@@ -89,7 +89,13 @@ Part 1.
 
 ## Project Workbook — Part 1: Problem framing
 
-Using the WIDOM framing in the Workbook template: your one-line pitch, what the
-problem is, who the stakeholders are, why it is impactful, why it is technically
-interesting, why it is hard, and why it hasn't been solved before. Resist naming
-a method — this part is about the problem.
+Using the WIDOM framing in the [Project Workbook template](/project-workbook/):
+your one-line pitch, what the problem is, who the stakeholders are, why it is
+impactful, why it is technically interesting, why it is hard, and why it hasn't
+been solved before. Resist naming a method — this part is about the problem.
+
+## Additional resources
+
+- [Project Workbook template](/project-workbook/) — copy it and complete Part 1.
+- The CHIL and ML4H proceedings, for a sense of the field's scope.
+- Your specialty-breakout track materials (posted before the camp).

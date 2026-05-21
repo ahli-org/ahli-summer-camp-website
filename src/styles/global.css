@@ -471,6 +471,8 @@ a:hover { color: var(--teal); }
 .resource-main a { font-weight: 600; font-size: 1.05rem; text-decoration: none; }
 .resource-main a:hover { text-decoration: underline; }
 .resource-main p { margin: .25rem 0 0; font-size: .92rem; color: var(--ink-soft); }
+.resource-soon { font-weight: 600; font-size: 1.05rem; color: var(--ink-soft); }
+.resource-soon em { font-style: normal; font-weight: 400; font-size: .9rem; color: var(--ink-faint); }
 
 /* ---- Curriculum day list ------------------------------------------------- */
 .day {

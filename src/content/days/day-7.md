@@ -46,3 +46,7 @@ remarks.
 The integrated one-paragraph narrative, and the assembled deck — one slide per
 Workbook part, plus a title and a closing "what I'll do next." Your Workbook has
 already written your slides; today is assembly, rehearsal, and delivery.
+
+## Additional resources
+
+- [Project Workbook template](/project-workbook/) — Part 7 assembles your deck.

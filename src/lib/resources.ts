@@ -1,17 +1,19 @@
 // Resource lists for the Resources page.
 //
-// Two audiences (students, instructors), each with a list of public resources.
-// Use `internal` for an on-site path (run through the url() helper by the page)
-// or `href` for an external/absolute URL. Items without a live link yet use '#'
-// and a description noting when they'll be posted.
+// Two audiences (students, instructors), each with public resources. A resource
+// links via exactly one of:
+//   internal — an on-site path (e.g. 'curriculum'), resolved with url()
+//   file     — a file in public/ (e.g. 'notebooks/x.ipynb'), served at base + file
+//   href     — an external/absolute URL
+// A resource with none of these is rendered as "not yet available" (no link),
+// for material that won't exist until later (e.g. recordings).
 
 export interface Resource {
   title: string;
   description?: string;
-  /** External or absolute URL. */
-  href?: string;
-  /** On-site path (e.g. 'curriculum'); resolved with url() by the page. */
   internal?: string;
+  file?: string;
+  href?: string;
 }
 
 export const studentResources: Resource[] = [
@@ -22,40 +24,44 @@ export const studentResources: Resource[] = [
   },
   {
     title: 'Project Workbook template',
-    description: 'The cumulative project document you complete one part per day. Posted before the camp.',
-    href: '#',
+    description: 'The cumulative project document you complete one part per day — copy it and fill it in.',
+    internal: 'project-workbook',
   },
   {
     title: 'Required readings',
-    description: 'Each content day’s required papers are listed on its day page; full PDFs/links posted before the camp.',
+    description: 'Each content day’s required papers are listed on its day page.',
     internal: 'curriculum',
   },
   {
-    title: 'Day 3 & 4 workshop notebooks',
-    description: 'Worked example notebooks and a template for building your own evaluation and methods notebooks. Posted before the camp.',
-    href: '#',
+    title: 'Evaluation Lab notebook (Day 3)',
+    description: 'A template notebook for building your project’s evaluation — discrimination, calibration, utility, subgroups, power, and shortcut probing.',
+    file: 'notebooks/evaluation-lab-template.ipynb',
+  },
+  {
+    title: 'Methods Lab notebook (Day 4)',
+    description: 'A template notebook for building and comparing methods for your project, reusing your Day 3 evaluation moves.',
+    file: 'notebooks/methods-lab-template.ipynb',
   },
   {
     title: 'Session recordings',
-    description: 'Video recordings of the lectures, posted after the camp.',
-    href: '#',
+    description: 'Video recordings of the lectures — posted after the camp.',
   },
 ];
 
 export const instructorResources: Resource[] = [
   {
-    title: 'Lecture slide outlines',
-    description: 'Slide-by-slide outlines for each lead lecture — the basis for the day pages’ lecture outlines.',
+    title: 'Instructor & guest lecturer guide',
+    description: 'Program design, teaching roles, and a brief for every day.',
+    internal: 'instructor-guide',
+  },
+  {
+    title: 'Curriculum, schedule & lecture outlines',
+    description: 'The day-by-day program; each day page carries a slide-by-slide outline of its lead lecture.',
     internal: 'curriculum',
   },
   {
-    title: 'Program schedule',
-    description: 'The finalized day-by-day schedule and the shared content-day template.',
-    internal: 'curriculum',
-  },
-  {
-    title: 'Specialty breakout & workshop guides',
-    description: 'The six domain tracks and the build-your-own-notebook workshop design. Posted before the camp.',
-    href: '#',
+    title: 'Project Workbook template',
+    description: 'The seven-part deliverable participants complete across the week.',
+    internal: 'project-workbook',
   },
 ];

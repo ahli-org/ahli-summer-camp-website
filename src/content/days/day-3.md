@@ -69,9 +69,10 @@ shared list of evaluation failure modes.
 
 The **workshop** then has you build an evaluation notebook for your own
 project — discrimination, calibration, clinical utility, subgroup
-disaggregation, power, and leakage/shortcut probing. Worked examples, a
-template, and a resource sheet are provided, and you are encouraged to use an AI
-coding assistant to scaffold a synthetic stand-in for your project.
+disaggregation, power, and leakage/shortcut probing. Start from the
+[Evaluation Lab template notebook](/notebooks/evaluation-lab-template.ipynb), and
+you are encouraged to use an AI coding assistant to scaffold a synthetic
+stand-in for your project.
 
 The day closes with **Small Group 2**: with the notebook in hand, you turn its
 findings into your project's evaluation plan.
@@ -88,3 +89,10 @@ findings into your project's evaluation plan.
 
 Estimand, primary and secondary metrics, subgroup / fairness plan, sample-size
 reasoning, and the top three threats to validity.
+
+## Additional resources
+
+- [Evaluation Lab notebook](/notebooks/evaluation-lab-template.ipynb) — the Day 3 workshop template.
+- [Project Workbook template](/project-workbook/) — Part 3.
+- [scikit-learn](https://scikit-learn.org/), [fairlearn](https://fairlearn.org/), and scikit-survival, as implementation references.
+- The MIMIC-IV demo on [PhysioNet](https://physionet.org/), for a real-data substrate.

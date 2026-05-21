@@ -61,6 +61,8 @@ automatically once `base` is set correctly — no per-page edits needed.
 | **Instructors & students** | generated — see "People (instructors & cohort)" below |
 | **Resource links** | `src/lib/resources.ts` |
 | Per-day curriculum outlines | `src/content/days/day-N.md` |
+| Instructor guide / Project Workbook | `src/md/*.md` |
+| Workshop notebooks | `scripts/build-notebooks.py` → `public/notebooks/*.ipynb` |
 | Colors, fonts, layout | `src/styles/global.css` (CSS variables in `:root`) |
 | Logo assets | `public/logos/` (see "Branding" below) |
 
@@ -148,15 +150,18 @@ This is a starter template. Items still marked as placeholders:
 ahli-summer-camp/
 ├── astro.config.mjs            # site URL + base path config
 ├── scripts/
-│   └── build-people.mjs        # generates students.json + instructors.json from sources
+│   ├── build-people.mjs        # generates students.json + instructors.json from sources
+│   └── build-notebooks.py      # generates the Day 3 & 4 workshop notebooks
 ├── public/
 │   ├── favicon.svg             # AHLI cross mark
 │   ├── logos/                  # AHLI logo lockups (white / colour / mark) + sponsor
-│   └── people/                 # generated headshots (<slug>.jpg)
+│   ├── people/                 # generated headshots (<slug>.jpg)
+│   └── notebooks/              # generated workshop notebooks (.ipynb)
 ├── src/
 │   ├── content.config.ts       # content collection: per-day curriculum outlines
 │   ├── content/
 │   │   └── days/               # day-1.md … day-7.md (detailed day outlines)
+│   ├── md/                     # instructor-guide.md, project-workbook.md (rendered pages)
 │   ├── components/
 │   │   ├── Hero.astro          # reusable page banner
 │   │   ├── Icon.astro          # inline SVG icon set (brand + utility)
@@ -186,6 +191,8 @@ ahli-summer-camp/
 │   │   ├── students/[slug].astro        # /students/<slug>/  (one per student)
 │   │   ├── resources.astro
 │   │   ├── sponsors.astro
+│   │   ├── instructor-guide.astro       # /instructor-guide/  (renders src/md)
+│   │   ├── project-workbook.astro       # /project-workbook/  (renders src/md)
 │   │   └── faq.astro
 │   └── styles/
 │       └── global.css

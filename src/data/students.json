@@ -730,6 +730,50 @@
     "email": "helena.coggan@childrens.harvard.edu"
   },
   {
+    "slug": "sylvie-dobrota-lai",
+    "name": "Sylvie Dobrota Lai",
+    "affiliation": "Stanford University",
+    "photo": "people/sylvie-dobrota-lai.jpg",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=5c27X2oAAAAJ"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/sylvie-dobrota-lai-5a137591/"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0001-5134-2105"
+      }
+    ],
+    "awards": [
+      "NIH/NIA F31 Predoctoral Fellowship (1F31AG090102-01), National Institute on Aging (2024-2025)",
+      "NIH T32 Training Grant (T32HL151323), TADA-BSSR, National Heart, Lung, and Blood Institute (2025-2026)",
+      "Stanford Data Science Scholar Program, Stanford University (2024-2026)",
+      "Community Impact Award, Stanford Alumni Association (2024)",
+      "Certificate of Recognition, Justice, Equity, Diversity and Inclusion Committee (2023)"
+    ],
+    "highlights": [
+      {
+        "type": "feature",
+        "title": "Using Data to Reimagine Recovery: How Sylvie Dobrota Lai is Empowering Stroke Survivors Through Digital Health",
+        "url": "https://datascience.stanford.edu/news/using-data-reimagine-recovery-how-sylvie-dobrota-lai-empowering-stroke-survivors-through",
+        "source": "Stanford Data Science",
+        "date": "2025-11"
+      }
+    ],
+    "bio": [
+      "Sylvie Dobrota Lai is a fourth-year PhD candidate in Epidemiology and Clinical Research at Stanford School of Medicine, where she works in Michelle Odden's lab and is a Stanford Data Science Scholar. She earned a BA in Molecular and Cell Biology with a Neuroscience concentration from UC Berkeley and an MS in Epidemiology and Clinical Research from Stanford, and spent two years in digital health industry roles before returning to Stanford for her doctorate. Her research applies statistical and machine learning methods, including causal inference, to disentangle the biological, environmental, and social factors that influence healthy aging and the preservation of cognitive function, with a particular focus on stroke survivors.",
+      "Her dissertation pairs population-level epidemiology with individual-level digital phenotyping. She uses LifeSpace, an open-source smartphone application developed in the Odden lab, to passively capture GPS mobility traces, Apple HealthKit gait and activity metrics, and daily surveys of mood, fatigue, and social engagement from stroke survivors. She links these signals to built-environment features extracted from Google Street View imagery using deep learning, and associates the resulting multimodal data with cognitive outcomes in Stanford's StrokeCog cohort to identify distinct recovery phenotypes. Her work is supported by an NIH/NIA F31 Predoctoral Fellowship and an NIH T32 training grant, and she has published on aging, cognition, hearing, and longevity in journals including the *Journals of Gerontology* and *Age and Ageing*.",
+      "Through the AHLI Summer Camp, Dobrota Lai hopes to develop stronger intuitions around evaluation and pre-deployment pipelines for models built on real-world sensing data, and to gain exposure to the collaboration landscape for research at the intersection of mobile health, epidemiology, and computer vision. As she works to position her research for a career bridging machine learning and clinical epidemiology, she is most interested in building relationships with other researchers who share the specific challenge of making ML work rigorously in health contexts."
+    ],
+    "tagline": "Passive sensing and ML for stroke recovery",
+    "position": "PhD Student",
+    "email": "sylvied@stanford.edu"
+  },
+  {
     "slug": "hyungjun-yoon",
     "name": "Hyungjun Yoon",
     "affiliation": "KAIST",
@@ -1115,6 +1159,74 @@
     "email": "sameer.neupane@ucsf.edu"
   },
   {
+    "slug": "milos-vukadinovic",
+    "name": "Milos Vukadinovic",
+    "affiliation": "University of California, Los Angeles",
+    "photo": "people/milos-vukadinovic.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://www.milosvuk.com"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=5pDQ9OYAAAAJ"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/vukadinovic936"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/milos-vukadinovic-b7b0171a2/"
+      },
+      {
+        "label": "Twitter/X",
+        "href": "https://x.com/milos_ai"
+      }
+    ],
+    "awards": [
+      "Winner of Medical Image De-Identification Challenge, National Institute of Health (NIH) (2024)",
+      "Best Oral Presentation, UCLA Research Day (2024)",
+      "Recognized for Outstanding Achievement in Mathematics, Honors Convocation, American University in Bulgaria (2022)",
+      "Graduated summa cum laude with honors in Mathematics and Computer Science, American University in Bulgaria (2022)",
+      "Programming Competition Medalist: CompMath (Bronze), MUC (Silver), ICPC (Honorable Mention), AUBG (Gold) (2019-2022)",
+      "3rd Place, Scale AI Generative AI Hackathon, with the UpSave Android app (2023)"
+    ],
+    "highlights": [
+      {
+        "type": "news_article",
+        "title": "Bioengineering Doctoral Student Co-Authors AI Heart Model Paper Published in Nature",
+        "url": "https://www.bioeng.ucla.edu/bioengineering-doctoral-student-co-authors-ai-heart-model-paper-published-in-nature/",
+        "source": "UCLA Samueli School of Engineering, Bioengineering",
+        "date": "2026-01"
+      },
+      {
+        "type": "press_release",
+        "title": "Researchers build largest-ever AI model to interpret echocardiograms",
+        "url": "https://divisionofresearch.kaiserpermanente.org/large-ai-interpret-echocardiograms/",
+        "source": "Kaiser Permanente Division of Research",
+        "date": "2025-11"
+      },
+      {
+        "type": "talk",
+        "title": "BrainX Community Live! December 2024: Foundation models in Cardiology - Automating Echocardiography with EchoPrime",
+        "url": "https://brainxai.org/connect/brainx-community-live-december-2024-foundation-models-in-cardiology-automating-echocardiography/",
+        "source": "BrainX Community",
+        "date": "2024-12"
+      }
+    ],
+    "bio": [
+      "Milos Vukadinovic is a final-year (4th year) PhD student in Bioengineering at UCLA, where his research focuses on AI for cardiac imaging. He is advised by David Ouyang (primary advisor) and Debiao Li (thesis advisor), and works as a visiting graduate student at the Cedars-Sinai Biomedical Research Institute, collaborating with an interdisciplinary team of physicians, physicists, and computer scientists across the full medical imaging pipeline. He earned a double major in Mathematics and Computer Science from the American University in Bulgaria, graduating summa cum laude with honors in both fields, with a semester abroad at Carroll College in Montana.",
+      "His work centers on deep learning and foundation models for echocardiography, ECG, and cardiac MRI interpretation. He is the first author of EchoPrime, a multi-video, view-informed vision-language model for comprehensive echocardiogram interpretation (published in Nature), and contributed to EchoCLIP, a vision-language foundation model for echocardiogram interpretation (Nature Medicine). His other work includes identifying cardiac sphericity as an early marker of cardiomyopathy (featured on the cover of Cell Reports Medicine) and GANcMRI for cardiac MRI video generation (presented at NeurIPS). During 2025 he also worked as a Data Scientist at the Kaiser Permanente Division of Research, where he helped build a large-scale AI model for echocardiography report generation and coordinated a clinical trial comparing its accuracy to that of sonographers. He serves as a reviewer for venues including NEJM, the Journal of the American Heart Association, MICCAI, and ML4H.",
+      "He has been recognized with honors including winning the NIH Medical Image De-Identification Challenge (2024), best oral presentation at UCLA Research Day (2024), and several programming-competition medals. He has given invited talks and guest lectures at institutions such as UC Berkeley/UCSF, the Broad Institute of MIT and Harvard, and the American Society of Echocardiography, and has mentored aspiring researchers through the Harvard OpenBio SRI program.",
+      "As a final-year PhD student transitioning into a leadership role within the research ecosystem, Milos hopes the AHLI Summer Camp will let him connect with researchers working at the forefront of AI in healthcare, build community, exchange ideas, and collectively push the field forward for the benefit of patients everywhere."
+    ],
+    "tagline": "Deep learning for echocardiography interpretation",
+    "position": "PhD Student",
+    "email": "milosvuk@ucla.edu"
+  },
+  {
     "slug": "chase-fensore",
     "name": "Chase Fensore",
     "affiliation": "Emory University",
@@ -1159,6 +1271,41 @@
     "tagline": "Generative AI for personalized clinical care",
     "position": "PhD Candidate",
     "email": "cfensor@emory.edu"
+  },
+  {
+    "slug": "jiyoun-kim",
+    "name": "Jiyoun Kim",
+    "affiliation": "KAIST Graduate School of AI",
+    "photo": "people/jiyoun-kim.jpg",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=XBQtxfMAAAAJ"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/ji-youn-kim"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jiyoun-kim-492729149"
+      }
+    ],
+    "awards": [
+      "Korean Government Funded Scholarship, KAIST Graduate School of AI (2023–Present)",
+      "Dean's List Award, SKKU College of Engineering (2019)",
+      "Academic Excellence Scholarship, SKKU College of Engineering (2019)"
+    ],
+    "highlights": [],
+    "bio": [
+      "Jiyoun Kim is a fourth-year PhD student in Artificial Intelligence at KAIST's Kim Jaechul Graduate School of AI, where she is advised by Prof. Edward Choi in the machine learning for healthcare group. She entered KAIST in 2023 through a joint M.S./Ph.D. program (M.S. completed 2023) after earning a B.S. in Systems Management Engineering and Computer Science and Engineering at Sungkyunkwan University, including an exchange term at Nanyang Technological University in Singapore. Before her doctoral work she gained full-stack software engineering experience as an intern at Musetown (Milpitas, CA) and AhnLab.",
+      "Her research centers on healthcare AI, clinical NLP, and multimodal electronic health record (EHR) modeling, with a focus on building evaluation methods that reflect how clinicians actually reason with patient data. She has contributed to work published at NeurIPS, ACL, CHIL, IEEE JBHI, and Scientific Reports, including co-leading EHRNoteQA, an LLM benchmark for clinical question answering over discharge summaries, and developing federated learning approaches for heterogeneous EHR systems. She is currently building a multi-turn, multi-note clinical QA benchmark co-designed with clinicians, and her proposed work develops a privacy-compliant multimodal \"hospital agent\" that answers clinician-style questions by iteratively querying both EHR tables and clinical notes while abstaining when evidence is insufficient.",
+      "Alongside research, Jiyoun has been an active educator: she served as Head Teaching Assistant for KAIST's AI504 (Programming for AI), where she deployed an LLM-based virtual TA serving 600 students, and has led hands-on PyTorch and NumPy tutorials for medical students and healthcare AI researchers at the KoSAIM 2024 Summer School.",
+      "At the AHLI Summer Camp, she hopes to deeply engage in discussions on clinical AI research and to find opportunities to collaborate with researchers around the world—drawing in particular on her interest in bridging technical methods with real-world clinical, regulatory, and organizational constraints."
+    ],
+    "tagline": "Multimodal EHR modeling and clinical AI evaluation",
+    "position": "PhD Student",
+    "email": "jiyoun.kim@kaist.ac.kr"
   },
   {
     "slug": "yasmeena-akhter",
@@ -1234,46 +1381,6 @@
     "tagline": "Explainable, causal ML for epilepsy care",
     "position": "PhD Student",
     "email": "u.kulsoom1@universityofgalway.ie"
-  },
-  {
-    "slug": "tarek-hamid",
-    "name": "Tarek Hamid",
-    "affiliation": "University of Virginia",
-    "photo": "people/tarek-hamid.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://www.tarekhamid.com/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=07cpc1QAAAAJ"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/tarek-hamid"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/tarekhamid/"
-      }
-    ],
-    "awards": [
-      "Best Talk, SandboxAQ 2026 Conference ($300) (2026)",
-      "SandboxAQ Global Travel Award ($5,000, to present at UbiComp 2025, Helsinki) (2025)",
-      "UVA Precision Health Initiative Grant ($4,000, to present at ICASSP 2025, Hyderabad) (2025)",
-      "Second Runner-up for Best Paper Award, IEEE Body Sensor Networks (Raproto) (2024)",
-      "TCNJ Merit Scholarship ($32,000) (2013-2017)"
-    ],
-    "highlights": [],
-    "bio": [
-      "Tarek Hamid is a fourth-year PhD student in Electrical and Computer Engineering at the University of Virginia, where he works in the Watson Research Lab under Prof. Amanda Watson. He holds an M.S. in Biomedical Engineering from Johns Hopkins University, a B.S. in Biomedical Engineering from The College of New Jersey, and pursued an M.S. in Computer Science at the University of Pennsylvania. Before returning to academia he spent several years in industry, including roles as a biomedical algorithm engineer at Sotera Digital Health, a software engineer at JPMorgan Chase, and a scientist at Johnson & Johnson, and he continues to consult on wearables data for clinical trials at VivoSense.",
-      "His research centers on biomedical signal processing and machine learning for wearable health, with a dissertation on broad-spectrum, multi-wavelength photoplethysmography (MW-PPG) algorithms for personalized and robust physiological monitoring. The core idea is to treat confounders such as skin tone, motion, and contact pressure not as noise to be removed but as quantities that can be directly measured from a spectrally rich optical signal, enabling more equitable and personalized biomarker extraction. He has led work on calibration-free cuffless blood pressure estimation (ICASSP 2025), objective skin-tone quantification (IMWUT/UbiComp 2025), and wearable nutrition monitoring, and he develops open-source tooling such as the Lumos MW-PPG platform and the SpectraVue analysis application. He is also co-founder of OxyVera, a venture developing a skin-tone-invariant pulse oximeter.",
-      "At the AHLI Summer Camp, Tarek hopes to gain feedback on his ongoing work from colleagues in the ML-for-health community, connect and network with peers working on complementary problems, and learn from leading academics in the field."
-    ],
-    "tagline": "Embedded ML for wearable physiological sensing",
-    "position": "PhD Student",
-    "email": "hamidtarek3@gmail.com"
   },
   {
     "slug": "haoran-zhang",
@@ -1851,6 +1958,44 @@
     "tagline": "Data science for precision cardiovascular health",
     "position": "PhD Student",
     "email": "alexander_schubert@berkeley.edu"
+  },
+  {
+    "slug": "tae-jones",
+    "name": "Tae Jones",
+    "affiliation": "University of Washington",
+    "photo": "people/tae-jones.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://tae-research.com/"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=-9fUAFwAAAAJ"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/taetertot"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/tae-jones"
+      }
+    ],
+    "awards": [
+      "Best Paper Award, ACM CHI Conference on Human Factors in Computing Systems (2024) — MigraineTracker",
+      "T32 Biomedical and Health Informatics Postdoctoral Fellowship, University of Washington",
+      "TL1 Translational Research Training Program Trainee, Institute of Translational Health Sciences (2023-2024)"
+    ],
+    "highlights": [],
+    "bio": [
+      "Tae Jones is a graduating fifth-year PhD candidate in Computer Science & Engineering at the University of Washington's Paul G. Allen School, co-advised by Dr. James Fogarty and Dr. Sean Munson and a member of the DUB group. Working at the intersection of Health Human-Computer Interaction (HCI) and digital health, she studies how structural and social factors—including implicit bias based on race, gender, socioeconomic background, and mental health stigma—shape health outcomes for patients managing physical-mental comorbidities. She came to the field through a BBA in Information Systems (with an Applied Statistics minor) and an MS in Healthcare Management & Informatics from Kennesaw State University, along with prior industry experience as a data analyst.",
+      "Her doctoral work spans user-centered, evidence-based digital health projects across cancer, depression, irritable bowel syndrome, hypertension, and migraine, in collaboration with partners including Fred Hutchinson Cancer Center, Kaiser Permanente Washington, and the UW School of Nursing. She led deployment interviews for Project SCOPE, a study of technology-enhanced collaborative care management of depression in cancer settings (CSCW 2024), and contributed to the MigraineTracker study examining patient experiences with goal-directed self-tracking (CHI 2024, a Best Paper awardee). Her first-authored CHI 2025 Late-Breaking Work examined researcher experiences and tensions around participant engagement in Health HCI research, and her dissertation investigates why patients withdraw from health technology studies. She completed the ITHS TL1 Translational Research Training Program and secured a competitive T32 Biomedical and Health Informatics Postdoctoral Fellowship to continue at UW with Dr. Andrea Hartzler, where her proposed research investigates why clinicians disengage from AI-generated bias-feedback tools like ConverSense and what design interventions can sustain that engagement.",
+      "At the AHLI Summer Camp, Tae hopes to deepen her technical fluency in machine learning for healthcare so she can translate her insights about social determinants of health into operationalized AI systems, and to learn how to frame health-equity questions in ways that are tractable for ML approaches without losing their nuance. She is also eager to build lasting cross-disciplinary collaborations—particularly with researchers and practitioners working on clinical study design, patient engagement, and real-world implementation—and to expand her network into communities complementary to her own as she transitions from her dissertation into a postdoctoral research agenda."
+    ],
+    "tagline": "Human-centered AI for health equity",
+    "position": "Graduate Researcher",
+    "email": "taejones@cs.washington.edu"
   },
   {
     "slug": "tiffany-hsieh",

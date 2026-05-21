@@ -64,7 +64,8 @@ the lecture's content.
 In **Small Group 1**, each participant drafts a one-slide method / model
 proposal. The **workshop** then has you build a methods notebook for your
 project — a baseline, stronger models, a representation / foundation-model
-approach, and a comparison harness that reuses your Day 3 evaluation moves. A
+approach, and a comparison harness that reuses your Day 3 evaluation moves. Start
+from the [Methods Lab template notebook](/notebooks/methods-lab-template.ipynb). A
 prompt-a-thon is the alternative track for LLM-centric projects.
 
 The day closes with **Small Group 2**: with the notebook's results in hand, each
@@ -90,3 +91,9 @@ Your chosen approach justified against data and metrics; the
 foundation-vs-task-specific and fine-tune/prompt/train-from-scratch decisions;
 your baseline; an internal-validation plan; and your main risk with a credible
 alternative.
+
+## Additional resources
+
+- [Methods Lab notebook](/notebooks/methods-lab-template.ipynb) — the Day 4 workshop template.
+- [Project Workbook template](/project-workbook/) — Part 4.
+- The MEDS ecosystem documentation, as an implementation reference.

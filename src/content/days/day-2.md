@@ -86,3 +86,10 @@ The data-generating process, what data already exists, your access plan,
 anticipated provenance-driven bias, and a gap check: does the available data
 actually support your Part 1 problem? If not, re-scope the problem or change the
 data plan — and note that here.
+
+## Additional resources
+
+- [Project Workbook template](/project-workbook/) — Part 2.
+- [PhysioNet](https://physionet.org/) — MIMIC-IV and credentialing.
+- The MEDS (Medical Event Data Standard) documentation.
+- The datasets list (posted before the camp).

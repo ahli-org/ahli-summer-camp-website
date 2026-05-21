@@ -87,3 +87,9 @@ expertise.
 Where the model's output lands in the workflow; the failure modes surfaced by
 the red team; your monitoring and drift plan; your audit plan; and the people
 and approvals the deployment needs.
+
+## Additional resources
+
+- [Project Workbook template](/project-workbook/) — Part 5.
+- The TRIPOD+AI reporting checklist.
+- Institutional model-monitoring and audit frameworks referenced in the readings.

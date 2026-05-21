@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { Content } from '../md/project-workbook.md';
+---
+<BaseLayout title="Project Workbook" description="The seven-part Project Workbook template — the cumulative document each participant builds across the week, one part per day.">
+  <Hero
+    eyebrow="The deliverable"
+    title="The Project Workbook"
+    lead="One cumulative document about your project — seven parts, one per day. By Day 7 it is your final presentation."
+  />
+  <section class="section">
+    <div class="wrap">
+      <div class="day-detail">
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -61,3 +61,8 @@ collaborator / IRB / PHI norms substitutes.
 Funding target and its incentives; an honest compute estimate; a collaborator
 map; and a timeline. Use the free afternoon to begin assembling your Day 7 deck
 from the seven slide-ready summaries.
+
+## Additional resources
+
+- [Project Workbook template](/project-workbook/) — Part 6.
+- A one-page resource on compute estimation and collaborator / IRB / PHI norms (posted before the camp).
