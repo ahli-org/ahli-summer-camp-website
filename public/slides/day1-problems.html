@@ -103,12 +103,13 @@
 <li>The <strong>label is endogenous</strong> to the system you predict: it is produced by the same care process that generates the features.</li>
 <li><strong>Deployment changes the data-generating process</strong> — prediction in health is <em>performative</em>, not passive (Perdomo et al., 2020).</li>
 </ul>
-<p>These aren't quirks. They break the <strong>identifiability</strong> and <strong>stationarity</strong> that general ML takes for granted.</p>
+<p>These aren't quirks: they <strong>complicate identifiability</strong> for causal and decision claims, and <strong>violate the i.i.d./stationarity</strong> assumptions predictive workflows lean on.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="AHLI HEALTH AI SUMMER CAMP 2026" data-theme="ahli-summit" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--header:AHLI HEALTH AI SUMMER CAMP 2026;--theme:ahli-summit;" data-marpit-pagination-total="30">
 <header>AHLI HEALTH AI SUMMER CAMP 2026</header>
 <h2 id="forty-years-of-perspective">Forty years of perspective</h2>
 <p>What is <strong>genuinely new</strong> now — and what is <strong>recycled</strong> under a new name.</p>
+<p>From <strong>MYCIN</strong> and <strong>INTERNIST</strong> to today's transformers, the cycle repeats: each era promised autonomy and delivered, at its best, useful <strong>decision support</strong>.</p>
 <div class="figslot">
 <span class="fig-id">FIG F1.2</span>
 <b>An ML4H timeline.</b> A horizontal timeline from expert systems (1970s–80s) → statistical ML on clinical data (1990s–2000s) → deep learning on EHR/imaging (2010s) → foundation models (2020s). Annotate each era with "the promise" and "what actually stuck." <i>See build guide F1.2.</i>
@@ -388,17 +389,19 @@ Optimizes for who is sick.</p>
 <div>
 <p><strong>Recycled / overclaimed</strong></p>
 <ul>
-<li>&quot;AI will replace clinicians&quot;</li>
+<li>&quot;AI will replace clinicians&quot; — said of expert systems in the 1980s</li>
 <li>Benchmarks mistaken for deployment</li>
 <li>New names for old shortcuts</li>
 </ul>
 </div>
 </div>
+<blockquote>
+<p>The failure modes recur too: misspecification, uninterpretability, and irresponsibility are old fallacies in new clothes. <span class="callback">Design principles &amp; fallacies — Szolovits et al. 2023</span></p>
+</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-header="AHLI HEALTH AI SUMMER CAMP 2026" data-theme="ahli-summit" lang="en-US" data-marpit-pagination="28" style="--paginate:true;--header:AHLI HEALTH AI SUMMER CAMP 2026;--theme:ahli-summit;" data-marpit-pagination-total="30">
 <header>AHLI HEALTH AI SUMMER CAMP 2026</header>
 <h2 id="open-problems--what-we-genuinely-dont-know">Open problems — what we genuinely don't know</h2>
-<div class="aside">Optional — cut if the room skews junior.</div>
 <ul>
 <li><strong>Identification at scale</strong> — when can an effect be trusted from observational health data without a trial?</li>
 <li><strong>Foundation models for health</strong> — transferable clinical structure, or laundered dataset shortcuts? <span class="callback">→ Day 4</span></li>
@@ -436,7 +439,7 @@ Name the <strong>unmet need</strong>, the <strong>stakeholders</strong>, and the
 Brief, warm open. This is the cohort's first content of the week.
 You set the frame for all seven days; everything downstream stands on it.
 ~75 min, FRAME mode. Replace the date if needed.
-This deck is a STARTER expanded toward a full 75-minute lecture (~28 slides,
+This deck is a STARTER expanded toward a full 75-minute lecture (30 slides,
 ~2.5 min each). See guides/day1-build-guide.md for the figure plan and a map
 of where to inject your own material. INSTRUCTOR tags mark those spots.</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>SPEAKER NOTES — Slide 2 (Why this week exists)
 State the spine explicitly. Participants will hear it referenced every
@@ -461,8 +464,12 @@ Everything after this slide is evidence for the claim.</p></div><div class="besp
 This is where your long view matters most — few people alive can speak to
 four decades of ML4H first-hand. INSTRUCTOR: this is YOUR slide. Pick two or
 three eras you lived through and say, candidly, what each promised and what
-actually survived. Set up Slide 26 (new vs. recycled) — this is the opening
-deposit on that theme. Resist turning it into a research-group history.</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>SPEAKER NOTES — Slide 8 (Section divider)
+actually survived. The MEDG systems you can speak to first-hand — MYCIN,
+INTERNIST, the Present Illness Program with Pauker — make this concrete, and the
+&quot;design principles and fallacies&quot; framing (McDermott, Nestor &amp; Szolovits 2023) is
+a clean way to name what recurs. → guides/instructor-resources.md. Set up Slide 27
+(new vs. recycled) — this is the opening deposit on that theme. Resist turning it
+into a research-group history.</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>SPEAKER NOTES — Slide 8 (Section divider)
 Pivot to the connective tissue of the week. The six features that follow are
 referenced by every later day; name that up front.</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>SPEAKER NOTES — Slide 9 (Six features)
 This list is the connective tissue for the whole week. Name each one and
@@ -529,7 +536,7 @@ This audience already nods at &quot;problem before method&quot; — push to the
 uncomfortable version: benchmark-chasing has distorted what counts as a problem,
 and many ML4H benchmarks have weak construct validity (Raji et al., AI and the
 Everything in the Whole Wide World Benchmark, NeurIPS 2021). The test now
-includes &quot;without naming a benchmark.&quot; Reappears on the rubric (Slide 28).</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>SPEAKER NOTES — Slide 24 (Problem formulation is a choice)
+includes &quot;without naming a benchmark.&quot; Reappears on the rubric (Slide 29).</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>SPEAKER NOTES — Slide 24 (Problem formulation is a choice)
 The Passi &amp; Barocas reading shows formulation is where bias and value choices
 enter. This motivates the deliverable: they will FORMULATE, not just pick. The
 next slide is the canonical worked case (cost vs. need).</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>SPEAKER NOTES — Slide 25 (Worked case: cost vs need)
@@ -546,15 +553,16 @@ Only you can credibly give this perspective — use it. INSTRUCTOR: this is the
 payoff of Slide 7. Be specific and be willing to disagree with the field's
 consensus. The cohort will spend the week being ambitious; a calibrated read
 of what is real vs. hyped is a gift from a senior voice. Foundation models get
-a full treatment on Day 4 (McDermott) — flag that you're only sketching here.</p></div><div class="bespoke-marp-note" data-index="27" tabindex="0"><p>SPEAKER NOTES — Slide 28 (Open problems) — OPTIONAL / CUTTABLE
+a full treatment on Day 4 (McDermott) — flag that you're only sketching here.</p></div><div class="bespoke-marp-note" data-index="27" tabindex="0"><p>SPEAKER NOTES — Slide 28 (Open problems) — CORE
 A senior, candid &quot;here is what we don't know&quot; beat — the highest-value thing a
 camp offers over a course, and it scales the lecture to the strongest attendees.
-Cut it for a more junior room without breaking the arc. Each bullet forward-
+Treat it as load-bearing, not the first slide cut for time (compress to the two
+bullets that matter most to your room if you must). Each bullet forward-
 references a later day. INSTRUCTOR: add the open problem you most wish someone
-would work on.</p></div><div class="bespoke-marp-note" data-index="28" tabindex="0"><p>SPEAKER NOTES — Slide 28 (What makes a good problem)
+would work on.</p></div><div class="bespoke-marp-note" data-index="28" tabindex="0"><p>SPEAKER NOTES — Slide 29 (What makes a good problem)
 This IS the grading rubric for the Workbook page. Walk all four criteria
 slowly. The last one is the sharpest diagnostic. Tell them the small-group
-facilitator will hold them to this test. Transition to the deliverable next.</p></div><div class="bespoke-marp-note" data-index="29" tabindex="0"><p>SPEAKER NOTES — Slide 29 (Activity / transition)
+facilitator will hold them to this test. Transition to the deliverable next.</p></div><div class="bespoke-marp-note" data-index="29" tabindex="0"><p>SPEAKER NOTES — Slide 30 (Activity / transition)
 Hand off cleanly. Name the deliverable, point to the room and time, and
 preview the guest: Alsentzer takes ONE real project through the messy reality
 of problem formulation — the concrete instance of today's abstraction. End
