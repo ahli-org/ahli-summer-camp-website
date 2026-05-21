@@ -11,6 +11,7 @@
     "build:people": "node scripts/build-people.mjs",
     "build:students": "node scripts/build-people.mjs students",
     "build:instructors": "node scripts/build-people.mjs instructors",
+    "build:notebooks": "uv run --with nbformat python scripts/build-notebooks.py",
     "sync:slides": "node scripts/sync-slides.mjs"
   },
   "dependencies": {

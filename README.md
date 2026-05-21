@@ -10,16 +10,40 @@ The design uses a clean, sidebar-driven editorial layout in the official
 
 ---
 
-## Quick start
+## Quick start — run the site locally
 
-Requires [Node.js](https://nodejs.org) 18.20.8+ (or 20.3+ / 22+).
+**The only prerequisite is [Node.js](https://nodejs.org)** (version 18.20.8+,
+20.3+, or 22+ — Node 20 LTS or 22 recommended). Everything the site displays is
+committed to the repo, so a fresh clone runs the full site as-is — you do **not**
+need Python, ImageMagick, the slide-deck repo, or any of the data-generation
+scripts to view or develop it (those are only for *regenerating* content — see
+[Regenerating generated content](#regenerating-generated-content-maintainers)).
 
 ```bash
-npm install      # install dependencies
-npm run dev      # local dev server at http://localhost:4321
-npm run build    # production build into ./dist
-npm run preview  # preview the built site locally
+git clone git@github.com:ahli-org/ahli-summer-camp-website.git
+cd ahli-summer-camp-website
+npm install      # install dependencies (~30s)
+npm run dev      # local dev server — open the URL it prints (usually http://localhost:4321)
 ```
+
+That's it — open the printed URL and you'll see the complete site: home, about,
+curriculum with all seven day pages, instructors, the 45-person cohort, the
+Project Workbook, workshop notebooks, sponsors, resources, and FAQ.
+
+Other commands:
+
+```bash
+npm run build    # production build into ./dist (what would be deployed)
+npm run preview  # serve the built ./dist locally to check the production build
+```
+
+**Two things you'll notice when you run it:**
+
+- A bright amber **"Internal review"** banner on the home page. That's expected —
+  it's a pre-launch checklist for the committee, toggled by `REVIEW_MODE` in
+  `src/lib/site.ts` (set it to `false` to hide).
+- If you add or rename files under `src/content/days/`, **restart the dev
+  server** — Astro only picks up content-collection changes at startup.
 
 ---
 
@@ -104,18 +128,9 @@ Each profile surfaces the person's headshot, role/position, affiliation, links
 icon buttons, full bio, awards, and a "Featured in" press section — designed to
 showcase them and support their visibility.
 
-- Put the source folder (one subfolder per student, each with `links.json`,
-  `bio.md`, and `headshot.png`) at `./.student_source/`. It is **gitignored** —
-  the raw bios/resumes are never committed.
-- Run `npm run build:students` (needs ImageMagick `convert` on PATH). It
-  slugifies names, resizes headshots, parses bios/links/awards/press, and writes
-  `src/data/students.json`.
-- Commit `src/data/students.json` and `public/people/*.jpg`. The pages render
-  from the typed wrapper in `src/lib/students.ts`.
-
-Each profile surfaces the student's headshot, position, affiliation, links
-(website, Scholar, GitHub, LinkedIn, etc.), full bio, awards, and press
-highlights — designed to showcase them and support their visibility.
+> The generated JSON and headshots are **committed**, so you don't need the
+> source folders or the generator to run the site — only to *regenerate* the
+> data. See [Regenerating generated content](#regenerating-generated-content-maintainers).
 
 ### Branding
 
@@ -144,6 +159,46 @@ This is a starter template. Items still marked as placeholders:
 - **Resource links** — `src/lib/resources.ts` (all public).
 - **Contact email** — `SITE.email` in `src/lib/site.ts`.
 - **Site URL** — `astro.config.mjs`.
+
+---
+
+## Regenerating generated content (maintainers)
+
+You only need this section if you're **updating** the generated content. To just
+run or develop the site, skip it — the outputs below are committed.
+
+These extra tools are required *only* for the commands here:
+
+- **ImageMagick** (`convert` on PATH) — for resizing headshots.
+- **Python 3 + [uv](https://docs.astral.sh/uv/)** — for building the notebooks.
+- **The companion [`ahli-summer-camp-slides`](https://github.com/ahli-org/ahli-summer-camp-slides) repo**, cloned next to this one — for the slide decks.
+
+| To regenerate… | Run | Inputs → outputs (commit the outputs) |
+|---|---|---|
+| Instructors & cohort | `npm run build:people` | `./.student_source/`, `./.instructor_source/` (gitignored) → `src/data/*.json` + `public/people/*.jpg` |
+| Workshop notebooks | `npm run build:notebooks` | `scripts/build-notebooks.py` → `public/notebooks/*.ipynb` |
+| Lecture slide decks | `npm run sync:slides` | built decks in the slides repo → `public/slides/*` |
+
+For slides, first build the decks in the slides repo (`npm run build` there),
+then `npm run sync:slides` here; it finds the repo as a sibling directory or via
+`$AHLI_SLIDES_DIR`.
+
+The **source folders** for people data (`.student_source/`, `.instructor_source/`)
+are intentionally gitignored — they hold raw bios/resumes/headshots and are not
+committed. Ask the program committee for them if you need to regenerate.
+
+## Troubleshooting
+
+- **A day page (`/curriculum/day-1/`) 404s in dev.** Restart the dev server —
+  Astro initializes content collections (`src/content/`) at startup, so newly
+  added day files aren't picked up until you restart.
+- **Port already in use.** `npm run dev` falls back to the next free port; use
+  the URL it prints (not a hard-coded 4321).
+- **"Open in Colab" on a notebook page doesn't open.** The repo is private, so
+  Colab's GitHub opener needs access until the site is public — download the
+  `.ipynb` and upload it to Colab, or run it locally (`pip install -r
+  public/notebooks/requirements.txt`). The path is set in `src/lib/notebooks.ts`.
+- **`npm run build:people` fails with "convert: not found".** Install ImageMagick.
 
 ---
 
