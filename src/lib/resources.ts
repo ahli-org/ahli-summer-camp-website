@@ -1,55 +1,61 @@
 // Resource lists for the Resources page.
 //
-// Two audiences (students, instructors), each with a list of resources. Mark an
-// item `gated: true` for material that should only be available to logged-in /
-// authorized people — it renders with a lock and points at `gatedHref` (e.g. a
-// members area, a private video host, or a shared drive) rather than a public
-// link. Public items just use `href`.
-//
-// Until the gating mechanism is wired up (see README → "Gating private content"),
-// gated items can point at a placeholder or an access-request mailto.
+// Two audiences (students, instructors), each with a list of public resources.
+// Use `internal` for an on-site path (run through the url() helper by the page)
+// or `href` for an external/absolute URL. Items without a live link yet use '#'
+// and a description noting when they'll be posted.
 
 export interface Resource {
   title: string;
   description?: string;
-  /** Public URL. Used when `gated` is false/undefined. */
+  /** External or absolute URL. */
   href?: string;
-  /** Access-controlled URL. Used when `gated` is true. */
-  gatedHref?: string;
-  gated?: boolean;
+  /** On-site path (e.g. 'curriculum'); resolved with url() by the page. */
+  internal?: string;
 }
 
 export const studentResources: Resource[] = [
   {
-    title: 'Pre-camp setup guide',
-    description: 'Environment setup and accounts to create before day one.',
+    title: 'Curriculum & daily schedule',
+    description: 'The full seven-day program, with a detailed outline for each day.',
+    internal: 'curriculum',
+  },
+  {
+    title: 'Project Workbook template',
+    description: 'The cumulative project document you complete one part per day. Posted before the camp.',
     href: '#',
   },
   {
-    title: 'Lab notebooks',
-    description: 'The daily Jupyter labs using synthetic clinical data.',
-    gated: true,
-    gatedHref: '#',
+    title: 'Required readings',
+    description: 'Each content day’s required papers are listed on its day page; full PDFs/links posted before the camp.',
+    internal: 'curriculum',
+  },
+  {
+    title: 'Day 3 & 4 workshop notebooks',
+    description: 'Worked example notebooks and a template for building your own evaluation and methods notebooks. Posted before the camp.',
+    href: '#',
   },
   {
     title: 'Session recordings',
-    description: 'Video recordings of each session, shared with the cohort.',
-    gated: true,
-    gatedHref: '#',
+    description: 'Video recordings of the lectures, posted after the camp.',
+    href: '#',
   },
 ];
 
 export const instructorResources: Resource[] = [
   {
-    title: 'Instructor handbook',
-    description: 'Logistics, schedule, and expectations for the week.',
-    gated: true,
-    gatedHref: '#',
+    title: 'Lecture slide outlines',
+    description: 'Slide-by-slide outlines for each lead lecture — the basis for the day pages’ lecture outlines.',
+    internal: 'curriculum',
   },
   {
-    title: 'Session templates',
-    description: 'Slide and notebook templates for concept sessions and labs.',
-    gated: true,
-    gatedHref: '#',
+    title: 'Program schedule',
+    description: 'The finalized day-by-day schedule and the shared content-day template.',
+    internal: 'curriculum',
+  },
+  {
+    title: 'Specialty breakout & workshop guides',
+    description: 'The six domain tracks and the build-your-own-notebook workshop design. Posted before the camp.',
+    href: '#',
   },
 ];

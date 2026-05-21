@@ -59,7 +59,8 @@ automatically once `base` is set correctly — no per-page edits needed.
 | Page text | the matching file in `src/pages/` |
 | Curriculum / schedule | `src/lib/curriculum.ts` (the `days` array + `dailyRhythm`) |
 | **Instructors & students** | generated — see "People (instructors & cohort)" below |
-| **Resource links (incl. gated)** | `src/lib/resources.ts` |
+| **Resource links** | `src/lib/resources.ts` |
+| Per-day curriculum outlines | `src/content/days/day-N.md` |
 | Colors, fonts, layout | `src/styles/global.css` (CSS variables in `:root`) |
 | Logo assets | `public/logos/` (see "Branding" below) |
 
@@ -135,7 +136,7 @@ This is a starter template. Items still marked as placeholders:
 - **Instructors & students** — generated from `./.instructor_source/` and
   `./.student_source/` via `npm run build:people` (see "People" above). The 2026
   cohort and instructors are already populated in `src/data/*.json`.
-- **Resource links** — `src/lib/resources.ts` (public + gated material).
+- **Resource links** — `src/lib/resources.ts` (all public).
 - **Contact email** — `SITE.email` in `src/lib/site.ts`.
 - **Site URL** — `astro.config.mjs`.
 
@@ -153,6 +154,9 @@ ahli-summer-camp/
 │   ├── logos/                  # AHLI logo lockups (white / colour / mark) + sponsor
 │   └── people/                 # generated headshots (<slug>.jpg)
 ├── src/
+│   ├── content.config.ts       # content collection: per-day curriculum outlines
+│   ├── content/
+│   │   └── days/               # day-1.md … day-7.md (detailed day outlines)
 │   ├── components/
 │   │   ├── Hero.astro          # reusable page banner
 │   │   ├── Icon.astro          # inline SVG icon set (brand + utility)
@@ -174,7 +178,8 @@ ahli-summer-camp/
 │   ├── pages/                  # one file per route
 │   │   ├── index.astro
 │   │   ├── about.astro
-│   │   ├── curriculum.astro
+│   │   ├── curriculum.astro             # /curriculum/  (overview + daily rhythm)
+│   │   ├── curriculum/[day].astro       # /curriculum/day-N/  (detailed outline)
 │   │   ├── instructors.astro            # /instructors/  (grid)
 │   │   ├── instructors/[slug].astro     # /instructors/<slug>/  (one per instructor)
 │   │   ├── students.astro               # /students/  (cohort grid)
@@ -186,41 +191,3 @@ ahli-summer-camp/
 │       └── global.css
 └── .github/workflows/deploy.yml
 ```
-
----
-
-## Gating private content (logins & recordings)
-
-Some resources (lab notebooks, session recordings) should be restricted to the
-cohort. A few facts shape how to do this on a static site:
-
-- **A static host (GitHub Pages) serves files to anyone with the URL.**
-  Client-side JavaScript can *hide* a link or show a login box, but it cannot
-  stop someone from fetching the underlying file directly. So pure-JS gating is
-  honour-system only, not real protection.
-- **Real gating must be enforced where the bytes are served** — at the edge, by
-  a serverless function, or by the content host. Importantly, **the site can
-  stay static**; you only add a gatekeeper in front of the protected material.
-
-Options, lowest-effort first (the build stays static in all of them):
-
-1. **Offload gated material to an access-controlled host (recommended to start).**
-   Keep the site on GitHub Pages. Put documents/notebooks in a Google Drive or
-   Dropbox folder shared with cohort emails, and recordings on a private video
-   host (Vimeo private/domain-locked, or Mux/Cloudflare Stream with signed
-   playback). The site just links out; Google/Vimeo enforce the login. No auth
-   code, no extra infra.
-2. **Cloudflare Access in front of a `/members` path or subdomain.**
-   Move hosting/DNS to Cloudflare (Cloudflare Pages still builds this static
-   site unchanged). Cloudflare authenticates via Google/GitHub/email-OTP **at
-   the edge** before serving — genuine protection of the actual files, still no
-   app code.
-3. **Identity provider + serverless signed URLs (most control).**
-   Add Auth0/Firebase/Netlify Identity for login and a small serverless function
-   that hands authorized users short-lived signed URLs to private storage
-   (S3/GCS/R2) for files and recordings. Most flexible, most work.
-
-The Resources page (`src/pages/resources.astro`) already separates public from
-gated items: set `gated: true` on a resource in `src/lib/resources.ts` and it
-renders with a lock and a "Cohort only" tag pointing at `gatedHref`. Wire that
-href to whichever option above you choose.

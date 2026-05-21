@@ -25,7 +25,7 @@ function personHref(p?: Person): string | null {
             <div class="day-num">{d.n}<span>Day</span></div>
             <div class="day-body">
               <p class="day-meta">{d.date} · <span class="day-mode">{d.mode}</span></p>
-              <h3>{d.title}</h3>
+              <h3><a class="day-title-link" href={url(`curriculum/day-${d.n}`)}>{d.title}</a></h3>
               <p class="day-gap">{d.gap}</p>
 
               <p class="day-faculty">
@@ -53,6 +53,7 @@ function personHref(p?: Person): string | null {
               <p><strong>Morning.</strong> {d.morning}</p>
               <p><strong>Afternoon.</strong> {d.afternoon}</p>
               <p class="day-questions"><strong>Key questions.</strong> {d.questions}</p>
+              <p><a class="day-more" href={url(`curriculum/day-${d.n}`)}>Full day outline →</a></p>
             </div>
           </article>
         ))}
@@ -65,11 +66,15 @@ function personHref(p?: Person): string | null {
       <p class="eyebrow">A typical day</p>
       <h2>The daily rhythm</h2>
       <p>
-        Days 1–5 share a consistent five-block structure: a concept lecture in
-        the morning, a guest lecture and hands-on workshop in the afternoon, and
-        two small-group sessions where the day’s work becomes a Project Workbook
-        deliverable. Day 6 is a funding panel and a free afternoon to prepare;
-        Day 7 is final presentations and networking.
+        Days 1–5 share one consistent five-block structure: lead lecture →
+        small group → guest lecture → workshop → closing small group. The shape
+        is deliberate — you get a frame, apply it to your project, get content
+        that sharpens your thinking, then revise your work. <strong>Every content
+        day ends with a small group</strong>, not a lecture, so the last thing
+        you do each day is improve your own project and complete that day’s
+        Project Workbook section. Day 1 uses the same structure with an 8:30
+        opening block in place of the handoff; Day 6 is a funding panel with a
+        free afternoon, and Day 7 is final presentations and networking.
       </p>
       <dl class="rhythm">
         {dailyRhythm.map((b) => (

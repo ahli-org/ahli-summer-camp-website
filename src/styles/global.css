@@ -471,14 +471,6 @@ a:hover { color: var(--teal); }
 .resource-main a { font-weight: 600; font-size: 1.05rem; text-decoration: none; }
 .resource-main a:hover { text-decoration: underline; }
 .resource-main p { margin: .25rem 0 0; font-size: .92rem; color: var(--ink-soft); }
-.lock { font-size: .85em; margin-left: .3rem; }
-.resource-tag {
-  flex: 0 0 auto;
-  font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--purple); background: var(--paper-2);
-  border: 1px solid var(--line); border-radius: 999px; padding: .2rem .6rem;
-  white-space: nowrap;
-}
 
 /* ---- Curriculum day list ------------------------------------------------- */
 .day {
@@ -516,6 +508,52 @@ a:hover { color: var(--teal); }
 .day-faculty strong { color: var(--ink-faint); font-weight: 600; }
 .faculty-affil { color: var(--ink-faint); }
 .day-questions { color: var(--ink-soft); }
+
+.day-title-link { color: inherit; text-decoration: none; }
+.day-title-link:hover { color: var(--indigo); }
+.day-more { font-weight: 600; font-size: .9rem; text-decoration: none; }
+.day-more:hover { text-decoration: underline; }
+.day-faculty--hero {
+  border-color: rgba(255,255,255,.25); color: #d6d8ea; margin-top: 1.1rem;
+}
+.day-faculty--hero strong { color: #b6b9d2; }
+.day-faculty--hero a { color: #fff; }
+.day-faculty--hero .faculty-affil { color: #b6b9d2; }
+
+/* ---- Per-day detail (rendered markdown) ---------------------------------- */
+.day-detail { max-width: 42rem; }
+.day-detail h2 {
+  font-family: var(--serif); font-weight: 600; font-size: 1.4rem;
+  color: var(--ink); margin: 2.2rem 0 .8rem;
+}
+.day-detail h2:first-child { margin-top: 0; }
+.day-detail h3 { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+.day-detail p { color: var(--ink-soft); margin-bottom: 1rem; }
+.day-detail strong { color: var(--ink); font-weight: 600; }
+.day-detail ul, .day-detail ol { color: var(--ink-soft); margin: 0 0 1rem 1.2rem; }
+.day-detail li { margin-bottom: .5rem; }
+.day-detail li::marker { color: var(--ink-faint); }
+.day-detail table {
+  width: 100%; border-collapse: collapse; margin: 0 0 1.4rem;
+  font-size: .92rem;
+}
+.day-detail th, .day-detail td {
+  text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.day-detail thead th {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--ink-faint); border-bottom: 2px solid var(--line);
+}
+.day-detail tbody td:first-child { color: var(--teal); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.day-nav {
+  display: flex; justify-content: space-between; gap: 1rem;
+  margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+}
+.day-nav-link { font-weight: 600; text-decoration: none; font-size: .92rem; }
+.day-nav-link:hover { text-decoration: underline; }
+.day-nav-link--next { text-align: right; margin-left: auto; }
 
 /* Daily rhythm timetable */
 .rhythm {

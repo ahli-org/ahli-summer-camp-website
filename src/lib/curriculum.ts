@@ -35,9 +35,9 @@ export const days: CurriculumDay[] = [
     lead: { name: 'Pete Szolovits', affil: 'MIT', slug: 'peter-szolovits' },
     guest: { name: 'Emily Alsentzer', affil: 'Stanford', slug: 'emily-alsentzer' },
     morning:
-      'Welcome and orientation — the course spine, the Project Workbook, and the small-group model — then a field-level frame: what ML4H is, what is shared across health problems, and what AI can and cannot do.',
+      'An opening block — welcome, orientation to how the week works, and a brief icebreaker — then a field-level frame: what ML4H is, what is shared across health problems, and what AI can and cannot do. A first small group reframes your project as a problem, not a method.',
     afternoon:
-      'A guest lecture walks a real project from messy problem-formulation toward clinical use. Small groups state each project’s unmet need, stakeholders, and structural gap, followed by a problem clinic within your data-modality track.',
+      'A guest lecture walks a real project from messy problem-formulation toward clinical use, then a problem clinic within your data-modality track. The day closes with a small group where you refine your problem framing.',
     questions:
       'What is the unmet health need? Who are the stakeholders? What historical, societal, or scientific gaps challenge the problem — and how is a problem different from a method?',
   },
@@ -136,15 +136,14 @@ export const days: CurriculumDay[] = [
 
 // The shared rhythm of a content day (Days 1–5). Days 6–7 differ — see their cards.
 export const dailyRhythm: { time: string; item: string }[] = [
-  { time: '8:00', item: 'Breakfast & check-in (shuttles run from the hotel)' },
-  { time: '9:00', item: 'Morning handoff (Day 1: welcome & orientation)' },
-  { time: '9:15', item: 'Lead lecture' },
+  { time: '9:00', item: 'Morning handoff (Day 1: an 8:30 opening block — check-in, welcome & orientation, icebreaker)' },
+  { time: '9:15', item: 'Lead lecture — frames the day' },
   { time: '10:30', item: 'Coffee break' },
-  { time: '11:00', item: 'Small Group 1' },
+  { time: '11:00', item: 'Small Group 1 — apply the frame to your project' },
   { time: '12:30', item: 'Lunch' },
-  { time: '1:30', item: 'Guest lecture' },
-  { time: '2:45', item: 'Specialty breakout / build-your-own-notebook workshop' },
-  { time: '4:15', item: 'Small Group 2' },
+  { time: '1:30', item: 'Guest lecture — a concrete case or counterpoint' },
+  { time: '2:45', item: 'Workshop — a notebook (Days 3–4), specialty breakout (Days 1–2), or fireside (Day 5)' },
+  { time: '4:15', item: 'Small Group 2 (closing) — revise your work and complete your Workbook section' },
   { time: '5:45', item: 'Daily wrap — submit your Workbook section' },
   { time: '6:00', item: 'Dinner' },
 ];

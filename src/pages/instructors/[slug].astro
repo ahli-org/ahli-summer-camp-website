@@ -4,6 +4,7 @@ import ProfileDetail from '../../components/ProfileDetail.astro';
 import { url } from '../../lib/site';
 import { instructors } from '../../lib/instructors';
 import type { Instructor } from '../../lib/instructors';
+import { days as curriculumDays } from '../../lib/curriculum';
 
 export function getStaticPaths() {
   return instructors.map((instructor) => ({ params: { slug: instructor.slug }, props: { instructor } }));
@@ -19,8 +20,11 @@ const description = instructor.tagline
   ? `${instructor.tagline}${metaBits ? ` — ${metaBits}` : ''}`
   : (instructor.bio[0] ?? `${instructor.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
 
-// Session line: prefer the human-readable assigned block, fall back to the day.
-const sessionMeta = [instructor.day, instructor.assigned_block].filter(Boolean).join(' · ');
+// Session line: the day's theme, drawn from the authoritative curriculum so it
+// always matches the schedule (the source `assigned_block` times can be stale).
+const dayNum = Number((instructor.day ?? '').match(/\d+/)?.[0]);
+const curDay = curriculumDays.find((d) => d.n === dayNum);
+const sessionMeta = curDay ? `Day ${curDay.n} · ${curDay.title}` : (instructor.day ?? '');
 ---
 <BaseLayout title={instructor.name} description={description}>
   <ProfileDetail
