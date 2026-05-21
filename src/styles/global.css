@@ -6,31 +6,41 @@
 
 /* ---- Design tokens ------------------------------------------------------- */
 :root {
-  --ink:          #1c2541;   /* primary text */
-  --ink-soft:     #4b5273;   /* secondary text */
-  --ink-faint:    #8a8fa6;   /* captions, muted */
+  /* ---- AHLI brand palette (from the official AHLI Color Palette) ---------- */
+  --ink:          #1f2020;   /* AHLI near-black — primary text */
+  --ink-soft:     #4a4d52;   /* secondary text */
+  --ink-faint:    #8a8d94;   /* captions, muted */
 
-  --navy:         #161b38;   /* sidebar base */
-  --navy-deep:    #0e1228;   /* sidebar bottom of gradient */
+  --navy:         #3a4490;   /* sidebar top of gradient (AHLI indigo #404C98) */
+  --navy-deep:    #232a5e;   /* sidebar bottom of gradient */
 
-  --purple:       #6f56b5;
-  --purple-bright:#9a82e0;
-  --teal:         #14998b;
-  --teal-bright:  #34c0b0;
+  --indigo:       #404c98;   /* AHLI indigo */
+  --indigo-bright:#5b67c4;
+  --blue:         #107bbc;   /* AHLI blue */
+  --teal:         #048a81;   /* AHLI deep teal */
+  --teal-bright:  #00b0c8;   /* AHLI cyan */
+  --mint:         #5bc7b2;   /* AHLI mint */
+  --magenta:      #cf206d;   /* AHLI magenta */
+  --lime:         #a1cd59;   /* AHLI lime */
 
-  --paper:        #fbfaf6;   /* main background */
-  --paper-2:      #f1efe7;   /* tinted blocks */
+  /* Back-compat aliases: existing rules use --purple; map it to AHLI indigo. */
+  --purple:        var(--indigo);
+  --purple-bright: var(--indigo-bright);
+
+  --paper:        #ffffff;   /* main background — AHLI clean white */
+  --paper-2:      #f3f4f7;   /* tinted blocks */
   --card:         #ffffff;
-  --line:         #e6e3d8;   /* hairline borders */
+  --line:         #e3e4ea;   /* hairline borders (toward AHLI #DFDFDF) */
 
   --sidebar-w:    21.5rem;
   --content-max:  48rem;
 
-  --shadow-sm: 0 1px 2px rgba(20,26,52,.06), 0 2px 8px rgba(20,26,52,.05);
-  --shadow-md: 0 6px 22px rgba(20,26,52,.10);
+  --shadow-sm: 0 1px 2px rgba(31,32,32,.06), 0 2px 8px rgba(31,32,32,.05);
+  --shadow-md: 0 6px 22px rgba(31,32,32,.10);
 
-  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --sans:  'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* AHLI typography: Montserrat for display, Open Sans for body/UI. */
+  --serif: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --sans:  'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* ---- Reset --------------------------------------------------------------- */
@@ -74,19 +84,13 @@ a:hover { color: var(--teal); }
 
 .brand { display: block; text-decoration: none; margin-bottom: 2.2rem; }
 .brand:hover { color: inherit; }
-.brand-mark {
-  display: block;
-  font-family: var(--serif);
-  font-size: 2.15rem; font-weight: 600; letter-spacing: .01em;
-  color: #fff; line-height: 1;
-}
-.brand-mark .dot { color: var(--teal-bright); }
+.brand-logo { display: block; width: 100%; max-width: 14rem; height: auto; }
 .brand-sub {
   display: block;
-  margin-top: .55rem;
+  margin-top: .7rem;
   font-size: .72rem; font-weight: 600;
   letter-spacing: .18em; text-transform: uppercase;
-  color: var(--purple-bright);
+  color: var(--mint);
 }
 
 .side-nav { display: flex; flex-direction: column; gap: .15rem; }
@@ -103,7 +107,7 @@ a:hover { color: var(--teal); }
 .side-nav a:hover { color: #fff; background: rgba(255,255,255,.05); }
 .side-nav a[aria-current='page'] {
   color: #fff;
-  background: rgba(154,130,224,.16);
+  background: rgba(0,176,200,.16);
   border-left-color: var(--teal-bright);
 }
 
@@ -124,7 +128,15 @@ a:hover { color: var(--teal); }
   margin-top: auto; padding-top: 1.8rem;
   font-size: .73rem; line-height: 1.55; color: #8186a0;
 }
+.side-foot p { margin: 0 0 .55rem; }
 .side-foot strong { color: #b7bad0; font-weight: 600; }
+.side-supported { color: #8186a0; }
+.side-sponsor { display: block; margin-top: .1rem; }
+.side-sponsor img {
+  width: 100%; max-width: 10.5rem; height: auto;
+  opacity: .85; transition: opacity .15s;
+}
+.side-sponsor:hover img { opacity: 1; }
 
 /* ============================================================================
    MOBILE TOP BAR  (hidden on desktop)
@@ -137,7 +149,7 @@ a:hover { color: var(--teal); }
   background: var(--navy-deep);
   color: #fff;
 }
-.mobile-bar .brand-mark { font-size: 1.35rem; }
+.mobile-logo { display: block; height: 1.6rem; width: auto; }
 .nav-toggle {
   appearance: none; border: 1px solid rgba(255,255,255,.25);
   background: transparent; color: #fff;
@@ -168,8 +180,8 @@ a:hover { color: var(--teal); }
 .hero {
   position: relative; overflow: hidden;
   background:
-    radial-gradient(900px 380px at 88% -10%, rgba(52,192,176,.30), transparent 60%),
-    linear-gradient(135deg, #1c2350 0%, #2a2466 55%, #3a2c78 100%);
+    radial-gradient(900px 380px at 88% -10%, rgba(0,176,200,.32), transparent 60%),
+    linear-gradient(135deg, #2a3270 0%, #404c98 55%, #0e6f97 100%);
   color: #fff;
 }
 .hero::after {  /* faint dot grid for texture */
@@ -283,6 +295,155 @@ a:hover { color: var(--teal); }
 .card h3 { margin-top: 0; }
 .card p:last-child { margin-bottom: 0; }
 
+/* ---- People cards (instructors & students) ------------------------------- */
+.people-grid {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+.person {
+  display: flex; gap: 1rem; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 10px; padding: 1.3rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+.person-avatar {
+  flex: 0 0 auto;
+  width: 3.4rem; height: 3.4rem;
+  border-radius: 50%; object-fit: cover;
+}
+.person-avatar--initials {
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--purple), var(--teal));
+  color: #fff; font-family: var(--serif); font-weight: 600; font-size: 1.15rem;
+  letter-spacing: .02em;
+}
+.person-body { min-width: 0; }
+.person-body h3 { margin: 0 0 .15rem; font-size: 1.12rem; }
+.person-role {
+  font-size: .82rem; font-weight: 600; letter-spacing: .03em;
+  color: var(--teal); margin: 0 0 .15rem;
+}
+.person-affil { font-size: .9rem; color: var(--ink-soft); margin: 0 0 .5rem; }
+.person-bio { font-size: .95rem; margin: 0 0 .6rem; }
+.person-links { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; }
+.person-links a {
+  font-size: .78rem; font-weight: 600;
+  padding: .15rem .6rem; border: 1px solid var(--line); border-radius: 999px;
+  text-decoration: none; color: var(--purple);
+}
+.person-links a:hover { border-color: var(--purple); background: var(--paper-2); }
+
+/* ---- Student cards (cohort grid) ----------------------------------------- */
+.people-grid--students {
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+.student-card {
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 10px; overflow: hidden;
+  box-shadow: var(--shadow-sm); text-decoration: none; color: inherit;
+  transition: box-shadow .15s, transform .15s, border-color .15s;
+}
+.student-card:hover {
+  box-shadow: var(--shadow-md); transform: translateY(-2px);
+  border-color: var(--indigo);
+}
+.student-photo {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+  background: var(--paper-2);
+}
+.student-photo--initials {
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--indigo), var(--teal));
+  color: #fff; font-family: var(--serif); font-weight: 600; font-size: 2.4rem;
+}
+.student-card-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
+.student-card-body h3 { margin: 0 0 .2rem; font-size: 1.05rem; line-height: 1.25; }
+.student-pos { margin: 0; font-size: .82rem; font-weight: 600; color: var(--teal); }
+.student-affil { margin: .15rem 0 0; font-size: .85rem; color: var(--ink-soft); }
+.student-more {
+  margin-top: auto; padding-top: .7rem;
+  font-size: .8rem; font-weight: 600; color: var(--indigo);
+}
+.student-card:hover .student-more { color: var(--teal); }
+
+/* ---- Student profile page ------------------------------------------------ */
+.hero--profile .hero-inner { padding-top: 2.6rem; padding-bottom: 2.6rem; }
+.profile-back {
+  display: inline-block; margin-bottom: 1.4rem;
+  font-size: .85rem; font-weight: 600; color: #cfd2e4; text-decoration: none;
+}
+.profile-back:hover { color: #fff; }
+.profile-head { display: flex; gap: 1.6rem; align-items: center; flex-wrap: wrap; }
+.profile-photo {
+  flex: 0 0 auto; width: 8.5rem; height: 8.5rem;
+  border-radius: 12px; object-fit: cover;
+  border: 2px solid rgba(255,255,255,.25);
+}
+.profile-photo--initials {
+  display: grid; place-items: center;
+  background: rgba(255,255,255,.12);
+  color: #fff; font-family: var(--serif); font-weight: 600; font-size: 2.6rem;
+}
+.profile-id { min-width: 0; }
+.profile-id h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(1.7rem, 3.5vw, 2.4rem); line-height: 1.1; }
+.profile-pos { margin: .5rem 0 0; font-size: 1.05rem; font-weight: 600; color: var(--teal-bright); }
+.profile-affil { margin: .15rem 0 0; color: #d6d8ea; }
+.profile-links { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
+.profile-links a {
+  font-size: .82rem; font-weight: 600; color: #fff; text-decoration: none;
+  padding: .28rem .8rem; border: 1px solid rgba(255,255,255,.3); border-radius: 999px;
+  transition: background .15s, border-color .15s;
+}
+.profile-links a:hover { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.6); }
+
+.profile-bio p { color: var(--ink-soft); margin-bottom: 1rem; }
+.profile-bio p:first-child { font-size: 1.1rem; color: var(--ink); }
+.profile-block { margin-top: 2.4rem; }
+.award-list { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); }
+.award-list li { margin-bottom: .5rem; }
+.highlight-list { list-style: none; margin: 0; padding: 0; }
+.highlight-list li { padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.highlight-list li:first-child { border-top: 1px solid var(--line); }
+.highlight-list a { font-weight: 600; }
+.highlight-meta { display: block; margin-top: .2rem; font-size: .82rem; color: var(--ink-faint); }
+
+/* ---- Sponsors ------------------------------------------------------------ */
+.sponsor-grid {
+  display: grid; gap: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.sponsor-card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 10px; padding: 2rem 1.8rem; text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.sponsor-card a { display: block; }
+.sponsor-logo {
+  display: block; margin: 0 auto .2rem;
+  max-width: 16rem; width: 100%; height: auto;
+}
+.sponsor-name { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); }
+.sponsor-card p { margin: 1rem 0 0; font-size: .95rem; color: var(--ink-soft); }
+
+/* ---- Resource list ------------------------------------------------------- */
+.resource-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+.resource {
+  display: flex; gap: 1rem; align-items: baseline; justify-content: space-between;
+  padding: 1.1rem 0; border-bottom: 1px solid var(--line);
+}
+.resource-main a { font-weight: 600; font-size: 1.05rem; text-decoration: none; }
+.resource-main a:hover { text-decoration: underline; }
+.resource-main p { margin: .25rem 0 0; font-size: .92rem; color: var(--ink-soft); }
+.lock { font-size: .85em; margin-left: .3rem; }
+.resource-tag {
+  flex: 0 0 auto;
+  font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--purple); background: var(--paper-2);
+  border: 1px solid var(--line); border-radius: 999px; padding: .2rem .6rem;
+  white-space: nowrap;
+}
+
 /* ---- Curriculum day list ------------------------------------------------- */
 .day {
   display: grid; grid-template-columns: 4.4rem 1fr; gap: 1.3rem;
@@ -322,7 +483,7 @@ a:hover { color: var(--teal); }
 
 /* ---- CTA strip ----------------------------------------------------------- */
 .cta {
-  background: linear-gradient(135deg, #221b4d, #34286e);
+  background: linear-gradient(135deg, #2a3270, #404c98 70%, #0e6f97);
   color: #fff; border-radius: 12px;
   padding: 2.3rem 2rem; text-align: center;
 }

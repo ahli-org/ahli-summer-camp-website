@@ -5,7 +5,7 @@ import { SITE, url } from '../lib/site';
 const facts = [
   { k: 'Dates', v: SITE.dates },
   { k: 'Format', v: 'Week-long, in-person intensive' },
-  { k: 'Cohort', v: '~50 PhD students in ML for health' },
+  { k: 'Cohort', v: '42 researchers in ML for health' },
   { k: 'Co-located with', v: 'CHIL conference' },
   { k: 'Supported by', v: SITE.funder },
   { k: 'Outcome', v: 'A shared Summer Camp Workbook' },
@@ -22,8 +22,8 @@ const facts = [
         translation.
       </p>
       <div class="btn-row">
-        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
-        <a class="btn btn-ghost" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-primary" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-ghost" href={url('students')}>Meet the cohort</a>
       </div>
     </div>
   </header>
@@ -91,10 +91,10 @@ const facts = [
   <section class="section">
     <div class="wrap">
       <div class="cta">
-        <h2>Join the {SITE.year} cohort</h2>
-        <p>Applications are open to PhD students working in machine learning for health.</p>
+        <h2>The {SITE.year} cohort is set</h2>
+        <p>Meet the students and instructors joining us for the week, and explore the curriculum.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href={url('apply')}>Start your application</a>
+          <a class="btn btn-primary" href={url('students')}>Meet the cohort</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { SITE } from '../lib/site';
+import { studentResources, instructorResources } from '../lib/resources';
+import type { Resource } from '../lib/resources';
+
+// Edit resource lists in src/lib/resources.ts.
+const sections: { heading: string; eyebrow: string; items: Resource[] }[] = [
+  { eyebrow: 'For students', heading: 'Student resources', items: studentResources },
+  { eyebrow: 'For instructors', heading: 'Instructor resources', items: instructorResources },
+];
+---
+<BaseLayout title="Resources">
+  <Hero
+    eyebrow="Resources"
+    title="Materials for the camp"
+    lead="Reading, setup guides, lab notebooks, and session recordings. Some materials are open; others are shared only with the cohort and instructors."
+  />
+
+  {sections.map((s) => (
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">{s.eyebrow}</p>
+        <h2>{s.heading}</h2>
+        <ul class="resource-list">
+          {s.items.map((r) => (
+            <li class={`resource${r.gated ? ' resource--gated' : ''}`}>
+              <div class="resource-main">
+                <a href={(r.gated ? r.gatedHref : r.href) ?? '#'}>
+                  {r.title}
+                  {r.gated && <span class="lock" title="Restricted — sign-in required" aria-label="Restricted">🔒</span>}
+                </a>
+                {r.description && <p>{r.description}</p>}
+              </div>
+              {r.gated && <span class="resource-tag">Cohort only</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <section class="section">
+    <div class="wrap">
+      <div class="callout">
+        <p>
+          <strong>Access to restricted materials.</strong> Items marked
+          <span class="lock">🔒</span> <em>Cohort only</em> — including lab
+          notebooks and session recordings — are shared with accepted students
+          and instructors. If you are part of the camp and need access, email
+          <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

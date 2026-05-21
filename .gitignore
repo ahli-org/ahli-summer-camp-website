@@ -22,3 +22,7 @@ pnpm-debug.log*
 .DS_Store
 .vscode/
 .idea/
+
+# local working copy of accepted-student source data (bios, resumes, CSV, etc.)
+# the website consumes the generated src/data/students.json + public/people/*.jpg instead
+.student_source/

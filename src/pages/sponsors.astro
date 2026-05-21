@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { SITE } from '../lib/site';
+
+const base = import.meta.env.BASE_URL;
+
+// Camp sponsors. Add an entry per sponsor; `logo` is a file in public/logos/
+// referenced without the leading "public" (omit for a text-only listing).
+const sponsors = [
+  {
+    name: 'Gordon and Betty Moore Foundation',
+    logo: 'logos/moore-foundation.svg',
+    url: 'https://www.moore.org/',
+    blurb:
+      'The camp is made possible by the generous support of the Gordon and Betty Moore Foundation.',
+  },
+];
+---
+<BaseLayout title="Sponsors">
+  <Hero
+    eyebrow="Sponsors"
+    title="With thanks to our sponsors"
+    lead="The AHLI Health AI Summer Camp is made possible by the generosity of our supporters. We are deeply grateful for their commitment to the next generation of machine-learning-for-health researchers."
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sponsor-grid">
+        {sponsors.map((s) => (
+          <article class="sponsor-card">
+            <a href={s.url} rel="noopener" target="_blank" aria-label={s.name}>
+              {s.logo
+                ? <img class="sponsor-logo" src={`${base}${s.logo}`} alt={`${s.name} logo`} loading="lazy" />
+                : <span class="sponsor-name">{s.name}</span>}
+            </a>
+            {s.blurb && <p>{s.blurb}</p>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Our lead sponsor</p>
+      <h2>About the Gordon and Betty Moore Foundation</h2>
+      <p>
+        Established by Intel co-founder Gordon Moore — of "Moore's Law" — and his
+        wife Betty, the <a href="https://www.moore.org/" rel="noopener" target="_blank">Gordon and Betty Moore Foundation</a>
+        fosters path-breaking scientific discovery, environmental conservation,
+        and the improvement of the quality of life. Headquartered in Palo Alto,
+        California, the foundation describes its approach as "society's venture
+        capital" — making bold, scientifically grounded investments intended to
+        create positive outcomes for future generations.
+      </p>
+      <p>
+        Its grantmaking spans three main areas: <strong>Science</strong>,
+        supporting fundamental research from quantum systems to astronomy;
+        <strong>Environmental Conservation</strong>, protecting critical
+        ecosystems worldwide; and the <strong>San Francisco Bay Area</strong>,
+        its home community. The foundation's support of the AHLI Health AI Summer
+        Camp reflects its enduring commitment to advancing rigorous,
+        impactful science.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>Thank you.</strong> The camp's hands-on curriculum, small
+          cohort, and shared Summer Camp Workbook are possible because of the
+          {SITE.funder}'s support of early-career researchers in machine
+          learning for health.
+        </p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-outline" href="https://www.moore.org/" rel="noopener" target="_blank">Visit moore.org</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

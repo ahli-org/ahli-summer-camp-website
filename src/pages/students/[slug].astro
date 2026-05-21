@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/site';
+import { students } from '../../lib/students';
+import type { Student } from '../../lib/students';
+
+export function getStaticPaths() {
+  return students.map((student) => ({ params: { slug: student.slug }, props: { student } }));
+}
+
+interface Props {
+  student: Student;
+}
+const { student } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const initials = student.name
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((w) => w[0]?.toUpperCase() ?? '')
+  .join('');
+
+// Concise meta description for sharing / SEO, drawn from the bio.
+const metaBits = [student.position, student.affiliation].filter(Boolean).join(' · ');
+const description =
+  (student.bio[0] ?? `${student.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+
+function fmtDate(d?: string): string {
+  if (!d) return '';
+  const [y, m] = d.split('-');
+  const months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return m ? `${months[Number(m)] ?? ''} ${y}`.trim() : y;
+}
+---
+<BaseLayout title={student.name} description={description}>
+  <header class="hero hero--profile">
+    <div class="hero-inner">
+      <a class="profile-back" href={url('students')}>← Back to the cohort</a>
+      <div class="profile-head">
+        {student.photo
+          ? <img class="profile-photo" src={`${base}${student.photo}`} alt={student.name} width="700" height="700" />
+          : <span class="profile-photo profile-photo--initials" aria-hidden="true">{initials}</span>}
+        <div class="profile-id">
+          <h1>{student.name}</h1>
+          {student.position && <p class="profile-pos">{student.position}</p>}
+          {student.affiliation && <p class="profile-affil">{student.affiliation}</p>}
+          {(student.links.length > 0 || student.email) && (
+            <p class="profile-links">
+              {student.links.map((l) => (
+                <a href={l.href} rel="noopener" target="_blank">{l.label}</a>
+              ))}
+              {student.email && <a href={`mailto:${student.email}`}>Email</a>}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      {student.bio.length > 0 && (
+        <div class="profile-bio">
+          {student.bio.map((p) => <p>{p}</p>)}
+        </div>
+      )}
+
+      {student.awards.length > 0 && (
+        <div class="profile-block">
+          <p class="eyebrow">Awards &amp; honors</p>
+          <h2>Recognition</h2>
+          <ul class="award-list">
+            {student.awards.map((a) => <li>{a}</li>)}
+          </ul>
+        </div>
+      )}
+
+      {student.highlights.length > 0 && (
+        <div class="profile-block">
+          <p class="eyebrow">In the news</p>
+          <h2>Press &amp; highlights</h2>
+          <ul class="highlight-list">
+            {student.highlights.map((h) => (
+              <li>
+                {h.url
+                  ? <a href={h.url} rel="noopener" target="_blank">{h.title}</a>
+                  : <span>{h.title}</span>}
+                {(h.source || h.date) && (
+                  <span class="highlight-meta">
+                    {[h.source, fmtDate(h.date)].filter(Boolean).join(' · ')}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div class="btn-row">
+        <a class="btn btn-outline" href={url('students')}>Meet the rest of the cohort</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -36,6 +36,8 @@ export const NAV: { label: string; path: string }[] = [
   { label: 'About', path: 'about' },
   { label: 'Curriculum', path: 'curriculum' },
   { label: 'Instructors', path: 'instructors' },
-  { label: 'Apply', path: 'apply' },
+  { label: 'Students', path: 'students' },
+  { label: 'Resources', path: 'resources' },
+  { label: 'Sponsors', path: 'sponsors' },
   { label: 'FAQ', path: 'faq' },
 ];

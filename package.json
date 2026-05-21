@@ -7,9 +7,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:students": "node scripts/build-students.mjs"
   },
   "dependencies": {
-    "astro": "^5"
+    "astro": "^6.3.6"
   }
 }
