@@ -34,13 +34,13 @@ export const studentResources: Resource[] = [
   },
   {
     title: 'Evaluation Lab notebook (Day 3)',
-    description: 'A template notebook for building your project’s evaluation — discrimination, calibration, utility, subgroups, power, and shortcut probing.',
-    file: 'notebooks/evaluation-lab-template.ipynb',
+    description: 'A template notebook for building your project’s evaluation — view it, open in Colab, or download.',
+    internal: 'notebooks/evaluation-lab',
   },
   {
     title: 'Methods Lab notebook (Day 4)',
-    description: 'A template notebook for building and comparing methods for your project, reusing your Day 3 evaluation moves.',
-    file: 'notebooks/methods-lab-template.ipynb',
+    description: 'A template notebook for building and comparing methods for your project — view it, open in Colab, or download.',
+    internal: 'notebooks/methods-lab',
   },
   {
     title: 'Session recordings',

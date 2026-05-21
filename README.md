@@ -185,6 +185,7 @@ ahli-summer-camp/
 │   │   ├── curriculum.ts       # day-by-day schedule content
 │   │   ├── students.ts         # typed access to students.json
 │   │   ├── instructors.ts      # typed access to instructors.json
+│   │   ├── notebooks.ts        # workshop notebook metadata + Colab URLs
 │   │   └── resources.ts        # student + instructor resource links
 │   ├── pages/                  # one file per route
 │   │   ├── index.astro
@@ -195,6 +196,7 @@ ahli-summer-camp/
 │   │   ├── instructors/[slug].astro     # /instructors/<slug>/  (one per instructor)
 │   │   ├── students.astro               # /students/  (cohort grid)
 │   │   ├── students/[slug].astro        # /students/<slug>/  (one per student)
+│   │   ├── notebooks/[notebook].astro   # /notebooks/<slug>/  (rendered + Colab + download)
 │   │   ├── resources.astro
 │   │   ├── sponsors.astro
 │   │   ├── instructor-guide.astro       # /instructor-guide/  (renders src/md)

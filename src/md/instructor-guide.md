@@ -136,7 +136,7 @@ convenience; discrimination, calibration, and clinical utility; statistical powe
 fairness and subgroup criteria; and the major threats to internal validity. Your
 lecture sets up Salaudeen's empirical case that aggregate metrics hide subgroup
 failures. In the afternoon you anchor the
-[evaluation-lab notebook](/notebooks/evaluation-lab-template.ipynb).
+[evaluation-lab notebook](/notebooks/evaluation-lab/).
 
 **Handoff.** Open with the handoff (Day 2 data specs). Close by naming Workbook
 Part 3 (the evaluation plan) and pointing to the afternoon notebook workshop.
@@ -154,7 +154,7 @@ models explicitly, framed as *"what method for what data and what target,"* not 
 a model zoo. Coordinate with Gerych so the talks divide cleanly: you cover
 *building*; he covers making the built model *trustworthy without breaking it*. In
 the afternoon you anchor the
-[methods-lab notebook](/notebooks/methods-lab-template.ipynb).
+[methods-lab notebook](/notebooks/methods-lab/).
 
 **Handoff.** Open with the handoff (Day 3 evaluation plans). The afternoon closing
 small group is a structured peer review. Close by naming Workbook Part 4 — the
