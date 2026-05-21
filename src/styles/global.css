@@ -498,6 +498,21 @@ a:hover { color: var(--teal); }
 .reading-list { margin: 0 0 1rem; padding-left: 1.3rem; color: var(--ink-soft); }
 .reading-list li { margin-bottom: .5rem; }
 .reading-list a { font-weight: 500; }
+
+/* AI-suggested readings — visually distinct, clearly delineated */
+.ai-readings {
+  margin: 2rem 0 0;
+  background: var(--paper-2);
+  border: 1px dashed var(--indigo);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+.ai-readings-tag {
+  margin: 0 0 .4rem; font-weight: 700; font-size: .9rem;
+  letter-spacing: .02em; color: var(--indigo);
+}
+.ai-readings > p { color: var(--ink-soft); font-size: .92rem; margin: 0 0 .8rem; }
+.ai-readings .reading-list { margin-bottom: 0; }
 .highlight-list { list-style: none; margin: 0; padding: 0; }
 .highlight-list li {
   display: flex; gap: .7rem; align-items: flex-start;

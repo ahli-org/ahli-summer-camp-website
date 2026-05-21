@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { url } from '../../lib/site';
-import { days as curriculumDays, readings } from '../../lib/curriculum';
+import { days as curriculumDays, readings, suggestedReadings } from '../../lib/curriculum';
 import type { Person } from '../../lib/curriculum';
 
 export async function getStaticPaths() {
@@ -27,6 +27,7 @@ const next = sorted[idx + 1];
 const dayPath = (n: number) => url(`curriculum/day-${n}`);
 
 const dayReadings = readings[meta.n] ?? [];
+const daySuggested = suggestedReadings[meta.n] ?? [];
 ---
 <BaseLayout title={`Day ${meta.n}: ${meta.title}`} description={meta.gap}>
   <header class="hero hero--profile">
@@ -68,6 +69,23 @@ const dayReadings = readings[meta.n] ?? [];
               ))}
             </ol>
           </>
+        )}
+
+        {daySuggested.length > 0 && (
+          <aside class="ai-readings">
+            <p class="ai-readings-tag">🤖 AI-suggested readings — for committee review</p>
+            <p>
+              Candidate additional readings proposed by an AI assistant (with
+              verified links). <strong>Not yet vetted or assigned</strong> — the
+              program committee should review before adding them to the required
+              list.
+            </p>
+            <ol class="reading-list">
+              {daySuggested.map((r) => (
+                <li>{r.url ? <a href={r.url} rel="noopener" target="_blank">{r.cite}</a> : <span>{r.cite}</span>}</li>
+              ))}
+            </ol>
+          </aside>
         )}
       </div>
 
