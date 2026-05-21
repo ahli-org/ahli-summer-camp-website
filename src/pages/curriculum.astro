@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { url } from '../lib/site';
+
+// Draft curriculum scaffold. Edit themes, dates, and instructors freely.
+const days = [
+  {
+    n: 1, date: 'Mon · Jun 22',
+    title: 'Foundations of ML for Health',
+    body: 'Framing the week: what makes health a distinctive setting for machine learning, the shape of a sound ML4H project, and the questions every study should answer.',
+  },
+  {
+    n: 2, date: 'Tue · Jun 23',
+    title: 'Working with Clinical Data',
+    body: 'Where health data comes from, how it is structured, and how to handle it responsibly. Hands-on work with synthetic clinical data modeled on MIMIC-IV.',
+  },
+  {
+    n: 3, date: 'Wed · Jun 24',
+    title: 'Evaluation & Study Design',
+    body: 'Designing studies that answer real questions: appropriate metrics, calibration, fairness auditing, decision-curve analysis, and avoiding common evaluation pitfalls.',
+  },
+  {
+    n: 4, date: 'Thu · Jun 25',
+    title: 'Methods & Modeling',
+    body: 'A guided comparison of modeling approaches — from classical baselines to neural networks — and how to situate your work in the foundation-model landscape.',
+  },
+  {
+    n: 5, date: 'Fri · Jun 26',
+    title: 'From Models to Practice',
+    body: 'What happens after a model works in a notebook: robustness, generalization across settings, and the path toward responsible real-world use.',
+  },
+  {
+    n: 6, date: 'Sat · Jun 27',
+    title: 'Incentives, Economics & Systems',
+    body: 'The systems health AI lives inside — incentives, economics, and the organizational realities that shape whether a method is adopted.',
+  },
+  {
+    n: 7, date: 'Sun · Jun 28',
+    title: 'Capstone & the Summer Camp Workbook',
+    body: 'Participants bring the week together: consolidating daily deliverables into a cohesive Summer Camp Workbook and sharing results with the cohort.',
+  },
+];
+---
+<BaseLayout title="Curriculum">
+  <Hero
+    eyebrow="Curriculum"
+    title="Seven days, one complete arc"
+    lead="The week moves through the full lifecycle of an ML-for-health project. Each day pairs a concept session with guided lab work that produces a concrete deliverable."
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <div class="callout">
+        <p>
+          <strong>This is a draft schedule.</strong> Day themes are settled in
+          outline; session details, readings, and instructors will be confirmed
+          ahead of the camp.
+        </p>
+      </div>
+
+      <div class="day-list">
+        {days.map((d) => (
+          <article class="day">
+            <div class="day-num">{d.n}<span>Day</span></div>
+            <div class="day-body">
+              <p class="day-meta">{d.date}</p>
+              <h3>{d.title}</h3>
+              <p>{d.body}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">How the days work</p>
+      <h2>Concept in the morning, hands-on after</h2>
+      <p>
+        Each day combines a concept session with a guided lab. Labs are run as
+        interactive Jupyter notebooks using synthetic clinical data, and are
+        treated as core curriculum rather than optional extras.
+      </p>
+      <p>
+        The deliverable from every lab is added to your growing
+        <strong>Summer Camp Workbook</strong> — so by the final day, the week's
+        work exists as a single, coherent reference.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-outline" href={url('instructors')}>Meet the instructors</a>
+        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

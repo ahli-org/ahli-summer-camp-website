@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { SITE, url } from '../lib/site';
+---
+<BaseLayout title="About">
+  <Hero
+    eyebrow="About the camp"
+    title="A focused week for the next generation of ML-for-health researchers"
+    lead="The AHLI Health AI Summer Camp is a week-long intensive designed to give PhD students the rigor, tools, and community to do excellent machine learning for health."
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Our goal</h2>
+      <p>
+        Machine learning for health sits between two demanding fields. Doing it
+        well means understanding both the methods and the clinical realities they
+        touch. The camp exists to help early-career researchers build that
+        combined fluency in a concentrated, supportive setting.
+      </p>
+      <p>
+        The week is hands-on by design. Concept sessions are paired with guided
+        lab work, and the cohort is kept small enough — around 50 PhD students —
+        for genuine discussion and mentorship.
+      </p>
+
+      <h3>Who it's for</h3>
+      <p>
+        The camp is aimed at PhD students whose research involves machine
+        learning for health (ML4H). Participants typically have a working
+        foundation in machine learning and want to deepen their practice in the
+        health setting specifically — data, evaluation, study design, and
+        translation.
+      </p>
+
+      <h3>What makes it different</h3>
+      <ul>
+        <li><strong>Deliverable-driven.</strong> Every day produces a concrete artifact, not just notes.</li>
+        <li><strong>Realistic data.</strong> Labs use synthetic clinical data modeled on MIMIC-IV structure.</li>
+        <li><strong>Current methods.</strong> Coverage spans classical models through the foundation-model landscape.</li>
+        <li><strong>Small cohort.</strong> Roughly 50 participants, for real conversation with instructors and peers.</li>
+      </ul>
+
+      <div class="callout">
+        <p>
+          <strong>The Summer Camp Workbook.</strong> Each participant's daily
+          deliverables accumulate into a single cohesive workbook. By the final
+          day, you leave not only with new skills but with a structured reference
+          you can bring back to your own research.
+        </p>
+      </div>
+
+      <h3>Support and partners</h3>
+      <p>
+        The camp is supported by the {SITE.funder} and co-located with
+        {SITE.colocatedWith}, connecting participants to the wider health-AI
+        research community.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-outline" href={url('curriculum')}>Explore the curriculum</a>
+        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { url } from '../lib/site';
+
+// Placeholder cards — replace with confirmed faculty as the lineup is finalized.
+const faculty = [
+  { day: 'Day 1', name: 'Instructor to be announced', role: 'Foundations of ML for Health' },
+  { day: 'Day 2', name: 'Instructor to be announced', role: 'Working with Clinical Data' },
+  { day: 'Day 3', name: 'Instructor to be announced', role: 'Evaluation & Study Design' },
+  { day: 'Day 4', name: 'Instructor to be announced', role: 'Methods & Modeling' },
+  { day: 'Day 5', name: 'Instructor to be announced', role: 'From Models to Practice' },
+  { day: 'Day 6', name: 'Instructor to be announced', role: 'Incentives, Economics & Systems' },
+];
+---
+<BaseLayout title="Instructors">
+  <Hero
+    eyebrow="Instructors"
+    title="Learn from researchers shaping health AI"
+    lead="The camp is led by instructors working at the frontier of machine learning for health, supported by a program committee that runs the week."
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <div class="callout">
+        <p>
+          <strong>The faculty lineup is being finalized.</strong> Confirmed
+          instructors and full bios will be published here ahead of the camp.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        {faculty.map((p) => (
+          <article class="card">
+            <p class="day-meta">{p.day}</p>
+            <h3>{p.name}</h3>
+            <p>{p.role}</p>
+            <p><em>Bio coming soon.</em></p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Behind the camp</p>
+      <h2>Program committee</h2>
+      <p>
+        The camp is organized by a program committee responsible for the
+        curriculum, logistics, and participant experience throughout the week.
+        Committee members and their roles will be listed here soon.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-outline" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

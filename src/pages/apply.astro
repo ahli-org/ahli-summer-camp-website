@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { SITE } from '../lib/site';
+
+// Replace these placeholders with real dates and the live application link.
+const dates = [
+  { k: 'Applications open', v: 'To be announced' },
+  { k: 'Application deadline', v: 'To be announced' },
+  { k: 'Decisions sent', v: 'To be announced' },
+  { k: 'Camp dates', v: SITE.dates },
+];
+const APPLICATION_LINK = '#'; // TODO: point to the live application form.
+---
+<BaseLayout title="Apply">
+  <Hero
+    eyebrow="Apply"
+    title="Join the 2026 cohort"
+    lead="The AHLI Health AI Summer Camp accepts a small cohort of PhD students working in machine learning for health."
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Who should apply</h2>
+      <p>
+        Applications are welcome from PhD students whose research involves
+        machine learning for health. Strong applicants typically have a working
+        foundation in machine learning and a clear interest in applying it to
+        health data, evaluation, and real-world problems.
+      </p>
+
+      <h3>Key dates</h3>
+      <dl class="facts">
+        {dates.map((d) => (
+          <div class="fact"><dt>{d.k}</dt><dd>{d.v}</dd></div>
+        ))}
+      </dl>
+
+      <h3>What to prepare</h3>
+      <ul>
+        <li>A short statement of interest describing your research and what you hope to gain.</li>
+        <li>A brief summary of your background in machine learning.</li>
+        <li>Your academic affiliation and program details.</li>
+      </ul>
+
+      <div class="callout">
+        <p>
+          <strong>Application details are being finalized.</strong> The full set
+          of requirements and the live application form will be posted here. To
+          be notified when applications open, email
+          <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        </p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href={APPLICATION_LINK}>Application form (coming soon)</a>
+        <a class="btn btn-outline" href={`mailto:${SITE.email}`}>Email the organizers</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, url } from '../lib/site';
+
+const facts = [
+  { k: 'Dates', v: SITE.dates },
+  { k: 'Format', v: 'Week-long, in-person intensive' },
+  { k: 'Cohort', v: '~50 PhD students in ML for health' },
+  { k: 'Co-located with', v: 'CHIL conference' },
+  { k: 'Supported by', v: SITE.funder },
+  { k: 'Outcome', v: 'A shared Summer Camp Workbook' },
+];
+---
+<BaseLayout title="Home">
+  <header class="hero hero--home">
+    <div class="hero-inner">
+      <span class="date-badge">{SITE.dates}</span>
+      <h1>AHLI Health AI<br />Summer Camp {SITE.year}</h1>
+      <p class="hero-lead">
+        A rigorous, hands-on week for PhD students building machine learning
+        for health — from clinical data to evaluation, modeling, and real-world
+        translation.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
+        <a class="btn btn-ghost" href={url('curriculum')}>See the curriculum</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">About the camp</p>
+      <h2>One intensive week, built around doing the work</h2>
+      <p class="lead">
+        The AHLI Health AI Summer Camp brings together early-career researchers
+        working at the intersection of machine learning and health. Over a single
+        focused week, participants move through the full arc of an ML-for-health
+        project alongside leading instructors and a tight-knit cohort of peers.
+      </p>
+      <p>
+        Rather than a lecture series, the camp is structured around daily
+        hands-on deliverables. Each day pairs a concept session with guided lab
+        work, and every participant's output accumulates into a cohesive
+        <strong>Summer Camp Workbook</strong> they leave with.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">At a glance</p>
+      <h2>The essentials</h2>
+      <dl class="facts">
+        {facts.map((f) => (
+          <div class="fact"><dt>{f.k}</dt><dd>{f.v}</dd></div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">What you'll do</p>
+      <h2>From clinical data to deployable insight</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Work with real-world data</h3>
+          <p>Hands-on sessions use synthetic clinical data modeled on MIMIC-IV
+            structure, so you practice on data that behaves like the real thing.</p>
+        </div>
+        <div class="card">
+          <h3>Evaluate like a scientist</h3>
+          <p>Go beyond accuracy: calibration, fairness auditing, decision-curve
+            analysis, and sound study design for health applications.</p>
+        </div>
+        <div class="card">
+          <h3>Model with current methods</h3>
+          <p>Compare classical and modern approaches, and situate your work
+            within today's foundation-model landscape.</p>
+        </div>
+        <div class="card">
+          <h3>Build a lasting artifact</h3>
+          <p>Daily deliverables come together as a Summer Camp Workbook — a
+            reference you can carry back into your own research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Join the {SITE.year} cohort</h2>
+        <p>Applications are open to PhD students working in machine learning for health.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href={url('apply')}>Start your application</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
