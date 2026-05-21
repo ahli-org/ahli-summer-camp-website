@@ -23,12 +23,13 @@ npm run preview  # preview the built site locally
 
 ---
 
-## Deploying to GitHub Pages
+## Deploying
 
-A workflow at `.github/workflows/deploy.yml` builds and deploys automatically.
+There is **no deploy workflow** right now — the site is built and reviewed
+locally (`npm run dev` / `npm run build` + `npm run preview`) and is not
+published anywhere yet. When you're ready to publish (e.g. to GitHub Pages):
 
-1. **Create the repo** and push this project to the `main` branch.
-2. **Set the site URL** in `astro.config.mjs`:
+1. **Set the site URL** in `astro.config.mjs`:
    - **Project page** (repo is e.g. `ahli-summer-camp`):
      ```js
      site: 'https://your-org.github.io',
@@ -41,9 +42,9 @@ A workflow at `.github/workflows/deploy.yml` builds and deploys automatically.
      ```
    - **Custom domain** (e.g. `camp.ahli.org`): set `site` to that URL, leave
      `base` commented out, and add a `CNAME` file in `public/`.
-3. In the repo: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-4. Push to `main`. The Actions tab shows the build; the site goes live at the
-   `site` URL once it finishes.
+2. **Re-add a deploy workflow** (the standard `withastro/action` GitHub Pages
+   workflow), and in the repo set **Settings → Pages → Source → GitHub Actions**.
+3. **Turn off the review banner** — set `REVIEW_MODE = false` in `src/lib/site.ts`.
 
 All internal links use the `url()` helper in `src/lib/site.ts`, so they adjust
 automatically once `base` is set correctly — no per-page edits needed.
@@ -201,5 +202,5 @@ ahli-summer-camp/
 │   │   └── faq.astro
 │   └── styles/
 │       └── global.css
-└── .github/workflows/deploy.yml
+└── (no deploy workflow yet — see "Deploying")
 ```
