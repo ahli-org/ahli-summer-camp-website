@@ -21,6 +21,7 @@ export interface InstructorHighlight {
 export interface Instructor {
   slug: string;
   name: string;
+  tagline?: string;
   role?: string;
   day?: string;
   assigned_block?: string;

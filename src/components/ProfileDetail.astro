@@ -7,6 +7,7 @@ interface Highlight { title: string; url?: string; source?: string; date?: strin
 interface Props {
   name: string;
   photo?: string | null;
+  tagline?: string;        // short catch phrase — what they do
   subtitle?: string;       // role or position
   affiliation?: string;
   meta?: string;           // extra line (e.g. session / assigned block)
@@ -19,7 +20,7 @@ interface Props {
   backLabel: string;
 }
 const {
-  name, photo = null, subtitle, affiliation, meta,
+  name, photo = null, tagline, subtitle, affiliation, meta,
   links = [], email = null, bio = [], awards = [], highlights = [],
   backHref, backLabel,
 } = Astro.props;
@@ -45,6 +46,7 @@ function fmtDate(d?: string): string {
         : <span class="profile-photo profile-photo--initials" aria-hidden="true">{initials}</span>}
       <div class="profile-id">
         <h1>{name}</h1>
+        {tagline && <p class="profile-tagline">{tagline}</p>}
         {subtitle && <p class="profile-pos">{subtitle}</p>}
         {affiliation && <p class="profile-affil">{affiliation}</p>}
         {meta && <p class="profile-meta">{meta}</p>}

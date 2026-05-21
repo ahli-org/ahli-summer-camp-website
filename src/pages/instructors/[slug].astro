@@ -15,8 +15,9 @@ interface Props {
 const { instructor } = Astro.props;
 
 const metaBits = [instructor.role, instructor.affiliation].filter(Boolean).join(' · ');
-const description =
-  (instructor.bio[0] ?? `${instructor.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+const description = instructor.tagline
+  ? `${instructor.tagline}${metaBits ? ` — ${metaBits}` : ''}`
+  : (instructor.bio[0] ?? `${instructor.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
 
 // Session line: prefer the human-readable assigned block, fall back to the day.
 const sessionMeta = [instructor.day, instructor.assigned_block].filter(Boolean).join(' · ');
@@ -25,6 +26,7 @@ const sessionMeta = [instructor.day, instructor.assigned_block].filter(Boolean).
   <ProfileDetail
     name={instructor.name}
     photo={instructor.photo}
+    tagline={instructor.tagline}
     subtitle={instructor.role}
     affiliation={instructor.affiliation}
     meta={sessionMeta}

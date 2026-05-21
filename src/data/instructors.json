@@ -45,6 +45,7 @@
       "He is a recognized leader and frequent speaker on applied AI in medicine, and was named one of Canada's Top 40 Under 40 in 2010.",
       "At the camp: Lead Lecturer — Day 5 Deployment, 9:00 AM Lecture on real-world deployments & challenges."
     ],
+    "tagline": "Deploying AI into real clinical care",
     "role": "Lead Lecturer",
     "day": "Day 5 Deployment",
     "assigned_block": "9:00 AM Lecture - Real-world deployments & challenges"
@@ -128,6 +129,7 @@
       "Her contributions have been widely recognized. She was named to MIT Technology Review's 35 Innovators Under 35 (2020), Forbes 30 Under 30 in Enterprise Technology (2021), and TIME's inaugural list of the 100 Most Influential People in AI (2023). She is also a co-recipient of the Electronic Frontier Foundation's Pioneer Award (2020, with Buolamwini and Gebru) and was named to the Mozilla Rise 25 list (2024).",
       "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Bias & ethics in deploying ML4H."
     ],
+    "tagline": "Auditing AI for accountability",
     "role": "Guest Lecturer",
     "day": "Day 5 Deployment",
     "assigned_block": "1:30 PM Guest Lecture - Bias & ethics in deploying ML4H"
@@ -187,6 +189,7 @@
       "McDermott is an active leader in the ML4H research community. He has served as a board member of the Association for Health, Learning, and Inference (AHLI) since its inception, was General Chair of the Machine Learning for Health (ML4H) Symposium in 2021, and was General Chair of the Conference on Health, Inference, and Learning (CHIL) in 2024 and 2025.",
       "At the camp: Lead Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
     ],
+    "tagline": "Foundation models and open standards for health data",
     "role": "Lead Lecturer",
     "day": "Day 4 Methods & Evaluation II",
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
@@ -250,6 +253,7 @@
       "Foschini has been recognized with UC Santa Barbara's Distinguished PhD Alumni Award (2023) and an Italian Excellence Award from the Italian-American Chamber of Commerce West (2021), and his work earned a KDD Best Paper runner-up award (2019). He is also a retired competitive programmer who represented Italy at the International Olympiad in Informatics and later coached the Italian national team.",
       "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough (Day 2 Data)."
     ],
+    "tagline": "Making biomedical data open and reusable",
     "role": "Guest Lecturer",
     "day": "Day 2 Data",
     "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
@@ -292,6 +296,7 @@
       "Gerych is also active in service to the research community. He has served as an organizer for the Time Series for Health workshop, as a Senior Area Chair for the Models and Methods track at the Conference on Health, Inference, and Learning (CHIL 2024), and as an Area Chair for NeurIPS (2025).",
       "At the camp: Guest Lecturer — Day 4 Methods & Evaluation II, 11:00 AM Guest Lecture (Methods & evaluation paper spotlight)."
     ],
+    "tagline": "Trustworthy, fair multimodal AI",
     "role": "Guest Lecturer",
     "day": "Day 4 Methods & Evaluation II",
     "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
@@ -352,6 +357,7 @@
       "Pollard is a Fellow of the Software Sustainability Institute and an instructor for The Carpentries. He serves on the editorial boards of PLOS Digital Health and npj Scientific Data, has been a member of MIT's Task Force on Open Access, and is an organizer and committee member for the Conference on Health, Inference, and Learning (CHIL).",
       "At the camp: Lead Lecturer — 9:00 AM Lecture - Overview of data availability across domains."
     ],
+    "tagline": "Building the open datasets behind clinical ML (MIMIC)",
     "role": "Lead Lecturer",
     "day": "Day 2 Data",
     "assigned_block": "9:00 AM Lecture - Overview of data availability across domains"
@@ -387,6 +393,7 @@
       "Joshi is active in the machine-learning-for-health community as a co-founder of the Fair ML for Health workshop at NeurIPS, General Chair of ML4H 2022, and Program Chair of MLHC 2022.",
       "At the camp: Lead Lecturer — Day lead, facilitating the 9:00 AM and 1:30 PM small groups and the 3:00 PM workshop (Day 3 Methods & Evaluation I)."
     ],
+    "tagline": "Algorithmic safety for healthcare machine learning",
     "role": "Lead Lecturer",
     "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
@@ -445,6 +452,7 @@
       "Her honors include the Best Paper Award at CHIL 2023 for \"Do We Still Need Clinical Language Models?\", a Best Oral Presentation Award at ISMB 2023 for her work on rare disease diagnosis, and a Microsoft Accelerate Foundation Models Research Initiative grant.",
       "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough."
     ],
+    "tagline": "Clinical NLP for responsible healthcare AI",
     "role": "Guest Lecturer",
     "day": "Day 1 Problems in ML4H",
     "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
@@ -498,6 +506,7 @@
       "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has been named an NYU Tandon Faculty First-Look Fellow and a Georgia Tech FOCUS Fellow.",
       "At the camp: Guest Lecturer — 11:00 AM Guest Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
     ],
+    "tagline": "Robust, rigorously-evaluated AI for the real world",
     "role": "Guest Lecturer",
     "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
@@ -552,6 +561,7 @@
       "His work has earned several major honors in the field. He received the ASHEcon Medal in 2018 — awarded biennially to the economist age 40 or under judged to have made the most significant contributions to health economics — as well as the Arrow Award for the best paper in health economics (2014) and the NIHCM Foundation Research Award (2016 and 2018).",
       "At the camp: Lead / Panel Chair — 9:00 AM Finance Panel chair."
     ],
+    "tagline": "Health economics for the AI era",
     "role": "Lead / Panel Chair",
     "day": "Day 6 Finance, Compute & Collaborators",
     "assigned_block": "9:00 AM Finance Panel chair"
@@ -602,6 +612,7 @@
       "Szolovits is an elected member of the National Academy of Medicine and a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI), the American College of Medical Informatics (ACMI), the American Institute for Medical and Biological Engineering (AIMBE), and the International Academy of Health Sciences Informatics. In 2013 he received the Morris F. Collen Award of Excellence, the American Medical Informatics Association's highest honor.",
       "At the camp: Lead Lecturer — 10:00 AM Lecture - Intro to problems in ML4H."
     ],
+    "tagline": "Pioneering AI for clinical decision-making",
     "role": "Lead Lecturer",
     "day": "Day 1 Problems in ML4H",
     "assigned_block": "10:00 AM Lecture - Intro to problems in ML4H"

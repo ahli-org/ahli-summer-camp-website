@@ -22,6 +22,7 @@ export interface StudentHighlight {
 export interface Student {
   slug: string;
   name: string;
+  tagline?: string;
   position: string;
   affiliation: string;
   email: string | null;

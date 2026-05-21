@@ -6,12 +6,12 @@ interface Props {
   href: string;
   name: string;
   photo?: string | null;
-  subtitle?: string;
+  tagline?: string;
   affiliation?: string;
   links?: Link[];
   email?: string | null;
 }
-const { href, name, photo = null, subtitle, affiliation, links = [], email = null } = Astro.props;
+const { href, name, photo = null, tagline, affiliation, links = [], email = null } = Astro.props;
 const base = import.meta.env.BASE_URL;
 
 const initials = name
@@ -29,7 +29,7 @@ const initials = name
   </span>
   <div class="profile-card-body">
     <h3><a class="profile-card-link" href={href}>{name}</a></h3>
-    {subtitle && <p class="profile-card-role">{subtitle}</p>}
+    {tagline && <p class="profile-card-tagline">{tagline}</p>}
     {affiliation && <p class="profile-card-affil">{affiliation}</p>}
     <ProfileLinks links={links} email={email} variant="icons" />
   </div>

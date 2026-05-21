@@ -15,13 +15,15 @@ interface Props {
 const { student } = Astro.props;
 
 const metaBits = [student.position, student.affiliation].filter(Boolean).join(' · ');
-const description =
-  (student.bio[0] ?? `${student.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+const description = student.tagline
+  ? `${student.tagline}${metaBits ? ` — ${metaBits}` : ''}`
+  : (student.bio[0] ?? `${student.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
 ---
 <BaseLayout title={student.name} description={description}>
   <ProfileDetail
     name={student.name}
     photo={student.photo}
+    tagline={student.tagline}
     subtitle={student.position}
     affiliation={student.affiliation}
     links={student.links}

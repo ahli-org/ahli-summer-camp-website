@@ -69,7 +69,7 @@ function bioParagraphs(md) {
 }
 
 // Fields copied through verbatim from links.json when present and non-null.
-const PASSTHROUGH = ['position', 'email', 'role', 'day', 'assigned_block'];
+const PASSTHROUGH = ['tagline', 'position', 'email', 'role', 'day', 'assigned_block'];
 
 function buildGroup(srcDirName, outName, label) {
   const SRC = join(root, srcDirName);
