@@ -22,6 +22,13 @@ function personHref(p?: Person): string | null {
 
   <section class="section">
     <div class="wrap">
+      <div class="callout">
+        <p>
+          <strong>Accepted students:</strong> start with the
+          <a href={url('before-you-arrive')}>Before you arrive</a> checklist —
+          readings, your specialty track, accounts to set up, and what to bring.
+        </p>
+      </div>
       <div class="day-list">
         {days.map((d) => (
           <article class="day">

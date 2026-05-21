@@ -42,7 +42,7 @@ outline of the panel chair's framing.
   a normal expectation of a clinical collaborator (covered in a pre-circulated
   one-page resource).
 - **The panel.** Four panelists, four lenses: federal/NIH, philanthropy,
-  industry/VC, and an academic budget-holder.
+  industry/VC, and an academic budget-holder. *(Panelists to be announced.)*
 
 ## What you'll be able to do
 
@@ -60,7 +60,7 @@ collaborator / IRB / PHI norms substitutes.
 
 Funding target and its incentives; an honest compute estimate; a collaborator
 map; and a timeline. Use the free afternoon to begin assembling your Day 7 deck
-from the seven slide-ready summaries.
+from the six slide-ready summaries so far.
 
 ## Additional resources
 

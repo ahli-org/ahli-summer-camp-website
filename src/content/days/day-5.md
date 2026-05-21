@@ -63,7 +63,7 @@ mismatch, subgroup harm, drift, gaming, missing collaborators. The presenter
 records, and does not defend.
 
 The **fireside chat** then grounds deployment in a practitioner's lived
-experience.
+experience *(clinician/patient guest to be announced)*.
 
 The day closes with **Small Group 2**, where you finish red-teaming any
 remaining projects and complete your deployment plan.
@@ -86,5 +86,5 @@ and approvals the deployment needs.
 
 - Lecture slides (tentative draft): [view the deck](/slides/day5-deployment.html) · [PDF](/slides/day5-deployment.pdf).
 - [Project Workbook template](/project-workbook/#part-5) — Part 5.
-- The TRIPOD+AI reporting checklist.
+- The [TRIPOD+AI reporting checklist](https://doi.org/10.1136/bmj-2023-078378).
 - Institutional model-monitoring and audit frameworks referenced in the readings.

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import { url } from '../../lib/site';
+import { Content } from '../../md/project-workbook-example.md';
+---
+<BaseLayout title="Project Workbook — worked example" description="A fully worked example Project Workbook for a fictional ML-for-health project, to calibrate what a strong entry looks like.">
+  <Hero
+    eyebrow="The deliverable"
+    title="Worked example: a completed Workbook"
+    lead="A fully filled Project Workbook for a fictional project — to show what a strong, concise entry looks like for each part."
+  />
+  <section class="section">
+    <div class="wrap">
+      <p><a href={url('project-workbook')}>← Back to the blank Project Workbook template</a></p>
+      <div class="day-detail">
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

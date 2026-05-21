@@ -88,4 +88,4 @@ reasoning, and the top three threats to validity.
 - [Evaluation Lab notebook](/notebooks/evaluation-lab/) — the Day 3 workshop template.
 - [Project Workbook template](/project-workbook/#part-3) — Part 3.
 - [scikit-learn](https://scikit-learn.org/), [fairlearn](https://fairlearn.org/), and scikit-survival, as implementation references.
-- The MIMIC-IV demo on [PhysioNet](https://physionet.org/), for a real-data substrate.
+- The [MIMIC-IV demo on PhysioNet](https://physionet.org/content/mimic-iv-demo/), for a real-data substrate.

@@ -125,6 +125,6 @@ Informed by the methods notebook you build in the Day 4 workshop.
 ### Part 7 — Synthesis & slides *(Day 7)*
 - **The integrated narrative.** *One paragraph walking the whole arc: problem →
   data → evaluation → method → deployment → resourcing.*
-- **The deck.** *Assemble the seven slide-ready summaries into a presentation: one
+- **The deck.** *Assemble the six slide-ready summaries (Parts 1–6) into a presentation: one
   slide per part, plus a title and a closing "what I'll do next." The Workbook has
   already written your slides — Day 7 is assembly and rehearsal.*

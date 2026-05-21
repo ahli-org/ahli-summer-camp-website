@@ -73,6 +73,35 @@ X_test,  y_test  = test_df[FEATURES],  test_df["y"]
 print(train_df.shape, test_df.shape, "event rate:", round(y_train.mean(), 3))
 '''
 
+# Alternative substrate for projects whose outcome is time-to-event (survival),
+# the most common non-binary case in the cohort. Pairs with scikit-survival.
+SYNTH_SURVIVAL = '''\
+# --- Alternative substrate: time-to-event (survival) ---
+# If your project is survival / time-to-event rather than binary classification,
+# build on this instead of the generator above (pip install scikit-survival).
+import numpy as np, pandas as pd
+
+def make_synthetic_survival(n=4000, subgroup_gap=0.5, censor_rate=0.3, seed=0):
+    """Right-censored survival data with a covariate-driven hazard and a
+    subgroup with weaker signal — adapt the hazard to your project."""
+    rng = np.random.default_rng(seed)
+    subgroup = rng.integers(0, 2, n)
+    x1 = rng.normal(0, 1, n)
+    x2 = rng.normal(0, 1, n)
+    risk = 0.8 * x1 + 0.4 * x2 + 0.5 * subgroup * (1 - subgroup_gap)
+    event_time = rng.exponential(1 / np.clip(np.exp(risk - 1.0), 1e-3, None))
+    censor_time = rng.exponential(scale=event_time.mean() / max(censor_rate, 1e-3), size=n)
+    observed = np.minimum(event_time, censor_time)
+    event = event_time <= censor_time
+    return pd.DataFrame({"x1": x1, "x2": x2, "subgroup": subgroup,
+                         "time": observed, "event": event})
+
+surv_df = make_synthetic_survival()
+print(surv_df.shape, "event rate:", round(surv_df.event.mean(), 3))
+# scikit-survival models take a structured array: Surv.from_arrays(event, time).
+# Evaluate with the concordance index and time-dependent AUC instead of AUROC.
+'''
+
 INTRO_NOTE = '''\
 > **How to use this notebook.** It is a *template*, not a finished analysis. Work
 > through the sections on **your own project**: state your project in Section 0,
@@ -104,6 +133,11 @@ def build_eval():
            "substrate. The synthetic generator below gives you ground-truth control; "
            "swap in the MIMIC-IV demo or your own dataset if that fits better.*"),
         code(SYNTH),
+        md("*Survival / time-to-event project? Use the alternative substrate "
+           "below instead, and evaluate with concordance and time-dependent AUC "
+           "rather than AUROC. (Imaging, text, or genomics: treat your encoder's "
+           "output as the feature matrix and reuse the binary substrate.)*"),
+        code(SYNTH_SURVIVAL),
         md("## Section 1 — Discrimination\n\n"
            "ROC/AUROC and precision–recall/AUPRC. Under realistic class imbalance, "
            "a strong AUROC can coexist with a model that is useless at the operating "

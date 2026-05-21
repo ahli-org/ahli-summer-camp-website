@@ -166,7 +166,8 @@ ahli-summer-camp/
 │   ├── content.config.ts       # content collection: per-day curriculum outlines
 │   ├── content/
 │   │   └── days/               # day-1.md … day-7.md (detailed day outlines)
-│   ├── md/                     # instructor-guide.md, project-workbook.md (rendered pages)
+│   ├── md/                     # instructor-guide, project-workbook (+ example),
+│   │                           #   before-you-arrive — markdown rendered as pages
 │   ├── components/
 │   │   ├── Hero.astro          # reusable page banner
 │   │   ├── Icon.astro          # inline SVG icon set (brand + utility)
@@ -201,6 +202,8 @@ ahli-summer-camp/
 │   │   ├── sponsors.astro
 │   │   ├── instructor-guide.astro       # /instructor-guide/  (renders src/md)
 │   │   ├── project-workbook.astro       # /project-workbook/  (renders src/md)
+│   │   ├── project-workbook/example.astro  # /project-workbook/example/ (worked example)
+│   │   ├── before-you-arrive.astro      # /before-you-arrive/  (pre-camp checklist)
 │   │   └── faq.astro
 │   └── styles/
 │       └── global.css
