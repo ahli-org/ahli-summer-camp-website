@@ -89,6 +89,9 @@ The flow:
   the two JSON files. Typed access is via `src/lib/students.ts` and
   `src/lib/instructors.ts`.
 - Commit `src/data/*.json` and `public/people/*.jpg`.
+- **Order** is a stable, non-alphabetical shuffle: the generator sorts by a hash
+  of each person's slug, so the order is fixed across regenerations and a newly
+  added person slots in without reshuffling everyone else.
 
 Each profile surfaces the person's headshot, role/position, affiliation, links
 (website, Scholar, GitHub, LinkedIn, X, Bluesky, ORCID, email) shown as

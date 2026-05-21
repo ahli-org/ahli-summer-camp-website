@@ -1,61 +1,53 @@
 [
   {
-    "slug": "emily-alsentzer",
-    "name": "Emily Alsentzer",
-    "affiliation": "Stanford University",
-    "photo": "people/emily-alsentzer.jpg",
+    "slug": "muhammad-mamdani",
+    "name": "Muhammad Mamdani",
+    "affiliation": "Unity Health Toronto / University of Toronto",
+    "photo": "people/muhammad-mamdani.jpg",
     "links": [
       {
         "label": "Website",
-        "href": "https://emilyalsentzer.com/"
+        "href": "https://tcairem.utoronto.ca/faculty/muhammad-mamdani"
       },
       {
         "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=wKcw9Y8AAAAJ"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/EmilyAlsentzer"
-      },
-      {
-        "label": "Twitter/X",
-        "href": "https://twitter.com/Emily_Alsentzer"
+        "href": "https://scholar.google.com/citations?user=unCQIQvUmVcC&hl=en"
       },
       {
         "label": "ORCID",
-        "href": "https://orcid.org/0000-0002-5370-1746"
+        "href": "https://orcid.org/0000-0001-5199-6344"
       }
     ],
     "awards": [
-      "Best Paper Award, CHIL 2023 (\"Do We Still Need Clinical Language Models?\")",
-      "Best Oral Presentation Award, ISMB 2023 (rare disease diagnosis)",
-      "Microsoft Accelerate Foundation Models Research Initiative grant (2023)"
+      "Canada's Top 40 Under 40 (2010)",
+      "Founding Director, Temerty Centre for AI Research and Education in Medicine (T-CAIREM), University of Toronto",
+      "Inaugural Vice President of Data Science and Advanced Analytics, Unity Health Toronto"
     ],
     "highlights": [
       {
-        "type": "press_release",
-        "title": "Study assesses GPT-4's potential to perpetuate racial, gender biases in clinical decision making",
-        "url": "https://www.eurekalert.org/news-releases/1029382",
-        "source": "EurekAlert! / Brigham and Women's Hospital",
-        "date": "2023"
+        "type": "feature",
+        "title": "Meet Muhammad Mamdani: Unity Health Toronto's first vice-president of Data Science and Advanced Analytics",
+        "url": "https://unityhealth.to/2019/10/meet-muhammad-mamdani-unity-health-torontos-first-vice-president-of-data-science-and-advanced-analytics/",
+        "source": "Unity Health Toronto",
+        "date": "2019"
       },
       {
-        "type": "news_article",
-        "title": "Assessing the potential of GPT-4 to perpetuate racial and gender biases in health care: a model evaluation study",
-        "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00225-X/fulltext",
-        "source": "The Lancet Digital Health",
-        "date": "2024"
+        "type": "press_release",
+        "title": "U of T launches new Temerty Centre for AI Research and Education in Medicine",
+        "url": "https://tcairem.utoronto.ca/news/u-t-launches-new-temerty-centre-ai-research-and-education-medicine",
+        "source": "T-CAIREM, University of Toronto",
+        "date": null
       }
     ],
     "bio": [
-      "Emily Alsentzer is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science at Stanford University, where she leads the Alsentzer Lab. She earned her PhD in 2022 through the MIT/Harvard Medical School Health Sciences and Technology (HST) program and holds a master's in Biomedical Informatics and a bachelor's in Computer Science, both from Stanford. Before joining the Stanford faculty in 2024, she completed a postdoctoral fellowship at Brigham and Women's Hospital and Harvard Medical School, where she worked to deploy machine learning models within the Mass General Brigham health system.",
-      "Her research uses machine learning and natural language processing to augment clinical decision-making and broaden access to high-quality healthcare, with an emphasis on infusing biomedical knowledge into ML algorithms, working with heterogeneous clinical data such as electronic health records and genomic data, improving model trustworthiness, and ensuring responsible deployment in clinical workflows. She is a co-creator of the widely used ClinicalBERT (Clinical BERT) model for clinical text and a founding organizer of the Conference on Health, Inference, and Learning (CHIL). Her work spans few-shot diagnosis of rare diseases, the evaluation of large language models in medicine, and the study of racial and gender bias in clinical AI systems.",
-      "Her honors include the Best Paper Award at CHIL 2023 for \"Do We Still Need Clinical Language Models?\", a Best Oral Presentation Award at ISMB 2023 for her work on rare disease diagnosis, and a Microsoft Accelerate Foundation Models Research Initiative grant.",
-      "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough."
+      "Muhammad Mamdani is the inaugural Vice President of Data Science and Advanced Analytics at Unity Health Toronto and the founding Director of the University of Toronto's Temerty Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM). He also founded and directs the Li Ka Shing Centre for Healthcare Analytics Research and Training (LKS-CHART). He is a Professor at the University of Toronto with appointments spanning the Temerty Faculty of Medicine, the Leslie Dan Faculty of Pharmacy, and the Institute of Health Policy, Management and Evaluation in the Dalla Lana School of Public Health. He holds a Doctor of Pharmacy (PharmD) from the University of Michigan, a Master of Arts in economics from Wayne State University, and a Master of Public Health from Harvard University, and completed a fellowship in pharmacoeconomics and outcomes research at the Detroit Medical Center.",
+      "Mamdani's work bridges health data science, pharmacoepidemiology, drug safety, and the real-world deployment of AI in clinical practice. At Unity Health Toronto, his team has developed and deployed dozens of AI solutions into live clinical care. Earlier in his career he founded the Ontario Drug Policy Research Network (ODPRN) and the Applied Health Research Centre, the latter of which has managed more than 100 multi-site clinical studies. He has authored over 500 peer-reviewed studies, including in the New England Journal of Medicine, The Lancet, JAMA, BMJ, and Annals of Internal Medicine; his work has been cited more than 55,000 times with an h-index above 110, making him one of the most highly cited researchers in his field.",
+      "He is a recognized leader and frequent speaker on applied AI in medicine, and was named one of Canada's Top 40 Under 40 in 2010.",
+      "At the camp: Lead Lecturer — Day 5 Deployment, 9:00 AM Lecture on real-world deployments & challenges."
     ],
-    "role": "Guest Lecturer",
-    "day": "Day 1 Problems in ML4H",
-    "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
+    "role": "Lead Lecturer",
+    "day": "Day 5 Deployment",
+    "assigned_block": "9:00 AM Lecture - Real-world deployments & challenges"
   },
   {
     "slug": "inioluwa-deborah-raji",
@@ -141,58 +133,63 @@
     "assigned_block": "1:30 PM Guest Lecture - Bias & ethics in deploying ML4H"
   },
   {
-    "slug": "jonathan-t-kolstad",
-    "name": "Jonathan T. Kolstad",
-    "affiliation": "UC Berkeley",
-    "photo": "people/jonathan-t-kolstad.jpg",
+    "slug": "matthew-mcdermott",
+    "name": "Matthew McDermott",
+    "affiliation": "Columbia University",
+    "photo": "people/matthew-mcdermott.jpg",
     "links": [
       {
         "label": "Website",
-        "href": "https://www.jkolstad.org/"
+        "href": "https://www.dbmi.columbia.edu/profile/matthew-mcdermott/"
       },
       {
         "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=OLMHs_UAAAAJ&hl=en"
+        "href": "https://scholar.google.com/citations?user=_V96PXoAAAAJ&hl=en"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/mmcdermott"
+      },
+      {
+        "label": "Twitter/X",
+        "href": "https://x.com/MattBMcDermott"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0001-6048-9707"
       }
     ],
     "awards": [
-      "ASHEcon Medal (2018)",
-      "Kenneth J. Arrow Award, best paper in health economics (2014)",
-      "NIHCM Foundation Research Award (2016, 2018)",
-      "Henry J. Kaiser Chair, UC Berkeley Haas (named chair)"
+      "General Chair, Conference on Health, Inference, and Learning (CHIL) (2024, 2025)",
+      "General Chair, Machine Learning for Health (ML4H) Symposium (2021)",
+      "Board member, Association for Health, Learning, and Inference (AHLI) (since inception)",
+      "Berkowitz Postdoctoral Fellow, Harvard Medical School"
     ],
     "highlights": [
       {
         "type": "feature",
-        "title": "Jonathan Kolstad — Faculty Profile, Berkeley Haas",
-        "url": "https://haas.berkeley.edu/faculty/jonathan-kolstad/",
-        "source": "UC Berkeley Haas",
-        "date": null
-      },
-      {
-        "type": "feature",
-        "title": "Jonathan Kolstad — Research at Berkeley",
-        "url": "https://vcresearch.berkeley.edu/faculty/jonathan-kolstad",
-        "source": "UC Berkeley Office of Research",
+        "title": "The Universal Adapter: How Matthew McDermott is Bridging the Gap Between Health Data and Artificial Intelligence",
+        "url": "https://www.dbmi.columbia.edu/the-universal-adapter-how-matthew-mcdermott-is-bridging-the-gap-between-health-data-and-artificial-intelligence/",
+        "source": "Columbia DBMI",
         "date": null
       },
       {
         "type": "press_release",
-        "title": "Top Health Economics Expert Professor Jonathan Kolstad Affiliates with Compass Lexecon",
-        "url": "https://www.compasslexecon.com/insights/news/jonathan-kolstad-affiliates-with-compass-lexecon",
-        "source": "Compass Lexecon",
-        "date": null
+        "title": "Matthew McDermott, Xuhai \"Orson\" Xu Excited To Join DBMI Faculty In 2025",
+        "url": "https://www.dbmi.columbia.edu/matthew-mcdermott-xuhai-orson-xu-excited-to-join-dbmi-faculty-in-2025/",
+        "source": "Columbia DBMI",
+        "date": "2025"
       }
     ],
     "bio": [
-      "Jonathan T. Kolstad is a health economist and Professor in the Economic Analysis and Policy Group at the Haas School of Business and the Department of Economics at the University of California, Berkeley, where he holds the Henry J. Kaiser Chair. He is also a Research Associate at the National Bureau of Economic Research, a core faculty member of the Computational Precision Health graduate program (UC Berkeley and UCSF), and the founding director of the Center for Health Care Marketplace Innovation. He earned his Ph.D. from Harvard University and his B.A. from Stanford University.",
-      "Kolstad's research sits at the intersection of health economics, industrial organization, and public economics, increasingly incorporating tools from behavioral economics, machine learning, and AI. A recurring theme is the search for new models and novel data that can capture the complexity of health care markets — in particular the role of information asymmetries and incentives in shaping consumer choice, provider behavior, and policy design. Beyond academia, he is a co-founder and former Chief Data Scientist of Picwell, a co-founder of Healthpilot, and a founding advisor to OODA Health, applying data science to health-insurance decision-making.",
-      "His work has earned several major honors in the field. He received the ASHEcon Medal in 2018 — awarded biennially to the economist age 40 or under judged to have made the most significant contributions to health economics — as well as the Arrow Award for the best paper in health economics (2014) and the NIHCM Foundation Research Award (2016 and 2018).",
-      "At the camp: Lead / Panel Chair — 9:00 AM Finance Panel chair."
+      "Matthew McDermott is an Assistant Professor of Biomedical Informatics at Columbia University, where he joined the faculty in 2025. His research centers on representation learning and foundation models over electronic health record (EHR) data, with the broader goal of making medical records both usable and shareable for modern machine learning. He earned a bachelor's degree in mathematics from Harvey Mudd College and a PhD in Computer Science from MIT, where he studied clinical and biomedical representation learning under Pete Szolovits. Before Columbia, he was a Berkowitz Postdoctoral Fellow at Harvard Medical School in Zak Kohane's lab, and he previously worked as a software engineer at Google and co-founded Guesstimate.",
+      "His work has shaped widely used tools and standards in machine learning for health. He is a co-creator of ClinicalBERT, one of the most widely used pre-trained clinical language models, and the originator of the open-source MEDS (Medical Event Data Standard) ecosystem, which acts as a universal adapter for structured medical data across research groups. His software contributions also include the EventStreamGPT (ESGPT) package and the MEDS-DEV reproducibility benchmark, and his methodological work includes Structure-inducing Pre-training, a framework for incorporating domain knowledge into pre-training with provable guarantees. His publications have been cited more than 8,500 times.",
+      "McDermott is an active leader in the ML4H research community. He has served as a board member of the Association for Health, Learning, and Inference (AHLI) since its inception, was General Chair of the Machine Learning for Health (ML4H) Symposium in 2021, and was General Chair of the Conference on Health, Inference, and Learning (CHIL) in 2024 and 2025.",
+      "At the camp: Lead Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
     ],
-    "role": "Lead / Panel Chair",
-    "day": "Day 6 Finance, Compute & Collaborators",
-    "assigned_block": "9:00 AM Finance Panel chair"
+    "role": "Lead Lecturer",
+    "day": "Day 4 Methods & Evaluation II",
+    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
   },
   {
     "slug": "luca-foschini",
@@ -258,251 +255,46 @@
     "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
   },
   {
-    "slug": "matthew-mcdermott",
-    "name": "Matthew McDermott",
-    "affiliation": "Columbia University",
-    "photo": "people/matthew-mcdermott.jpg",
+    "slug": "walter-gerych",
+    "name": "Walter Gerych",
+    "affiliation": "Worcester Polytechnic Institute",
+    "photo": "people/walter-gerych.jpg",
     "links": [
       {
         "label": "Website",
-        "href": "https://www.dbmi.columbia.edu/profile/matthew-mcdermott/"
+        "href": "https://waltergerych.github.io/"
       },
       {
         "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=_V96PXoAAAAJ&hl=en"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/mmcdermott"
-      },
-      {
-        "label": "Twitter/X",
-        "href": "https://x.com/MattBMcDermott"
-      },
-      {
-        "label": "ORCID",
-        "href": "https://orcid.org/0000-0001-6048-9707"
-      }
-    ],
-    "awards": [
-      "General Chair, Conference on Health, Inference, and Learning (CHIL) (2024, 2025)",
-      "General Chair, Machine Learning for Health (ML4H) Symposium (2021)",
-      "Board member, Association for Health, Learning, and Inference (AHLI) (since inception)",
-      "Berkowitz Postdoctoral Fellow, Harvard Medical School"
-    ],
-    "highlights": [
-      {
-        "type": "feature",
-        "title": "The Universal Adapter: How Matthew McDermott is Bridging the Gap Between Health Data and Artificial Intelligence",
-        "url": "https://www.dbmi.columbia.edu/the-universal-adapter-how-matthew-mcdermott-is-bridging-the-gap-between-health-data-and-artificial-intelligence/",
-        "source": "Columbia DBMI",
-        "date": null
-      },
-      {
-        "type": "press_release",
-        "title": "Matthew McDermott, Xuhai \"Orson\" Xu Excited To Join DBMI Faculty In 2025",
-        "url": "https://www.dbmi.columbia.edu/matthew-mcdermott-xuhai-orson-xu-excited-to-join-dbmi-faculty-in-2025/",
-        "source": "Columbia DBMI",
-        "date": "2025"
-      }
-    ],
-    "bio": [
-      "Matthew McDermott is an Assistant Professor of Biomedical Informatics at Columbia University, where he joined the faculty in 2025. His research centers on representation learning and foundation models over electronic health record (EHR) data, with the broader goal of making medical records both usable and shareable for modern machine learning. He earned a bachelor's degree in mathematics from Harvey Mudd College and a PhD in Computer Science from MIT, where he studied clinical and biomedical representation learning under Pete Szolovits. Before Columbia, he was a Berkowitz Postdoctoral Fellow at Harvard Medical School in Zak Kohane's lab, and he previously worked as a software engineer at Google and co-founded Guesstimate.",
-      "His work has shaped widely used tools and standards in machine learning for health. He is a co-creator of ClinicalBERT, one of the most widely used pre-trained clinical language models, and the originator of the open-source MEDS (Medical Event Data Standard) ecosystem, which acts as a universal adapter for structured medical data across research groups. His software contributions also include the EventStreamGPT (ESGPT) package and the MEDS-DEV reproducibility benchmark, and his methodological work includes Structure-inducing Pre-training, a framework for incorporating domain knowledge into pre-training with provable guarantees. His publications have been cited more than 8,500 times.",
-      "McDermott is an active leader in the ML4H research community. He has served as a board member of the Association for Health, Learning, and Inference (AHLI) since its inception, was General Chair of the Machine Learning for Health (ML4H) Symposium in 2021, and was General Chair of the Conference on Health, Inference, and Learning (CHIL) in 2024 and 2025.",
-      "At the camp: Lead Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
-    ],
-    "role": "Lead Lecturer",
-    "day": "Day 4 Methods & Evaluation II",
-    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
-  },
-  {
-    "slug": "muhammad-mamdani",
-    "name": "Muhammad Mamdani",
-    "affiliation": "Unity Health Toronto / University of Toronto",
-    "photo": "people/muhammad-mamdani.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://tcairem.utoronto.ca/faculty/muhammad-mamdani"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=unCQIQvUmVcC&hl=en"
-      },
-      {
-        "label": "ORCID",
-        "href": "https://orcid.org/0000-0001-5199-6344"
-      }
-    ],
-    "awards": [
-      "Canada's Top 40 Under 40 (2010)",
-      "Founding Director, Temerty Centre for AI Research and Education in Medicine (T-CAIREM), University of Toronto",
-      "Inaugural Vice President of Data Science and Advanced Analytics, Unity Health Toronto"
-    ],
-    "highlights": [
-      {
-        "type": "feature",
-        "title": "Meet Muhammad Mamdani: Unity Health Toronto's first vice-president of Data Science and Advanced Analytics",
-        "url": "https://unityhealth.to/2019/10/meet-muhammad-mamdani-unity-health-torontos-first-vice-president-of-data-science-and-advanced-analytics/",
-        "source": "Unity Health Toronto",
-        "date": "2019"
-      },
-      {
-        "type": "press_release",
-        "title": "U of T launches new Temerty Centre for AI Research and Education in Medicine",
-        "url": "https://tcairem.utoronto.ca/news/u-t-launches-new-temerty-centre-ai-research-and-education-medicine",
-        "source": "T-CAIREM, University of Toronto",
-        "date": null
-      }
-    ],
-    "bio": [
-      "Muhammad Mamdani is the inaugural Vice President of Data Science and Advanced Analytics at Unity Health Toronto and the founding Director of the University of Toronto's Temerty Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM). He also founded and directs the Li Ka Shing Centre for Healthcare Analytics Research and Training (LKS-CHART). He is a Professor at the University of Toronto with appointments spanning the Temerty Faculty of Medicine, the Leslie Dan Faculty of Pharmacy, and the Institute of Health Policy, Management and Evaluation in the Dalla Lana School of Public Health. He holds a Doctor of Pharmacy (PharmD) from the University of Michigan, a Master of Arts in economics from Wayne State University, and a Master of Public Health from Harvard University, and completed a fellowship in pharmacoeconomics and outcomes research at the Detroit Medical Center.",
-      "Mamdani's work bridges health data science, pharmacoepidemiology, drug safety, and the real-world deployment of AI in clinical practice. At Unity Health Toronto, his team has developed and deployed dozens of AI solutions into live clinical care. Earlier in his career he founded the Ontario Drug Policy Research Network (ODPRN) and the Applied Health Research Centre, the latter of which has managed more than 100 multi-site clinical studies. He has authored over 500 peer-reviewed studies, including in the New England Journal of Medicine, The Lancet, JAMA, BMJ, and Annals of Internal Medicine; his work has been cited more than 55,000 times with an h-index above 110, making him one of the most highly cited researchers in his field.",
-      "He is a recognized leader and frequent speaker on applied AI in medicine, and was named one of Canada's Top 40 Under 40 in 2010.",
-      "At the camp: Lead Lecturer — Day 5 Deployment, 9:00 AM Lecture on real-world deployments & challenges."
-    ],
-    "role": "Lead Lecturer",
-    "day": "Day 5 Deployment",
-    "assigned_block": "9:00 AM Lecture - Real-world deployments & challenges"
-  },
-  {
-    "slug": "olawale-salaudeen",
-    "name": "Olawale Salaudeen",
-    "affiliation": "MIT",
-    "photo": "people/olawale-salaudeen.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://www.olawalesalaudeen.com/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=F-ytPfAAAAAJ&hl=en"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/olawalesalaudeen"
+        "href": "https://scholar.google.com/citations?user=5xL774wAAAAJ&hl=en"
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/olawalesalaudeen"
+        "href": "https://www.linkedin.com/in/walter-gerych-84165112b/"
       }
     ],
     "awards": [
-      "Schmidt Sciences AI Center Fellowship",
-      "Sloan Scholarship",
-      "Beckman Graduate Research Fellowship",
-      "GEM Associate Fellowship",
-      "Best Paper Award, NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle",
-      "NYU Tandon Faculty First-Look Fellow",
-      "Georgia Tech FOCUS Fellow",
-      "NSF Miniature Brain Machinery Traineeship",
-      "ICML 2022 Top Reviewer (top 10%)"
+      "Area Chair, NeurIPS (2025)",
+      "Senior Area Chair, Models and Methods track, Conference on Health, Inference, and Learning (CHIL) (2024)"
     ],
     "highlights": [
       {
-        "type": "feature",
-        "title": "Olawale Salaudeen — AI Center Fellow in Residence",
-        "url": "https://www.schmidtsciences.org/person/olawale-salaudeen/",
-        "source": "Schmidt Sciences",
+        "type": "talk",
+        "title": "CS Guest Presentation: Trustworthiness In the Age of Foundation Models, Dr. Walter Gerych",
+        "url": "https://www.wpi.edu/news/calendar/events/cs-guest-presentation-trustworthiness-age-foundation-models-dr-walter-gerych-massachusetts-institute",
+        "source": "Worcester Polytechnic Institute",
         "date": null
       }
     ],
     "bio": [
-      "Olawale (Wale) Salaudeen is a postdoctoral researcher at MIT in the Healthy ML Lab, led by Marzyeh Ghassemi, and an AI Center Fellow in Residence at Schmidt Sciences. He earned his PhD in Computer Science jointly through the University of Illinois Urbana-Champaign and Stanford University's Trustworthy AI Research (STAIR) Lab, advised by Sanmi Koyejo, and holds a BS in Mechanical Engineering with minors in Computer Science and Mathematics from Texas A&M University. He was previously a postdoctoral scholar at the Eric and Wendy Schmidt Center at the Broad Institute of MIT and Harvard.",
-      "His research focuses on the robustness and reliability of AI in real-world decision-making. He works on the science of valid measurement and prediction of AI capabilities and risks, characterizing and intervening on the causal and spurious mechanisms behind model behavior, inference-time adaptation of AI systems, and measuring and mitigating the disparate impacts of AI. A central theme is anticipating failures before deployment and ensuring reliable behavior under real-world distribution shift, with translational impact in domains such as healthcare.",
-      "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has been named an NYU Tandon Faculty First-Look Fellow and a Georgia Tech FOCUS Fellow.",
-      "At the camp: Guest Lecturer — 11:00 AM Guest Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
+      "Walter Gerych is a tenure-track Assistant Professor of Computer Science at Worcester Polytechnic Institute (WPI). He earned his PhD in Data Science from WPI, advised by Elke Rundensteiner and Emmanuel Agu, and subsequently was a postdoctoral associate in the Healthy ML lab at MIT CSAIL under Marzyeh Ghassemi before returning to WPI as faculty.",
+      "His research centers on trustworthy machine learning: removing harmful behaviors and spurious correlations from models, improving fairness, advancing AI safety, and developing robust measures of confidence and uncertainty that indicate when a model's prediction can be trusted. A recurring theme of his recent work is debiasing large pre-trained and multi-modal foundation models using efficient, minimally invasive approaches that preserve downstream performance, with frequent application to machine learning for healthcare and generative AI. At MIT he led an SERC group on bias in clinical large language models. His work has appeared at top venues including NeurIPS, ICLR, AAAI, ACL, and CIKM.",
+      "Gerych is also active in service to the research community. He has served as an organizer for the Time Series for Health workshop, as a Senior Area Chair for the Models and Methods track at the Conference on Health, Inference, and Learning (CHIL 2024), and as an Area Chair for NeurIPS (2025).",
+      "At the camp: Guest Lecturer — Day 4 Methods & Evaluation II, 11:00 AM Guest Lecture (Methods & evaluation paper spotlight)."
     ],
     "role": "Guest Lecturer",
-    "day": "Day 3 Methods & Evaluation I",
+    "day": "Day 4 Methods & Evaluation II",
     "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
-  },
-  {
-    "slug": "peter-szolovits",
-    "name": "Peter Szolovits",
-    "affiliation": "MIT",
-    "photo": "people/peter-szolovits.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://groups.csail.mit.edu/medg/people/psz/home/Pete_MEDG_site/Home.html"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=1LuGqFQAAAAJ"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/peter-szolovits-33b88a36/"
-      },
-      {
-        "label": "ORCID",
-        "href": "https://orcid.org/0000-0001-8411-6403"
-      }
-    ],
-    "awards": [
-      "Member, National Academy of Medicine (elected)",
-      "Fellow, Association for the Advancement of Artificial Intelligence (AAAI)",
-      "Fellow, American College of Medical Informatics (ACMI)",
-      "Fellow, American Institute for Medical and Biological Engineering (AIMBE)",
-      "Fellow, International Academy of Health Sciences Informatics",
-      "Morris F. Collen Award of Excellence, AMIA (2013)"
-    ],
-    "highlights": [
-      {
-        "type": "feature",
-        "title": "Large Language Models Seem Miraculous, but Science Abhors Miracles",
-        "url": "https://ai.nejm.org/doi/abs/10.1056/AIp2300103",
-        "source": "NEJM AI",
-        "date": "2024"
-      }
-    ],
-    "bio": [
-      "Peter (Pete) Szolovits is Professor of Computer Science and Engineering in MIT's Department of Electrical Engineering and Computer Science (EECS) and head of the Clinical Decision-Making Group within the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). He is also an associate member of the Institute for Medical Engineering and Science (IMES) and a member of the faculty of the Harvard/MIT Division of Health Sciences and Technology (HST). He earned both his bachelor's degree in physics and his PhD in information science from the California Institute of Technology.",
-      "His research applies artificial intelligence methods to problems of medical decision-making, predictive modeling, and clinical decision support, and to the design of information systems for health care institutions and patients. Over a career spanning more than four decades, he has worked on diagnosis, therapy planning, monitoring, computational genetic counseling, controlled sharing of health information, and the privacy and confidentiality of medical records. He is a pioneer of clinical natural language processing, developing methods to extract meaningful structured data from free-text clinical narratives, and his group has been highly influential in the modern machine-learning-for-health community.",
-      "Szolovits is an elected member of the National Academy of Medicine and a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI), the American College of Medical Informatics (ACMI), the American Institute for Medical and Biological Engineering (AIMBE), and the International Academy of Health Sciences Informatics. In 2013 he received the Morris F. Collen Award of Excellence, the American Medical Informatics Association's highest honor.",
-      "At the camp: Lead Lecturer — 10:00 AM Lecture - Intro to problems in ML4H."
-    ],
-    "role": "Lead Lecturer",
-    "day": "Day 1 Problems in ML4H",
-    "assigned_block": "10:00 AM Lecture - Intro to problems in ML4H"
-  },
-  {
-    "slug": "shalmali-joshi",
-    "name": "Shalmali Joshi",
-    "affiliation": "Columbia University",
-    "photo": "people/shalmali-joshi.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://reaim-lab.github.io/shalmalijoshi.html"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=x5wW5WIAAAAJ&hl=en"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/shalmalijoshi"
-      },
-      {
-        "label": "Twitter/X",
-        "href": "https://twitter.com/shalmali_joshi_"
-      }
-    ],
-    "awards": [],
-    "highlights": [],
-    "bio": [
-      "Shalmali Joshi is an Assistant Professor in the Department of Biomedical Informatics at Columbia University, where she leads the reAIM lab. She is also a member of Columbia's Data Science Institute and is affiliated with the SNF Center for Precision Psychiatry and Mental Health and the Department of Computer Science. She earned her PhD in Electrical and Computer Engineering from the University of Texas at Austin and was previously a postdoctoral fellow at Harvard University's Center for Research on Computation and Society and at the Vector Institute in Toronto.",
-      "Her research addresses the algorithmic safety of machine learning for human-centered domains, with the broad goal of designing AI and ML systems that improve scientific inference and predictive capabilities in the biomedical sciences. The reAIM lab focuses on the generalizability, reliability, and robustness of inference and prediction, drawing on methods that span deep learning, reinforcement learning, observational causal inference, and probabilistic modeling, alongside explainability and the responsible use of generative AI. Application areas include psychiatry, cardiology, radiology, rheumatology, and neurocritical care. Her work appears in venues including NeurIPS, FAccT, CHIL, and MLHC, as well as perspectives in journals such as JAMIA, *The Lancet Digital Health*, and *Nature Medicine*.",
-      "Joshi is active in the machine-learning-for-health community as a co-founder of the Fair ML for Health workshop at NeurIPS, General Chair of ML4H 2022, and Program Chair of MLHC 2022.",
-      "At the camp: Lead Lecturer — Day lead, facilitating the 9:00 AM and 1:30 PM small groups and the 3:00 PM workshop (Day 3 Methods & Evaluation I)."
-    ],
-    "role": "Lead Lecturer",
-    "day": "Day 3 Methods & Evaluation I",
-    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
   },
   {
     "slug": "tom-pollard",
@@ -565,45 +357,253 @@
     "assigned_block": "9:00 AM Lecture - Overview of data availability across domains"
   },
   {
-    "slug": "walter-gerych",
-    "name": "Walter Gerych",
-    "affiliation": "Worcester Polytechnic Institute",
-    "photo": "people/walter-gerych.jpg",
+    "slug": "shalmali-joshi",
+    "name": "Shalmali Joshi",
+    "affiliation": "Columbia University",
+    "photo": "people/shalmali-joshi.jpg",
     "links": [
       {
         "label": "Website",
-        "href": "https://waltergerych.github.io/"
+        "href": "https://reaim-lab.github.io/shalmalijoshi.html"
       },
       {
         "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=5xL774wAAAAJ&hl=en"
+        "href": "https://scholar.google.com/citations?user=x5wW5WIAAAAJ&hl=en"
       },
       {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/walter-gerych-84165112b/"
+        "label": "GitHub",
+        "href": "https://github.com/shalmalijoshi"
+      },
+      {
+        "label": "Twitter/X",
+        "href": "https://twitter.com/shalmali_joshi_"
+      }
+    ],
+    "awards": [],
+    "highlights": [],
+    "bio": [
+      "Shalmali Joshi is an Assistant Professor in the Department of Biomedical Informatics at Columbia University, where she leads the reAIM lab. She is also a member of Columbia's Data Science Institute and is affiliated with the SNF Center for Precision Psychiatry and Mental Health and the Department of Computer Science. She earned her PhD in Electrical and Computer Engineering from the University of Texas at Austin and was previously a postdoctoral fellow at Harvard University's Center for Research on Computation and Society and at the Vector Institute in Toronto.",
+      "Her research addresses the algorithmic safety of machine learning for human-centered domains, with the broad goal of designing AI and ML systems that improve scientific inference and predictive capabilities in the biomedical sciences. The reAIM lab focuses on the generalizability, reliability, and robustness of inference and prediction, drawing on methods that span deep learning, reinforcement learning, observational causal inference, and probabilistic modeling, alongside explainability and the responsible use of generative AI. Application areas include psychiatry, cardiology, radiology, rheumatology, and neurocritical care. Her work appears in venues including NeurIPS, FAccT, CHIL, and MLHC, as well as perspectives in journals such as JAMIA, *The Lancet Digital Health*, and *Nature Medicine*.",
+      "Joshi is active in the machine-learning-for-health community as a co-founder of the Fair ML for Health workshop at NeurIPS, General Chair of ML4H 2022, and Program Chair of MLHC 2022.",
+      "At the camp: Lead Lecturer — Day lead, facilitating the 9:00 AM and 1:30 PM small groups and the 3:00 PM workshop (Day 3 Methods & Evaluation I)."
+    ],
+    "role": "Lead Lecturer",
+    "day": "Day 3 Methods & Evaluation I",
+    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
+  },
+  {
+    "slug": "emily-alsentzer",
+    "name": "Emily Alsentzer",
+    "affiliation": "Stanford University",
+    "photo": "people/emily-alsentzer.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://emilyalsentzer.com/"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=wKcw9Y8AAAAJ"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/EmilyAlsentzer"
+      },
+      {
+        "label": "Twitter/X",
+        "href": "https://twitter.com/Emily_Alsentzer"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0002-5370-1746"
       }
     ],
     "awards": [
-      "Area Chair, NeurIPS (2025)",
-      "Senior Area Chair, Models and Methods track, Conference on Health, Inference, and Learning (CHIL) (2024)"
+      "Best Paper Award, CHIL 2023 (\"Do We Still Need Clinical Language Models?\")",
+      "Best Oral Presentation Award, ISMB 2023 (rare disease diagnosis)",
+      "Microsoft Accelerate Foundation Models Research Initiative grant (2023)"
     ],
     "highlights": [
       {
-        "type": "talk",
-        "title": "CS Guest Presentation: Trustworthiness In the Age of Foundation Models, Dr. Walter Gerych",
-        "url": "https://www.wpi.edu/news/calendar/events/cs-guest-presentation-trustworthiness-age-foundation-models-dr-walter-gerych-massachusetts-institute",
-        "source": "Worcester Polytechnic Institute",
+        "type": "press_release",
+        "title": "Study assesses GPT-4's potential to perpetuate racial, gender biases in clinical decision making",
+        "url": "https://www.eurekalert.org/news-releases/1029382",
+        "source": "EurekAlert! / Brigham and Women's Hospital",
+        "date": "2023"
+      },
+      {
+        "type": "news_article",
+        "title": "Assessing the potential of GPT-4 to perpetuate racial and gender biases in health care: a model evaluation study",
+        "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00225-X/fulltext",
+        "source": "The Lancet Digital Health",
+        "date": "2024"
+      }
+    ],
+    "bio": [
+      "Emily Alsentzer is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science at Stanford University, where she leads the Alsentzer Lab. She earned her PhD in 2022 through the MIT/Harvard Medical School Health Sciences and Technology (HST) program and holds a master's in Biomedical Informatics and a bachelor's in Computer Science, both from Stanford. Before joining the Stanford faculty in 2024, she completed a postdoctoral fellowship at Brigham and Women's Hospital and Harvard Medical School, where she worked to deploy machine learning models within the Mass General Brigham health system.",
+      "Her research uses machine learning and natural language processing to augment clinical decision-making and broaden access to high-quality healthcare, with an emphasis on infusing biomedical knowledge into ML algorithms, working with heterogeneous clinical data such as electronic health records and genomic data, improving model trustworthiness, and ensuring responsible deployment in clinical workflows. She is a co-creator of the widely used ClinicalBERT (Clinical BERT) model for clinical text and a founding organizer of the Conference on Health, Inference, and Learning (CHIL). Her work spans few-shot diagnosis of rare diseases, the evaluation of large language models in medicine, and the study of racial and gender bias in clinical AI systems.",
+      "Her honors include the Best Paper Award at CHIL 2023 for \"Do We Still Need Clinical Language Models?\", a Best Oral Presentation Award at ISMB 2023 for her work on rare disease diagnosis, and a Microsoft Accelerate Foundation Models Research Initiative grant.",
+      "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough."
+    ],
+    "role": "Guest Lecturer",
+    "day": "Day 1 Problems in ML4H",
+    "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
+  },
+  {
+    "slug": "olawale-salaudeen",
+    "name": "Olawale Salaudeen",
+    "affiliation": "MIT",
+    "photo": "people/olawale-salaudeen.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://www.olawalesalaudeen.com/"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=F-ytPfAAAAAJ&hl=en"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/olawalesalaudeen"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/olawalesalaudeen"
+      }
+    ],
+    "awards": [
+      "Schmidt Sciences AI Center Fellowship",
+      "Sloan Scholarship",
+      "Beckman Graduate Research Fellowship",
+      "GEM Associate Fellowship",
+      "Best Paper Award, NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle",
+      "NYU Tandon Faculty First-Look Fellow",
+      "Georgia Tech FOCUS Fellow",
+      "NSF Miniature Brain Machinery Traineeship",
+      "ICML 2022 Top Reviewer (top 10%)"
+    ],
+    "highlights": [
+      {
+        "type": "feature",
+        "title": "Olawale Salaudeen — AI Center Fellow in Residence",
+        "url": "https://www.schmidtsciences.org/person/olawale-salaudeen/",
+        "source": "Schmidt Sciences",
         "date": null
       }
     ],
     "bio": [
-      "Walter Gerych is a tenure-track Assistant Professor of Computer Science at Worcester Polytechnic Institute (WPI). He earned his PhD in Data Science from WPI, advised by Elke Rundensteiner and Emmanuel Agu, and subsequently was a postdoctoral associate in the Healthy ML lab at MIT CSAIL under Marzyeh Ghassemi before returning to WPI as faculty.",
-      "His research centers on trustworthy machine learning: removing harmful behaviors and spurious correlations from models, improving fairness, advancing AI safety, and developing robust measures of confidence and uncertainty that indicate when a model's prediction can be trusted. A recurring theme of his recent work is debiasing large pre-trained and multi-modal foundation models using efficient, minimally invasive approaches that preserve downstream performance, with frequent application to machine learning for healthcare and generative AI. At MIT he led an SERC group on bias in clinical large language models. His work has appeared at top venues including NeurIPS, ICLR, AAAI, ACL, and CIKM.",
-      "Gerych is also active in service to the research community. He has served as an organizer for the Time Series for Health workshop, as a Senior Area Chair for the Models and Methods track at the Conference on Health, Inference, and Learning (CHIL 2024), and as an Area Chair for NeurIPS (2025).",
-      "At the camp: Guest Lecturer — Day 4 Methods & Evaluation II, 11:00 AM Guest Lecture (Methods & evaluation paper spotlight)."
+      "Olawale (Wale) Salaudeen is a postdoctoral researcher at MIT in the Healthy ML Lab, led by Marzyeh Ghassemi, and an AI Center Fellow in Residence at Schmidt Sciences. He earned his PhD in Computer Science jointly through the University of Illinois Urbana-Champaign and Stanford University's Trustworthy AI Research (STAIR) Lab, advised by Sanmi Koyejo, and holds a BS in Mechanical Engineering with minors in Computer Science and Mathematics from Texas A&M University. He was previously a postdoctoral scholar at the Eric and Wendy Schmidt Center at the Broad Institute of MIT and Harvard.",
+      "His research focuses on the robustness and reliability of AI in real-world decision-making. He works on the science of valid measurement and prediction of AI capabilities and risks, characterizing and intervening on the causal and spurious mechanisms behind model behavior, inference-time adaptation of AI systems, and measuring and mitigating the disparate impacts of AI. A central theme is anticipating failures before deployment and ensuring reliable behavior under real-world distribution shift, with translational impact in domains such as healthcare.",
+      "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has been named an NYU Tandon Faculty First-Look Fellow and a Georgia Tech FOCUS Fellow.",
+      "At the camp: Guest Lecturer — 11:00 AM Guest Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
     ],
     "role": "Guest Lecturer",
-    "day": "Day 4 Methods & Evaluation II",
+    "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
+  },
+  {
+    "slug": "jonathan-t-kolstad",
+    "name": "Jonathan T. Kolstad",
+    "affiliation": "UC Berkeley",
+    "photo": "people/jonathan-t-kolstad.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://www.jkolstad.org/"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=OLMHs_UAAAAJ&hl=en"
+      }
+    ],
+    "awards": [
+      "ASHEcon Medal (2018)",
+      "Kenneth J. Arrow Award, best paper in health economics (2014)",
+      "NIHCM Foundation Research Award (2016, 2018)",
+      "Henry J. Kaiser Chair, UC Berkeley Haas (named chair)"
+    ],
+    "highlights": [
+      {
+        "type": "feature",
+        "title": "Jonathan Kolstad — Faculty Profile, Berkeley Haas",
+        "url": "https://haas.berkeley.edu/faculty/jonathan-kolstad/",
+        "source": "UC Berkeley Haas",
+        "date": null
+      },
+      {
+        "type": "feature",
+        "title": "Jonathan Kolstad — Research at Berkeley",
+        "url": "https://vcresearch.berkeley.edu/faculty/jonathan-kolstad",
+        "source": "UC Berkeley Office of Research",
+        "date": null
+      },
+      {
+        "type": "press_release",
+        "title": "Top Health Economics Expert Professor Jonathan Kolstad Affiliates with Compass Lexecon",
+        "url": "https://www.compasslexecon.com/insights/news/jonathan-kolstad-affiliates-with-compass-lexecon",
+        "source": "Compass Lexecon",
+        "date": null
+      }
+    ],
+    "bio": [
+      "Jonathan T. Kolstad is a health economist and Professor in the Economic Analysis and Policy Group at the Haas School of Business and the Department of Economics at the University of California, Berkeley, where he holds the Henry J. Kaiser Chair. He is also a Research Associate at the National Bureau of Economic Research, a core faculty member of the Computational Precision Health graduate program (UC Berkeley and UCSF), and the founding director of the Center for Health Care Marketplace Innovation. He earned his Ph.D. from Harvard University and his B.A. from Stanford University.",
+      "Kolstad's research sits at the intersection of health economics, industrial organization, and public economics, increasingly incorporating tools from behavioral economics, machine learning, and AI. A recurring theme is the search for new models and novel data that can capture the complexity of health care markets — in particular the role of information asymmetries and incentives in shaping consumer choice, provider behavior, and policy design. Beyond academia, he is a co-founder and former Chief Data Scientist of Picwell, a co-founder of Healthpilot, and a founding advisor to OODA Health, applying data science to health-insurance decision-making.",
+      "His work has earned several major honors in the field. He received the ASHEcon Medal in 2018 — awarded biennially to the economist age 40 or under judged to have made the most significant contributions to health economics — as well as the Arrow Award for the best paper in health economics (2014) and the NIHCM Foundation Research Award (2016 and 2018).",
+      "At the camp: Lead / Panel Chair — 9:00 AM Finance Panel chair."
+    ],
+    "role": "Lead / Panel Chair",
+    "day": "Day 6 Finance, Compute & Collaborators",
+    "assigned_block": "9:00 AM Finance Panel chair"
+  },
+  {
+    "slug": "peter-szolovits",
+    "name": "Peter Szolovits",
+    "affiliation": "MIT",
+    "photo": "people/peter-szolovits.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://groups.csail.mit.edu/medg/people/psz/home/Pete_MEDG_site/Home.html"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=1LuGqFQAAAAJ"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/peter-szolovits-33b88a36/"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0001-8411-6403"
+      }
+    ],
+    "awards": [
+      "Member, National Academy of Medicine (elected)",
+      "Fellow, Association for the Advancement of Artificial Intelligence (AAAI)",
+      "Fellow, American College of Medical Informatics (ACMI)",
+      "Fellow, American Institute for Medical and Biological Engineering (AIMBE)",
+      "Fellow, International Academy of Health Sciences Informatics",
+      "Morris F. Collen Award of Excellence, AMIA (2013)"
+    ],
+    "highlights": [
+      {
+        "type": "feature",
+        "title": "Large Language Models Seem Miraculous, but Science Abhors Miracles",
+        "url": "https://ai.nejm.org/doi/abs/10.1056/AIp2300103",
+        "source": "NEJM AI",
+        "date": "2024"
+      }
+    ],
+    "bio": [
+      "Peter (Pete) Szolovits is Professor of Computer Science and Engineering in MIT's Department of Electrical Engineering and Computer Science (EECS) and head of the Clinical Decision-Making Group within the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). He is also an associate member of the Institute for Medical Engineering and Science (IMES) and a member of the faculty of the Harvard/MIT Division of Health Sciences and Technology (HST). He earned both his bachelor's degree in physics and his PhD in information science from the California Institute of Technology.",
+      "His research applies artificial intelligence methods to problems of medical decision-making, predictive modeling, and clinical decision support, and to the design of information systems for health care institutions and patients. Over a career spanning more than four decades, he has worked on diagnosis, therapy planning, monitoring, computational genetic counseling, controlled sharing of health information, and the privacy and confidentiality of medical records. He is a pioneer of clinical natural language processing, developing methods to extract meaningful structured data from free-text clinical narratives, and his group has been highly influential in the modern machine-learning-for-health community.",
+      "Szolovits is an elected member of the National Academy of Medicine and a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI), the American College of Medical Informatics (ACMI), the American Institute for Medical and Biological Engineering (AIMBE), and the International Academy of Health Sciences Informatics. In 2013 he received the Morris F. Collen Award of Excellence, the American Medical Informatics Association's highest honor.",
+      "At the camp: Lead Lecturer — 10:00 AM Lecture - Intro to problems in ML4H."
+    ],
+    "role": "Lead Lecturer",
+    "day": "Day 1 Problems in ML4H",
+    "assigned_block": "10:00 AM Lecture - Intro to problems in ML4H"
   }
 ]

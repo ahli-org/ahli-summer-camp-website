@@ -4,6 +4,14 @@ import Hero from '../components/Hero.astro';
 import ProfileCard from '../components/ProfileCard.astro';
 import { url } from '../lib/site';
 import { instructors } from '../lib/instructors';
+
+// Split into sections by role; order within each is the stable shuffle from the data.
+const leads = instructors.filter((i) => /lead/i.test(i.role ?? ''));
+const guests = instructors.filter((i) => !/lead/i.test(i.role ?? ''));
+const groups = [
+  { heading: 'Lead instructors', blurb: 'Faculty who lead the daily sessions and labs.', people: leads },
+  { heading: 'Guest lecturers', blurb: 'Visiting speakers joining for focused talks.', people: guests },
+];
 ---
 <BaseLayout title="Instructors">
   <Hero
@@ -12,22 +20,25 @@ import { instructors } from '../lib/instructors';
     lead={`The camp is led by ${instructors.length} instructors and guest lecturers working at the frontier of machine learning for health. Explore their work below.`}
   />
 
-  <section class="section">
-    <div class="wrap">
-      <div class="people-grid people-grid--profiles">
-        {instructors.map((p) => (
-          <ProfileCard
-            href={url(`instructors/${p.slug}`)}
-            name={p.name}
-            photo={p.photo}
-            subtitle={p.role}
-            affiliation={p.affiliation}
-            links={p.links}
-          />
-        ))}
+  {groups.map((g) => g.people.length > 0 && (
+    <section class="section">
+      <div class="wrap wrap--wide">
+        <h2>{g.heading}</h2>
+        <p class="section-lead">{g.blurb}</p>
+        <div class="people-grid people-grid--profiles">
+          {g.people.map((p) => (
+            <ProfileCard
+              href={url(`instructors/${p.slug}`)}
+              name={p.name}
+              photo={p.photo}
+              affiliation={p.affiliation}
+              links={p.links}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 
   <section class="section">
     <div class="wrap">

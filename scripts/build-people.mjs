@@ -22,6 +22,18 @@ mkdirSync(PHOTO_DIR, { recursive: true });
 // Latin letters that don't decompose under NFKD but have obvious ASCII forms.
 const LETTER_MAP = { ø: 'o', Ø: 'o', æ: 'ae', Æ: 'ae', œ: 'oe', Œ: 'oe', ł: 'l', Ł: 'l', đ: 'd', Đ: 'd', ð: 'd', Ð: 'd', þ: 'th', Þ: 'th', ß: 'ss', ı: 'i' };
 
+// Deterministic pseudo-random sort key (FNV-1a hash of the slug). Gives a fixed,
+// non-alphabetical order that is stable across regenerations — and a new person
+// slots into the shuffle deterministically without reordering everyone else.
+function orderKey(slug) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < slug.length; i++) {
+    h ^= slug.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return h >>> 0;
+}
+
 function slugify(name) {
   return name
     .replace(/[øØæÆœŒłŁđĐðÐþÞßı]/g, (c) => LETTER_MAP[c] ?? c)
@@ -113,7 +125,7 @@ function buildGroup(srcDirName, outName, label) {
     people.push(person);
   }
 
-  people.sort((a, b) => a.name.localeCompare(b.name));
+  people.sort((a, b) => orderKey(a.slug) - orderKey(b.slug));
   const out = join(root, 'src', 'data', outName);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, JSON.stringify(people, null, 2) + '\n');
