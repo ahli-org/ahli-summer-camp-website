@@ -53,7 +53,9 @@ groups and the guest lecture hang on.
   [day page](/curriculum/) carries a slide-by-slide outline of your lecture;
   adapt, replace, and extend it freely, while keeping the structural beats
   (frame → core content → transition to the deliverable) and the navy/purple/teal
-  visual theme.
+  visual theme. The companion slide-deck repository’s `guides/uplevel-review.md`
+  goes deeper on how to raise the ceiling for this audience — read it before
+  building your deck.
 - **Coordinate with your guest** so the two talks complement rather than overlap.
 
 ## If you are a guest lecturer
@@ -80,11 +82,35 @@ run, even though you do not staff them.
 - **Rotating peer session leads.** The participants are senior researchers; each
   session is run by a rotating peer "session lead" from within the group,
   following a one-page protocol. The role rotates daily.
-- **Coaches are an optional layer.** If volunteers are recruited — postdocs,
-  senior PhDs, or instructors with free blocks — they circulate as coaches across
-  two or three groups, modeling good feedback and unsticking groups. The program
-  runs identically with several coaches or none.
+- **Coaches strengthen the groups — aim to staff them.** One floating day lead
+  cannot meaningfully support six simultaneous groups, and a first-time peer lead
+  on a hard prompt with no coach is a predictable weak point — especially Day 3
+  (critique) and Day 5 (red-team), which are adversarial by design. Recruit
+  coaches (postdocs, senior PhDs, or instructors with free blocks) to cover **at
+  least two or three of the six groups**, prioritizing Days 3 and 5. The program
+  can run without them, but not *identically* — so where coaches are thin, lean
+  harder on the one-page protocol and the night-before briefing below.
+- **Brief the next day's rotating leads the evening before.** A five-minute
+  walkthrough of the next day's prompt and protocol with each group's incoming
+  session lead removes most of the first-time-facilitator risk.
 - **The day lead floats** among the groups during small-group blocks.
+
+### What happens to each daily submission
+
+Each content day's Workbook part is submitted at the 5:45 wrap — and it gets a
+response, so submission never becomes a formality:
+
+- **Overnight skim.** The floating day lead and any coaches skim that day's
+  submissions and flag 2–3 — strong examples or ones heading off the rails (e.g.
+  a Day 2 data plan that quietly invalidates the Day 1 problem) — for a
+  30-second mention at the **next morning's handoff**.
+- **Built-in peer cross-review.** The closing small group each day includes a
+  brief round where members react to one another's draft part, not just their
+  own — so every participant gets feedback on every deliverable, not only on the
+  Day 4 peer-review and Day 7 audience rubrics.
+
+This catches a participant whose early part is off before they build on it for
+three more days, which is the whole point of a cumulative deliverable.
 
 ---
 

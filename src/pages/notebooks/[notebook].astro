@@ -56,9 +56,20 @@ const downloadHref = `${base}notebooks/${meta.file}`;
     <div class="wrap wrap--xwide">
       <div class="callout">
         <p>
-          This is a <strong>template</strong> to adapt to your own project. Open
-          it in Colab (one click, no install) or download it, then work through
-          the sections below.
+          This is a <strong>template</strong> to adapt to your own project — work
+          through the sections below. To run it: open in Colab (one click, no
+          install), or download it and run locally with
+          <code>pip install -r requirements.txt</code> (the
+          <a href={`${base}notebooks/requirements.txt`}>requirements file</a> is
+          alongside the notebooks). The notebook includes a binary substrate and
+          a time-to-event alternative; imaging/text/genomics projects feed their
+          encoder output in as the feature matrix.
+        </p>
+        <p style="margin-top:.6rem">
+          <strong>Note:</strong> “Open in Colab” loads the notebook from GitHub,
+          so it requires repository access until the site is public — if it
+          doesn’t open, use <em>Download .ipynb</em> and upload it to Colab, or
+          run it locally.
         </p>
       </div>
 

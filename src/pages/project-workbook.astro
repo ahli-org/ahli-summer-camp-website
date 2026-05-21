@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import { url } from '../lib/site';
 import { Content } from '../md/project-workbook.md';
 ---
 <BaseLayout title="Project Workbook" description="The seven-part Project Workbook template — the cumulative document each participant builds across the week, one part per day.">
@@ -11,6 +12,13 @@ import { Content } from '../md/project-workbook.md';
   />
   <section class="section">
     <div class="wrap">
+      <div class="callout">
+        <p>
+          New to the format? See a <a href={url('project-workbook/example')}>fully
+          worked example</a> — a completed Workbook for a fictional project — to
+          calibrate what a strong entry looks like.
+        </p>
+      </div>
       <div class="day-detail">
         <Content />
       </div>

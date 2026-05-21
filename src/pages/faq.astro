@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import { SITE } from '../lib/site';
+import { SITE, url } from '../lib/site';
 
+// Answers may contain HTML (links); rendered with set:html below.
 const faqs = [
   {
     q: 'Who is the camp for?',
-    a: 'The camp is designed for PhD students whose research involves machine learning for health. A working foundation in machine learning is expected. The 2026 cohort has been selected.',
+    a: 'The camp is designed for late-stage PhD students and early-career postdocs whose research involves machine learning for health. A working foundation in machine learning is expected. The 2026 cohort has been selected.',
   },
   {
     q: 'When and where does the camp take place?',
@@ -14,11 +15,15 @@ const faqs = [
   },
   {
     q: 'How large is the cohort?',
-    a: 'The 2026 cohort is 45 PhD students and early-career researchers, kept intentionally small to allow real discussion and mentorship with instructors and peers.',
+    a: 'The 2026 cohort is 45 late-stage PhD students and early-career postdocs, kept intentionally small to allow real discussion and mentorship with instructors and peers.',
   },
   {
     q: 'What will I leave the camp with?',
     a: 'Each day produces a concrete deliverable. Together these form a cohesive Project Workbook — a structured reference you can carry back into your own research.',
+  },
+  {
+    q: 'How should I prepare before the camp?',
+    a: `Start with the <a href="${url('before-you-arrive')}">Before you arrive</a> checklist — required readings, choosing your specialty track, accounts to set up, and what to bring (a printed poster and a prospective project).`,
   },
   {
     q: 'Do I need to bring my own data?',
@@ -27,6 +32,18 @@ const faqs = [
   {
     q: 'Is there a cost, and is travel support available?',
     a: 'Details on fees and any available support are shared directly with accepted participants.',
+  },
+  {
+    q: 'Is there a code of conduct?',
+    a: `Yes. All participants, instructors, and organizers are expected to follow a code of conduct ensuring a respectful, harassment-free environment; the camp adopts the community standards of the co-located CHIL conference. Concerns can be raised confidentially with the organizers at ${SITE.email}.`,
+  },
+  {
+    q: 'How do I request dietary, accessibility, or other accommodations?',
+    a: `Email the organizers at ${SITE.email} with your needs as early as you can, and we'll make arrangements. Venue and catering details are shared with accepted participants.`,
+  },
+  {
+    q: 'Will the sessions be recorded?',
+    a: `Lecture recordings may be shared with the cohort after the camp. Participants are told in advance what will be recorded and can opt out of being captured; the same consent applies to the participant photos shown on the Students page. Questions about recording or media use go to ${SITE.email}.`,
   },
   {
     q: 'How can I stay informed?',
@@ -47,7 +64,7 @@ const faqs = [
         {faqs.map((f) => (
           <div class="faq-item">
             <h3>{f.q}</h3>
-            <p>{f.a}</p>
+            <p set:html={f.a} />
           </div>
         ))}
       </div>

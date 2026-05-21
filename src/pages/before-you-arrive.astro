@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { Content } from '../md/before-you-arrive.md';
+---
+<BaseLayout title="Before you arrive" description="Pre-camp checklist for AHLI Summer Camp participants: readings, specialty tracks, accounts to set up, what to bring, and Day 1 logistics.">
+  <Hero
+    eyebrow="For accepted students"
+    title="Before you arrive"
+    lead="Your pre-camp checklist — readings, your specialty track, accounts to set up, what to bring, and Day 1 logistics."
+  />
+  <section class="section">
+    <div class="wrap">
+      <div class="day-detail">
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

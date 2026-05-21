@@ -89,4 +89,5 @@ alternative.
 - Lecture slides (tentative draft): [view the deck](/slides/day4-methods.html) · [PDF](/slides/day4-methods.pdf).
 - [Methods Lab notebook](/notebooks/methods-lab/) — the Day 4 workshop template.
 - [Project Workbook template](/project-workbook/#part-4) — Part 4.
-- The MEDS ecosystem documentation, as an implementation reference.
+- The [MEDS ecosystem documentation](https://medical-event-data-standard.github.io/), as an implementation reference.
+- Current EHR foundation models worth knowing for the foundation-vs-task-specific decision: ETHOS, CEHR-GPT, and COMET, plus the MEDS-DEV benchmark (names to look up — verify the latest before relying on them).
