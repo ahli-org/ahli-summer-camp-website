@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import StudentCard from '../components/StudentCard.astro';
+import ProfileCard from '../components/ProfileCard.astro';
 import { url, SITE } from '../lib/site';
 import { students } from '../lib/students';
 ---
@@ -14,8 +14,17 @@ import { students } from '../lib/students';
 
   <section class="section">
     <div class="wrap">
-      <div class="people-grid people-grid--students">
-        {students.map((s) => <StudentCard student={s} />)}
+      <div class="people-grid people-grid--profiles">
+        {students.map((s) => (
+          <ProfileCard
+            href={url(`students/${s.slug}`)}
+            name={s.name}
+            photo={s.photo}
+            subtitle={s.position}
+            affiliation={s.affiliation}
+            links={s.links}
+          />
+        ))}
       </div>
     </div>
   </section>

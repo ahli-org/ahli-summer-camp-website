@@ -2,9 +2,7 @@
   {
     "slug": "alemu-sisay-nigru",
     "name": "Alemu Sisay Nigru",
-    "position": "PhD Candidate",
     "affiliation": "University of Brescia",
-    "email": "alemu.nigru@unibs.it",
     "photo": "people/alemu-sisay-nigru.jpg",
     "links": [
       {
@@ -36,14 +34,14 @@
       "Alemu Sisay Nigru is a PhD candidate in Artificial Intelligence in Medicine at the University of Brescia (expected 2025), where his dissertation develops AI-driven clinical decision support for the personalized management of low back pain. He earned a B.Sc. in Electrical and Computer Engineering from the University of Gondar, Ethiopia (graduating first in his class as a gold medalist) and an M.Sc. in Communication Technologies and Multimedia from Brescia (110/110 cum laude), with an Erasmus+ mobility period at Mid Sweden University. Before his doctorate he taught engineering courses and chaired a department at the University of Gondar.",
       "His research centers on deep learning for medical imaging and clinical translation. He is the principal architect of LumbarAI, a Swin3D Transformer framework that automates grading of 11 lumbar-spine radiological features from sagittal MRI, integrates PACS/DICOM ingestion, explainable AI heatmaps, a human-in-the-loop correction loop, and bilingual (English/Italian) LLM report generation. The system is in pilot deployment at a Brescia clinic, where it has reduced active radiologist reporting time by an estimated 75–85%. His work also fuses radiological severity with patient-reported outcomes to identify biopsychosocial patient phenotypes. He has held visiting research positions at NYU's Video Lab (with Prof. Yao Wang) and at the Center for Digital Health & Implementation Science in Addis Ababa, and has published in the North American Spine Society Journal with several manuscripts under review.",
       "For the AHLI Summer Camp, Alemu hopes above all to join the health-AI research community in person. He wants to present the LumbarAI work to an audience that will push back on it, stress-test his evaluation choices, and raise questions he has not considered. He is also eager to hear how researchers in genomics, public health, and wearables frame their problems, since his next steps involve extending beyond spine imaging toward longitudinal, multimodal clinical monitoring — a direction he believes those conversations will help sharpen."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "alemu.nigru@unibs.it"
   },
   {
     "slug": "alexander-schubert",
     "name": "Alexander Schubert",
-    "position": "PhD Student",
     "affiliation": "UC Berkeley",
-    "email": "alexander_schubert@berkeley.edu",
     "photo": "people/alexander-schubert.jpg",
     "links": [
       {
@@ -71,14 +69,14 @@
       "Alexander Schubert is a PhD student in Computational Precision Health, a joint program between UC Berkeley and UCSF, supervised by Ziad Obermeyer and Ahmed Alaa. He holds a BSc in Economics and Business Administration from Goethe University Frankfurt (with distinction) and, before his PhD, spent several years as a senior associate at McKinsey & Company in Munich leading data-science teams on healthcare and pharmaceutical projects. He has been a Berkeley Fellow and a Fellow of the Eric and Wendy Schmidt Center at the Broad Institute, and he interned as an AI research intern at Dandelion Health.",
       "His research focuses on the development and responsible real-world deployment of machine learning for high-stakes cardiovascular prediction, centered on deep learning applied to ECG waveforms linked to large-scale clinical outcome data. His work spans three streams: an ECG model for sudden cardiac death risk now in prospective multi-site deployment in Sweden, the U.S., and Taiwan; a handheld single-lead ECG screen for silent prior myocardial infarction undergoing randomized validation in rural Tamil Nadu with the state Department of Health and J-PAL; and an ECG-based model for detecting drug-induced hERG-channel inhibition for cardiac drug safety. His publications appear in or are under review at venues including Nature, NEJM AI, Nature Communications, ICLR, and IEEE JBHI.",
       "Through the summer camp, Alexander hopes to engage with the questions that most occupy him at the intersection of methodology and real-world use: designing architectures and training setups suited to clinical data, evaluating models so they hold up under prospective deployment, and translating strong retrospective performance into tools that change care. He sees the curriculum as spanning exactly this range and hopes to learn from instructors and a capable cohort of peers, and to come away with a community he can keep building with long after the week ends."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "alexander_schubert@berkeley.edu"
   },
   {
     "slug": "amin-adibi",
     "name": "Amin Adibi",
-    "position": "PhD Candidate",
     "affiliation": "University of British Columbia",
-    "email": "amin.adibi@ubc.ca",
     "photo": "people/amin-adibi.jpg",
     "links": [
       {
@@ -124,14 +122,14 @@
       "Amin Adibi is a fourth-year PhD candidate at the University of British Columbia, working on fairness and bias in clinical algorithms under the supervision of Dr. Mohsen Sadatsafavi. His doctoral thesis, \"Untangling Race and Lung Function in Respiratory Prediction Models,\" examines the technically and ethically fraught problem of removing race from lung function algorithms without compromising accuracy or fairness. He came to health research from engineering, holding an M.Sc. in Biomedical Engineering from the University of Calgary and a B.Sc. in Chemical Engineering from Sharif University of Technology, and has worked for years as a statistical research scientist and analyst on respiratory disease modelling.",
       "His research spans algorithmic fairness and racial bias, bias and reliability in large language models for clinical use, clinical prediction models, and the role of value judgments in health modelling. He developed and validated the ACCEPT tool for predicting acute COPD exacerbations (published in Lancet Respiratory Medicine), has first-author papers in journals including JAMA and the American Journal of Respiratory and Critical Care Medicine, and reports an h-index of 17. He co-founded the Peer Models Network, an initiative providing accessible, model-as-a-service infrastructure for healthcare modelling. He is deeply engaged in the ML-for-health community—serving as Communications Chair and Area Chair for ML4H, organizing UBC's inaugural health AI summit, and serving on the Global Lung Function Initiative Advisory Committee and (as an elected senator) UBC's Senate.",
       "As a PhD candidate working on race and algorithmic fairness with strong interest in deployment issues, Adibi hopes the AHLI Summer Camp will help him build relationships and explore collaboration opportunities as he begins applying for postdoctoral positions. He notes that several of the camp's instructors share his interests, and—having had brief prior interactions with some of them—he is seeking opportunities for deeper, more substantive discussions that could seed future collaborations."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "amin.adibi@ubc.ca"
   },
   {
     "slug": "anders-gjolbye-madsen",
     "name": "Anders Gjølbye Madsen",
-    "position": "PhD Fellow",
     "affiliation": "Technical University of Denmark / Stanford University",
-    "email": "gjoelbye@cs.stanford.edu",
     "photo": "people/anders-gjolbye-madsen.jpg",
     "links": [
       {
@@ -164,14 +162,14 @@
       "Anders Gjølbye Madsen is a DDSA PhD Fellow at the Technical University of Denmark (DTU), currently a visiting researcher at Stanford's STAIR Lab with Sanmi Koyejo. He earned his BSc and MSc in Engineering at DTU (with a study exchange at ETH Zürich) and has over four years of consecutive postgraduate research training. His PhD, supervised by Lars Kai Hansen (DTU) and Sebastian Weichwald (University of Copenhagen) and conducted in collaboration with Rigshospitalet, develops methods for trustworthy diagnosis and decision support in clinical neurology. His research centers on machine learning for health, with a focus on EEG representation learning, neurodiagnostics, and methods for making models more reliable and interpretable.",
       "His recent work includes PatternLocal (NeurIPS 2025) on reducing false-positive attributions in explanations of non-linear models, concept-based explanations for EEG transformers (IEEE MLSP 2023, Top 10% Outstanding Paper), and SPEED, a scalable EEG preprocessing pipeline for self-supervised learning (IEEE MLSP 2024). Before his PhD, he spent three years at the startup BrainCapture building transformer-based models and data pipelines for portable EEG-based epilepsy diagnostics, experience that grounds his current work in real deployment constraints. He has also been active in teaching and in leadership roles, co-founding the student organization Copenhagen MedTech and serving on the Danish Data Science Academy's Young Academy Panel.",
       "His summer camp research statement proposes trustworthy EEG foundation models that learn transferable representations from large unlabeled recordings and can be adapted across neurodiagnostic tasks and deployment settings, evaluating them not only by accuracy but also by transfer, efficiency, robustness, and explanation reliability. By attending, Anders hopes to gain better judgment about how to develop and evaluate machine learning for health in ways that are clinically meaningful, to discuss issues of cross-site transfer, robustness, and deployment with researchers on related health problems, and to learn about research leadership, especially how to build strong collaborations with clinicians and shape research programs around problems that matter in practice."
-    ]
+    ],
+    "position": "PhD Fellow",
+    "email": "gjoelbye@cs.stanford.edu"
   },
   {
     "slug": "antonio-mendoza",
     "name": "Antonio Mendoza",
-    "position": "PhD Student",
     "affiliation": "Rice University",
-    "email": "antonio@rice.edu",
     "photo": "people/antonio-mendoza.jpg",
     "links": [
       {
@@ -219,14 +217,14 @@
       "His research develops machine learning and deep learning multimodal fusion networks that combine clinical features with physiological signals (ECG, blood pressure, oxygen saturation waveforms), as well as ECG denoising algorithms for patients with implanted Left Ventricular Assist Devices (LVADs) and TinyML/embedded inference pipelines for real-time signal classification on microcontrollers. He collaborates closely with clinical partners at Texas Children's Hospital, Texas Heart Institute, and Houston Methodist, with particular interest in pediatric cardiac populations that are often underrepresented in machine learning research, and he holds patents related to LVAD technology and ECG noise removal.",
       "For the proposed project, he aims to model cardiovascular disease progression as a continuous trajectory in a learned, physiologically grounded latent space, shifting from \"how sick is this patient now?\" to \"what trajectory is this patient on, and how fast is it evolving?\" to enable earlier, more personalized risk detection.",
       "At the summer camp, Antonio hopes to improve his ability to translate multimodal ML research into deployable solutions, better aligning model design with validation and real-world constraints (including regulatory and financial aspects). He wants to strengthen how he formulates impactful research questions, network with future collaborators and mentors, and learn the stories and lessons behind real-world research tools and deployments such as PhysioNet, including visions for multi-center collaboration and federated learning."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "antonio@rice.edu"
   },
   {
     "slug": "arvind-pillai",
     "name": "Arvind Pillai",
-    "position": "PhD Student",
     "affiliation": "Dartmouth College",
-    "email": "arvind.pillai184@gmail.com",
     "photo": "people/arvind-pillai.jpg",
     "links": [
       {
@@ -274,14 +272,14 @@
       "His work has appeared at flagship venues including ICLR, ACM CHI, and ACM UbiComp/IMWUT, and has been recognized with a Best Paper Award at the NeurIPS TSALM workshop and a Distinguished Paper Award at UbiComp. He led PaPaGei, an open foundation model for photoplethysmography (PPG) signals, and Time2Lang, which bridges time-series foundation models and large language models for health sensing; his MoodCapture work on smartphone-image-based depression detection received broad press coverage. He has also released large public resources such as the multi-year Dartmouth College Experience Study dataset.",
       "For his AHLI summer camp research, Arvind proposes an LLM-based, multi-agent reasoning system that turns passive mobile sensing, EMA, patient goals, and prior session transcripts into protocol-aligned, clinician-facing session-preparation suggestions for therapy with patients who have serious mental illness, grounded in the mSITE clinical trial.",
       "He hopes to attend the camp to engage with other researchers tackling pre-deployment evaluation and assessment of health AI systems, and to better understand how academia operates with respect to grants, compute, and collaborations as he weighs academic versus industry career paths and seeks to be intentional about where he can do the most impactful work."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "arvind.pillai184@gmail.com"
   },
   {
     "slug": "ayush-noori",
     "name": "Ayush Noori",
-    "position": "D.Phil. student and Rhodes Scholar",
     "affiliation": "University of Oxford, Harvard Medical School",
-    "email": "ayush.noori@sjc.ox.ac.uk",
     "photo": "people/ayush-noori.jpg",
     "links": [
       {
@@ -388,14 +386,14 @@
       "Ayush Noori is a D.Phil. student in Engineering Science at the University of Oxford, where he is a Rhodes Scholar and Encode: AI for Science Fellow in the Computational Health Informatics (Clinical Machine Learning) group led by Prof. David Clifton. He completed his A.B. in Computer Science and Neuroscience (Phi Beta Kappa) and a Master's in Computer Science at Harvard University, and previously worked in Prof. Marinka Zitnik's lab at Harvard Medical School. He conducts research at the interface of artificial intelligence, neuroscience, and precision medicine, with a stated mission of developing AI technologies that expand personalized diagnostic and therapeutic possibilities for neurological and other challenging diseases. He reports an extensive research record, including 40+ publications (14 as first or co-first author) across venues such as Cell, Nature Neuroscience, Nature Machine Intelligence, and NEJM AI, and recognition including the Rhodes and Barry Goldwater Scholarships.",
       "His proposed research, TrialAgent, is an AI system for closed-loop, agentic clinical discovery from population-scale health records. It formulates hypotheses as target trials and combines EHR data with external biomedical evidence (omics, literature, experimental protocols) to prioritize hypotheses testable in both observational data and experimental systems, then dispatches subagents to build cohorts, adjust for confounders, and run causal analyses, iterating until a hypothesis is revised, retested, or nominated for prospective validation. The goal is to improve research productivity by intelligently allocating expensive validation investment, with early prototypes evaluated on synthetic EHRs and planned large-scale evaluation across multiple health systems.",
       "Ayush is active in the ML-for-health community, having served on the ML4H organizing committee (Co-Chair of Demos and Perspectives in 2024, Chair of Logistics in 2025). His long-term goal is to lead an independent research lab advancing knowledge-grounded AI for neurology. At the AHLI Summer Camp, he hopes to share his work and receive interdisciplinary feedback on his proposed research program, gain training in the regulatory, legal, and operational landscape of health-AI deployment and data partnerships, and connect with a broader cohort of emerging leaders through the workshops, small-group discussions, and team-building days."
-    ]
+    ],
+    "position": "D.Phil. student and Rhodes Scholar",
+    "email": "ayush.noori@sjc.ox.ac.uk"
   },
   {
     "slug": "benjamin-fox",
     "name": "Benjamin Fox",
-    "position": "PhD Student",
     "affiliation": "Icahn School of Medicine at Mount Sinai",
-    "email": "benmfox@me.com",
     "photo": "people/benjamin-fox.jpg",
     "links": [
       {
@@ -443,14 +441,14 @@
       "His research builds foundational transformer and joint-embedding (JEPA-style) models for physiological time-series data — including full-night, multichannel polysomnography for sleep staging and cardiovascular risk, and bedside monitoring data for real-time hypotension and cardiac arrest risk estimation. He is the first author of SleepJEPA and PhysioJEPA, and his sleep foundation model work (sometimes referred to as PFTSleep) drew media coverage as one of the largest studies of its kind. His broader interests span time series, wearables, omics, and natural language processing for health and social good.",
       "For the AHLI summer camp, Benjamin proposes identifying multimodal sleep-signal features (EEG, PPG, ECG, sleep stage, and body position from polysomnography) that are associated with glucose control, pairing PSG with continuous glucose monitor (CGM) data to better identify people at risk for metabolic disease.",
       "He is excited to attend for networking and potential postdoc collaborations, to share his current work and receive feedback from experts at the intersection of AI and health (especially in time series, wearables, and omics), and to learn additional techniques. He is also keen to participate in discussions on deployment of AI systems in health settings, AI safety, AI environmental/climate impacts, and AI policy."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "benmfox@me.com"
   },
   {
     "slug": "brighton-nuwagira",
     "name": "Brighton Nuwagira",
-    "position": "PhD Candidate",
     "affiliation": "University of Texas at Dallas",
-    "email": "bxb210001@utdallas.edu",
     "photo": "people/brighton-nuwagira.jpg",
     "links": [
       {
@@ -472,14 +470,14 @@
       "Brighton Nuwagira is a fifth-year Ph.D. candidate in Mathematics at the University of Texas at Dallas, advised by Dr. Baris Coskunuzer, and is expected to complete his degree in 2026. His academic path spans three continents: a B.Sc. with Education from Makerere University in Uganda, an M.Sc. in Mathematical Sciences from the African Institute for Mathematical Sciences (AIMS) in Senegal as a Mastercard Foundation Scholar, and a master's and doctoral training in mathematics and data science at UT Dallas. Before his graduate studies he taught high-school mathematics in Uganda.",
       "His research sits at the intersection of topological machine learning and medical image analysis, developing methods that integrate topological data analysis with deep learning to build robust, data-efficient, and interpretable models. He has a strong publication record in venues such as ICCV, MICCAI workshops, and the Machine Learning for Health (ML4H) Symposium, with first-authored work on cubical multiparameter persistence vectorizations (CuMPerLay, ICCV 2025), breast and ovarian cancer detection with topological deep learning, topological signatures in 3D medical imaging (TopoCAM), low-data medical imaging, and chest X-ray screening for TB and pneumonia. He has been active in the ML4H and CHIL communities as a roundtable junior chair and co-organizer of AMS topology sessions, and co-founded the Computational Intelligence Group, an international research network.",
       "For the AHLI Summer Camp, Brighton hopes to gain a clearer understanding of how to move his research from methodological development to real-world impact in health settings—learning how to frame problems for clinical use, how data is generated, what practical constraints matter, and how models should be evaluated beyond standard metrics. He is especially interested in learning from researchers working with multimodal data and real-world deployment challenges, and in becoming part of an open community at the intersection of machine learning and health as he continues developing robust and generalizable methods for healthcare."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "bxb210001@utdallas.edu"
   },
   {
     "slug": "chase-fensore",
     "name": "Chase Fensore",
-    "position": "PhD Candidate",
     "affiliation": "Emory University",
-    "email": "cfensor@emory.edu",
     "photo": "people/chase-fensore.jpg",
     "links": [
       {
@@ -517,14 +515,14 @@
       "Chase M. Fensore is a PhD candidate in Computer Science at Emory University, advised by Dr. Joyce C. Ho, with a tentative dissertation titled \"Personalizing Clinical Interventions with Multimodal Data and Generative Models: From Population Risk to Self-Management.\" He earned a B.S. in Computer Science & Engineering from The Ohio State University, where his honors thesis applied machine learning to Raman spectra. His work sits at the intersection of clinical NLP, LLM evaluation, information retrieval, and health equity, and he has been recognized with an NSF GRFP Honorable Mention (2024), a Shankar Fellowship through the Emory Diabetes Translational Accelerator, and a Laney Graduate School Fellowship.",
       "His research pursues two complementary threads. The first evaluates LLMs and retrieval-augmented generation (RAG) systems for patient-facing health question answering—examining whether domain-specific retrieval improves responses, how safely LLMs handle sensitive medical queries, and how to build benchmarks robust enough to capture real patient information needs—including contributions to SIGIR's LiveRAG challenge. The second integrates granular social determinants of health (SDOH) into clinical prediction, including a study of 33,000+ heart failure patients showing that individual SDOH indicators outperform composite indices on both predictive performance and algorithmic fairness, published in the Journal of the American Heart Association. He also co-founded Pelorus Health (now Zuki Health), a funded mobile app supporting collaborative diabetes management for children and parents, and remains a technology advisor. His proposed summer-camp project, DyMeS-QA, is a dynamic, persona-driven framework for generating and evaluating benchmarks for patient-facing medical RAG QA, designed to surface failure modes across populations and question types before deployment.",
       "Chase is excited to connect with other late-stage PhD students and researchers in ML for health and to get feedback on his proposed benchmark framework from an interdisciplinary audience. The camp's focus on evaluation methodology, equity assessment, and real-world deployment maps directly onto open questions in his work—particularly how to evaluate LLM-based patient QA tools for safety and equity before deployment. He also hopes to build relationships that extend beyond the program as he transitions from his dissertation toward an independent research agenda centered on patient-centered LLM/RAG tools with a focus on health equity, and to think rigorously about extending his framework beyond text-based QA."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "cfensor@emory.edu"
   },
   {
     "slug": "chi-en-amy-tai",
     "name": "Chi-en Amy Tai",
-    "position": "PhD Student",
     "affiliation": "University of Waterloo",
-    "email": "amy.tai@uwaterloo.ca",
     "photo": "people/chi-en-amy-tai.jpg",
     "links": [
       {
@@ -592,14 +590,14 @@
       "Chi-en Amy Tai is a PhD student in Computer Science at the University of Waterloo, working in Alexander Wong's Vision and Image Processing (VIP) Lab. She completed her M.A.Sc. in Systems Design Engineering at Waterloo—earning the Alumni Gold Medal for her thesis on medical imaging and computer vision for breast cancer—and a B.A.Sc. in Management Engineering, also at Waterloo, where she graduated with a 98% cumulative average and a second Alumni Gold Medal. Her research sits at the intersection of AI and health, with a focus on medical image analysis and computer vision for cancer care.",
       "She is a prolific contributor to open science, having authored a large body of journal and workshop papers as part of the Cancer-Net and NutritionVerse initiatives, which release open datasets and pretrained models for cancer diagnosis/prognosis and dietary intake estimation. Her work on synthetic correlated diffusion imaging for breast cancer has received substantial media coverage (CBC, CTV, Global News, and others), and she has presented widely at NeurIPS, CVPR, MICCAI, and ML4H workshops. Alongside her studies she has held applied scientist roles at Microsoft and a data science role at Capital One, and she actively mentors students and engages in outreach to promote women in STEM.",
       "Through the AHLI Summer Camp, Tai hopes to gain a deeper understanding of how machine learning can be applied responsibly in real-world health settings, including the regulatory, legal, and operational aspects of deployment such as ongoing auditing, human-AI interaction, and what distinguishes successful deployments from those that fall short. She is also looking forward to connecting with other researchers and practitioners, broadening her perspective, and building relationships that could lead to future collaborations beyond the program."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "amy.tai@uwaterloo.ca"
   },
   {
     "slug": "daeun-kyung",
     "name": "Daeun Kyung",
-    "position": "PhD Student",
     "affiliation": "KAIST",
-    "email": "kyungdaeun@kaist.ac.kr",
     "photo": "people/daeun-kyung.jpg",
     "links": [
       {
@@ -638,14 +636,14 @@
       "Daeun Kyung is a PhD student in the Kim Jaechul Graduate School of AI at KAIST (integrated master's/doctoral program, expected August 2026), advised by Prof. Edward Choi. She earned her undergraduate degree in Electrical Engineering and Computer Science from the Gwangju Institute of Science and Technology (GIST), where she received an EECS Outstanding Bachelor's Research Award. Her research centers on large language models and multimodal learning for healthcare, with deep experience in both model development and dataset construction aimed at robust, trustworthy AI.",
       "Her work spans clinical dialogue simulation, cross-modal reasoning over EHRs and medical imaging, and medical image generation. Notable projects include PatientSim, a persona-driven simulator of realistic doctor-patient interactions (NeurIPS 2025 Datasets and Benchmarks, Spotlight); EHRXDiff, a latent diffusion framework for predicting future chest X-rays from longitudinal EHR data (CHIL 2025); EHRXQA, the first multimodal QA dataset integrating structured EHRs with chest X-ray images (NeurIPS 2023); and PerX2CT, a perspective-projection 3D CT reconstruction method that won the ICASSP 2023 Best Student Paper Award. She also interned at LG AI Research, where her work on zero-shot X-ray pathology classification was published in Scientific Reports. Her proposed summer-camp project trains persona-responsive LLM-based doctor agents via reinforcement learning, building on PatientSim with multi-objective rewards that jointly optimize diagnostic accuracy, patient satisfaction, and conversational quality.",
       "Daeun hopes the camp will help her broaden her perspective beyond academic research: developing a clearer understanding of the real-world deployment landscape (regulatory, legal, and operational considerations), sharpening how she frames and evaluates health AI problems with an emphasis on meaningful metrics and equity-aware evaluation, and building lasting relationships with peers and mentors who share a commitment to health AI. In return, she hopes to contribute her experience across EHR data, medical imaging, and evaluation design, grounded in close collaboration with clinicians."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "kyungdaeun@kaist.ac.kr"
   },
   {
     "slug": "dipendra-pant",
     "name": "Dipendra Pant",
-    "position": "PhD Student",
     "affiliation": "Norwegian University of Science and Technology",
-    "email": "dipendra.pant@ntnu.no",
     "photo": "people/dipendra-pant.jpg",
     "links": [
       {
@@ -672,14 +670,14 @@
       "His research centers on applying causal inference, predictive modeling, and longitudinal EHR analysis to child and adolescent mental health. He has published work visualizing patient trajectories and disorder co-occurrences, forecasting readmission risk, and establishing frameworks for the secondary use of health records in treatment planning, alongside contributions on synthetic data generation for privacy. He brings a broad technical background spanning machine learning frameworks (TensorFlow, PyTorch, scikit-learn), full-stack web development, and cloud/DevOps tooling, and has authored a book on statistics for data scientists.",
       "For the proposed project, Dipendra aims to move clinical AI from predicting crises to prescribing solutions, developing a \"causal trajectory alignment\" tool that uses counterfactual inference and conditional average treatment effects to recommend interventions most likely to stabilize a patient's trajectory.",
       "At the summer camp, he hopes to learn about approaching clinical decision-making, how multimodal data and the data-generation process shape problem solvability, the practical design and evaluation of causal inference models from the speakers, and navigating funding across government, industry, and philanthropy."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "dipendra.pant@ntnu.no"
   },
   {
     "slug": "divyam-madaan",
     "name": "Divyam Madaan",
-    "position": "PhD candidate",
     "affiliation": "New York University",
-    "email": "divyam.madaan@nyu.edu",
     "photo": "people/divyam-madaan.jpg",
     "links": [
       {
@@ -716,14 +714,14 @@
       "Divyam Madaan is a fifth-year PhD candidate in Computer Science at New York University's Courant Institute of Mathematical Sciences, advised by Sumit Chopra and Kyunghyun Cho. He earned his M.S. from the School of Computing at KAIST (2019–2021), where he was advised by Sung Ju Hwang and worked on adversarial robustness and continual learning, and his B.E. (with Honors) in Information Technology from Panjab University, India. He has held research roles at NVIDIA (continual learning with heterogeneous architectures), FOR.ai (sparse ensembles and adversarial robustness, with Aidan Gomez and Yarin Gal), and the Celestini Project India.",
       "His research focuses on developing methods that effectively harness information from multiple modalities and on improving models' ability to perform consistently across future time periods, with a strong emphasis on healthcare applications. His work has appeared at venues including NeurIPS, ICML, ICLR (with oral and spotlight presentations), and CVPR, spanning multi-modal learning, continual learning, and medical imaging. His proposed summer-camp project, \"Better Multi-Modal Learning Enables Active Data Collection,\" envisions calibrated, interpretable, and adaptive multi-modal clinical assistants that quantify their own uncertainty, abstain when information is insufficient, and reason about which additional data would offer the greatest diagnostic gain at the lowest patient risk.",
       "As he prepares to transition into an academic career, Divyam views the summer camp as an opportunity to build his long-term professional community. He will defend his PhD this summer and will join Shalmali Joshi's lab as a postdoctoral fellow in the fall to focus on machine learning for healthcare. He hopes to gain feedback on his long-term research vision—ensuring his work is both technically and clinically meaningful—and to deepen existing connections while forming new collaborations that will support and challenge his work throughout his career."
-    ]
+    ],
+    "position": "PhD candidate",
+    "email": "divyam.madaan@nyu.edu"
   },
   {
     "slug": "dominik-becker",
     "name": "Dominik Becker",
-    "position": "PhD Candidate",
     "affiliation": "Georg-August University Göttingen, Germany",
-    "email": "dominik.becker1@uni-goettingen.de",
     "photo": "people/dominik-becker.jpg",
     "links": [
       {
@@ -747,14 +745,14 @@
       "Dominik Becker is a fourth-year PhD candidate in machine learning for medical imaging at the Institute of Computer Science (Sinz Lab) at the University of Göttingen, where he has worked since November 2022. His academic path is unusually interdisciplinary: he holds a B.Sc. in Business Administration and an M.Sc. in Applied Statistics, both from Göttingen, with a master's thesis on lung segmentation and implicit representation in continuous 3D space using occupancy networks. He was awarded a scholarship from the Studienstiftung des deutschen Volkes (German National Academic Foundation).",
       "His research focuses on learning-based reconstruction for electrical impedance tomography (EIT), a portable, low-cost, radiation-free imaging modality with potential for continuous bedside lung monitoring. Because in vivo conductivity ground truth cannot be obtained from living patients, he develops a physics-informed, simulation-to-learning framework: anatomically realistic digital twins derived from CT images are turned into volumetric meshes, the forward EIT problem is solved with the finite element method (FEM), and the resulting synthetic measurement–conductivity pairs train machine learning models for the inverse reconstruction problem. His work was published as \"RESIST: Remapping EIT Signals Using Implicit Spatially-Aware Transformer\" (PMLR, presented at ML4H 2024). His research interests span inverse problems, medical image reconstruction, physics-informed learning, and implicit neural representations.",
       "At the summer camp, Dominik hopes to gain meaningful exchange with active researchers in the field, learning from their experiences, perspectives, and ideas, and to make new connections with peers who share his interests. He also wants to broaden his view of future possibilities by exploring different paths, innovations, and ways of thinking he may not have previously considered."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "dominik.becker1@uni-goettingen.de"
   },
   {
     "slug": "ferdaous-idlahcen",
     "name": "Ferdaous Idlahcen",
-    "position": "PhD Candidate",
     "affiliation": "Mohammed VI Polytechnic University",
-    "email": "ferdaous.idlahcen@um6p.ma",
     "photo": "people/ferdaous-idlahcen.jpg",
     "links": [
       {
@@ -809,14 +807,14 @@
       "Her research focuses on translational, AI-driven computational pathology — using deep learning, foundation models, and attention-based multiple instance learning (MIL) to bring clinical pathology tools into real-world practice, with particular attention to low-resource African settings and the Global South. She has published in venues including *Artificial Intelligence Review*, *Microscopy Research and Technique*, and several SciTePress/Springer conferences, and presented at the European Congress of Digital Pathology. Her honors include the L'Oréal–UNESCO For Women in Science Young Talents Maghreb Award (2025), a Coimbra Group Fellowship, and awards at the Deep Learning Indaba, and she has attended summer schools including EEML, the African Computer Vision Summer School, and Oxford ML.",
       "For the AHLI summer camp, she proposes work on predicting HRD and gBRCA1/2 mutation status directly from Moroccan H&E-stained histopathology whole-slide images using foundation models and attention-based MIL, with interpretable identification of mutation-associated tissue patches — aiming for a faster, lower-cost screening alternative to next-generation sequencing that performs well on underrepresented African cohorts.",
       "She hopes to gain from the camp's rare, comprehensive package of intensive, applicable lectures. Given the complexity of her field and her experience across academia and industry building clinical prototypes — including challenges around data collection and deployment in real African settings, and why projects fail despite strong research — she sees the inaugural Health AI Summer Camp as a uniquely valuable opportunity to learn material that is usually taught only in separate pieces."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "ferdaous.idlahcen@um6p.ma"
   },
   {
     "slug": "guilherme-seidyo-imai-aldeia",
     "name": "Guilherme Seidyo Imai Aldeia",
-    "position": "Postdoc fellow",
     "affiliation": "Boston Children's Hospital, Harvard Medical School",
-    "email": "guilherme.imaialdeia@childrens.harvard.edu",
     "photo": "people/guilherme-seidyo-imai-aldeia.jpg",
     "links": [
       {
@@ -840,14 +838,14 @@
       "Guilherme Seidyo Imai Aldeia is a first-year postdoctoral fellow in the CavaLab (William La Cava's clinical AI group) within the Computational Health Informatics Program at Boston Children's Hospital and Harvard Medical School. He completed his PhD in Computer Science at the Federal University of ABC (UFABC) in Brazil in December 2025, with prior degrees in computer science and neuroscience from the same institution and training at the Latin-American Summer School in Computational Neuroscience. He is an advanced programmer in Python, C++, and Julia, with 14 publications and 200+ citations spanning journals such as Philosophical Transactions of the Royal Society A, IEEE Transactions on Evolutionary Computation, and Genetic Programming and Evolvable Machines.",
       "His research interests center on model interpretability, explainable AI, and data visualization for healthcare prediction and modeling. His doctoral and early-career work focused on symbolic regression and interpretability, and he has more recently applied large language models to learn computable phenotypes for treatment-resistant hypertension from EHR data and worked with fMRI data and neural networks for temporal signals. His proposed AHLI project develops interpretable AI tools for brain disorder diagnosis using resting-state fMRI: he aims to build foundation transformers and long-sequence temporal encoders that preserve the temporal dimension of rs-fMRI, integrate multimodal signals such as heart rate, and adapt Grad-CAM-style methods to produce clinically meaningful explanations across cohorts including pediatric headache, ADHD, and autism datasets.",
       "Guilherme hopes to use the AHLI Summer Camp to build connections with other researchers and potential collaborators as he transitions from a computer science and neuroscience background toward broader healthcare applications. Coming from South America and aiming to remain in academia in the United States, he sees the camp as a chance to mature his research, refine the ideas in his proposed research plan (which bridges his current work toward a long-term K99 goal), and shape his path toward becoming an independent researcher."
-    ]
+    ],
+    "position": "Postdoc fellow",
+    "email": "guilherme.imaialdeia@childrens.harvard.edu"
   },
   {
     "slug": "ha-le",
     "name": "Ha Le",
-    "position": "PhD Candidate",
     "affiliation": "Northeastern University",
-    "email": "le.ha1@northeastern.edu",
     "photo": "people/ha-le.jpg",
     "links": [
       {
@@ -885,14 +883,14 @@
       "Ha Le is a fourth-year Ph.D. candidate in Computer Science (HCI) at Northeastern University's Khoury College of Computer Sciences, co-advised by Stephen Intille and Varun Mishra. She earned a B.S. in Mathematics and Computer Science from Gustavus Adolphus College and an M.S. in Computer Science from Northeastern. She builds multimodal, human-centered AI/ML systems that adapt to and incorporate user feedback to improve the detection of human activities, behaviors, and health-related outcomes.",
       "Her research focuses on human activity recognition (HAR) from wearable and mobile sensors, with an emphasis on personalized, adaptive systems rather than large static foundation models. She develops human-in-the-loop methods for incremental learning—letting users define new activities, confirm sensor relevance, and correct labels—and on data-acquisition tools such as micro ecological momentary assessment (µEMA) delivered through brief smartwatch prompts. Her work has produced multiple first-author publications at competitive venues including IMWUT and CHI, alongside collaborative projects on agentic LLM systems for reconciling activity labels, sleep-disruption detection, and an NIH-supported just-in-time adaptive intervention for people with spinal cord injuries, where she serves as the main technical lead. She has received an Apple AI/ML Fellowship and a Northeastern Outstanding PhD Students Award.",
       "For the AHLI Summer Camp, Ha hopes to engage with the ML-for-health community by both sharing her work and learning from others. She is especially interested in presenting her ideas to a specialized audience and getting feedback to improve her research, learning about different approaches and challenges that broaden her perspective, and finding opportunities for collaboration. She values the chance to connect with people in the ML4Health community and build relationships that support future research."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "le.ha1@northeastern.edu"
   },
   {
     "slug": "hangyul-yoon",
     "name": "Hangyul Yoon",
-    "position": "MD-PhD candidate",
     "affiliation": "Korea Advanced Institute of Science and Technology (KAIST)",
-    "email": "hangyulmd@kaist.ac.kr",
     "photo": "people/hangyul-yoon.jpg",
     "links": [
       {
@@ -914,14 +912,14 @@
       "Hangyul Yoon is a board-certified physician in radiation oncology and a final-year MD-PhD candidate at the Kim Jaechul Graduate School of AI at KAIST, advised by Prof. Eunho Yang and supported by Korea's Medical Scientist Training Program (funded by the Ministry of Science and ICT). He completed his medical degree at Yonsei University College of Medicine, an M.S. at Sungkyunkwan University College of Medicine (supervised by Dongryul Oh), an internship at Severance Hospital, and a radiation oncology residency at Samsung Medical Center, where he gained extensive radiotherapy experience across a wide range of cancers and earned board certification from the Korean Society for Radiation Oncology.",
       "His research lies at the intersection of artificial intelligence and medicine, focusing on multimodal models, data-efficient learning for medical imaging, and clinically grounded reasoning. He has authored more than ten publications, including work on 4D medical image interpolation (CVPR 2024), one-shot medical image segmentation (Med-PerSAM), and benchmarks and datasets for chest X-ray interpretation and diagnostic reasoning (e.g., CXReasonBench, a NeurIPS 2025 Spotlight; EHRNoteQA, NeurIPS 2024; and instruction-guided lesion segmentation at CVPR 2026). As a visiting researcher at NAVER Healthcare AI (2022–2025) he contributed to trustworthy benchmarks for evaluating LLMs on EHR discharge summaries and to improving foundation-model performance on the Korean medical licensing examination. His proposed project develops an automated pipeline that generates million-scale lesion masks and instruction-answer pairs from chest X-rays without human annotation (MIMIC-ILS / ROSALIA), with a forward-looking aim of reinforcement learning that incorporates physician preferences for self-correcting medical reasoning and segmentation.",
       "As a final-year MD-PhD candidate, Hangyul hopes to bring his distinctive clinician-scientist perspective to the camp's discussions with participants and speakers. Because he has conducted his research and studies outside the US and Europe, he especially values the opportunity to exchange experiences and build networks with researchers and students from top institutions and major technology companies, which he believes will help shape his future career path and research direction."
-    ]
+    ],
+    "position": "MD-PhD candidate",
+    "email": "hangyulmd@kaist.ac.kr"
   },
   {
     "slug": "haoran-zhang",
     "name": "Haoran Zhang",
-    "position": "PhD Student",
     "affiliation": "MIT",
-    "email": "haoranz@mit.edu",
     "photo": "people/haoran-zhang.jpg",
     "links": [
       {
@@ -957,14 +955,14 @@
       "Haoran Zhang is a fifth-year PhD student at the MIT Laboratory for Information and Decision Systems (LIDS), advised by Dr. Marzyeh Ghassemi. His research focuses on improving the reliability of machine learning systems in healthcare, studying how bias, distribution shifts, and label noise arise in clinical data and models, and designing methods that improve robustness, calibration, and equity in practice. He completed a Master of Science in Computer Science at the University of Toronto (advised by Marzyeh Ghassemi and Quaid Morris) and a Bachelor of Engineering in Chemical Engineering at McMaster University before beginning his doctorate at MIT.",
       "His work has produced some of the first end-to-end fairness audits of clinical ML systems across text, tabular data, and medical imaging, with first-author papers at NeurIPS, ICML, and CHIL, and co-first-authored work in Nature Medicine on the limits of fair medical imaging AI in real-world generalization. Beyond research, he has been a central organizer in the Machine Learning for Health (ML4H) community, serving as General Chair of ML4H in 2024 and 2025, and has held visiting and applied-science roles at Stanford and Amazon AWS.",
       "His research agenda aims to build a holistic framework for evaluating and mitigating fairness in clinical ML systems—spanning the full pipeline from data and labels through deployment and clinical integration—so that the benefits of clinical AI are distributed equitably across patient populations. Through the AHLI Summer Camp, he hopes to build connections with other senior PhD students and researchers, form relationships that could lead to future collaborations, and develop new research ideas by engaging with the different perspectives and methods of the camp's interdisciplinary attendees and speakers."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "haoranz@mit.edu"
   },
   {
     "slug": "helena-coggan",
     "name": "Helena Coggan",
-    "position": "Postdoctoral Research Fellow",
     "affiliation": "Boston Children's Hospital",
-    "email": "helena.coggan@childrens.harvard.edu",
     "photo": "people/helena-coggan.jpg",
     "links": [
       {
@@ -1019,14 +1017,14 @@
       "Helena Coggan is a first-year postdoctoral research fellow in the Computational Health Informatics Program (CHIP) at Boston Children's Hospital, working in William La Cava's lab (the Cava Lab) within Harvard Medical School's Faculty of Pediatrics. She trained as a physicist and computational biologist, earning a BA and MSci in Natural Sciences (Physics) from the University of Cambridge before completing a PhD in computational biology at University College London (2021–2025), funded by the EPSRC. Her doctoral work, supervised by Prof. J. Fisher in collaboration with the McGranahan and Swanton labs, built highly parallelized agent-based models of organoid growth and lung tumour evolution and applied Bayesian and machine learning methods to infer mechanisms from in vitro and TRACERx patient-cohort data.",
       "Since joining the Cava Lab, Helena has shifted her focus to machine learning for health, conducting large-scale epidemiological analyses of electronic health record databases to study how demographic characteristics influence clinician decision-making in the emergency department, and developing real-time fairness-monitoring algorithms for clinically deployed ML tools. Her proposed summer-camp project centers on real-time clinical decision support: building ML models to predict a patient's risk against the four CMS Emergency Care Access and Timeliness (ECAT) outcomes and using in-silico clinical trials to evaluate alternative patient-prioritization schemes, drawing on a retrospective dataset of more than 800,000 pediatric ED visits.",
       "Helena is building her career in US academia after completing her PhD in Europe and hopes the camp will help her form valuable connections, identify peers and mentors, and acclimatize to networking norms in a US context. Beyond getting feedback on her project, she is eager to strengthen her ability to communicate grant ideas and future research plans—a skill distinct from presenting completed work—and to learn more about the state of the art in ML for health, particularly regulatory and implementation science relevant to clinical decision support. (She is also a published author/novelist, an interest separate from her academic work.)"
-    ]
+    ],
+    "position": "Postdoctoral Research Fellow",
+    "email": "helena.coggan@childrens.harvard.edu"
   },
   {
     "slug": "hiba-ahsan",
     "name": "Hiba Ahsan",
-    "position": "PhD student",
     "affiliation": "Northeastern University",
-    "email": "ahsan.hi@northeastern.edu",
     "photo": "people/hiba-ahsan.jpg",
     "links": [
       {
@@ -1072,14 +1070,14 @@
       "Hiba Ahsan is a Ph.D. student in Computer Science at Northeastern University's Khoury College of Computer Sciences, advised by Prof. Byron C. Wallace, with an expected graduation in late 2026. She earned a B.Tech. in Information Technology from the National Institute of Technology Karnataka and an M.S. in Computer Science from the University of Massachusetts Amherst, and brings substantial industry experience, including three years as a research engineer at Microsoft (Bing Advertising) and research internships at Netflix, LinkedIn, and Codametrix.",
       "Her research is in clinical natural language processing, focused on understanding and mitigating the biases that large language models exhibit in healthcare. She is an early adopter of mechanistic interpretability methods for clinical LLMs: her work has used activation patching to localize where demographic information such as gender and race is encoded in model representations (EMNLP Findings 2025) and sparse autoencoders to reveal and ablate latent features tied to racial bias in clinical text (ICLR 2026, featured in Northeastern Global News). Earlier work includes a zero-shot LLM approach for retrieving and summarizing evidence from EHRs (CHIL 2024) and the MIMIC-SBDH dataset for social and behavioral determinants of health (MLHC 2021). Her current project develops methods to make clinical LLM reasoning monitorable through counterfactual fine-tuning, producing structured, verifiable atomic claims.",
       "For the AHLI Summer Camp, Hiba hopes to network with the ML-for-health community. She is excited to get feedback on her project, exchange ideas, and potentially start new collaborations."
-    ]
+    ],
+    "position": "PhD student",
+    "email": "ahsan.hi@northeastern.edu"
   },
   {
     "slug": "hyungjun-yoon",
     "name": "Hyungjun Yoon",
-    "position": "Ph.D. Candidate",
     "affiliation": "KAIST",
-    "email": "hyungjun.yoon@kaist.ac.kr",
     "photo": "people/hyungjun-yoon.jpg",
     "links": [
       {
@@ -1114,14 +1112,14 @@
       "Hyungjun Yoon is a Ph.D. candidate in Electrical Engineering at KAIST, advised by Sung-Ju Lee in the Networking and Mobile Systems Lab, where he serves as lab leader. He completed his BS in Computer Science at KAIST (cum laude) and is now in the integrated MS–PhD program. His research centers on foundation models and large language models for healthcare and mobile/physiological sensing, spanning the full pipeline from data collection and large-scale pre-training to on-device deployment and post-deployment user studies.",
       "His work includes pre-training foundation models for motion (IEEE TMC 2025) and earable ExG signals (ICLR 2026), adapting self-supervised sensory models to individual users (SenSys 2025), grounding multimodal LLMs with sensor data via visual prompting (EMNLP 2024), and multi-agent collaboration for multimodal sensing (ACL 2026). He has published at top venues including ICLR, EMNLP, CHI, SenSys, and IEEE Transactions on Mobile Computing, holds numerous patents, and has interned at Microsoft Research (with Lili Qiu) and Nokia Bell Labs (with Fahim Kawsar), as well as visiting NTU's WANDS group. His honors include the Qualcomm Innovation Fellowship and an ACM CHI 2022 Best Paper Honorable Mention.",
       "His summer camp research statement, \"Towards Personalized Health LLMs,\" proposes a training-free framework that personalizes health LLMs at test time through metadata-aware example selection and inference-time optimization, avoiding per-user fine-tuning. Through the camp, Hyungjun hopes to build connections with researchers across institutions, cultures, and fields whose collaboration could enrich his interdisciplinary work; to develop and refine the project in his research statement through feedback and possible collaboration; and, most importantly, to gain broader insight into the current and future landscape of health AI by learning how researchers from diverse backgrounds view the field's most important problems and opportunities."
-    ]
+    ],
+    "position": "Ph.D. Candidate",
+    "email": "hyungjun.yoon@kaist.ac.kr"
   },
   {
     "slug": "jiho-kim",
     "name": "Jiho Kim",
-    "position": "Postdoctoral Researcher",
     "affiliation": "KAIST",
-    "email": "jiho.kim@kaist.ac.kr",
     "photo": "people/jiho-kim.jpg",
     "links": [
       {
@@ -1156,14 +1154,14 @@
       "Jiho Kim is a postdoctoral researcher at KAIST, where he completed his Ph.D. in Artificial Intelligence (2021–2026) under Prof. Edward Choi after earning a B.S. in Electrical Engineering at the same institution. His research develops AI systems for healthcare, with a particular focus on LLM-based agents and simulation environments that support robust reasoning in clinical settings. More broadly, his work spans healthcare AI, conversational AI, agent reasoning, and simulation-based evaluation, unified by the goal of building reliable AI systems that can adapt and interact effectively in real-world clinical scenarios.",
       "His publication record includes work at top-tier venues such as NeurIPS, ICLR, ACL, and EMNLP. He led EHRCon (NeurIPS 2024 Datasets and Benchmarks, Spotlight), a dataset for checking consistency between unstructured notes and structured tables in EHRs, and contributed to PatientSim, a persona-driven simulator for doctor-patient interactions. He also created DialSim, a real-time simulator for evaluating long-term multi-party dialogue understanding (released as the `DialSim` Python package), and FactKG / KG-GPT, frameworks for reasoning and fact verification over knowledge graphs. His current projects develop tool-augmented agents that reason over large-scale EHR databases and LLM-based user simulators. He has also gained industry experience as an Applied Scientist Intern at Amazon and has taught hands-on sessions for the Korean Society of Artificial Intelligence in Medicine.",
       "For the AHLI Summer Camp, Jiho hopes to engage in discussions with instructors and speakers about the current and future directions of healthcare AI as the field advances rapidly. He looks forward to exchanging ideas and growing alongside other PhD students and postdoctoral researchers in healthcare AI, and he sees the networking opportunities the camp offers as valuable to his future as a researcher in the field."
-    ]
+    ],
+    "position": "Postdoctoral Researcher",
+    "email": "jiho.kim@kaist.ac.kr"
   },
   {
     "slug": "kyungdo-kim",
     "name": "Kyungdo Kim",
-    "position": "Graduate Student",
     "affiliation": "Duke University",
-    "email": "kyungdo.kim@duke.edu",
     "photo": "people/kyungdo-kim.jpg",
     "links": [
       {
@@ -1190,14 +1188,14 @@
       "Kyungdo Kim is a fourth-year PhD candidate in Biomedical Engineering at Duke University, working in the t.Dunn Lab under Prof. Timothy Dunn. He describes himself as a human-centered AI researcher focused on human behavior analysis, multimodal machine learning, and cognitive AI. He earned an M.S. in Cognitive Science and a B.A. in Materials Science and Engineering, both from Seoul National University, and brings substantial industry and clinical research experience, including a recent internship on Samsung Research America's Digital Health Team and prior work as a medical AI researcher at Seoul National University Hospital.",
       "His doctoral research spans 3D computer vision, EHRs, clinical NLP, speech, and biosignals, unified by a goal of explainable, personalized, intervention-aware medicine for neurological disorders. He leads the TULIP project, which uses a multi-camera markerless motion-capture system deployed in the Duke Neurology Clinic to build large-scale 3D movement datasets and interpretable digital biomarkers for Parkinson's disease. This work was published at CVPR 2024 and is expanding toward longitudinal, LLM-integrated models that link movement phenotypes to EHR trajectories for treatment planning and differential diagnosis.",
       "Kyungdo's interest in the camp is driven by community: he was selected for the CHIL 2025 doctoral symposium, where the most valuable experiences were the conversations with researchers approaching shared clinical motivations from different technical angles. As he approaches the later stages of his PhD, he hopes the AHLI Summer Camp's interdisciplinary environment, spanning computer science, public health, and clinical informatics, will deepen his thinking on real-world deployment and evaluation and help him build lasting connections with peers committed to making health AI work outside the lab."
-    ]
+    ],
+    "position": "Graduate Student",
+    "email": "kyungdo.kim@duke.edu"
   },
   {
     "slug": "louise-durand-janin",
     "name": "Louise Durand-Janin",
-    "position": "Machine Learning PhD student",
     "affiliation": "Inria and Doctolib",
-    "email": "louise.durand--janin@inria.fr",
     "photo": "people/louise-durand-janin.jpg",
     "links": [
       {
@@ -1222,14 +1220,14 @@
       "Louise Durand--Janin is a machine learning PhD student in the HeKA team at Inria (Inria, Inserm, Université Paris Cité), conducting a CIFRE doctorate jointly with Doctolib, the leading digital health company in France. She is supervised by Adrien Coulet (Inria), Ivan Lerner (Inria, AP-HP), Nicolas Barascud (Doctolib), and Fajwel Fogel (Doctolib). She completed the MVA (Mathematics, Vision, Learning) Master's at ENS Paris-Saclay with honors and a Master's in Applied Mathematics (Statistics) at Paris-Dauphine. Prior to her PhD, she worked as an AI research engineer with Pr. Xavier Jouven's team (developing predictive models for sudden cardiac death from the French SNDS database and optimizing ambulance redeployment in Paris with reinforcement learning) and as an AI research intern at Iktos, where she developed a flow-matching generative model for 3D peptide structures.",
       "Her PhD research focuses on EHR generative models, specifically developing a multimodal, text-centric, and longitudinal generative model that learns from heterogeneous electronic health record data to recommend the most appropriate next clinical interventions in outpatient care. Her approach extends recent next-event-prediction EHR generative models by integrating structured and textual clinical data through cross-attention mechanisms inspired by vision-language models, while exploring how large language models can produce interpretable clinical rationales for predicted care trajectories. Her training spans deep learning, generative models, optimal transport, and medical imaging, and she works with data sources including MIMIC-IV, UK Biobank, and Doctolib's proprietary outpatient data.",
       "At the summer camp, Louise hopes to connect with inspiring researchers, discover new research directions, and deepen her understanding of current challenges in Health AI. She is especially interested in gaining both scientific inspiration and practical insight for her work on EHR foundation models, a rapidly evolving area, and in learning directly from speakers and instructors whose work she encountered during her PhD literature review, ultimately strengthening her research vision and expanding her academic network."
-    ]
+    ],
+    "position": "Machine Learning PhD student",
+    "email": "louise.durand--janin@inria.fr"
   },
   {
     "slug": "reyhaneh-hosseinpourkhoshkbari",
     "name": "Reyhaneh Hosseinpourkhoshkbari",
-    "position": "Ph.D. Student",
     "affiliation": "The University of Texas at Dallas",
-    "email": "rxh210037@utdallas.edu",
     "photo": "people/reyhaneh-hosseinpourkhoshkbari.jpg",
     "links": [
       {
@@ -1259,14 +1257,14 @@
       "Her research centers on large-language-model-based virtual patients for medical education, with the goal of building simulated patients that are clinically grounded, behaviorally diverse, and educationally meaningful. Recent projects include realism evaluation of LLM-based virtual patients (via expert review, Turing tests, and linguistic analysis), personality-driven patient simulation, and the integration of Cognitive Diagnostic Models to assess clinical reasoning. She has also collaborated with her advisor on new misspecification tests for Cognitive Diagnostic Models, presented at the Annual Meeting of the Psychometric Society, and worked on personality prediction from text, emotion detection, and RAG/LLM fine-tuning. Her recent work has appeared at the Machine Learning for Health (ML4H) and NeurIPS GenAI4Health workshops.",
       "For her proposed research, she aims to develop a unified framework for LLM-based virtual patients that combines multi-level realism evaluation, controllable personality-driven behavior, and psychometric assessment of student–patient interactions to support scalable training in clinical reasoning and communication.",
       "As an international PhD student, she hopes the summer camp will offer guidance, perspective, and meaningful connections to grow academically and professionally. She is especially eager for the collaborative environment — to receive detailed feedback on her work on evaluating and applying virtual patients in healthcare education, to contribute actively to others' projects, and to engage with peers from different backgrounds whose interdisciplinary perspectives can reveal new research directions."
-    ]
+    ],
+    "position": "Ph.D. Student",
+    "email": "rxh210037@utdallas.edu"
   },
   {
     "slug": "roben-delos-reyes",
     "name": "Roben Delos Reyes",
-    "position": "PhD Candidate",
     "affiliation": "The University of Melbourne",
-    "email": "rdelosreyes@student.unimelb.edu.au",
     "photo": "people/roben-delos-reyes.jpg",
     "links": [
       {
@@ -1314,14 +1312,14 @@
       "Roben Delos Reyes is a PhD candidate in the School of Computing and Information Systems at The University of Melbourne, supervised by Prof. Nicholas Geard and Prof. Daniel Capurro, with a planned thesis submission in mid-2026. His path into health informatics is internationally varied: a B.S. in Computer Science (magna cum laude) from the University of the Philippines Diliman, an M.S. in Electrical Engineering from KAIST in Korea, AI research roles in industry (sleep-staging and speech enhancement), and a recent six-month research internship on crisis informatics at the National Institute of Informatics in Tokyo.",
       "His doctoral research develops methods for the dynamic evaluation of predictive ML models in healthcare using agent-based modelling. Rather than evaluating clinical ML models in isolation, he builds healthcare-environment simulators, such as an emergency department ABM calibrated on MIMIC-IV, that explicitly represent system conditions (patient demand, resource capacity, clinical workflows) and generate synthetic EHR data. This enables both robustness evaluation under shifting conditions (e.g., mass casualty incidents and disasters) and impact evaluation of how model predictions feed back into system outcomes. His work has appeared in Computers in Biology and Medicine, the International Journal of Disaster Risk Reduction, and the Journal of Artificial Societies and Social Simulation, and will be presented at CHIL 2026. He holds an honorary appointment at The Royal Melbourne Hospital and contributes to collaborative work on ethical, \"curiosity-driven and humble\" clinical AI.",
       "At the AHLI Summer Camp, Roben hopes to gain feedback and mentorship on his proposed research and opportunities for collaboration to strengthen its real-world impact, to build connections within a diverse interdisciplinary health-AI community, and to deepen his understanding of key topics and emerging directions in ML for health."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "rdelosreyes@student.unimelb.edu.au"
   },
   {
     "slug": "sameer-neupane",
     "name": "Sameer Neupane",
-    "position": "Post Doctoral Scholar",
     "affiliation": "University of California San Francisco",
-    "email": "sameer.neupane@ucsf.edu",
     "photo": "people/sameer-neupane.jpg",
     "links": [
       {
@@ -1355,14 +1353,14 @@
       "Sameer Neupane is a first-year postdoctoral scholar at UCSF, where he works in the TECH Lab with Peter Washington in the Division of Clinical Informatics and Digital Transformation. He completed his PhD in Computer Science at the University of Memphis in late 2025 under Santosh Kumar, working in the mDOT Center, after earlier earning a bachelor's degree in Electronics and Communication Engineering in India and spending four years as a software engineer at OpenText. His research sits at the intersection of digital health, human-centered AI, and machine learning, with a particular focus on wearable sensing, large language models, and human-computer interaction. His doctoral work includes the nationwide MOODS study on stress management with wearables, contributions to an open-source PPG foundation model, and studies integrating wearable triggers with LLM-driven interventions, published at venues such as CHI and UbiComp.",
       "At UCSF, his work spans multimodal, self-supervised modeling of wearable biosignals for depression and anxiety detection, human-in-the-loop AI for neurodevelopmental assessment (ADHD and autism), and just-in-time adaptive interventions for mental health. His summer camp research statement proposes a two-stage, confidence-aware pipeline that uses multimodal LLMs to extract behavioral features from video, audio, and transcripts collected via the lab's SocialPlai platform, then classifies ASD/ADHD outcomes while routing only low-confidence cases for human review.",
       "Through the summer camp, Sameer hopes to deepen his understanding of cutting-edge machine learning methods for multimodal data, especially representation learning and uncertainty-aware modeling, and to strengthen the methodological rigor of his approach to designing robust architectures, evaluating model reliability, and integrating human-in-the-loop systems. He is also eager to collaborate with peers, exchange ideas, and build connections as he prepares to transition into a faculty role, where interdisciplinary collaboration and research leadership will be central."
-    ]
+    ],
+    "position": "Post Doctoral Scholar",
+    "email": "sameer.neupane@ucsf.edu"
   },
   {
     "slug": "sanjana-ramprasad",
     "name": "Sanjana Ramprasad",
-    "position": "PhD Student",
     "affiliation": "Northeastern University",
-    "email": "ramprasad.sa@northeastern.edu",
     "photo": "people/sanjana-ramprasad.jpg",
     "links": [
       {
@@ -1390,14 +1388,14 @@
       "Sanjana Ramprasad is a final-year PhD candidate in Computer Science at Northeastern University, advised by Byron C. Wallace in the Khoury College NLP group; she expects to graduate shortly and begin a postdoctoral appointment (at Stanford). She earned an MSc in Computer Science from SUNY Buffalo (working on handwriting verification with CNNs) and a BE in Information Science from PESIT, and previously worked as a machine learning engineer at Mya Systems before her PhD. During her PhD she interned multiple times at Abridge AI, working with Zachary Lipton and Elisa Ferracane.",
       "Her research is in natural language processing for healthcare, with a focus on identifying and mitigating hallucinations in large language models, especially for clinical applications. Her thesis examines reliable summarization through the lens of factuality, hallucination patterns, and metrics. Representative work includes TrialsSummarizer for medical evidence synthesis (EACL 2023 demo), evaluating the factuality of zero-shot summarizers across domains (EACL 2024), analyzing circumstantial hallucination trends in dialogue summarization (ACL 2024), and a critical evaluation of automatic factuality metrics (NeurIPS 2025). She is a recipient of the Khoury Graduate Fellowship.",
       "Her summer camp research statement proposes using mechanistic interpretability to probe and steer an LLM's internal representation of \"factual strictness,\" enabling context-aware, user-controlled tolerance for confabulation, so that models can be held to strict factuality in high-stakes settings while allowing plausible inferences where appropriate. Because she plans to graduate within a month and start a postdoc in AI/healthcare, she hopes the camp's guidance and mentorship will help her scope projects and plan her postdoctoral research on making LLMs more reliable, interpretable, and controllable for use by healthcare experts. She also hopes to refine her broader vision for how factuality should be measured, detected, and controlled in healthcare, and to find potential collaborators across CS/AI and healthcare."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "ramprasad.sa@northeastern.edu"
   },
   {
     "slug": "seyedeh-somayyeh-mousavi",
     "name": "Seyedeh Somayyeh Mousavi",
-    "position": "Computer Science and Bioinformatics",
     "affiliation": "Emory University",
-    "email": "seyedeh.somayyeh.mousavi@emory.edu",
     "photo": "people/seyedeh-somayyeh-mousavi.jpg",
     "links": [
       {
@@ -1430,14 +1428,14 @@
       "Seyedeh Somayyeh Mousavi is a fourth-year PhD candidate in Computer Science and Bioinformatics in the Department of Biomedical Informatics at Emory University School of Medicine, where she is advised by Dr. Reza Sameni in the Alphanumerics Lab. Her doctoral work centers on demographic-aware artificial intelligence for cardiovascular risk prediction, using both longitudinal and cross-sectional analyses of electrocardiogram (ECG) and electronic health record data. Before joining Emory, she earned an M.Sc. in Biomedical Engineering (Bioelectric) and a B.Sc. in Electrical Engineering from the University of Zanjan in Iran, with a long-standing focus on biomedical signal processing and cuff-less blood pressure estimation.",
       "Her research spans machine learning and deep learning analysis of ECGs in congenital heart disease, the development of open-source ECG feature-extraction tooling, and large-scale studies of bias in blood pressure measurement—including a population-wide analysis of more than 75 million blood pressure encounters from Emory Healthcare. She has published in venues such as Physiological Measurement, MDPI Sensors, and the IEEE EMBC conference, and has been recognized with awards including the IEEE EMBC NextGen Scholar Award and multiple best-thesis honors.",
       "Mousavi's stated long-term goal is to build an academic career as a faculty member and establish an independent research laboratory advancing equitable, data-driven approaches in cardiology and cardiovascular medicine. She is particularly interested in robust AI models that integrate cross-sectional and longitudinal health data to improve early detection, risk stratification, and personalized management of cardiovascular disease. She hopes the AHLI Summer Camp will help her broaden her interdisciplinary perspective by engaging with leading researchers in AI, bioengineering, and clinical science, and will help her refine her vision for building impactful, clinically translatable research programs in academia."
-    ]
+    ],
+    "position": "Computer Science and Bioinformatics",
+    "email": "seyedeh.somayyeh.mousavi@emory.edu"
   },
   {
     "slug": "simon-lee",
     "name": "Simon Lee",
-    "position": "PhD Candidate",
     "affiliation": "UCLA",
-    "email": "simonlee711@g.ucla.edu",
     "photo": "people/simon-lee.jpg",
     "links": [
       {
@@ -1492,14 +1490,14 @@
       "Simon has been notably productive for his career stage, with work at venues including ICLR, ICML (where he received a Spotlight), CHIL, and ML4H, and journal submissions to npj Digital Medicine, Nature Communications, and NEJM AI. He is a contributor to the MEDS data standard ecosystem for reproducible health AI and released Clinical ModernBERT, a long-context clinical text encoder with over 120,000 downloads on Hugging Face. He has gained industry experience as a Student Researcher at Google Research, an AI Resident at Samsung Research America, and a Data Scientist at Celsius Therapeutics, and he actively reviews for major ML venues and mentors UCLA students.",
       "For the AHLI summer camp, Simon proposes developing predictive \"health world models\" that learn patient trajectories as dynamical systems — using JEPA-style architectures to model how patient states evolve under interventions across EHR and wearable data, enabling long-horizon forecasting, counterfactual reasoning, and realistic trajectory generation.",
       "He hopes to use the camp to engage with the latest research and network with emerging scientists in the field, understand recent progress and directions, build professional networks, and begin establishing his own name and brand for future employment and collaboration opportunities."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "simonlee711@g.ucla.edu"
   },
   {
     "slug": "tahmina-sultana-priya",
     "name": "Tahmina Sultana Priya",
-    "position": "Graduate Research Assistant",
     "affiliation": "Virginia Polytechnic Institute and State University",
-    "email": "tpriya@vt.edu",
     "photo": "people/tahmina-sultana-priya.jpg",
     "links": [
       {
@@ -1531,14 +1529,14 @@
       "Her research focuses on machine learning for health, explainable AI, precision medicine, and bioinformatics — building data-driven, unsupervised, and subgroup-specific predictive models to characterize disease heterogeneity and progression. Through research internships at Mayo Clinic's Division of Computational Biology (advised by Dr. Shulan Tian), she has worked extensively on subtyping metabolic dysfunction-associated steatotic liver disease (MASLD) by integrating EHR and population genomics, including a first-author paper accepted at Nature Communications and a submission to Machine Learning for Healthcare on predicting rapid fibrosis progression. She is a Pratt Fellow at Virginia Tech.",
       "For the AHLI summer camp, she proposes a framework for explainable, causal-aware patient subtyping that integrates causal structure estimation with knowledge-guided LLMs and counterfactual explanations, validated on MASLD cohorts from Mayo Clinic, to move beyond feature-based clustering toward transparent, clinically meaningful patient stratification.",
       "She hopes the camp will let her share her research while deepening her understanding of machine learning for health through exposure to emerging directions. As a PhD candidate graduating this fall and planning an academic career, she is especially interested in strengthening her ability to bridge methodological development with clinically meaningful, interpretable, and actionable applications, gaining insight into real-world health-AI challenges, and finding opportunities for collaboration (and postdoc positions) within the community."
-    ]
+    ],
+    "position": "Graduate Research Assistant",
+    "email": "tpriya@vt.edu"
   },
   {
     "slug": "tanmoy-sarkar-pias",
     "name": "Tanmoy Sarkar Pias",
-    "position": "Postdoctoral Scholar",
     "affiliation": "Stanford University",
-    "email": "tspias@stanford.edu",
     "photo": "people/tanmoy-sarkar-pias.jpg",
     "links": [
       {
@@ -1606,14 +1604,14 @@
       "Tanmoy Sarkar Pias is a first-year postdoctoral scholar in the Integrative Personalized Medicine Laboratory at Stanford Medicine (Stanford Radiology), working with Prof. Mirabela Rusu on multimodal, multi-task vision foundation models for cancer detection and surgical guidance. He earned his PhD in Computer Science from Virginia Tech in 2025, with a dissertation on advancing trustworthiness in machine learning models through systematic evaluation and deficiency mitigation, along with M.S. (Virginia Tech) and B.S. (BUET) degrees in computer science. He has a prolific publication record across medical AI, computer vision, EEG/biosignals, and trustworthy ML, including a Communications Medicine paper on the low responsiveness of ML models to deteriorating health conditions that received broad media coverage.",
       "His research sits at the intersection of medical image analysis and computer vision, with deep expertise in robust and trustworthy ML, fairness and bias mitigation, explainability (SHAP/LIME, gradient-based methods), synthetic data generation for edge-case stress testing, and large language models. His proposed AHLI project is H-Net, a hybrid Swin Transformer and convolutional network that jointly performs 3D multi-modal image registration and cancer segmentation, so that the two tasks act as mutual spatial regularizers. Validated on biopsy-confirmed MRI-TRUS prostate cases across institutions, the framework is designed to generalize to other image-guided interventions such as liver and breast biopsy, neurosurgical planning, and cardiac guidance.",
       "Tanmoy is preparing for a faculty career and hopes the AHLI Summer Camp will give him a clearer framework for translating his multimodal image-guided cancer detection work into a broader research agenda focused on real-world deployment and clinical impact. He wants to engage with researchers thinking seriously about evaluation, bias, and clinical translation, sharpen how he communicates the significance of his work to interdisciplinary audiences, build relationships with peers at a similar career stage, and develop the perspective needed to lead a research group at the intersection of machine learning and health."
-    ]
+    ],
+    "position": "Postdoctoral Scholar",
+    "email": "tspias@stanford.edu"
   },
   {
     "slug": "tarek-hamid",
     "name": "Tarek Hamid",
-    "position": "PhD Student",
     "affiliation": "University of Virginia",
-    "email": "hamidtarek3@gmail.com",
     "photo": "people/tarek-hamid.jpg",
     "links": [
       {
@@ -1645,14 +1643,14 @@
       "Tarek Hamid is a fourth-year PhD student in Electrical and Computer Engineering at the University of Virginia, where he works in the Watson Research Lab under Prof. Amanda Watson. He holds an M.S. in Biomedical Engineering from Johns Hopkins University, a B.S. in Biomedical Engineering from The College of New Jersey, and pursued an M.S. in Computer Science at the University of Pennsylvania. Before returning to academia he spent several years in industry, including roles as a biomedical algorithm engineer at Sotera Digital Health, a software engineer at JPMorgan Chase, and a scientist at Johnson & Johnson, and he continues to consult on wearables data for clinical trials at VivoSense.",
       "His research centers on biomedical signal processing and machine learning for wearable health, with a dissertation on broad-spectrum, multi-wavelength photoplethysmography (MW-PPG) algorithms for personalized and robust physiological monitoring. The core idea is to treat confounders such as skin tone, motion, and contact pressure not as noise to be removed but as quantities that can be directly measured from a spectrally rich optical signal, enabling more equitable and personalized biomarker extraction. He has led work on calibration-free cuffless blood pressure estimation (ICASSP 2025), objective skin-tone quantification (IMWUT/UbiComp 2025), and wearable nutrition monitoring, and he develops open-source tooling such as the Lumos MW-PPG platform and the SpectraVue analysis application. He is also co-founder of OxyVera, a venture developing a skin-tone-invariant pulse oximeter.",
       "At the AHLI Summer Camp, Tarek hopes to gain feedback on his ongoing work from colleagues in the ML-for-health community, connect and network with peers working on complementary problems, and learn from leading academics in the field."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "hamidtarek3@gmail.com"
   },
   {
     "slug": "tiffany-hsieh",
     "name": "Tiffany Hsieh",
-    "position": "PhD student",
     "affiliation": "Brown University School of Public Health",
-    "email": "han-chih_hsieh@brown.edu",
     "photo": "people/tiffany-hsieh.jpg",
     "links": [
       {
@@ -1676,14 +1674,14 @@
       "Tiffany (Han-Chih) Hsieh is a third-year PhD student in Epidemiology at the Brown University School of Public Health, concurrently completing a Master of Arts in Biostatistics, advised by Rebecca A. Hubbard and Sarah F. Ackley. She earned an ScM in Epidemiology (General Epidemiology and Methodology) and a Certificate in Pharmacoepidemiology and Drug Safety from the Johns Hopkins Bloomberg School of Public Health, and a BS in Biomedical Imaging and Radiological Sciences from National Yang-Ming University in Taiwan. Her research interests span causal inference, epidemiologic methods, biostatistics, pharmacoepidemiology, comparative effectiveness research, and oncology.",
       "As a Brown-Sanofi Predoctoral Fellow, Tiffany has developed and evaluated machine learning models (LASSO, random forest, gradient boosting, neural networks) to predict surveillance \"false alarms\" in breast cancer survivors using high-dimensional EHR data, co-led a multi-cohort heart failure study using marginal structural models, and conducted simulation studies of selection bias under alternative causal diagrams. She has also interned at Merck's Biostatistics and Research Decision Sciences group, where she designed target trial emulation simulations for HPV vaccine effectiveness and standardized R workflows for FDA-facing analytic reporting. Her dissertation integrates transformer-based representation learning with advanced causal inference methods to compare adjuvant chemotherapy regimens for older women with early-stage breast cancer using SEER-Medicare data.",
       "Tiffany hopes the summer camp will give her deeper grounding in the methodological frontier—particularly how leading groups approach ML-based confounding adjustment, deployment-aware evaluation, and foundation models on EHR and claims data—as she works at the intersection of ML and causal inference, where she has felt the methodological tension between prediction-optimized ML and the assumptions causal estimation requires. She also seeks direct mentorship and feedback from faculty who have shaped the field and a community of peers working on adjacent problems, noting that PhD work in this niche can feel isolating. Beyond research, she is an active community leader, serving as president of the Brown Graduate Consulting Club."
-    ]
+    ],
+    "position": "PhD student",
+    "email": "han-chih_hsieh@brown.edu"
   },
   {
     "slug": "umay-kulsoom",
     "name": "Umay Kulsoom",
-    "position": "PhD Student",
     "affiliation": "University of Galway, Ireland",
-    "email": "u.kulsoom1@universityofgalway.ie",
     "photo": "people/umay-kulsoom.jpg",
     "links": [
       {
@@ -1707,14 +1705,14 @@
       "Umay Kulsoom is a PhD student in the School of Computer Science at the University of Galway, Ireland, where her research focuses on clinical Natural Language Processing for analysing real medical text. She works on explainable predictive models and causal inference for epilepsy datasets, supervised by Frank Glavin and Malika Bendechache. Before her doctoral studies she spent more than seven years in academia in Pakistan as a lecturer and academic administrator, teaching core computer science courses and supervising ICT research projects, and earned master's degrees in Information Technology (NUST) and Computer Science (Fatima Jinnah Women University). She also worked as a research assistant in neural signal processing (resting-state EEG) at Universiti Teknologi PETRONAS in Malaysia.",
       "Her work began with explainable machine learning and deep learning for transparent predictive modelling from clinical narratives—including interpretable classification of pathology and radiology reports—and has progressed toward causal inference approaches that aim to identify meaningful relationships between treatments, medications, and outcomes in epilepsy. Through a collaboration with FutureNeuro at RCSI, she and her colleagues obtained access to anonymised epilepsy electronic patient records from two Irish hospitals, enabling causal analysis of treatment outcomes and medication effects on real-world clinical data. Her recent publications include work accepted at the World Conference on Explainable AI and a systematic review in IEEE Access.",
       "Kulsoom's research sits at the intersection of clinical NLP, explainability, and causal inference. She hopes the AHLI Summer Camp will help fill gaps that are difficult to address from within a single lab: its focus on real-world deployment, evaluation pipelines, and equity considerations is directly relevant to her goal of building credible, pre-deployment evaluations of models that extract treatment-response signals from free-text EPRs in a regulated health setting, and to assessing whether such models perform equitably across patient subgroups. She also looks forward to engaging with peers across EHR, genomics, and clinical imaging, building an interdisciplinary network, and thinking deliberately about research leadership and the broader health-AI ecosystem of funding, compute, and collaboration."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "u.kulsoom1@universityofgalway.ie"
   },
   {
     "slug": "uzma-pathan",
     "name": "Uzma Pathan",
-    "position": "Graduate Research Assistant",
     "affiliation": "University of Maryland, Baltimore",
-    "email": "uzma.pathan@umaryland.edu",
     "photo": "people/uzma-pathan.jpg",
     "links": [
       {
@@ -1741,14 +1739,14 @@
       "Uzma Pathan is a fifth-year Ph.D. candidate (and Graduate Research Assistant) in the Pharmaceutical Health Services Research program at the University of Maryland, Baltimore, advised by Dr. Danya M. Qato. She holds a Bachelor of Pharmacy and a Master of Pharmacy in Pharmacology from Mumbai, India, and a Master's in Pharmacy Administration from St. John's University, giving her an interdisciplinary foundation spanning clinical pharmacy, pharmacology, epidemiology, and health services research. She maintains a 4.0 GPA and defended her dissertation proposal in 2025.",
       "Her research uses large longitudinal claims datasets (IQVIA PharMetrics, IBM MarketScan, Medicare, Medicaid) to study treatment trajectories and health outcomes for people with co-occurring opioid use disorder (OUD) and hepatitis C, an understudied but high-need population. Her dissertation combines group-based trajectory modeling, marginal structural models, and machine learning to characterize and predict treatment engagement patterns for buprenorphine and direct-acting antiviral therapies. She has contributed to an FDA-funded project on optimal OUD treatment trajectories, authored several peer-reviewed publications and numerous conference presentations (APHA, AcademyHealth, ISPOR), mentored PharmD and junior PhD trainees, and held leadership roles in ISPOR student chapters and special interest groups.",
       "For the AHLI Summer Camp, Uzma—who describes herself as new to machine learning—is seeking expert guidance on model selection, tuning, and validation, and is especially interested in strengthening her ability to integrate machine learning with longitudinal and causal inference methods. She values the interdisciplinary training and mentorship for enhancing the rigor and translational impact of her work, looks forward to learning from peers with different methodological backgrounds, and hopes to contribute her own experience in substance use disorder research and real-world data analysis to foster collaboration."
-    ]
+    ],
+    "position": "Graduate Research Assistant",
+    "email": "uzma.pathan@umaryland.edu"
   },
   {
     "slug": "xiyu-ding",
     "name": "Xiyu Ding",
-    "position": "PhD Candidate",
     "affiliation": "Johns Hopkins School of Medicine",
-    "email": "xding20@jh.edu",
     "photo": "people/xiyu-ding.jpg",
     "links": [
       {
@@ -1777,14 +1775,14 @@
       "Xiyu Ding is a PhD candidate in Biomedical Informatics and Data Science at the Johns Hopkins School of Medicine, advised by Akihiko Nishimura. Her thesis addresses health disparities through large-scale analytics using secondary health data, with projects spanning the impact of social determinants of health on type 2 diabetes, federated multi-database studies of sex differences in second-line antidiabetic agents, and high-dimensional Bayesian transfer learning. She holds an M.S. in Computational Biology from Harvard University (advised by Timothy Miller) and a B.S. in Biological Science from Nanjing University.",
       "Her research trajectory has moved across several areas of healthcare AI. In her early training she focused on clinical NLP—working with unstructured clinical text on classification and information extraction—and she has since shifted toward hierarchical Bayesian modeling and large-scale healthcare analytics in federated settings, particularly for studying health disparities. Her work has appeared in venues including the Journal of the American College of Cardiology, JAMIA, and JAMIA Open, and she received a Distinguished Paper Award at the AMIA 2025 Annual Symposium. She has industry and entrepreneurial experience as well, including a research internship at Eli Lilly and co-founding a venture developing a self-evolving AI agent for automated ICD-10 code labeling, which reflects her growing interest in agent-based systems.",
       "Ding's long-term goal is to develop and deploy trustworthy AI/ML systems in healthcare, especially in high-stakes clinical settings, with attention to rigorous evaluation, bias mitigation at scale, and human-AI interaction that supports rather than replaces clinical expertise. She sees the AHLI Summer Camp as an opportunity to step back and think critically about where AI in healthcare is going—what problems matter most and what meaningful progress looks like in practice—and to learn from and connect with leaders in the field as she begins to define a strong, independent research agenda and consider a future in academia."
-    ]
+    ],
+    "position": "PhD Candidate",
+    "email": "xding20@jh.edu"
   },
   {
     "slug": "yasmeena-akhter",
     "name": "Yasmeena Akhter",
-    "position": "PhD Scholar",
     "affiliation": "Indian Institute of Technology Jodhpur, India",
-    "email": "akhter.1@iitj.ac.in",
     "photo": "people/yasmeena-akhter.jpg",
     "links": [
       {
@@ -1819,14 +1817,14 @@
       "Her research develops efficient, lightweight, and interpretable deep learning solutions for medical image analysis in low-resource and computationally constrained settings, aiming to make advanced diagnostic tools accessible in underserved regions. She has published across top venues (IJCAI, MICCAI, ISBI, CVPR workshops, Nature Scientific Data, and others) on chest X-ray analysis, occupational lung disease (silicosis and pneumoconiosis) detection, knowledge distillation, anonymization of medical images, and non-invasive tuberculosis detection from cough acoustics, and she holds a filed Indian patent on pneumoconiosis detection. She also serves as a reviewer for venues including Pattern Recognition, IEEE TBIOM, NeurIPS Datasets, MICCAI, CVPR, and CHIL.",
       "For the proposed project, she focuses on edge-deployable cough-acoustic tuberculosis screening for low-resource settings, building self-supervised audio foundation models, model compression for on-device inference, and privacy-by-design tools usable by community health workers.",
       "At the summer camp, Yasmeena hopes to address the translational gap in moving acoustic-based TB screening from model development to clinical deployment. She is particularly interested in the curriculum on pre-deployment evaluation, equity-aware metrics, and bias assessment for benchmarking cough classifiers across diverse populations; the practical challenges of field validation, concept drift, and interface design for users with limited formal education; and the camp's sessions on data partnerships, governance, funding, and interdisciplinary team-building needed to build inclusive multi-site cough corpora and federated training infrastructure."
-    ]
+    ],
+    "position": "PhD Scholar",
+    "email": "akhter.1@iitj.ac.in"
   },
   {
     "slug": "yvonne-wu",
     "name": "Yvonne Wu",
-    "position": "Postdoctoral Research Associate",
     "affiliation": "Dartmouth College",
-    "email": "yvonne.wu@dartmouth.edu",
     "photo": "people/yvonne-wu.jpg",
     "links": [
       {
@@ -1856,14 +1854,14 @@
       "Yu (Yvonne) Wu is a first-year postdoctoral research associate at Dartmouth College, where she works on the Evergreen Project, a generative AI project for student well-being. She earned her PhD in Computer Science at the University of Cambridge in December 2025 under Cecilia Mascolo, following a master's in Electrical and Computer Engineering at Rice University (with Akane Sano) and a bachelor's degree from Nanjing University of Posts and Telecommunication. She has also been a research intern at Microsoft Research Asia.",
       "Her research focuses on AI for sequential and multimodal data, accessible health sensing, and mobile health. Her PhD built a coherent program around generalizable foundation models for digital health: addressing label distribution shift in VO2max prediction via unsupervised domain adaptation (UDAMA, MLHC 2023), self-supervised representation learning for time series that mitigates false negative pairs (StatioCL, CIKM 2024), and foundation models for irregular time series. She has co-authored work at venues including ICLR, NeurIPS (Datasets & Benchmarks), npj Digital Medicine, MLHC, and CIKM, and was awarded the Wiseman Prize at Cambridge for her mentoring, teaching, and community contributions.",
       "Her summer camp research statement proposes a memory mechanism for multimodal wearable health agents, advancing wearable health AI from static, short-window prediction toward longitudinal reasoning and personalized health coaching over a person's full history, evaluated on benchmarks such as GLOBEM and PMData. Through the camp, Yvonne hopes to exchange research ideas with peers and mentors at the forefront of machine learning for health, to engage in substantive intellectual discourse, to identify meaningful points of convergence with her own work, and to cultivate collaborative relationships that extend well beyond the program."
-    ]
+    ],
+    "position": "Postdoctoral Research Associate",
+    "email": "yvonne.wu@dartmouth.edu"
   },
   {
     "slug": "zhongyu-li",
     "name": "Zhongyu Li",
-    "position": "PhD Student",
     "affiliation": "Rollins School of Public Health, Emory University",
-    "email": "zhongyu.li@emory.edu",
     "photo": "people/zhongyu-li.jpg",
     "links": [
       {
@@ -1911,6 +1909,8 @@
       "Zhongyu Li is a doctoral candidate in Nutrition and Health Sciences at the Rollins School of Public Health, Emory University, advised by Dr. Jithin Sam Varghese. Her training is rooted in the natural sciences and public health: she holds a B.S. in Biology (Physiology) from the University of Washington and an MSPH in Human Nutrition from the Johns Hopkins Bloomberg School of Public Health. Before and during her doctoral studies she accumulated extensive research and project-coordination experience across nutrition, cancer prevention, and food-as-medicine programs at Tufts, Johns Hopkins, and the American Institute for Cancer Research, and she has published 17 papers (six as first author) in journals including Diabetes Care, Diabetologia, and Circulation: Cardiovascular Quality and Outcomes.",
       "Her dissertation, \"Type 2 Diabetes Subtypes for Precision Medicine in Electronic Health Records – Cancer (T2D-SPEAR Cancer),\" applies machine learning, causal inference, and human genetics to characterize type 2 diabetes heterogeneity and its relationship to site-specific cancer risk. She has led the translation of a T2D subtyping framework from US cohort studies into large-scale EHR data (Epic Cosmos), and she complements this modeling work with mixed-methods studies, interviewing primary-care clinicians to understand how AI-enabled phenotyping tools might be adopted in practice. Her work has been recognized with a PhRMA Foundation Predoctoral Fellowship, a Winship Invest Award, and multiple American Diabetes Association oral presentations.",
       "At the summer camp, Zhongyu hopes to build a stronger foundation for turning health problems into machine learning questions that are both methodologically rigorous and clinically useful. She is especially motivated by translational research, evaluation of model usefulness/robustness/fairness before deployment, and the practical side of moving research forward (funding, compute, data partnerships). As a researcher trained in public health rather than computer science, she is particularly eager to exchange ideas with computationally oriented peers, learning how they frame problems, choose architectures, and set evaluation standards, an exchange she sees as genuinely complementary to her own clinical and epidemiological perspective."
-    ]
+    ],
+    "position": "PhD Student",
+    "email": "zhongyu.li@emory.edu"
   }
 ]

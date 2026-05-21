@@ -333,41 +333,64 @@ a:hover { color: var(--teal); }
 }
 .person-links a:hover { border-color: var(--purple); background: var(--paper-2); }
 
-/* ---- Student cards (cohort grid) ----------------------------------------- */
-.people-grid--students {
+/* ---- Profile cards (cohort / instructor grids) --------------------------- */
+.people-grid--profiles {
   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
-.student-card {
+.profile-card {
+  position: relative;
   display: flex; flex-direction: column;
   background: var(--card); border: 1px solid var(--line);
   border-radius: 10px; overflow: hidden;
-  box-shadow: var(--shadow-sm); text-decoration: none; color: inherit;
+  box-shadow: var(--shadow-sm);
   transition: box-shadow .15s, transform .15s, border-color .15s;
 }
-.student-card:hover {
+.profile-card:hover {
   box-shadow: var(--shadow-md); transform: translateY(-2px);
   border-color: var(--indigo);
 }
-.student-photo {
-  width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+/* Square thumbnail via the padding-box technique (works without aspect-ratio). */
+.profile-thumb {
+  position: relative; display: block; width: 100%; padding-top: 100%;
   background: var(--paper-2);
 }
-.student-photo--initials {
+.profile-thumb img,
+.profile-thumb-initials {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+.profile-thumb img { object-fit: cover; }
+.profile-thumb-initials {
   display: grid; place-items: center;
   background: linear-gradient(135deg, var(--indigo), var(--teal));
   color: #fff; font-family: var(--serif); font-weight: 600; font-size: 2.4rem;
 }
-.student-card-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
-.student-card-body h3 { margin: 0 0 .2rem; font-size: 1.05rem; line-height: 1.25; }
-.student-pos { margin: 0; font-size: .82rem; font-weight: 600; color: var(--teal); }
-.student-affil { margin: .15rem 0 0; font-size: .85rem; color: var(--ink-soft); }
-.student-more {
-  margin-top: auto; padding-top: .7rem;
-  font-size: .8rem; font-weight: 600; color: var(--indigo);
-}
-.student-card:hover .student-more { color: var(--teal); }
+.profile-card-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
+.profile-card-body h3 { margin: 0 0 .2rem; font-size: 1.05rem; line-height: 1.25; }
+/* Stretched link makes the whole card clickable; icon buttons sit above it. */
+.profile-card-link { text-decoration: none; color: inherit; }
+.profile-card-link::after { content: ''; position: absolute; inset: 0; z-index: 0; }
+.profile-card-link:hover { color: var(--indigo); }
+.profile-card-role { margin: 0; font-size: .82rem; font-weight: 600; color: var(--teal); }
+.profile-card-affil { margin: .15rem 0 0; font-size: .85rem; color: var(--ink-soft); }
+.profile-card .link-btns { margin-top: auto; padding-top: .8rem; position: relative; z-index: 1; }
 
-/* ---- Student profile page ------------------------------------------------ */
+/* ---- Link buttons (icons / icon+label) ----------------------------------- */
+.link-btns { display: flex; flex-wrap: wrap; gap: .45rem; }
+.link-btn {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-size: .82rem; font-weight: 600; text-decoration: none;
+  color: var(--indigo); border: 1px solid var(--line); background: var(--card);
+  padding: .3rem .7rem; border-radius: 999px;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.link-btn:hover { color: #fff; background: var(--indigo); border-color: var(--indigo); }
+.link-btn svg { flex: 0 0 auto; }
+/* icon-only variant (round) */
+.link-btns--icons { gap: .35rem; }
+.link-btns--icons .link-btn { padding: .4rem; border-radius: 50%; color: var(--ink-soft); }
+.link-btns--icons .link-btn:hover { color: #fff; }
+
+/* ---- Profile detail page ------------------------------------------------- */
 .hero--profile .hero-inner { padding-top: 2.6rem; padding-bottom: 2.6rem; }
 .profile-back {
   display: inline-block; margin-bottom: 1.4rem;
@@ -389,13 +412,13 @@ a:hover { color: var(--teal); }
 .profile-id h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(1.7rem, 3.5vw, 2.4rem); line-height: 1.1; }
 .profile-pos { margin: .5rem 0 0; font-size: 1.05rem; font-weight: 600; color: var(--teal-bright); }
 .profile-affil { margin: .15rem 0 0; color: #d6d8ea; }
-.profile-links { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
-.profile-links a {
-  font-size: .82rem; font-weight: 600; color: #fff; text-decoration: none;
-  padding: .28rem .8rem; border: 1px solid rgba(255,255,255,.3); border-radius: 999px;
-  transition: background .15s, border-color .15s;
+.profile-meta { margin: .3rem 0 0; font-size: .9rem; color: #b6b9d2; }
+/* Link buttons on the dark hero render light. */
+.profile-head .link-btns { margin: 1.1rem 0 0; }
+.profile-head .link-btn {
+  color: #fff; background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.3);
 }
-.profile-links a:hover { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.6); }
+.profile-head .link-btn:hover { background: rgba(255,255,255,.18); border-color: rgba(255,255,255,.7); }
 
 .profile-bio p { color: var(--ink-soft); margin-bottom: 1rem; }
 .profile-bio p:first-child { font-size: 1.1rem; color: var(--ink); }
@@ -403,9 +426,13 @@ a:hover { color: var(--teal); }
 .award-list { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); }
 .award-list li { margin-bottom: .5rem; }
 .highlight-list { list-style: none; margin: 0; padding: 0; }
-.highlight-list li { padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.highlight-list li {
+  display: flex; gap: .7rem; align-items: flex-start;
+  padding: .8rem 0; border-bottom: 1px solid var(--line);
+}
 .highlight-list li:first-child { border-top: 1px solid var(--line); }
-.highlight-list a { font-weight: 600; }
+.highlight-icon { flex: 0 0 auto; color: var(--teal); margin-top: .15rem; }
+.highlight-body a { font-weight: 600; }
 .highlight-meta { display: block; margin-top: .2rem; font-size: .82rem; color: var(--ink-faint); }
 
 /* ---- Sponsors ------------------------------------------------------------ */

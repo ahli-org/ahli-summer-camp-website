@@ -1,0 +1,49 @@
+---
+import Icon from './Icon.astro';
+
+interface Link {
+  label: string;
+  href: string;
+}
+interface Props {
+  links?: Link[];
+  email?: string | null;
+  /** 'labeled' = icon + text (profile pages); 'icons' = icon-only (cards). */
+  variant?: 'labeled' | 'icons';
+}
+const { links = [], email = null, variant = 'labeled' } = Astro.props;
+
+// Map a link label to an icon name in Icon.astro.
+const ICON_FOR: Record<string, string> = {
+  Website: 'website',
+  'Google Scholar': 'scholar',
+  GitHub: 'github',
+  LinkedIn: 'linkedin',
+  'Twitter/X': 'x',
+  Bluesky: 'bluesky',
+  ORCID: 'orcid',
+  NameDrop: 'link',
+  Email: 'email',
+};
+
+const items = [...links];
+if (email) items.push({ label: 'Email', href: `mailto:${email}` });
+const iconOnly = variant === 'icons';
+---
+{items.length > 0 && (
+  <div class={`link-btns${iconOnly ? ' link-btns--icons' : ''}`}>
+    {items.map((l) => (
+      <a
+        class="link-btn"
+        href={l.href}
+        rel="noopener"
+        target={l.href.startsWith('mailto:') ? undefined : '_blank'}
+        aria-label={l.label}
+        title={l.label}
+      >
+        <Icon name={ICON_FOR[l.label] ?? 'link'} size={iconOnly ? 17 : 16} />
+        {!iconOnly && <span>{l.label}</span>}
+      </a>
+    ))}
+  </div>
+)}

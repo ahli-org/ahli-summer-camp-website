@@ -58,45 +58,42 @@ automatically once `base` is set correctly — no per-page edits needed.
 | Navigation menu | `src/lib/site.ts` (the `NAV` array) |
 | Page text | the matching file in `src/pages/` |
 | Curriculum days | the `days` array in `src/pages/curriculum.astro` |
-| **Instructors** | the `instructors` array in `src/lib/people.ts` |
-| **Students / cohort** | generated — see "The cohort" below |
+| **Instructors & students** | generated — see "People (instructors & cohort)" below |
 | **Resource links (incl. gated)** | `src/lib/resources.ts` |
 | Colors, fonts, layout | `src/styles/global.css` (CSS variables in `:root`) |
 | Logo assets | `public/logos/` (see "Branding" below) |
 
-### Adding instructors
+### People (instructors & cohort)
 
-Instructors live in `src/lib/people.ts` (the `instructors` array) and render
-through the `PersonCard` component. Each person is an object; every field except
-`name` is optional:
-
-```ts
-{
-  name: 'Jane Doe',
-  role: 'Evaluation & Study Design',        // the session they lead
-  affiliation: 'PhD · Some University',
-  photo: 'people/jane-doe.jpg',             // file in public/people/, omit for an initials avatar
-  bio: 'One short paragraph.',
-  links: [{ label: 'Website', href: 'https://example.edu' }],
-}
-```
-
-Drop photos into `public/people/` and reference them **without** the leading
-`public` (e.g. `photo: 'people/jane-doe.jpg'`). With no photo, the card shows a
-coloured initials avatar automatically.
-
-### The cohort (students)
-
-The Students page (`/students/`) and each per-student profile
-(`/students/<slug>/`) are built from **generated data**, not hand-edited. The
-flow is:
+Both the instructor pages (`/instructors/`, `/instructors/<slug>/`) and the
+student pages (`/students/`, `/students/<slug>/`) are built from **generated
+data**, not hand-edited, and share the same components (`ProfileCard` for the
+grids, `ProfileDetail` for profiles, `ProfileLinks`/`Icon` for the link icons).
+The flow:
 
 ```
-.student_source/<Name>/{links.json, bio.md, headshot.png}   ← local source (gitignored)
-        │  npm run build:students
+.student_source/<Name>/{links.json, bio.md, headshot.png}     ← local source (gitignored)
+.instructor_source/<Name>/{links.json, bio.md, headshot.png}  ← local source (gitignored)
+        │  npm run build:people        (or build:students / build:instructors)
         ├─ resized headshots → public/people/<slug>.jpg
-        └─ profile data      → src/data/students.json   ← committed; the site reads this
+        └─ profile data      → src/data/students.json + src/data/instructors.json
+                                                          ← committed; the site reads these
 ```
+
+- Put each source folder (one subfolder per person, each with `links.json`,
+  `bio.md`, and `headshot.png`) at `./.student_source/` and
+  `./.instructor_source/`. Both are **gitignored** — raw bios/resumes are never
+  committed.
+- Run `npm run build:people` (needs ImageMagick `convert` on PATH). It
+  slugifies names, resizes headshots, parses bios/links/awards/press, and writes
+  the two JSON files. Typed access is via `src/lib/students.ts` and
+  `src/lib/instructors.ts`.
+- Commit `src/data/*.json` and `public/people/*.jpg`.
+
+Each profile surfaces the person's headshot, role/position, affiliation, links
+(website, Scholar, GitHub, LinkedIn, X, Bluesky, ORCID, email) shown as
+icon buttons, full bio, awards, and a "Featured in" press section — designed to
+showcase them and support their visibility.
 
 - Put the source folder (one subfolder per student, each with `links.json`,
   `bio.md`, and `headshot.png`) at `./.student_source/`. It is **gitignored** —
@@ -132,10 +129,9 @@ Add a new page by creating a new `.astro` file there and adding it to `NAV`.
 
 This is a starter template. Items still marked as placeholders:
 
-- **Instructors** — `instructors` array in `src/lib/people.ts`.
-- **Students / cohort** — generated from `./.student_source/` via
-  `npm run build:students` (see "The cohort" above). The 2026 cohort is
-  already populated in `src/data/students.json`.
+- **Instructors & students** — generated from `./.instructor_source/` and
+  `./.student_source/` via `npm run build:people` (see "People" above). The 2026
+  cohort and instructors are already populated in `src/data/*.json`.
 - **Resource links** — `src/lib/resources.ts` (public + gated material).
 - **Contact email** — `SITE.email` in `src/lib/site.ts`.
 - **Site URL** — `astro.config.mjs`.
@@ -148,33 +144,37 @@ This is a starter template. Items still marked as placeholders:
 ahli-summer-camp/
 ├── astro.config.mjs            # site URL + base path config
 ├── scripts/
-│   └── build-students.mjs      # generates cohort data from ./.student_source/
+│   └── build-people.mjs        # generates students.json + instructors.json from sources
 ├── public/
 │   ├── favicon.svg             # AHLI cross mark
 │   ├── logos/                  # AHLI logo lockups (white / colour / mark) + sponsor
-│   └── people/                 # generated student headshots (<slug>.jpg)
+│   └── people/                 # generated headshots (<slug>.jpg)
 ├── src/
 │   ├── components/
 │   │   ├── Hero.astro          # reusable page banner
-│   │   ├── PersonCard.astro    # instructor card
-│   │   ├── StudentCard.astro   # cohort-grid card (links to a profile)
+│   │   ├── Icon.astro          # inline SVG icon set (brand + utility)
+│   │   ├── ProfileCard.astro   # grid card (links to a profile)
+│   │   ├── ProfileDetail.astro # full profile layout (bio, awards, press)
+│   │   ├── ProfileLinks.astro  # icon link buttons
 │   │   └── Sidebar.astro       # fixed navigation sidebar
 │   ├── data/
-│   │   └── students.json       # generated cohort data (committed)
+│   │   ├── students.json       # generated cohort data (committed)
+│   │   └── instructors.json    # generated instructor data (committed)
 │   ├── layouts/
 │   │   └── BaseLayout.astro    # HTML shell, fonts, mobile drawer, footer
 │   ├── lib/
 │   │   ├── site.ts             # site constants, nav, url() helper
-│   │   ├── people.ts           # instructors data
 │   │   ├── students.ts         # typed access to students.json
+│   │   ├── instructors.ts      # typed access to instructors.json
 │   │   └── resources.ts        # student + instructor resource links
 │   ├── pages/                  # one file per route
 │   │   ├── index.astro
 │   │   ├── about.astro
 │   │   ├── curriculum.astro
-│   │   ├── instructors.astro
-│   │   ├── students.astro            # /students/  (cohort grid)
-│   │   ├── students/[slug].astro     # /students/<slug>/  (one per student)
+│   │   ├── instructors.astro            # /instructors/  (grid)
+│   │   ├── instructors/[slug].astro     # /instructors/<slug>/  (one per instructor)
+│   │   ├── students.astro               # /students/  (cohort grid)
+│   │   ├── students/[slug].astro        # /students/<slug>/  (one per student)
 │   │   ├── resources.astro
 │   │   ├── sponsors.astro
 │   │   └── faq.astro

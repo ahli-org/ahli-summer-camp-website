@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProfileDetail from '../../components/ProfileDetail.astro';
+import { url } from '../../lib/site';
+import { instructors } from '../../lib/instructors';
+import type { Instructor } from '../../lib/instructors';
+
+export function getStaticPaths() {
+  return instructors.map((instructor) => ({ params: { slug: instructor.slug }, props: { instructor } }));
+}
+
+interface Props {
+  instructor: Instructor;
+}
+const { instructor } = Astro.props;
+
+const metaBits = [instructor.role, instructor.affiliation].filter(Boolean).join(' · ');
+const description =
+  (instructor.bio[0] ?? `${instructor.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+
+// Session line: prefer the human-readable assigned block, fall back to the day.
+const sessionMeta = [instructor.day, instructor.assigned_block].filter(Boolean).join(' · ');
+---
+<BaseLayout title={instructor.name} description={description}>
+  <ProfileDetail
+    name={instructor.name}
+    photo={instructor.photo}
+    subtitle={instructor.role}
+    affiliation={instructor.affiliation}
+    meta={sessionMeta}
+    links={instructor.links}
+    bio={instructor.bio}
+    awards={instructor.awards}
+    highlights={instructor.highlights}
+    backHref={url('instructors')}
+    backLabel="Meet all the instructors"
+  />
+</BaseLayout>

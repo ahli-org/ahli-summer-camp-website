@@ -1,0 +1,101 @@
+---
+import ProfileLinks from './ProfileLinks.astro';
+import Icon from './Icon.astro';
+
+interface Link { label: string; href: string; }
+interface Highlight { title: string; url?: string; source?: string; date?: string; }
+interface Props {
+  name: string;
+  photo?: string | null;
+  subtitle?: string;       // role or position
+  affiliation?: string;
+  meta?: string;           // extra line (e.g. session / assigned block)
+  links?: Link[];
+  email?: string | null;
+  bio?: string[];
+  awards?: string[];
+  highlights?: Highlight[];
+  backHref: string;
+  backLabel: string;
+}
+const {
+  name, photo = null, subtitle, affiliation, meta,
+  links = [], email = null, bio = [], awards = [], highlights = [],
+  backHref, backLabel,
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const initials = name
+  .split(/\s+/).filter(Boolean).slice(0, 2)
+  .map((w) => w[0]?.toUpperCase() ?? '').join('');
+
+function fmtDate(d?: string): string {
+  if (!d) return '';
+  const [y, m] = d.split('-');
+  const months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return m ? `${months[Number(m)] ?? ''} ${y}`.trim() : y;
+}
+---
+<header class="hero hero--profile">
+  <div class="hero-inner">
+    <a class="profile-back" href={backHref}>← {backLabel}</a>
+    <div class="profile-head">
+      {photo
+        ? <img class="profile-photo" src={`${base}${photo}`} alt={name} width="700" height="700" />
+        : <span class="profile-photo profile-photo--initials" aria-hidden="true">{initials}</span>}
+      <div class="profile-id">
+        <h1>{name}</h1>
+        {subtitle && <p class="profile-pos">{subtitle}</p>}
+        {affiliation && <p class="profile-affil">{affiliation}</p>}
+        {meta && <p class="profile-meta">{meta}</p>}
+        <ProfileLinks links={links} email={email} variant="labeled" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    {bio.length > 0 && (
+      <div class="profile-bio">
+        {bio.map((p) => <p>{p}</p>)}
+      </div>
+    )}
+
+    {awards.length > 0 && (
+      <div class="profile-block">
+        <p class="eyebrow">Awards &amp; honors</p>
+        <h2>Recognition</h2>
+        <ul class="award-list">
+          {awards.map((a) => <li>{a}</li>)}
+        </ul>
+      </div>
+    )}
+
+    {highlights.length > 0 && (
+      <div class="profile-block">
+        <p class="eyebrow">In the news</p>
+        <h2>Featured in</h2>
+        <ul class="highlight-list">
+          {highlights.map((h) => (
+            <li>
+              <span class="highlight-icon"><Icon name="press" size={18} /></span>
+              <span class="highlight-body">
+                {h.url
+                  ? <a href={h.url} rel="noopener" target="_blank">{h.title}</a>
+                  : <span>{h.title}</span>}
+                {(h.source || h.date) && (
+                  <span class="highlight-meta">{[h.source, fmtDate(h.date)].filter(Boolean).join(' · ')}</span>
+                )}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    <div class="btn-row">
+      <a class="btn btn-outline" href={backHref}>{backLabel}</a>
+    </div>
+  </div>
+</section>

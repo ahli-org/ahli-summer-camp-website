@@ -1,33 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import PersonCard from '../components/PersonCard.astro';
+import ProfileCard from '../components/ProfileCard.astro';
 import { url } from '../lib/site';
-import { instructors } from '../lib/people';
-
-// Edit the instructor list in src/lib/people.ts (the `instructors` array).
-const announced = instructors.some((p) => p.name !== 'Instructor to be announced');
+import { instructors } from '../lib/instructors';
 ---
 <BaseLayout title="Instructors">
   <Hero
     eyebrow="Instructors"
     title="Learn from researchers shaping health AI"
-    lead="The camp is led by instructors working at the frontier of machine learning for health, supported by a program committee that runs the week."
+    lead={`The camp is led by ${instructors.length} instructors and guest lecturers working at the frontier of machine learning for health. Explore their work below.`}
   />
 
   <section class="section">
     <div class="wrap">
-      {!announced && (
-        <div class="callout">
-          <p>
-            <strong>The faculty lineup is being finalized.</strong> Confirmed
-            instructors and full bios will be published here ahead of the camp.
-          </p>
-        </div>
-      )}
-
-      <div class="people-grid">
-        {instructors.map((p) => <PersonCard person={p} />)}
+      <div class="people-grid people-grid--profiles">
+        {instructors.map((p) => (
+          <ProfileCard
+            href={url(`instructors/${p.slug}`)}
+            name={p.name}
+            photo={p.photo}
+            subtitle={p.role}
+            affiliation={p.affiliation}
+            links={p.links}
+          />
+        ))}
       </div>
     </div>
   </section>

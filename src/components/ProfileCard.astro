@@ -1,0 +1,36 @@
+---
+import ProfileLinks from './ProfileLinks.astro';
+
+interface Link { label: string; href: string; }
+interface Props {
+  href: string;
+  name: string;
+  photo?: string | null;
+  subtitle?: string;
+  affiliation?: string;
+  links?: Link[];
+  email?: string | null;
+}
+const { href, name, photo = null, subtitle, affiliation, links = [], email = null } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const initials = name
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((w) => w[0]?.toUpperCase() ?? '')
+  .join('');
+---
+<article class="profile-card">
+  <span class="profile-thumb">
+    {photo
+      ? <img src={`${base}${photo}`} alt={name} loading="lazy" width="700" height="700" />
+      : <span class="profile-thumb-initials" aria-hidden="true">{initials}</span>}
+  </span>
+  <div class="profile-card-body">
+    <h3><a class="profile-card-link" href={href}>{name}</a></h3>
+    {subtitle && <p class="profile-card-role">{subtitle}</p>}
+    {affiliation && <p class="profile-card-affil">{affiliation}</p>}
+    <ProfileLinks links={links} email={email} variant="icons" />
+  </div>
+</article>
