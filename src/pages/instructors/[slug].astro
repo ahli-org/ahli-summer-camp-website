@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProfileDetail from '../../components/ProfileDetail.astro';
+import { url } from '../../lib/site';
+import { instructors } from '../../lib/instructors';
+import type { Instructor } from '../../lib/instructors';
+import { days as curriculumDays } from '../../lib/curriculum';
+
+export function getStaticPaths() {
+  return instructors.map((instructor) => ({ params: { slug: instructor.slug }, props: { instructor } }));
+}
+
+interface Props {
+  instructor: Instructor;
+}
+const { instructor } = Astro.props;
+
+const metaBits = [instructor.role, instructor.affiliation].filter(Boolean).join(' · ');
+const description = instructor.tagline
+  ? `${instructor.tagline}${metaBits ? ` — ${metaBits}` : ''}`
+  : (instructor.bio[0] ?? `${instructor.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+
+// Session line: the day's theme, drawn from the authoritative curriculum so it
+// always matches the schedule (the source `assigned_block` times can be stale).
+const dayNum = Number((instructor.day ?? '').match(/\d+/)?.[0]);
+const curDay = curriculumDays.find((d) => d.n === dayNum);
+const sessionMeta = curDay ? `Day ${curDay.n} · ${curDay.title}` : (instructor.day ?? '');
+---
+<BaseLayout title={instructor.name} description={description}>
+  <ProfileDetail
+    name={instructor.name}
+    photo={instructor.photo}
+    tagline={instructor.tagline}
+    subtitle={instructor.role}
+    affiliation={instructor.affiliation}
+    meta={sessionMeta}
+    links={instructor.links}
+    bio={instructor.bio}
+    awards={instructor.awards}
+    highlights={instructor.highlights}
+    backHref={url('instructors')}
+    backLabel="Meet all the instructors"
+  />
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import { url, SITE } from '../lib/site';
+import { students } from '../lib/students';
+---
+<BaseLayout title="Students">
+  <Hero
+    eyebrow="The cohort"
+    title={`Meet the ${SITE.year} cohort`}
+    lead={`${students.length} PhD students and early-career researchers in machine learning for health, selected from a competitive applicant pool to spend the week together. Explore their work below.`}
+  />
+
+  <section class="section">
+    <div class="wrap wrap--wide">
+      <div class="people-grid people-grid--profiles">
+        {students.map((s) => (
+          <ProfileCard
+            href={url(`students/${s.slug}`)}
+            name={s.name}
+            photo={s.photo}
+            tagline={s.tagline}
+            affiliation={s.affiliation}
+            links={s.links}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">For accepted students</p>
+      <h2>Getting ready for the week</h2>
+      <p>
+        Pre-camp reading, setup instructions, and session materials are gathered
+        on the resources page, alongside the day-by-day curriculum.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-outline" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-primary" href={url('resources')}>Student resources</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

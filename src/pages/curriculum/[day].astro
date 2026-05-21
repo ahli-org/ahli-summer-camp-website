@@ -1,0 +1,84 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/site';
+import { days as curriculumDays, readings } from '../../lib/curriculum';
+import type { Person } from '../../lib/curriculum';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('days');
+  return entries.map((entry) => ({ params: { day: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const meta = curriculumDays.find((d) => d.n === entry.data.day)!;
+
+function personHref(p?: Person): string | null {
+  return p?.slug ? url(`instructors/${p.slug}`) : null;
+}
+
+// Prev / next day navigation.
+const sorted = [...curriculumDays].sort((a, b) => a.n - b.n);
+const idx = sorted.findIndex((d) => d.n === meta.n);
+const prev = sorted[idx - 1];
+const next = sorted[idx + 1];
+const dayPath = (n: number) => url(`curriculum/day-${n}`);
+
+const dayReadings = readings[meta.n] ?? [];
+---
+<BaseLayout title={`Day ${meta.n}: ${meta.title}`} description={meta.gap}>
+  <header class="hero hero--profile">
+    <div class="hero-inner">
+      <a class="profile-back" href={url('curriculum')}>← Curriculum & schedule</a>
+      <p class="hero-eyebrow">Day {meta.n} · {meta.date} · {meta.mode}</p>
+      <h1>{meta.title}</h1>
+      <p class="hero-lead">{meta.gap}</p>
+      <p class="day-faculty day-faculty--hero">
+        {meta.lead && (
+          <span>
+            <strong>{meta.leadLabel ?? 'Lead'}:</strong>{' '}
+            {personHref(meta.lead) ? <a href={personHref(meta.lead)}>{meta.lead.name}</a> : <span>{meta.lead.name}</span>}
+            {meta.lead.affil && <span class="faculty-affil"> ({meta.lead.affil})</span>}
+          </span>
+        )}
+        {meta.guest && (
+          <span>
+            <strong>Guest:</strong>{' '}
+            {personHref(meta.guest) ? <a href={personHref(meta.guest)}>{meta.guest.name}</a> : <span>{meta.guest.name}</span>}
+            {meta.guest.affil && <span class="faculty-affil"> ({meta.guest.affil})</span>}
+          </span>
+        )}
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="day-detail">
+        <Content />
+
+        {dayReadings.length > 0 && (
+          <>
+            <h2 id="readings">Required readings</h2>
+            <ol class="reading-list">
+              {dayReadings.map((r) => (
+                <li>{r.url ? <a href={r.url} rel="noopener" target="_blank">{r.cite}</a> : <span>{r.cite}</span>}</li>
+              ))}
+            </ol>
+          </>
+        )}
+      </div>
+
+      <nav class="day-nav">
+        {prev
+          ? <a class="day-nav-link" href={dayPath(prev.n)}>← Day {prev.n}: {prev.title}</a>
+          : <span></span>}
+        {next
+          ? <a class="day-nav-link day-nav-link--next" href={dayPath(next.n)}>Day {next.n}: {next.title} →</a>
+          : <span></span>}
+      </nav>
+    </div>
+  </section>
+</BaseLayout>

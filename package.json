@@ -7,9 +7,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:people": "node scripts/build-people.mjs",
+    "build:students": "node scripts/build-people.mjs students",
+    "build:instructors": "node scripts/build-people.mjs instructors",
+    "sync:slides": "node scripts/sync-slides.mjs"
   },
   "dependencies": {
-    "astro": "^5"
+    "astro": "^6.3.6"
   }
 }

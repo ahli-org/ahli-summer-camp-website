@@ -1,17 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE, url } from '../lib/site';
+import { SITE, url, REVIEW_MODE } from '../lib/site';
+import ReviewNotice from '../components/ReviewNotice.astro';
 
 const facts = [
   { k: 'Dates', v: SITE.dates },
   { k: 'Format', v: 'Week-long, in-person intensive' },
-  { k: 'Cohort', v: '~50 PhD students in ML for health' },
+  { k: 'Cohort', v: '45 researchers in ML for health' },
   { k: 'Co-located with', v: 'CHIL conference' },
   { k: 'Supported by', v: SITE.funder },
-  { k: 'Outcome', v: 'A shared Summer Camp Workbook' },
+  { k: 'Outcome', v: 'A shared Project Workbook' },
 ];
 ---
 <BaseLayout title="Home">
+  {REVIEW_MODE && <ReviewNotice />}
   <header class="hero hero--home">
     <div class="hero-inner">
       <span class="date-badge">{SITE.dates}</span>
@@ -22,8 +24,8 @@ const facts = [
         translation.
       </p>
       <div class="btn-row">
-        <a class="btn btn-primary" href={url('apply')}>Apply to attend</a>
-        <a class="btn btn-ghost" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-primary" href={url('curriculum')}>See the curriculum</a>
+        <a class="btn btn-ghost" href={url('students')}>Meet the cohort</a>
       </div>
     </div>
   </header>
@@ -42,7 +44,7 @@ const facts = [
         Rather than a lecture series, the camp is structured around daily
         hands-on deliverables. Each day pairs a concept session with guided lab
         work, and every participant's output accumulates into a cohesive
-        <strong>Summer Camp Workbook</strong> they leave with.
+        <strong>Project Workbook</strong> they leave with.
       </p>
     </div>
   </section>
@@ -81,7 +83,7 @@ const facts = [
         </div>
         <div class="card">
           <h3>Build a lasting artifact</h3>
-          <p>Daily deliverables come together as a Summer Camp Workbook — a
+          <p>Daily deliverables come together as a Project Workbook — a
             reference you can carry back into your own research.</p>
         </div>
       </div>
@@ -91,10 +93,10 @@ const facts = [
   <section class="section">
     <div class="wrap">
       <div class="cta">
-        <h2>Join the {SITE.year} cohort</h2>
-        <p>Applications are open to PhD students working in machine learning for health.</p>
+        <h2>The {SITE.year} cohort is set</h2>
+        <p>Meet the students and instructors joining us for the week, and explore the curriculum.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href={url('apply')}>Start your application</a>
+          <a class="btn btn-primary" href={url('students')}>Meet the cohort</a>
         </div>
       </div>
     </div>

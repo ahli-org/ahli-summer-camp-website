@@ -19,6 +19,10 @@ export function currentKey(pathname: string): string {
   return pathname.replace(BASE, '').replace(/^\/+|\/+$/g, '');
 }
 
+// Review mode: shows a prominent internal review banner (see ReviewNotice.astro)
+// flagging content that needs human verification. SET TO false BEFORE DEPLOY.
+export const REVIEW_MODE = true;
+
 export const SITE = {
   name: 'AHLI Health AI Summer Camp',
   shortName: 'AHLI Summer Camp',
@@ -36,6 +40,8 @@ export const NAV: { label: string; path: string }[] = [
   { label: 'About', path: 'about' },
   { label: 'Curriculum', path: 'curriculum' },
   { label: 'Instructors', path: 'instructors' },
-  { label: 'Apply', path: 'apply' },
+  { label: 'Students', path: 'students' },
+  { label: 'Resources', path: 'resources' },
+  { label: 'Sponsors', path: 'sponsors' },
   { label: 'FAQ', path: 'faq' },
 ];

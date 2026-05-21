@@ -27,11 +27,11 @@ const year = new Date().getFullYear();
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#161b38" />
+    <meta name="theme-color" content="#404c98" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -40,8 +40,8 @@ const year = new Date().getFullYear();
 
     <!-- Mobile-only top bar -->
     <div class="mobile-bar">
-      <a href={url('')} style="text-decoration:none">
-        <span class="brand-mark">AHLI<span class="dot" style="color:var(--teal-bright)">.</span></span>
+      <a href={url('')} style="text-decoration:none;display:flex;align-items:center">
+        <img class="mobile-logo" src={`${base}logos/ahli-horizontal-white.svg`} alt="AHLI Health AI Summer Camp" height="26" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-controls="sidebar" aria-expanded="false">
         Menu

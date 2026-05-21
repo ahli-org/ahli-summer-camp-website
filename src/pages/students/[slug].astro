@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProfileDetail from '../../components/ProfileDetail.astro';
+import { url } from '../../lib/site';
+import { students } from '../../lib/students';
+import type { Student } from '../../lib/students';
+
+export function getStaticPaths() {
+  return students.map((student) => ({ params: { slug: student.slug }, props: { student } }));
+}
+
+interface Props {
+  student: Student;
+}
+const { student } = Astro.props;
+
+const metaBits = [student.position, student.affiliation].filter(Boolean).join(' · ');
+const description = student.tagline
+  ? `${student.tagline}${metaBits ? ` — ${metaBits}` : ''}`
+  : (student.bio[0] ?? `${student.name} — ${metaBits}`).slice(0, 155).replace(/\s+\S*$/, '') + '…';
+---
+<BaseLayout title={student.name} description={description}>
+  <ProfileDetail
+    name={student.name}
+    photo={student.photo}
+    tagline={student.tagline}
+    subtitle={student.position}
+    affiliation={student.affiliation}
+    links={student.links}
+    email={student.email}
+    bio={student.bio}
+    awards={student.awards}
+    highlights={student.highlights}
+    backHref={url('students')}
+    backLabel="Meet the rest of the cohort"
+  />
+</BaseLayout>

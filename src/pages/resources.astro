@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { SITE, url } from '../lib/site';
+import { studentResources, instructorResources, slideResources } from '../lib/resources';
+import type { Resource } from '../lib/resources';
+
+const base = import.meta.env.BASE_URL;
+
+const sections: { heading: string; eyebrow: string; items: Resource[]; note?: string }[] = [
+  { eyebrow: 'For students', heading: 'Student resources', items: studentResources },
+  { eyebrow: 'Lecture slides', heading: 'Lecture slide decks', items: slideResources, note: 'Tentative drafts, actively being revised. Each opens as an interactive deck; a PDF is linked from the matching day page.' },
+  { eyebrow: 'For instructors', heading: 'Instructor resources', items: instructorResources },
+];
+
+const hasLink = (r: Resource) => Boolean(r.internal || r.file || r.href);
+const internalHref = (path: string) => {
+  const [p, hash] = path.split('#');
+  return url(p) + (hash ? `#${hash}` : '');
+};
+const linkFor = (r: Resource) =>
+  r.internal ? internalHref(r.internal) : r.file ? `${base}${r.file}` : (r.href ?? '#');
+const external = (r: Resource) => Boolean(r.href);
+---
+<BaseLayout title="Resources">
+  <Hero
+    eyebrow="Resources"
+    title="Materials for the camp"
+    lead="Reading, the Project Workbook, workshop notebooks, guides, and session recordings — gathered here as they’re ready. Everything is open."
+  />
+
+  {sections.map((s) => (
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">{s.eyebrow}</p>
+        <h2>{s.heading}</h2>
+        {s.note && <p class="section-lead">{s.note}</p>}
+        <ul class="resource-list">
+          {s.items.map((r) => (
+            <li class="resource">
+              <div class="resource-main">
+                {hasLink(r)
+                  ? <a href={linkFor(r)} {...(external(r) ? { rel: 'noopener', target: '_blank' } : {})}>{r.title}</a>
+                  : <span class="resource-soon">{r.title} <em>— not yet available</em></span>}
+                {r.description && <p>{r.description}</p>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <section class="section">
+    <div class="wrap">
+      <div class="callout">
+        <p>
+          Materials are posted here as they’re finalized. Questions about the
+          resources? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { Content } from '../md/instructor-guide.md';
+---
+<BaseLayout title="Instructor guide" description="Program design, teaching roles, and per-day briefs for AHLI Summer Camp lead lecturers and guest lecturers.">
+  <Hero
+    eyebrow="For instructors"
+    title="Instructor & guest lecturer guide"
+    lead="How the week is designed, what each teaching role is asked to do, and a brief for every day."
+  />
+  <section class="section">
+    <div class="wrap">
+      <div class="day-detail">
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
