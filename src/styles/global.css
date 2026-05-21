@@ -35,6 +35,7 @@
   --sidebar-w:    21.5rem;
   --content-max:  48rem;   /* prose column — kept narrow for readability */
   --content-wide: 68rem;   /* wider column for card grids (fits ~4 across) */
+  --content-xwide:84rem;   /* widest column — notebooks / code-heavy pages */
 
   --shadow-sm: 0 1px 2px rgba(31,32,32,.06), 0 2px 8px rgba(31,32,32,.05);
   --shadow-md: 0 6px 22px rgba(31,32,32,.10);
@@ -175,13 +176,19 @@ a:hover { color: var(--teal); }
 
 .wrap { width: 100%; max-width: var(--content-max); margin: 0 auto; padding: 0 2.4rem; }
 .wrap--wide { max-width: var(--content-wide); }
+.wrap--xwide { max-width: var(--content-xwide); }
+/* anchored subsections shouldn't sit flush to the viewport top */
+.day-detail [id] { scroll-margin-top: 1.5rem; }
 .section { padding: 3.4rem 0; }
 .section + .section { border-top: 1px solid var(--line); }
 
 /* ---- Notebook viewer ----------------------------------------------------- */
 .nb-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.4rem; }
+.btn-icon { display: inline-flex; align-items: center; gap: .5rem; }
+.btn-icon svg { flex: 0 0 auto; }
 .notebook { margin-top: 1.5rem; }
-.nb-md { margin: 1.4rem 0; }
+/* Prose cells stay readable; code cells use the full (wide) column. */
+.nb-md { margin: 1.4rem 0; max-width: 46rem; }
 .nb-md h1, .nb-md h2 { font-family: var(--serif); font-weight: 600; color: var(--ink); }
 .nb-md h1 { font-size: 1.5rem; margin: 0 0 .6rem; }
 .nb-md h2 { font-size: 1.25rem; margin: 1.6rem 0 .6rem; }
@@ -201,18 +208,19 @@ a:hover { color: var(--teal); }
 /* code cells */
 .nb-code {
   margin: .9rem 0; border: 1px solid var(--line); border-radius: 8px;
-  overflow: hidden; position: relative;
+  overflow: hidden;
 }
 .nb-code::before {
   content: 'In [ ]:'; display: block;
   font-size: .7rem; font-weight: 600; letter-spacing: .04em;
   color: var(--ink-faint); background: var(--paper-2);
-  padding: .35rem .8rem; border-bottom: 1px solid var(--line);
+  padding: .4rem .9rem; border-bottom: 1px solid var(--line);
 }
-.nb-code :global(pre) {
-  margin: 0; padding: .9rem 1rem; overflow-x: auto;
-  font-size: .85rem; line-height: 1.5;
+.nb-code pre {
+  margin: 0; padding: 1rem 1.1rem; overflow-x: auto;
+  font-size: .86rem; line-height: 1.55; tab-size: 4;
 }
+.nb-code pre code { white-space: pre; }
 
 /* ---- Internal review notice (REVIEW_MODE) -------------------------------- */
 .review-notice {

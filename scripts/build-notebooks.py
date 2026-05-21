@@ -17,6 +17,14 @@ from nbformat.v4 import new_notebook, new_markdown_cell, new_code_cell
 OUT = Path(__file__).resolve().parent.parent / "public" / "notebooks"
 OUT.mkdir(parents=True, exist_ok=True)
 
+# GitHub path used for the "Open in Colab" badge (also recognised by GitHub's
+# notebook renderer). Keep in sync with src/lib/notebooks.ts.
+COLAB_REPO = "ahli-org/ahli-summer-camp-website/blob/main/public/notebooks"
+
+def colab_badge(filename):
+    url = f"https://colab.research.google.com/github/{COLAB_REPO}/{filename}"
+    return f"[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({url})"
+
 # Shared starter: a synthetic-data generator with the knobs the workshop spec calls for.
 SYNTH = '''\
 import numpy as np
@@ -88,7 +96,8 @@ def build_eval():
     nb = new_notebook()
     nb.cells = [
         md("# Evaluation Lab — build your project's evaluation notebook\n\n"
-           "**AHLI Health AI Summer Camp 2026 · Day 3 workshop**\n\n" + INTRO_NOTE),
+           "**AHLI Health AI Summer Camp 2026 · Day 3 workshop**\n\n"
+           + colab_badge("evaluation-lab-template.ipynb") + "\n\n" + INTRO_NOTE),
         md("## Section 0 — Project setup\n\n"
            "*State your project in one or two sentences: the prediction/decision, "
            "the population, and the decision your model informs. Then build a data "
@@ -177,7 +186,8 @@ def build_methods():
     nb = new_notebook()
     nb.cells = [
         md("# Methods Lab — build your project's methods notebook\n\n"
-           "**AHLI Health AI Summer Camp 2026 · Day 4 workshop**\n\n" + INTRO_NOTE +
+           "**AHLI Health AI Summer Camp 2026 · Day 4 workshop**\n\n"
+           + colab_badge("methods-lab-template.ipynb") + "\n\n" + INTRO_NOTE +
            "\nReuse your Day 3 evaluation moves as the *comparison harness* here: "
            "every model goes through the same evaluation."),
         md("## Section 0 — Project setup\n\n"

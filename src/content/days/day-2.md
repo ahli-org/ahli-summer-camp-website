@@ -81,7 +81,7 @@ data plan — and note that here.
 ## Additional resources
 
 - Lecture slides (tentative draft): [view the deck](/slides/day2-data.html) · [PDF](/slides/day2-data.pdf).
-- [Project Workbook template](/project-workbook/) — Part 2.
+- [Project Workbook template](/project-workbook/#part-2) — Part 2.
 - [PhysioNet](https://physionet.org/) — MIMIC-IV and credentialing.
 - The MEDS (Medical Event Data Standard) documentation.
 - The datasets list (posted before the camp).

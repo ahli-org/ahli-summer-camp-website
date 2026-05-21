@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import { Code } from 'astro:components';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/site';
 import { notebooks, colabUrl } from '../../lib/notebooks';
 import type { NotebookMeta } from '../../lib/notebooks';
@@ -18,7 +19,10 @@ export function getStaticPaths() {
       .filter((c: any) => c.cell_type === 'markdown' || c.cell_type === 'code')
       .map((c: any) => ({
         type: c.cell_type,
-        source: Array.isArray(c.source) ? c.source.join('') : (c.source ?? ''),
+        // Drop the Colab badge line (the page provides its own buttons; the
+        // badge stays in the .ipynb for GitHub/standalone viewing).
+        source: (Array.isArray(c.source) ? c.source.join('') : (c.source ?? ''))
+          .split('\n').filter((l: string) => !l.includes('colab-badge')).join('\n'),
       }))
       .filter((c: Cell) => c.source.trim().length > 0);
     return { params: { notebook: meta.slug }, props: { meta, cells } };
@@ -38,14 +42,18 @@ const downloadHref = `${base}notebooks/${meta.file}`;
       <h1>{meta.title}</h1>
       <p class="hero-lead">{meta.blurb}</p>
       <div class="nb-actions">
-        <a class="btn btn-primary" href={colabUrl(meta.file)} rel="noopener" target="_blank">Open in Colab</a>
-        <a class="btn btn-ghost" href={downloadHref} download>Download .ipynb</a>
+        <a class="btn btn-primary btn-icon" href={colabUrl(meta.file)} rel="noopener" target="_blank">
+          <Icon name="colab" size={18} /> Open in Colab
+        </a>
+        <a class="btn btn-ghost btn-icon" href={downloadHref} download>
+          <Icon name="download" size={18} /> Download .ipynb
+        </a>
       </div>
     </div>
   </header>
 
   <section class="section">
-    <div class="wrap">
+    <div class="wrap wrap--xwide">
       <div class="callout">
         <p>
           This is a <strong>template</strong> to adapt to your own project. Open

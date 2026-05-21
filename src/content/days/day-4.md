@@ -88,5 +88,5 @@ alternative.
 
 - Lecture slides (tentative draft): [view the deck](/slides/day4-methods.html) · [PDF](/slides/day4-methods.pdf).
 - [Methods Lab notebook](/notebooks/methods-lab/) — the Day 4 workshop template.
-- [Project Workbook template](/project-workbook/) — Part 4.
+- [Project Workbook template](/project-workbook/#part-4) — Part 4.
 - The MEDS ecosystem documentation, as an implementation reference.

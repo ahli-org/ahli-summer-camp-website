@@ -85,6 +85,6 @@ and approvals the deployment needs.
 ## Additional resources
 
 - Lecture slides (tentative draft): [view the deck](/slides/day5-deployment.html) · [PDF](/slides/day5-deployment.pdf).
-- [Project Workbook template](/project-workbook/) — Part 5.
+- [Project Workbook template](/project-workbook/#part-5) — Part 5.
 - The TRIPOD+AI reporting checklist.
 - Institutional model-monitoring and audit frameworks referenced in the readings.

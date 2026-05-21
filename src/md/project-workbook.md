@@ -29,6 +29,8 @@ each section in. Revisit and revise earlier parts as later days change your view
 ### Project title and one-line pitch
 One sentence: what you are doing and for whom.
 
+<div id="part-1"></div>
+
 ### Part 1 — Problem framing *(Day 1)*
 Adapted from the WIDOM framing structure. Resist naming a method here — this part
 is about the problem.
@@ -45,6 +47,8 @@ is about the problem.
 - **Slide-ready summary:** *3 bullets — the problem, why it matters, why it is
   open.*
 
+<div id="part-2"></div>
+
 ### Part 2 — Data *(Day 2)*
 - **The data-generating process.** *How is your data produced? Care byproduct, or
   designed for research?*
@@ -57,6 +61,8 @@ is about the problem.
   If not, re-scope the problem or change the data plan — and note that here.*
 - **Slide-ready summary:** *3 bullets — the data source, the access path, the main
   bias.*
+
+<div id="part-3"></div>
 
 ### Part 3 — Evaluation & study design *(Day 3)*
 Informed by the evaluation notebook you build in the Day 3 workshop.
@@ -74,6 +80,8 @@ Informed by the evaluation notebook you build in the Day 3 workshop.
 - **Slide-ready summary:** *3 bullets — what success means, how you'll measure it,
   the biggest validity risk.*
 
+<div id="part-4"></div>
+
 ### Part 4 — Method & modeling *(Day 4)*
 Informed by the methods notebook you build in the Day 4 workshop.
 
@@ -86,6 +94,8 @@ Informed by the methods notebook you build in the Day 4 workshop.
 - **Main methodological risk**, and one credible alternative you considered.
 - **Slide-ready summary:** *3 bullets — the method, why it fits, the main risk.*
 
+<div id="part-5"></div>
+
 ### Part 5 — Deployment *(Day 5)*
 - **Where the output lands.** *Where in the clinical workflow does your model's
   output appear, and who acts on it?*
@@ -97,6 +107,8 @@ Informed by the methods notebook you build in the Day 4 workshop.
 - **Slide-ready summary:** *3 bullets — where it deploys, the top failure mode,
   the monitoring plan.*
 
+<div id="part-6"></div>
+
 ### Part 6 — Resourcing *(Day 6)*
 - **Funding target** and its incentives. *Which funder, and what would they want
   from this work?*
@@ -107,6 +119,8 @@ Informed by the methods notebook you build in the Day 4 workshop.
 - **Timeline.** *A realistic horizon for the next phase of work.*
 - **Slide-ready summary:** *3 bullets — the funding path, the compute reality, the
   key collaborator.*
+
+<div id="part-7"></div>
 
 ### Part 7 — Synthesis & slides *(Day 7)*
 - **The integrated narrative.** *One paragraph walking the whole arc: problem →

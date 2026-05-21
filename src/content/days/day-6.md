@@ -64,5 +64,5 @@ from the seven slide-ready summaries.
 
 ## Additional resources
 
-- [Project Workbook template](/project-workbook/) — Part 6.
+- [Project Workbook template](/project-workbook/#part-6) — Part 6.
 - A one-page resource on compute estimation and collaborator / IRB / PHI norms (posted before the camp).

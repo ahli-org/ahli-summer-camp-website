@@ -49,4 +49,4 @@ already written your slides; today is assembly, rehearsal, and delivery.
 
 ## Additional resources
 
-- [Project Workbook template](/project-workbook/) — Part 7 assembles your deck.
+- [Project Workbook template](/project-workbook/#part-7) — Part 7 assembles your deck.
