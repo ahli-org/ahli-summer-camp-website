@@ -57,7 +57,7 @@ automatically once `base` is set correctly — no per-page edits needed.
 | Camp name, dates, email, funder | `src/lib/site.ts` (the `SITE` object) |
 | Navigation menu | `src/lib/site.ts` (the `NAV` array) |
 | Page text | the matching file in `src/pages/` |
-| Curriculum days | the `days` array in `src/pages/curriculum.astro` |
+| Curriculum / schedule | `src/lib/curriculum.ts` (the `days` array + `dailyRhythm`) |
 | **Instructors & students** | generated — see "People (instructors & cohort)" below |
 | **Resource links (incl. gated)** | `src/lib/resources.ts` |
 | Colors, fonts, layout | `src/styles/global.css` (CSS variables in `:root`) |
@@ -167,6 +167,7 @@ ahli-summer-camp/
 │   │   └── BaseLayout.astro    # HTML shell, fonts, mobile drawer, footer
 │   ├── lib/
 │   │   ├── site.ts             # site constants, nav, url() helper
+│   │   ├── curriculum.ts       # day-by-day schedule content
 │   │   ├── students.ts         # typed access to students.json
 │   │   ├── instructors.ts      # typed access to instructors.json
 │   │   └── resources.ts        # student + instructor resource links

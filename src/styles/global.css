@@ -498,9 +498,38 @@ a:hover { color: var(--teal); }
 .day-body h3 { margin: 0 0 .3rem; }
 .day-meta {
   font-size: .82rem; font-weight: 600; letter-spacing: .04em;
-  color: var(--teal); margin-bottom: .5rem;
+  color: var(--teal); margin-bottom: .4rem;
 }
-.day-body p { margin-bottom: 0; }
+.day-mode {
+  display: inline-block; color: var(--magenta);
+  text-transform: uppercase; letter-spacing: .1em; font-size: .72rem;
+}
+.day-body p { margin-bottom: .6rem; font-size: .98rem; }
+.day-body p:last-child { margin-bottom: 0; }
+.day-gap { color: var(--ink); font-weight: 600; font-style: italic; }
+.day-faculty {
+  display: flex; flex-wrap: wrap; gap: .3rem 1.1rem;
+  font-size: .9rem; color: var(--ink-soft);
+  padding: .5rem 0; margin: .2rem 0 .7rem;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.day-faculty strong { color: var(--ink-faint); font-weight: 600; }
+.faculty-affil { color: var(--ink-faint); }
+.day-questions { color: var(--ink-soft); }
+
+/* Daily rhythm timetable */
+.rhythm {
+  margin-top: 1.4rem; border: 1px solid var(--line);
+  border-radius: 10px; overflow: hidden;
+}
+.rhythm-row {
+  display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
+  padding: .7rem 1.1rem; border-bottom: 1px solid var(--line);
+}
+.rhythm-row:last-child { border-bottom: 0; }
+.rhythm-row:nth-child(odd) { background: var(--paper-2); }
+.rhythm-row dt { font-weight: 600; color: var(--teal); font-variant-numeric: tabular-nums; }
+.rhythm-row dd { margin: 0; color: var(--ink-soft); }
 
 /* ---- Callout ------------------------------------------------------------- */
 .callout {
