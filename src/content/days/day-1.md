@@ -79,14 +79,6 @@ The day closes with **Small Group 2**, where you return to your home group to
 refine your problem framing in light of the breakout and complete Workbook
 Part 1.
 
-## Required readings
-
-1. Kleinberg, Ludwig, Mullainathan & Obermeyer (2015), *Prediction Policy Problems.*
-2. Passi & Barocas (2019), *Problem Formulation and Fairness.*
-3. Wang et al. (2023), *Scientific discovery in the age of artificial intelligence.*
-4. Bastani, Bastani & Chung (2024), *Optimizing Health Supply Chains in LMICs with Machine Learning.*
-5. Yala et al. (2021), *Toward robust mammography-based models for breast cancer risk.*
-
 ## Project Workbook — Part 1: Problem framing
 
 Using the WIDOM framing in the [Project Workbook template](/project-workbook/):
@@ -96,6 +88,7 @@ been solved before. Resist naming a method — this part is about the problem.
 
 ## Additional resources
 
+- Lecture slides (tentative draft): [view the deck](/slides/day1-problems.html) · [PDF](/slides/day1-problems.pdf).
 - [Project Workbook template](/project-workbook/) — copy it and complete Part 1.
 - The CHIL and ML4H proceedings, for a sense of the field's scope.
 - Your specialty-breakout track materials (posted before the camp).

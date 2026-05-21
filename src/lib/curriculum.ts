@@ -147,3 +147,50 @@ export const dailyRhythm: { time: string; item: string }[] = [
   { time: '5:45', item: 'Daily wrap — submit your Workbook section' },
   { time: '6:00', item: 'Dinner' },
 ];
+
+export interface Reading {
+  cite: string;
+  url?: string; // canonical link (publisher DOI / arXiv / journal); omit if none
+}
+
+// Required readings per day. NOTE FOR REVIEW: links point to the paper matching
+// each citation, but the citation list itself is carried from the program
+// materials and needs a human accuracy/recency pass (see the review notice).
+export const readings: Record<number, Reading[]> = {
+  1: [
+    { cite: 'Kleinberg, Ludwig, Mullainathan & Obermeyer (2015), Prediction Policy Problems.', url: 'https://www.aeaweb.org/articles?id=10.1257/aer.p20151023' },
+    { cite: 'Passi & Barocas (2019), Problem Formulation and Fairness.', url: 'https://arxiv.org/abs/1901.02547' },
+    { cite: 'Wang et al. (2023), Scientific discovery in the age of artificial intelligence.', url: 'https://www.nature.com/articles/s41586-023-06221-2' },
+    { cite: 'Bastani, Bastani & Chung (2024), Optimizing Health Supply Chains in LMICs with Machine Learning.', url: 'https://link.springer.com/chapter/10.1007/978-3-031-60867-4_12' },
+    { cite: 'Yala et al. (2021), Toward robust mammography-based models for breast cancer risk (Mirai).', url: 'https://www.science.org/doi/10.1126/scitranslmed.aba4373' },
+  ],
+  2: [
+    { cite: 'Rajkomar et al. (2018), Scalable and accurate deep learning with electronic health records.', url: 'https://www.nature.com/articles/s41746-018-0029-1' },
+    { cite: 'Yuan et al. (2021), Temporal bias in case-control design.', url: 'https://www.nature.com/articles/s41467-021-21390-2' },
+    { cite: 'Einav et al. (2018), Predictive modeling of U.S. health care spending in late life.', url: 'https://www.science.org/doi/10.1126/science.aar5045' },
+    { cite: 'Chandra, Cutler & Song (2011), Who ordered that? The economics of treatment choices in medical care.', url: 'https://www.sciencedirect.com/science/article/pii/B9780444535924000062' },
+    { cite: 'Fleming et al. (2023), MedAlign: a clinician-generated dataset.', url: 'https://arxiv.org/abs/2308.14089' },
+    { cite: 'The datasets list in the resources document.' },
+  ],
+  3: [
+    { cite: 'Card et al. (2020), With Little Power Comes Great Responsibility.', url: 'https://aclanthology.org/2020.emnlp-main.745/' },
+    { cite: 'Liu et al. (2022), The medical algorithmic audit.', url: 'https://doi.org/10.1016/S2589-7500(22)00003-6' },
+    { cite: 'Plana et al. (2022), Randomized Clinical Trials of Machine Learning Interventions in Health Care.', url: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2796833' },
+    { cite: 'Yu et al. (2024), Heterogeneity and predictors of the effects of AI assistance on radiologists.', url: 'https://www.nature.com/articles/s41591-024-02850-w' },
+    { cite: 'Chang et al. (2024), Red Teaming Large Language Models in Medicine.', url: 'https://www.medrxiv.org/content/10.1101/2024.04.05.24305411v1' },
+  ],
+  4: [
+    { cite: 'Yang et al. (2022), A large language model for electronic health records (GatorTron).', url: 'https://www.nature.com/articles/s41746-022-00742-2' },
+    { cite: 'Lehman et al. (2023), Do we still need clinical language models?', url: 'https://arxiv.org/abs/2302.08091' },
+    { cite: 'Agrawal et al. (2022), Large Language Models are Few-Shot Clinical Information Extractors.', url: 'https://aclanthology.org/2022.emnlp-main.130/' },
+    { cite: 'Jiménez-Sánchez et al. (2024), Copycats: the many lives of a public medical imaging dataset.', url: 'https://arxiv.org/abs/2402.06353' },
+    { cite: 'One current foundation-model-for-health reading — instructor’s pick (announced before the camp).' },
+  ],
+  5: [
+    { cite: 'Obermeyer et al. (2019), Dissecting racial bias in an algorithm used to manage the health of populations.', url: 'https://www.science.org/doi/10.1126/science.aax2342' },
+    { cite: 'Collins et al. (2024), TRIPOD+AI statement.', url: 'https://doi.org/10.1136/bmj-2023-078378' },
+    { cite: 'Boag et al. (2024), The algorithm journey map.', url: 'https://www.nature.com/articles/s41746-024-01061-4' },
+    { cite: 'Lyons et al. (2023), Variability in the performance of a sepsis prediction model across 9 hospitals.', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2803492' },
+    { cite: 'Pfohl et al. (2024), A toolbox for surfacing health equity harms and biases in large language models.', url: 'https://www.nature.com/articles/s41591-024-03258-2' },
+  ],
+};

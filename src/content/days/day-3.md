@@ -77,14 +77,6 @@ stand-in for your project.
 The day closes with **Small Group 2**: with the notebook in hand, you turn its
 findings into your project's evaluation plan.
 
-## Required readings
-
-1. Card et al. (2020), *With Little Power Comes Great Responsibility.*
-2. Liu et al. (2022), *The medical algorithmic audit.*
-3. Plana et al. (2022), *Randomized Clinical Trials of Machine Learning Interventions in Health Care.*
-4. Yu et al. (2024), *Heterogeneity and predictors of the effects of AI assistance on radiologists.*
-5. Chang et al. (2024), *Red Teaming Large Language Models in Medicine.*
-
 ## Project Workbook — Part 3: Evaluation & study design
 
 Estimand, primary and secondary metrics, subgroup / fairness plan, sample-size
@@ -92,6 +84,7 @@ reasoning, and the top three threats to validity.
 
 ## Additional resources
 
+- Lecture slides (tentative draft): [view the deck](/slides/day3-evaluation.html) · [PDF](/slides/day3-evaluation.pdf).
 - [Evaluation Lab notebook](/notebooks/evaluation-lab-template.ipynb) — the Day 3 workshop template.
 - [Project Workbook template](/project-workbook/) — Part 3.
 - [scikit-learn](https://scikit-learn.org/), [fairlearn](https://fairlearn.org/), and scikit-survival, as implementation references.

@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { url } from '../../lib/site';
-import { days as curriculumDays } from '../../lib/curriculum';
+import { days as curriculumDays, readings } from '../../lib/curriculum';
 import type { Person } from '../../lib/curriculum';
 
 export async function getStaticPaths() {
@@ -25,6 +25,8 @@ const idx = sorted.findIndex((d) => d.n === meta.n);
 const prev = sorted[idx - 1];
 const next = sorted[idx + 1];
 const dayPath = (n: number) => url(`curriculum/day-${n}`);
+
+const dayReadings = readings[meta.n] ?? [];
 ---
 <BaseLayout title={`Day ${meta.n}: ${meta.title}`} description={meta.gap}>
   <header class="hero hero--profile">
@@ -56,6 +58,17 @@ const dayPath = (n: number) => url(`curriculum/day-${n}`);
     <div class="wrap">
       <div class="day-detail">
         <Content />
+
+        {dayReadings.length > 0 && (
+          <>
+            <h2 id="readings">Required readings</h2>
+            <ol class="reading-list">
+              {dayReadings.map((r) => (
+                <li>{r.url ? <a href={r.url} rel="noopener" target="_blank">{r.cite}</a> : <span>{r.cite}</span>}</li>
+              ))}
+            </ol>
+          </>
+        )}
       </div>
 
       <nav class="day-nav">

@@ -71,15 +71,6 @@ routes, and shared biases in your domain.
 The day closes with **Small Group 2**, where you refine the access plan in light
 of the breakout and complete your data specification.
 
-## Required readings
-
-1. Rajkomar et al. (2018), *Scalable and accurate deep learning with electronic health records.*
-2. Yuan et al. (2021), *Temporal bias in case-control design.*
-3. Einav et al. (2018), *Predictive modeling of U.S. health care spending in late life.*
-4. Chandra, Cutler & Song (2011), *Who ordered that? The economics of treatment choices in medical care.*
-5. Fleming et al. (2023), *MedAlign: a clinician-generated dataset.*
-6. The datasets list in the resources document.
-
 ## Project Workbook — Part 2: Data
 
 The data-generating process, what data already exists, your access plan,
@@ -89,6 +80,7 @@ data plan — and note that here.
 
 ## Additional resources
 
+- Lecture slides (tentative draft): [view the deck](/slides/day2-data.html) · [PDF](/slides/day2-data.pdf).
 - [Project Workbook template](/project-workbook/) — Part 2.
 - [PhysioNet](https://physionet.org/) — MIMIC-IV and credentialing.
 - The MEDS (Medical Event Data Standard) documentation.

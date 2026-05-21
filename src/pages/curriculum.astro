@@ -2,8 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import { url } from '../lib/site';
-import { days, dailyRhythm } from '../lib/curriculum';
+import { days, dailyRhythm, readings } from '../lib/curriculum';
 import type { Person } from '../lib/curriculum';
+
+// Days that carry required readings, in order.
+const readingDays = days.filter((d) => (readings[d.n] ?? []).length > 0);
 
 // Render an instructor name, linked to their profile when we have a slug.
 function personHref(p?: Person): string | null {
@@ -81,6 +84,27 @@ function personHref(p?: Person): string | null {
           <div class="rhythm-row"><dt>{b.time}</dt><dd>{b.item}</dd></div>
         ))}
       </dl>
+    </div>
+  </section>
+
+  <section class="section" id="required-readings">
+    <div class="wrap">
+      <p class="eyebrow">Required readings</p>
+      <h2>Readings by day</h2>
+      <p>
+        Each content day has a short required-reading list. They’re also on each
+        day’s page; the full set is collected here.
+      </p>
+      {readingDays.map((d) => (
+        <div class="profile-block">
+          <h3><a href={url(`curriculum/day-${d.n}`)}>Day {d.n} — {d.title}</a></h3>
+          <ol class="reading-list">
+            {(readings[d.n] ?? []).map((r) => (
+              <li>{r.url ? <a href={r.url} rel="noopener" target="_blank">{r.cite}</a> : <span>{r.cite}</span>}</li>
+            ))}
+          </ol>
+        </div>
+      ))}
     </div>
   </section>
 

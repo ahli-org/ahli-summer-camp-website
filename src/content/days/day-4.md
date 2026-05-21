@@ -77,14 +77,6 @@ proposal is reviewed by two assigned peers, and you revise your method rationale
 > alternative discussed? (1–5) (4) One strength. (5) The single most valuable
 > change.
 
-## Required readings
-
-1. Yang et al. (2022), *A large language model for electronic health records (GatorTron).*
-2. Lehman et al. (2023), *Do we still need clinical language models?*
-3. Agrawal et al. (2022), *Large Language Models are Few-Shot Clinical Information Extractors.*
-4. Jimenez-Sanchez et al. (2024), *Copycats: the many lives of a public medical imaging dataset.*
-5. One current foundation-model-for-health reading — instructor's pick (announced before the camp).
-
 ## Project Workbook — Part 4: Method & modeling
 
 Your chosen approach justified against data and metrics; the
@@ -94,6 +86,7 @@ alternative.
 
 ## Additional resources
 
+- Lecture slides (tentative draft): [view the deck](/slides/day4-methods.html) · [PDF](/slides/day4-methods.pdf).
 - [Methods Lab notebook](/notebooks/methods-lab-template.ipynb) — the Day 4 workshop template.
 - [Project Workbook template](/project-workbook/) — Part 4.
 - The MEDS ecosystem documentation, as an implementation reference.

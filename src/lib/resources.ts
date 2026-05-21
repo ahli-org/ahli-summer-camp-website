@@ -29,8 +29,8 @@ export const studentResources: Resource[] = [
   },
   {
     title: 'Required readings',
-    description: 'Each content day’s required papers are listed on its day page.',
-    internal: 'curriculum',
+    description: 'Every content day’s required papers, with links — collected on the curriculum page and on each day’s page.',
+    internal: 'curriculum#required-readings',
   },
   {
     title: 'Evaluation Lab notebook (Day 3)',
@@ -46,6 +46,16 @@ export const studentResources: Resource[] = [
     title: 'Session recordings',
     description: 'Video recordings of the lectures — posted after the camp.',
   },
+];
+
+// Lecture slide decks (Marp), built in the companion slides repo and synced via
+// `npm run sync:slides`. Tentative drafts — actively revised.
+export const slideResources: Resource[] = [
+  { title: 'Day 1 — Problems in ML4H', description: 'Lead lecture slides (PDF also available on the day page).', file: 'slides/day1-problems.html' },
+  { title: 'Day 2 — Data', file: 'slides/day2-data.html' },
+  { title: 'Day 3 — Evaluation & Study Design', file: 'slides/day3-evaluation.html' },
+  { title: 'Day 4 — Methods & Modeling', file: 'slides/day4-methods.html' },
+  { title: 'Day 5 — Deployment', file: 'slides/day5-deployment.html' },
 ];
 
 export const instructorResources: Resource[] = [

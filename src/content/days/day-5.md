@@ -68,19 +68,13 @@ experience.
 The day closes with **Small Group 2**, where you finish red-teaming any
 remaining projects and complete your deployment plan.
 
-## Required readings
+## Recommended / reference reading
 
-1. Obermeyer et al. (2019), *Dissecting racial bias in an algorithm used to manage population health.*
-2. The *TRIPOD+AI statement* (2024).
-3. Boag et al. (2024), *The algorithm journey map.*
-4. Lyons et al. (2023), *Sepsis model variability across hospitals.*
-5. Pfohl et al. (2024), *A toolbox for surfacing health equity harms and biases in large language models.*
-
-*Recommended / reference:* Diao et al. (2024) on race adjustment; Bastani et al.
-(2021) on RL for COVID border testing; Varoquaux & Cheplygina (2022) on imaging
-methodological failures; Ganapathi et al. (2022), STANDING Together; Vidal et al.
-(2023) on US AI regulation; Agarwal et al. (2023) on combining human and AI
-expertise.
+Beyond the required readings (listed below): Diao et al. (2024) on race
+adjustment; Bastani et al. (2021) on RL for COVID border testing; Varoquaux &
+Cheplygina (2022) on imaging methodological failures; Ganapathi et al. (2022),
+STANDING Together; Vidal et al. (2023) on US AI regulation; Agarwal et al. (2023)
+on combining human and AI expertise.
 
 ## Project Workbook — Part 5: Deployment
 
@@ -90,6 +84,7 @@ and approvals the deployment needs.
 
 ## Additional resources
 
+- Lecture slides (tentative draft): [view the deck](/slides/day5-deployment.html) · [PDF](/slides/day5-deployment.pdf).
 - [Project Workbook template](/project-workbook/) — Part 5.
 - The TRIPOD+AI reporting checklist.
 - Institutional model-monitoring and audit frameworks referenced in the readings.

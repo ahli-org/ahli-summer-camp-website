@@ -2,19 +2,24 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import { SITE, url } from '../lib/site';
-import { studentResources, instructorResources } from '../lib/resources';
+import { studentResources, instructorResources, slideResources } from '../lib/resources';
 import type { Resource } from '../lib/resources';
 
 const base = import.meta.env.BASE_URL;
 
-const sections: { heading: string; eyebrow: string; items: Resource[] }[] = [
+const sections: { heading: string; eyebrow: string; items: Resource[]; note?: string }[] = [
   { eyebrow: 'For students', heading: 'Student resources', items: studentResources },
+  { eyebrow: 'Lecture slides', heading: 'Lecture slide decks', items: slideResources, note: 'Tentative drafts, actively being revised. Each opens as an interactive deck; a PDF is linked from the matching day page.' },
   { eyebrow: 'For instructors', heading: 'Instructor resources', items: instructorResources },
 ];
 
 const hasLink = (r: Resource) => Boolean(r.internal || r.file || r.href);
+const internalHref = (path: string) => {
+  const [p, hash] = path.split('#');
+  return url(p) + (hash ? `#${hash}` : '');
+};
 const linkFor = (r: Resource) =>
-  r.internal ? url(r.internal) : r.file ? `${base}${r.file}` : (r.href ?? '#');
+  r.internal ? internalHref(r.internal) : r.file ? `${base}${r.file}` : (r.href ?? '#');
 const external = (r: Resource) => Boolean(r.href);
 ---
 <BaseLayout title="Resources">
@@ -29,6 +34,7 @@ const external = (r: Resource) => Boolean(r.href);
       <div class="wrap">
         <p class="eyebrow">{s.eyebrow}</p>
         <h2>{s.heading}</h2>
+        {s.note && <p class="section-lead">{s.note}</p>}
         <ul class="resource-list">
           {s.items.map((r) => (
             <li class="resource">

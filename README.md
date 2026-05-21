@@ -63,6 +63,8 @@ automatically once `base` is set correctly — no per-page edits needed.
 | Per-day curriculum outlines | `src/content/days/day-N.md` |
 | Instructor guide / Project Workbook | `src/md/*.md` |
 | Workshop notebooks | `scripts/build-notebooks.py` → `public/notebooks/*.ipynb` |
+| Lecture slide decks | built in the companion `ahli-summer-camp-slides` repo; `npm run sync:slides` → `public/slides/` |
+| Internal review banner | `REVIEW_MODE` in `src/lib/site.ts` (set `false` to hide) |
 | Colors, fonts, layout | `src/styles/global.css` (CSS variables in `:root`) |
 | Logo assets | `public/logos/` (see "Branding" below) |
 
@@ -151,12 +153,14 @@ ahli-summer-camp/
 ├── astro.config.mjs            # site URL + base path config
 ├── scripts/
 │   ├── build-people.mjs        # generates students.json + instructors.json from sources
-│   └── build-notebooks.py      # generates the Day 3 & 4 workshop notebooks
+│   ├── build-notebooks.py      # generates the Day 3 & 4 workshop notebooks
+│   └── sync-slides.mjs         # vendors Marp decks from the companion slides repo
 ├── public/
 │   ├── favicon.svg             # AHLI cross mark
 │   ├── logos/                  # AHLI logo lockups (white / colour / mark) + sponsor
 │   ├── people/                 # generated headshots (<slug>.jpg)
-│   └── notebooks/              # generated workshop notebooks (.ipynb)
+│   ├── notebooks/              # generated workshop notebooks (.ipynb)
+│   └── slides/                 # synced lecture decks (Marp HTML + PDF)
 ├── src/
 │   ├── content.config.ts       # content collection: per-day curriculum outlines
 │   ├── content/
@@ -168,6 +172,7 @@ ahli-summer-camp/
 │   │   ├── ProfileCard.astro   # grid card (links to a profile)
 │   │   ├── ProfileDetail.astro # full profile layout (bio, awards, press)
 │   │   ├── ProfileLinks.astro  # icon link buttons
+│   │   ├── ReviewNotice.astro  # internal pre-launch review banner (REVIEW_MODE)
 │   │   └── Sidebar.astro       # fixed navigation sidebar
 │   ├── data/
 │   │   ├── students.json       # generated cohort data (committed)

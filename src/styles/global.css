@@ -178,6 +178,23 @@ a:hover { color: var(--teal); }
 .section { padding: 3.4rem 0; }
 .section + .section { border-top: 1px solid var(--line); }
 
+/* ---- Internal review notice (REVIEW_MODE) -------------------------------- */
+.review-notice {
+  background: #fff8e1; color: #5a4a00;
+  border: 2px solid #e0a800; border-left-width: 8px;
+  padding: 1.2rem 1.5rem; margin: 1.2rem;
+}
+.review-notice-tag {
+  font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+  color: #9a4a00; margin: 0 0 .5rem; font-size: .95rem;
+}
+.review-notice p { margin: 0 0 .6rem; }
+.review-notice ul { margin: .4rem 0 .6rem 1.2rem; }
+.review-notice li { margin-bottom: .4rem; }
+.review-notice a { color: #8a4b00; font-weight: 600; }
+.review-notice code { background: rgba(0,0,0,.06); padding: .05rem .3rem; border-radius: 4px; font-size: .9em; }
+.review-notice-foot { font-size: .85rem; color: #7a6a2a; margin-bottom: 0; }
+
 /* ---- Hero / page banner -------------------------------------------------- */
 .hero {
   position: relative; overflow: hidden;
@@ -434,6 +451,9 @@ a:hover { color: var(--teal); }
 .profile-block { margin-top: 2.4rem; }
 .award-list { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); }
 .award-list li { margin-bottom: .5rem; }
+.reading-list { margin: 0 0 1rem; padding-left: 1.3rem; color: var(--ink-soft); }
+.reading-list li { margin-bottom: .5rem; }
+.reading-list a { font-weight: 500; }
 .highlight-list { list-style: none; margin: 0; padding: 0; }
 .highlight-list li {
   display: flex; gap: .7rem; align-items: flex-start;
