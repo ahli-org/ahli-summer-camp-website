@@ -194,6 +194,11 @@ committed. Ask the program committee for them if you need to regenerate.
   added day files aren't picked up until you restart.
 - **Port already in use.** `npm run dev` falls back to the next free port; use
   the URL it prints (not a hard-coded 4321).
+- **`http://localhost:<port>/` shows a 404.** The site is configured with
+  `base: '/ahli-summer-camp-website/'` (for GitHub Pages), so the dev server
+  serves everything under that subpath. Use the full URL Astro prints on
+  startup, e.g. `http://localhost:4321/ahli-summer-camp-website/`. All in-site
+  links point to `/ahli-summer-camp-website/…` and work end-to-end from there.
 - **"Open in Colab" on a notebook page doesn't open.** The repo is private, so
   Colab's GitHub opener needs access until the site is public — download the
   `.ipynb` and upload it to Colab, or run it locally (`pip install -r
