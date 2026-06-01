@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE, url, REVIEW_MODE } from '../lib/site';
-import ReviewNotice from '../components/ReviewNotice.astro';
+import { SITE, url } from '../lib/site';
 
 const facts = [
   { k: 'Dates', v: SITE.dates },
@@ -13,7 +12,6 @@ const facts = [
 ];
 ---
 <BaseLayout title="Home">
-  {REVIEW_MODE && <ReviewNotice />}
   <header class="hero hero--home">
     <div class="hero-inner">
       <span class="date-badge">{SITE.dates}</span>

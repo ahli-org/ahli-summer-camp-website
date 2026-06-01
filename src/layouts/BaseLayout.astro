@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.astro';
-import { SITE, url } from '../lib/site';
+import ReviewNotice from '../components/ReviewNotice.astro';
+import { SITE, url, REVIEW_MODE } from '../lib/site';
 
 interface Props {
   title: string;
@@ -52,6 +53,7 @@ const year = new Date().getFullYear();
     <Sidebar />
 
     <main id="main" class="content">
+      {REVIEW_MODE && <ReviewNotice />}
       <slot />
 
       <footer class="site-footer">

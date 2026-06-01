@@ -1,55 +1,17 @@
 ---
-// Internal review banner — flags content that needs human verification before
-// launch. Controlled by REVIEW_MODE in src/lib/site.ts; set that to false (or
-// delete this component's usage) to remove it everywhere before deploy.
-import { url } from '../lib/site';
+// Pre-launch draft banner — shown on every page via BaseLayout while the site
+// is shared with a small group of reviewers (instructors, students, program
+// committee) to verify their details. Controlled by REVIEW_MODE in
+// src/lib/site.ts; set that to false before public launch.
+import { SITE } from '../lib/site';
 ---
-<aside class="review-notice" role="note" aria-label="Internal review notice">
-  <p class="review-notice-tag">⚠ Internal review — not for public release</p>
+<aside class="review-notice" role="note" aria-label="Draft notice">
+  <p class="review-notice-tag">⚠ Draft — not for public dissemination</p>
   <p>
-    This is a draft for the program committee. The following need a human
-    accuracy/recency pass before launch:
-  </p>
-  <ul>
-    <li>
-      <strong>Required readings.</strong> The citation lists (see the
-      <a href={`${url('curriculum')}#required-readings`}>curriculum readings</a>)
-      are carried from the program materials and several look out of date or
-      incorrect — verify every
-      citation, that it is the intended reading, and that each link resolves.
-      <em>Day 2</em>’s “datasets list” and <em>Day 4</em>’s “instructor’s pick”
-      are placeholders.
-    </li>
-    <li>
-      <strong>Curriculum & schedule.</strong> Authored from the finalized program
-      materials — confirm day themes, the five-block / closing-small-group
-      structure, and all times against the official schedule.
-    </li>
-    <li>
-      <strong>Instructors.</strong> Day/role come from the source data; some
-      bios, links, awards, and press were assembled programmatically — verify
-      each, and confirm day assignments (source session times were stale and are
-      not shown).
-    </li>
-    <li>
-      <strong>Students.</strong> Bios, links, awards, press, and taglines were
-      assembled/drafted programmatically — verify each profile.
-    </li>
-    <li>
-      <strong>Workshop notebooks & Project Workbook.</strong> Drafts — review and
-      expand before use.
-    </li>
-    <li>
-      <strong>Slide decks.</strong> Tentative and actively being revised in the
-      companion repository.
-    </li>
-    <li>
-      <strong>Still TBD:</strong> Day 5 fireside clinician/patient guest; Day 6
-      panelists; final contact email and site URL.
-    </li>
-  </ul>
-  <p class="review-notice-foot">
-    To remove this banner, set <code>REVIEW_MODE = false</code> in
-    <code>src/lib/site.ts</code>.
+    This is a pre-launch draft of the {SITE.name} {SITE.year} site, shared with
+    a small group of reviewers to verify program materials and personal details
+    before public launch. If you spot anything incorrect — particularly about
+    your own bio, photo, links, day assignment, or affiliation — please email
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a> so we can fix it.
   </p>
 </aside>

@@ -29,8 +29,7 @@ export const SITE = {
   year: '2026',
   tagline: 'A week-long intensive in machine learning for health.',
   dates: 'June 22–28, 2026',
-  // TODO: replace with the real camp contact address.
-  email: 'summer-camp@ahli.org',
+  email: 'summercamp@ahli.cc',
   funder: 'Gordon and Betty Moore Foundation',
   colocatedWith: 'the Conference on Health, Inference, and Learning (CHIL)',
 };
