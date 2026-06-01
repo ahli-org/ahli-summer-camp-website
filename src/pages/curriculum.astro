@@ -50,11 +50,20 @@ function personHref(p?: Person): string | null {
                 )}
                 {d.guest && (
                   <span>
-                    <strong>Guest:</strong>{' '}
+                    <strong>{d.guest2 ? 'Guests' : 'Guest'}:</strong>{' '}
                     {personHref(d.guest)
                       ? <a href={personHref(d.guest)}>{d.guest.name}</a>
                       : <span>{d.guest.name}</span>}
                     {d.guest.affil && <span class="faculty-affil"> ({d.guest.affil})</span>}
+                    {d.guest2 && (
+                      <>
+                        {' & '}
+                        {personHref(d.guest2)
+                          ? <a href={personHref(d.guest2)}>{d.guest2.name}</a>
+                          : <span>{d.guest2.name}</span>}
+                        {d.guest2.affil && <span class="faculty-affil"> ({d.guest2.affil})</span>}
+                      </>
+                    )}
                   </span>
                 )}
                 {d.panel && <span><strong>Plus:</strong> a four-lens funding panel</span>}

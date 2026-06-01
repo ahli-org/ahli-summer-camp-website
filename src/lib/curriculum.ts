@@ -19,6 +19,7 @@ export interface CurriculumDay {
   lead?: Person;
   leadLabel?: string; // defaults to "Lead lecture"
   guest?: Person;
+  guest2?: Person;    // optional second guest (Day 2 has two Sage Bionetworks guests)
   panel?: boolean;
   morning: string;
   afternoon: string;
@@ -49,6 +50,7 @@ export const days: CurriculumDay[] = [
     mode: 'Interrogate',
     lead: { name: 'Tom Pollard', affil: 'MIT', slug: 'tom-pollard' },
     guest: { name: 'Solly Sieberts', affil: 'Sage Bionetworks', slug: 'solly-sieberts' },
+    guest2: { name: 'Jineta Banerjee', affil: 'Sage Bionetworks', slug: 'jineta-banerjee' },
     morning:
       'Health data as a first-class citizen — the data-generating process, structured clinical data, de-identification, and access mechanics (PhysioNet, DUAs). Small groups map their own data-generating process and access plan.',
     afternoon:

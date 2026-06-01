@@ -46,9 +46,16 @@ const daySuggested = suggestedReadings[meta.n] ?? [];
         )}
         {meta.guest && (
           <span>
-            <strong>Guest:</strong>{' '}
+            <strong>{meta.guest2 ? 'Guests' : 'Guest'}:</strong>{' '}
             {personHref(meta.guest) ? <a href={personHref(meta.guest)}>{meta.guest.name}</a> : <span>{meta.guest.name}</span>}
             {meta.guest.affil && <span class="faculty-affil"> ({meta.guest.affil})</span>}
+            {meta.guest2 && (
+              <>
+                {' & '}
+                {personHref(meta.guest2) ? <a href={personHref(meta.guest2)}>{meta.guest2.name}</a> : <span>{meta.guest2.name}</span>}
+                {meta.guest2.affil && <span class="faculty-affil"> ({meta.guest2.affil})</span>}
+              </>
+            )}
           </span>
         )}
       </p>
