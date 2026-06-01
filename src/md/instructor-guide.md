@@ -141,10 +141,13 @@ afternoon small group.
 process; data collected as a byproduct of care versus designed for research;
 de-identification and governance; and, concretely, access mechanics — PhysioNet
 credentialing, data use agreements, what it actually takes to get MIMIC-style
-data in hand. Frame the day as a two-sided contrast: your lecture covers
-structured institutional data, the Sage Bionetworks guest lectures (Sieberts and
-Banerjee) cover patient-generated, multi-omics, and consortium data — make the
-contrast explicit so the guest lectures land as the other half of one picture.
+data in hand. Frame the day as a two-sided contrast: your lecture covers the
+*byproduct-of-care* world — single-site institutional EHRs, MIMIC-style cohorts;
+the Sage Bionetworks guest lectures cover the *designed-for-research* world —
+Sieberts on statistical genetics and multi-omics with DREAM Challenges as a
+benchmarking model, and Banerjee on rare-disease data fabric and Synapse-style
+governed sharing across consortia and patient communities. Make the contrast
+explicit so the guest lectures land as the other half of one picture.
 
 **Handoff.** Open with the handoff (Day 1 problem statements). Close by naming
 Workbook Part 2 — the data specification — and its gap check: does the available

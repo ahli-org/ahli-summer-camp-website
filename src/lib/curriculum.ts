@@ -54,7 +54,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Health data as a first-class citizen — the data-generating process, structured clinical data, de-identification, and access mechanics (PhysioNet, DUAs). Small groups map their own data-generating process and access plan.',
     afternoon:
-      'A guest lecture on patient-generated, wearable, and sensor data and the commercial data ecosystem. Small groups refine the access plan and complete a data specification, followed by a data clinic within your modality track.',
+      'Two guest lectures from Sage Bionetworks on the other half of the picture: research-cohort and genomics data (GWAS, multi-omics, longitudinal phenotyping), and the Synapse / data-fabric model for governed sharing across consortia and patient communities. Small groups refine the access plan and complete a data specification, followed by a data clinic within your modality track.',
     questions:
       'What is the data-generating process for your project? What data exists independent of your AI system, and what biases does its provenance create?',
   },
