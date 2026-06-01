@@ -32,7 +32,7 @@ export const days: CurriculumDay[] = [
     title: 'Problems in ML4H',
     gap: 'An interesting topic → a real, well-posed health problem with stakeholders.',
     mode: 'Frame',
-    lead: { name: 'Pete Szolovits', affil: 'MIT', slug: 'peter-szolovits' },
+    lead: { name: 'Peter Szolovits', affil: 'MIT', slug: 'peter-szolovits' },
     guest: { name: 'Emily Alsentzer', affil: 'Stanford', slug: 'emily-alsentzer' },
     morning:
       'An opening block — welcome, orientation to how the week works, and a brief icebreaker — then a field-level frame: what ML4H is, what is shared across health problems, and what AI can and cannot do. A first small group reframes your project as a problem, not a method.',
@@ -48,7 +48,7 @@ export const days: CurriculumDay[] = [
     gap: 'A problem → the data that actually exists to attack it.',
     mode: 'Interrogate',
     lead: { name: 'Tom Pollard', affil: 'MIT', slug: 'tom-pollard' },
-    guest: { name: 'Luca Foschini', affil: 'Sage Bionetworks', slug: 'luca-foschini' },
+    guest: { name: 'Solly Sieberts', affil: 'Sage Bionetworks', slug: 'solly-sieberts' },
     morning:
       'Health data as a first-class citizen — the data-generating process, structured clinical data, de-identification, and access mechanics (PhysioNet, DUAs). Small groups map their own data-generating process and access plan.',
     afternoon:
@@ -93,7 +93,7 @@ export const days: CurriculumDay[] = [
     gap: 'A model that works in a notebook → a system that survives a real clinic.',
     mode: 'Stress-test',
     lead: { name: 'Muhammad Mamdani', affil: 'Unity Health / U Toronto', slug: 'muhammad-mamdani' },
-    guest: { name: 'Deb Raji', affil: 'UC Berkeley', slug: 'inioluwa-deborah-raji' },
+    guest: { name: 'Inioluwa Deborah Raji', affil: 'UC Berkeley', slug: 'inioluwa-deborah-raji' },
     morning:
       'Real-world deployment war stories — workflow integration, clinician adoption, monitoring, and drift. Small groups red-team the ethics, safety, and failure modes of their project.',
     afternoon:
@@ -107,7 +107,7 @@ export const days: CurriculumDay[] = [
     title: 'Finance, Compute & Collaborators',
     gap: 'A working prototype → a funded, staffed, sustained program.',
     mode: 'Resource',
-    lead: { name: 'Jon Kolstad', affil: 'UC Berkeley', slug: 'jonathan-t-kolstad' },
+    lead: { name: 'Jonathan T. Kolstad', affil: 'UC Berkeley', slug: 'jonathan-t-kolstad' },
     leadLabel: 'Panel chair',
     panel: true,
     morning:

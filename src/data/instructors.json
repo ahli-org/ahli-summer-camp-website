@@ -40,10 +40,7 @@
       }
     ],
     "bio": [
-      "Muhammad Mamdani is the inaugural Vice President of Data Science and Advanced Analytics at Unity Health Toronto and the founding Director of the University of Toronto's Temerty Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM). He also founded and directs the Li Ka Shing Centre for Healthcare Analytics Research and Training (LKS-CHART). He is a Professor at the University of Toronto with appointments spanning the Temerty Faculty of Medicine, the Leslie Dan Faculty of Pharmacy, and the Institute of Health Policy, Management and Evaluation in the Dalla Lana School of Public Health. He holds a Doctor of Pharmacy (PharmD) from the University of Michigan, a Master of Arts in economics from Wayne State University, and a Master of Public Health from Harvard University, and completed a fellowship in pharmacoeconomics and outcomes research at the Detroit Medical Center.",
-      "Mamdani's work bridges health data science, pharmacoepidemiology, drug safety, and the real-world deployment of AI in clinical practice. At Unity Health Toronto, his team has developed and deployed dozens of AI solutions into live clinical care. Earlier in his career he founded the Ontario Drug Policy Research Network (ODPRN) and the Applied Health Research Centre, the latter of which has managed more than 100 multi-site clinical studies. He has authored over 500 peer-reviewed studies, including in the New England Journal of Medicine, The Lancet, JAMA, BMJ, and Annals of Internal Medicine; his work has been cited more than 55,000 times with an h-index above 110, making him one of the most highly cited researchers in his field.",
-      "He is a recognized leader and frequent speaker on applied AI in medicine, and was named one of Canada's Top 40 Under 40 in 2010.",
-      "At the camp: Lead Lecturer — Day 5 Deployment, 9:00 AM Lecture on real-world deployments & challenges."
+      "Dr. Mamdani is Clinical Lead – Artificial Intelligence at Ontario Health and Director of the University of Toronto Temerty Faculty of Medicine Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM). Previously, Dr. Mamdani was Vice President of Data Science and Advanced Analytics at Unity Health Toronto where his team deployed over 50 AI solutions to improve patient outcomes and hospital efficiency. Dr. Mamdani is also Professor in the Department of Medicine of the Temerty Faculty of Medicine, the Leslie Dan Faculty of Pharmacy, and the Institute of Health Policy, Management and Evaluation of the Dalla Lana School of Public Health. He is also an Affiliate Scientist at IC/ES and a Faculty Affiliate of the Vector Institute. In 2024, Dr. Mamdani’s team received the national Solventum Health Care Innovation Team Award by the Canadian College of Health Leaders. Also in 2024, Dr. Mamdani was named international AI Leader of the Year by AIMed. Previously, Dr. Mamdani was named among Canada’s Top 40 under 40. He has published over 600 studies in peer-reviewed medical journals. Dr. Mamdani obtained a Doctor of Pharmacy degree (PharmD) from the University of Michigan (Ann Arbor) and completed a fellowship in pharmacoeconomics and outcomes research at the Detroit Medical Center. During his fellowship, Dr. Mamdani obtained a Master of Arts degree in Economics from Wayne State University with a concentration in econometric theory. He then completed a Master of Public Health degree from Harvard University with a concentration in quantitative methods."
     ],
     "tagline": "Deploying AI into real clinical care",
     "role": "Lead Lecturer",
@@ -195,68 +192,93 @@
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
   },
   {
-    "slug": "luca-foschini",
-    "name": "Luca Foschini",
+    "slug": "solly-sieberts",
+    "name": "Solly Sieberts",
     "affiliation": "Sage Bionetworks",
-    "photo": "people/luca-foschini.jpg",
+    "photo": "people/solly-sieberts.jpg",
     "links": [
       {
         "label": "Website",
-        "href": "https://lucafoschini.com/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=LNtKWuIAAAAJ&hl=en"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/LucaFoschini"
+        "href": "https://www.synapse.org/Profile:273959"
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/lucafoschini/"
+        "href": "https://www.linkedin.com/in/solveig-sieberts-b9172125"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0003-1033-0954"
       }
     ],
-    "awards": [
-      "UCSB Distinguished PhD Alumni Award (2023)",
-      "Ashoka Fellow",
-      "Italian Excellence Award, Italian-American Chamber of Commerce West (2021)",
-      "KDD Best Paper Award Runner-up (2019)",
-      "International Olympiad in Informatics, Italian National Team (2000, 2001)"
-    ],
+    "awards": [],
     "highlights": [
       {
-        "type": "press_release",
-        "title": "Sage Bionetworks Appoints New President",
-        "url": "https://sagebionetworks.org/article/sage-bionetworks-appoints-new-president",
-        "source": "Sage Bionetworks",
+        "type": "feature",
+        "title": "A collaborative approach that engages the community to develop digital biomarkers (Behind the Paper)",
+        "url": "https://communities.springernature.com/posts/a-collaborative-approach-that-engages-the-community-to-develop-digital-biomarkers",
+        "source": "Springer Nature Research Communities",
+        "date": "2021-05"
+      }
+    ],
+    "bio": [
+      "Solly Sieberts is a Principal Scientist and Director of Statistical Genetics at Sage Bionetworks. Her research interests include the analysis of large multi-omics data sets as well as the analysis and integration of multiple diverse data sets such as GWAS, eQTL, molecular networks and causal inference between molecular and clinical phenotypes in human and model organisms. Prior to joining Sage Bionetworks, she previously worked at Rosetta Inpharmatics and deCODE Genetics."
+    ],
+    "role": "Guest Lecturer",
+    "day": "Day 2 Data"
+  },
+  {
+    "slug": "jineta-banerjee",
+    "name": "Jineta Banerjee",
+    "affiliation": "Sage Bionetworks",
+    "photo": "people/jineta-banerjee.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://www.synapse.org/Profile:3389310"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=H0vf5OgAAAAJ&hl=en"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jineta-banerjee"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0002-1775-3645"
+      }
+    ],
+    "awards": [],
+    "highlights": [
+      {
+        "type": "feature",
+        "title": "Boosting Rare Disease Research with Machine Learning",
+        "url": "https://nationalpress.org/topic/machine-learning-rare-disease-jineta-banerjee-sage-bionetworks/",
+        "source": "National Press Foundation",
         "date": "2023"
       },
       {
-        "type": "interview",
-        "title": "Developing digital biomarkers: An interview with Evidation's Co-founder and Chief Data Scientist, Luca Foschini, Ph.D.",
-        "url": "https://rockhealth.com/developing-digital-biomarkers-an-interview-with-evidation/",
-        "source": "Rock Health",
-        "date": null
+        "type": "press_release",
+        "title": "$25 Million Project Seeks to Coordinate Data Produced by Human-Based Testing Methods (Complement-ARIE)",
+        "url": "https://nyulangone.org/news/25-million-project-seeks-coordinate-data-produced-human-based-testing-methods",
+        "source": "NYU Langone News",
+        "date": "2026-03"
       },
       {
-        "type": "talk",
-        "title": "Developing Digital Measures from Person-Generated Health Data | AI & Health",
-        "url": "https://www.youtube.com/watch?v=tNihlUIaqTE",
-        "source": "YouTube",
+        "type": "press_release",
+        "title": "Sage Bionetworks Selected to Build Biomedical Data Fabric Toolbox by ARPA-H",
+        "url": "https://sagebionetworks.org/article/sage-bionetworks-selected-to-build-biomedical-data-fabric-toolbox-by-advanced-research-projects-agency-for-health-arpa-h",
+        "source": "Sage Bionetworks",
         "date": null
       }
     ],
     "bio": [
-      "Luca Foschini is President and CEO of Sage Bionetworks, the nonprofit research organization that builds open-source platforms, data standards, and governance models to make biomedical data easier to share, reproduce, and reuse. He stepped into the role in January 2023. Before Sage, he spent roughly a decade as co-founder and Chief Data Scientist of Evidation Health, where he led a team of more than 50 health data scientists and helped pioneer machine learning models that predict and prevent disease from everyday wearable and sensor data; under his tenure the company grew to serve millions of Americans. He holds a PhD in Computer Science from the University of California, Santa Barbara, and a Master's in Computer Engineering from the Sant'Anna School of Advanced Studies in Pisa, and he previously held research positions at Google and CERN.",
-      "His research sits at the intersection of artificial intelligence, digital medicine, and open data, with an emphasis on methodology for collecting and analyzing person-generated health data, continuous health monitoring, and privacy in high-dimensional data. He has authored more than 70 peer-reviewed publications in venues including *Nature Medicine*, *Science Translational Medicine*, *JAMA Network Open*, and *The Lancet Digital Health*, and he serves on the faculty of Harvard Medical School's executive education program on AI in healthcare.",
-      "Foschini has been recognized with UC Santa Barbara's Distinguished PhD Alumni Award (2023) and an Italian Excellence Award from the Italian-American Chamber of Commerce West (2021), and his work earned a KDD Best Paper runner-up award (2019). He is also a retired competitive programmer who represented Italy at the International Olympiad in Informatics and later coached the Italian national team.",
-      "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough (Day 2 Data)."
+      "Jineta Banerjee, PhD, is a Principal Data Scientist and Associate Director of Advanced Data Analytics at Sage Bionetworks. Her research focuses on creative computational analyses of biomedical data to accelerate rare-disease research and to encourage data sharing within patient communities. Her work spans neuroscience, genomics, bioinformatics, machine learning, and electronic health records. She is involved in the ARPA-H Biomedical Data Fabric Toolbox project, where her team applies AI-assisted methods and digital-dignity principles to meaningfully connect biomedical data, and serves as a principal investigator on the NIH Complement-ARIE program — a $25 million data hub and coordinating center hosted jointly at NYU Langone Health and Sage Bionetworks."
     ],
-    "tagline": "Making biomedical data open and reusable",
+    "tagline": "AI-assisted data sharing for rare-disease research",
     "role": "Guest Lecturer",
-    "day": "Day 2 Data",
-    "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
+    "day": "Day 2 Data"
   },
   {
     "slug": "walter-gerych",
@@ -388,10 +410,7 @@
     "awards": [],
     "highlights": [],
     "bio": [
-      "Shalmali Joshi is an Assistant Professor in the Department of Biomedical Informatics at Columbia University, where she leads the reAIM lab. She is also a member of Columbia's Data Science Institute and is affiliated with the SNF Center for Precision Psychiatry and Mental Health and the Department of Computer Science. She earned her PhD in Electrical and Computer Engineering from the University of Texas at Austin and was previously a postdoctoral fellow at Harvard University's Center for Research on Computation and Society and at the Vector Institute in Toronto.",
-      "Her research addresses the algorithmic safety of machine learning for human-centered domains, with the broad goal of designing AI and ML systems that improve scientific inference and predictive capabilities in the biomedical sciences. The reAIM lab focuses on the generalizability, reliability, and robustness of inference and prediction, drawing on methods that span deep learning, reinforcement learning, observational causal inference, and probabilistic modeling, alongside explainability and the responsible use of generative AI. Application areas include psychiatry, cardiology, radiology, rheumatology, and neurocritical care. Her work appears in venues including NeurIPS, FAccT, CHIL, and MLHC, as well as perspectives in journals such as JAMIA, *The Lancet Digital Health*, and *Nature Medicine*.",
-      "Joshi is active in the machine-learning-for-health community as a co-founder of the Fair ML for Health workshop at NeurIPS, General Chair of ML4H 2022, and Program Chair of MLHC 2022.",
-      "At the camp: Lead Lecturer — Day lead, facilitating the 9:00 AM and 1:30 PM small groups and the 3:00 PM workshop (Day 3 Methods & Evaluation I)."
+      "Shalmali Joshi is an Assistant Professor at Columbia University, Department of Biomedical Informatics, where she leads the reAIM group. She works on robustness, generalizability, and reliability of multimodal AI/ML prediction, inference, and adaptivity in health and biomedicine. Before Columbia, she was a Postdoctoral Fellow at Harvard University and the Vector Institute. She completed her PhD in Electrical and Computer Engineering from the University of Texas at Austin."
     ],
     "tagline": "Algorithmic safety for healthcare machine learning",
     "role": "Lead Lecturer",
@@ -447,10 +466,7 @@
       }
     ],
     "bio": [
-      "Emily Alsentzer is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science at Stanford University, where she leads the Alsentzer Lab. She earned her PhD in 2022 through the MIT/Harvard Medical School Health Sciences and Technology (HST) program and holds a master's in Biomedical Informatics and a bachelor's in Computer Science, both from Stanford. Before joining the Stanford faculty in 2024, she completed a postdoctoral fellowship at Brigham and Women's Hospital and Harvard Medical School, where she worked to deploy machine learning models within the Mass General Brigham health system.",
-      "Her research uses machine learning and natural language processing to augment clinical decision-making and broaden access to high-quality healthcare, with an emphasis on infusing biomedical knowledge into ML algorithms, working with heterogeneous clinical data such as electronic health records and genomic data, improving model trustworthiness, and ensuring responsible deployment in clinical workflows. She is a co-creator of the widely used ClinicalBERT (Clinical BERT) model for clinical text and a founding organizer of the Conference on Health, Inference, and Learning (CHIL). Her work spans few-shot diagnosis of rare diseases, the evaluation of large language models in medicine, and the study of racial and gender bias in clinical AI systems.",
-      "Her honors include the Best Paper Award at CHIL 2023 for \"Do We Still Need Clinical Language Models?\", a Best Oral Presentation Award at ISMB 2023 for her work on rare disease diagnosis, and a Microsoft Accelerate Foundation Models Research Initiative grant.",
-      "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Project walkthrough."
+      "Dr. Emily Alsentzer is an Assistant Professor in Biomedical Data Science and, by courtesy, Computer Science at Stanford University. Her research leverages machine learning (ML) and natural language processing (NLP) to augment clinical decision-making and broaden access to high quality healthcare. She focuses on integrating medical expertise into ML models to ensure responsible deployment in clinical workflows. Dr. Alsentzer completed a postdoctoral fellowship at Brigham and Women’s Hospital where she worked to deploy ML models within the Mass General Brigham healthcare system. She received her PhD from the Health Sciences and Technology program at MIT and Harvard Medical School and holds degrees in computer science (BS) and biomedical informatics (MS) from Stanford University. She has served as General Chair for the Machine Learning for Health Symposium and founding organizer for SAIL and the Conference on Health, Inference, and Learning (CHIL)."
     ],
     "tagline": "Clinical NLP for responsible healthcare AI",
     "role": "Guest Lecturer",
@@ -607,10 +623,10 @@
       }
     ],
     "bio": [
-      "Peter (Pete) Szolovits is Professor of Computer Science and Engineering in MIT's Department of Electrical Engineering and Computer Science (EECS) and head of the Clinical Decision-Making Group within the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). He is also an associate member of the Institute for Medical Engineering and Science (IMES) and a member of the faculty of the Harvard/MIT Division of Health Sciences and Technology (HST). He earned both his bachelor's degree in physics and his PhD in information science from the California Institute of Technology.",
-      "His research applies artificial intelligence methods to problems of medical decision-making, predictive modeling, and clinical decision support, and to the design of information systems for health care institutions and patients. Over a career spanning more than four decades, he has worked on diagnosis, therapy planning, monitoring, computational genetic counseling, controlled sharing of health information, and the privacy and confidentiality of medical records. He is a pioneer of clinical natural language processing, developing methods to extract meaningful structured data from free-text clinical narratives, and his group has been highly influential in the modern machine-learning-for-health community.",
-      "Szolovits is an elected member of the National Academy of Medicine and a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI), the American College of Medical Informatics (ACMI), the American Institute for Medical and Biological Engineering (AIMBE), and the International Academy of Health Sciences Informatics. In 2013 he received the Morris F. Collen Award of Excellence, the American Medical Informatics Association's highest honor.",
-      "At the camp: Lead Lecturer — 10:00 AM Lecture - Intro to problems in ML4H."
+      "Peter Szolovits is Professor (Post-Tenure) of Computer Science and Engineering in the MIT Department of Electrical Engineering and Computer Science (EECS) and in the Harvard/MIT Health Sciences and Technology (HST) program. He heads the Clinical Decision-Making Group within the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL).",
+      "His research centers on the application of AI methods to problems of medical decision making,natural language processing to extract meaningful data from clinical narratives to support translational medicine, and the design of information systems for health care institutions and patients. He has worked on problems of diagnosis, therapy planning, execution and monitoring for various medical conditions, computational aspects of genetic counseling, controlled sharing of health information, and privacy and confidentiality issues in medical record systems. His interests in AI include knowledge representation, qualitative reasoning, and probabilistic inference.",
+      "His interests in medical computing include Web-based heterogeneous medical record systems, life-long personal health information systems, and design of cryptographic schemes for health identifiers. He teaches classes in artificial intelligence, machine learning, programming languages, medical computing, medical decision making, knowledge-based systems and probabilistic inference.",
+      "His physics bachelor's degree and his PhD in information science are both from Caltech. Prof. Szolovits was elected to the National Academy of Medicine and to Fellowships in the American Association for Artificial Intelligence, the American College of Medical Informatics, the American Institute for Medical and Biological Engineering, and the International Academy of Health Sciences Informatics. He has served as a member of the National Research Council's Computer Science and Telecommunications Board and as a member of the National Library of Medicine’s Biomedical Library and Informatics Review Committee. He was the 2013 recipient of the Morris F. Collen Award of Excellence from the American College of Medical Informatics."
     ],
     "tagline": "Pioneering AI for clinical decision-making",
     "role": "Lead Lecturer",

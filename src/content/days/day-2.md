@@ -21,7 +21,7 @@ The mode is **interrogate**: treat your dataset as a suspect.
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 |
 | 12:30–1:30 | Lunch |
-| 1:30–2:45 | Guest lecture (Foschini) |
+| 1:30–2:45 | Guest lectures (Sieberts & Banerjee) |
 | 2:45–4:15 | Specialty Breakout #2 — data clinic |
 | 4:15–5:45 | Small Group 2 (closing) — refine your data specification |
 | 5:45–6:00 | Daily wrap — submit Workbook Part 2 |

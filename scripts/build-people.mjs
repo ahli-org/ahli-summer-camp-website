@@ -90,9 +90,14 @@ function buildGroup(srcDirName, outName, label) {
     const data = JSON.parse(readFileSync(linksPath, 'utf8'));
     const slug = slugify(data.name);
 
-    const headshot = join(folder, 'headshot.png');
+    // Accept either .jpg or .png source headshots (V2 sources ship as .jpg).
+    let headshot = null;
+    for (const ext of ['jpg', 'jpeg', 'png']) {
+      const candidate = join(folder, `headshot.${ext}`);
+      if (existsSync(candidate)) { headshot = candidate; break; }
+    }
     let photo = null;
-    if (existsSync(headshot)) {
+    if (headshot) {
       execFileSync('convert', [
         headshot, '-resize', '700x700>', '-background', 'white',
         '-flatten', '-quality', '85', join(PHOTO_DIR, `${slug}.jpg`),

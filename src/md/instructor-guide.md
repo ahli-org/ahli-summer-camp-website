@@ -116,7 +116,7 @@ three more days, which is the whole point of a cumulative deliverable.
 
 ## Per-day briefs
 
-### Day 1 — Problems in ML4H · Lead: Pete Szolovits · Guest: Emily Alsentzer
+### Day 1 — Problems in ML4H · Lead: Peter Szolovits · Guest: Emily Alsentzer
 
 **Your role.** You set the intellectual frame for the entire week. Day 1 uses the
 five-block template; its only difference is the start — an 8:30–9:15 opening
@@ -135,16 +135,16 @@ own project: *is this a real, well-posed problem?*
 Alsentzer's project walkthrough, which makes the abstraction concrete before the
 afternoon small group.
 
-### Day 2 — Data · Lead: Tom Pollard · Guest: Luca Foschini
+### Day 2 — Data · Lead: Tom Pollard · Guests: Solly Sieberts & Jineta Banerjee
 
 **Your lecture.** Health data as a first-class citizen: the data-generating
 process; data collected as a byproduct of care versus designed for research;
 de-identification and governance; and, concretely, access mechanics — PhysioNet
 credentialing, data use agreements, what it actually takes to get MIMIC-style
 data in hand. Frame the day as a two-sided contrast: your lecture covers
-structured institutional data, Foschini's covers patient-generated and sensor
-data — make the contrast explicit so the guest lecture lands as the other half
-of one picture.
+structured institutional data, the Sage Bionetworks guest lectures (Sieberts and
+Banerjee) cover patient-generated, multi-omics, and consortium data — make the
+contrast explicit so the guest lectures land as the other half of one picture.
 
 **Handoff.** Open with the handoff (Day 1 problem statements). Close by naming
 Workbook Part 2 — the data specification — and its gap check: does the available
@@ -186,7 +186,7 @@ the afternoon you anchor the
 small group is a structured peer review. Close by naming Workbook Part 4 — the
 method rationale.
 
-### Day 5 — Deployment · Lead: Muhammad Mamdani · Guest: Deb Raji · 2:45 PM fireside
+### Day 5 — Deployment · Lead: Muhammad Mamdani · Guest: Inioluwa Deborah Raji · 2:45 PM fireside
 
 **Your role.** Day lead; the 9:15 AM lead lecture. The day's fourth block is a
 clinician/patient fireside chat (an organizer moderates; guest TBD), and the day
@@ -204,7 +204,7 @@ small groups and Raji's accountability-focused guest lecture.
 groups as a red team — participants try to break their own projects — and name
 Workbook Part 5, the deployment plan.
 
-### Day 6 — Finance, Compute & Collaborators · Panel Chair: Jon Kolstad
+### Day 6 — Finance, Compute & Collaborators · Panel Chair: Jonathan T. Kolstad
 
 **Your role.** You frame the funding landscape and chair the Finance panel; the
 panel fills the lead-and-guest role across the 9:15 and 11:00 blocks.
