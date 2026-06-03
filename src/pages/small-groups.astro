@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { url, SITE } from '../lib/site';
+import { groups, facilitatorsForGroup } from '../lib/groups';
+
+const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
+---
+<BaseLayout
+  title="Small groups"
+  description="Your fixed home group for the week: who's in it, how the daily peer-led small-group discussions work, and the rotating facilitator schedule."
+>
+  <Hero
+    eyebrow="Daily small groups"
+    title="Your home group for the week"
+    lead={`The ${totalStudents} participants are split into ${groups.length} fixed home groups of six or seven. You stay in the same group all week, so you come to know your groupmates' projects as well as your own — and a different member facilitates each day.`}
+  />
+
+  <!-- The goal of the small-group discussions -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Why fixed groups</p>
+      <h2>What the small groups are for</h2>
+      <p>
+        Every content day (Days 1–5) has two <strong>small-group blocks</strong>:
+        one mid-morning to apply the day's frame to your own project, and one at
+        the end of the day to revise your work and complete that day's
+        <a href={url('project-workbook')}>Project Workbook</a> section. You spend
+        them with the same home group all week.
+      </p>
+      <p>
+        The groups are <strong>fixed on purpose</strong>. The aim is not to match
+        people by subfield — quite the opposite. Each group is deliberately mixed
+        across research areas, methods, institutions, and countries, so that over
+        the week you give and get feedback from people who see your problem from
+        angles you wouldn't have considered. By Day 7 you should understand each
+        of your groupmates' projects nearly as well as your own.
+      </p>
+      <p>
+        Each day's discussion has a job: refine your project against the day's
+        topic — <strong>problem framing, then data, evaluation, methods, and
+        deployment</strong>. The group is where a lecture stops being abstract
+        and starts changing your project.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>The through-line on each group is a loose hook, not an
+          assignment.</strong> Your project does not have to fit your group's
+          theme — work on whatever you came to work on. The themes below just
+          reflect how the cohort happened to fall out.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How a session runs + facilitator instructions -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">The rotating facilitator</p>
+      <h2>Facilitating a small group</h2>
+      <p>
+        There is no instructor in the room — the groups are <strong>peer-led</strong>.
+        Each day a different member is the <strong>facilitator</strong>. The role
+        rotates so that, across the week, everyone in the group leads at least one
+        discussion. The facilitator is not the expert; they keep the conversation
+        useful and make sure every project gets time.
+      </p>
+      <p>If it's your turn to facilitate, your job is to:</p>
+      <ul>
+        <li>
+          <strong>Keep time.</strong> Divide the block evenly so every member's
+          project gets a roughly equal turn — about 7–8 minutes each in a group of
+          six or seven. Watch the clock; don't let the first project eat the hour.
+        </li>
+        <li>
+          <strong>Hold the day's focus.</strong> Anchor each turn on the day's
+          question (framing, data, evaluation, methods, or deployment), not on
+          whatever is most fun to discuss. Gently pull the conversation back when
+          it drifts.
+        </li>
+        <li>
+          <strong>Draw everyone in.</strong> Make sure quieter members both
+          present and give feedback. Invite the people who haven't spoken before
+          moving on.
+        </li>
+        <li>
+          <strong>Push for the concrete.</strong> Steer the group toward specific,
+          actionable feedback the presenter can use, and toward a clear next step
+          for each project — not vague praise.
+        </li>
+        <li>
+          <strong>Close the loop.</strong> In the day's second (closing) block,
+          make sure everyone leaves with their <a href={url('project-workbook')}>Project
+          Workbook</a> section for that day drafted before the daily wrap.
+        </li>
+      </ul>
+      <p>
+        When it's not your turn, you're a participant: come ready to pitch your
+        project in a couple of minutes and to give your groupmates sharp,
+        generous feedback.
+      </p>
+    </div>
+  </section>
+
+  <!-- The groups + facilitator rotation -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">The {groups.length} groups</p>
+      <h2>Groups &amp; facilitator rotation</h2>
+      <p>
+        Find your group below. The schedule shows who facilitates each day —
+        rotated in roster order across the two daily blocks (<strong>SG1</strong>,
+        the mid-morning block, and <strong>SG2</strong>, the closing block) so the
+        role is shared evenly. Days 6 (funding panel) and 7 (presentations) have no
+        home-group session.
+      </p>
+
+      {groups.map((g) => (
+        <article class="group">
+          <header class="group-head">
+            <span class="group-badge">{g.name}</span>
+            <div>
+              <h3 id={g.name.toLowerCase()}>Group {g.n} · {g.name}</h3>
+              <p class="group-through">{g.throughline}</p>
+            </div>
+          </header>
+
+          <div class="group-cols">
+            <div class="group-members">
+              <h4>Members <span class="muted">({g.members.length})</span></h4>
+              <ul class="member-list">
+                {g.members.map((m) => (
+                  <li>
+                    <a href={url(`students/${m.slug}`)}>{m.name}</a>
+                    {m.stage && <span class="member-stage">{m.stage}</span>}
+                    <span class="member-focus">{m.focus}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="group-rota">
+              <h4>Facilitator rotation</h4>
+              <table class="rota">
+                <thead>
+                  <tr><th>Day</th><th>Focus</th><th>SG1</th><th>SG2</th></tr>
+                </thead>
+                <tbody>
+                  {facilitatorsForGroup(g).map((r) => (
+                    <tr>
+                      <td class="rota-day">{r.day}</td>
+                      <td>{r.topic}</td>
+                      <td>{r.sg1.name}</td>
+                      <td>{r.sg2.name}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      ))}
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href={url('curriculum')}>See the daily curriculum</a>
+        <a class="btn btn-outline" href={url('project-workbook')}>Project Workbook</a>
+        <a class="btn btn-outline" href={url('students')}>Meet the cohort</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .group {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.4rem 1.5rem 1.6rem;
+    margin-top: 1.6rem;
+    background: var(--card);
+  }
+  .group-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .group-badge {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4.4rem;
+    padding: .55rem .7rem;
+    border-radius: 8px;
+    background: var(--purple);
+    color: #fff;
+    font-family: var(--serif, inherit);
+    font-weight: 700;
+    font-size: .95rem;
+    letter-spacing: .02em;
+  }
+  .group-head h3 { margin: 0; }
+  .group-through { margin: .15rem 0 0; font-size: .92rem; color: var(--ink-soft); }
+
+  .group-cols {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.6rem;
+  }
+  .group-cols h4 {
+    margin: 0 0 .6rem;
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--ink-soft);
+  }
+  .muted { color: var(--ink-faint); font-weight: 400; }
+
+  .member-list { list-style: none; margin: 0; padding: 0; }
+  .member-list li {
+    padding: .4rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .member-list li:first-child { border-top: 0; }
+  .member-list a { font-weight: 600; }
+  .member-stage {
+    margin-left: .5rem;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--teal, var(--purple));
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  .member-focus {
+    display: block;
+    font-size: .88rem;
+    color: var(--ink-soft);
+    margin-top: .1rem;
+  }
+
+  .rota {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .88rem;
+  }
+  .rota th, .rota td {
+    text-align: left;
+    padding: .4rem .5rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .rota thead th {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--ink-soft);
+    border-bottom: 2px solid var(--line);
+  }
+  .rota-day {
+    color: var(--teal, var(--purple));
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 640px) {
+    .group-cols { grid-template-columns: 1fr; gap: 1.2rem; }
+  }
+</style>

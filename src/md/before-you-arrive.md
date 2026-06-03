@@ -6,6 +6,7 @@ groups and workshops far more valuable.
 
 - [ ] **Do the required readings** — each content day has a short list ([all readings, by day](/curriculum/#required-readings)).
 - [ ] **Pick your specialty track** — self-select the data-modality track closest to your project (see below).
+- [ ] **Find your home group** — your fixed small group for the week, and the days you facilitate ([home groups & facilitator rotation](/small-groups/)).
 - [ ] **Set up your accounts and tools** (PhysioNet, Colab, an AI coding assistant — see below).
 - [ ] **Prepare your two things to bring** — a printed poster and a prospective project (see below).
 - [ ] **Skim the templates** — the [Project Workbook](/project-workbook/) and the Day 3 & 4 workshop notebooks ([Evaluation Lab](/notebooks/evaluation-lab/), [Methods Lab](/notebooks/methods-lab/)), so the 90-minute workshop blocks are spent on substance.
