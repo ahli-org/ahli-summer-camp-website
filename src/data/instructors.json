@@ -2,7 +2,7 @@
   {
     "slug": "muhammad-mamdani",
     "name": "Muhammad Mamdani",
-    "affiliation": "Unity Health Toronto / University of Toronto",
+    "affiliation": "University of Toronto / Ontario Health",
     "photo": "people/muhammad-mamdani.jpg",
     "links": [
       {
@@ -221,7 +221,7 @@
       }
     ],
     "bio": [
-      "Solly Sieberts is a Principal Scientist and Director of Statistical Genetics at Sage Bionetworks. Her research interests include the analysis of large multi-omics data sets as well as the analysis and integration of multiple diverse data sets such as GWAS, eQTL, molecular networks and causal inference between molecular and clinical phenotypes in human and model organisms. Prior to joining Sage Bionetworks, she previously worked at Rosetta Inpharmatics and deCODE Genetics."
+      "Solly Sieberts is the Director of Analytical Science and Evaluation at Sage Bionetworks where she focuses on the organizational mission of enabling biomedical research through open science data sharing and benchmarking of AI/ML models in the biomedical research space. With a background spanning genetics, genomics, systems biology, and digital health, her research has spanned a broad range of health applications from neuropsychology and neurodegeneration to infectious disease and post-viral syndromes. She holds a Ph.D in Statistical Genetics from the University of Washington, and has previously worked at Rosetta Inpharmatics (Merck) and deCODE Genetics in Iceland. She also serves on the board of directors of DREAM Challenges."
     ],
     "role": "Guest Lecturer",
     "day": "Day 2 Data"
@@ -412,7 +412,7 @@
     "bio": [
       "Shalmali Joshi is an Assistant Professor at Columbia University, Department of Biomedical Informatics, where she leads the reAIM group. She works on robustness, generalizability, and reliability of multimodal AI/ML prediction, inference, and adaptivity in health and biomedicine. Before Columbia, she was a Postdoctoral Fellow at Harvard University and the Vector Institute. She completed her PhD in Electrical and Computer Engineering from the University of Texas at Austin."
     ],
-    "tagline": "Algorithmic safety for healthcare machine learning",
+    "tagline": "Robust AI for health and biomedicine",
     "role": "Lead Lecturer",
     "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
@@ -425,7 +425,7 @@
     "links": [
       {
         "label": "Website",
-        "href": "https://emilyalsentzer.com/"
+        "href": "https://alsentzerlab.stanford.edu"
       },
       {
         "label": "Google Scholar",
@@ -444,31 +444,12 @@
         "href": "https://orcid.org/0000-0002-5370-1746"
       }
     ],
-    "awards": [
-      "Best Paper Award, CHIL 2023 (\"Do We Still Need Clinical Language Models?\")",
-      "Best Oral Presentation Award, ISMB 2023 (rare disease diagnosis)",
-      "Microsoft Accelerate Foundation Models Research Initiative grant (2023)"
-    ],
-    "highlights": [
-      {
-        "type": "press_release",
-        "title": "Study assesses GPT-4's potential to perpetuate racial, gender biases in clinical decision making",
-        "url": "https://www.eurekalert.org/news-releases/1029382",
-        "source": "EurekAlert! / Brigham and Women's Hospital",
-        "date": "2023"
-      },
-      {
-        "type": "news_article",
-        "title": "Assessing the potential of GPT-4 to perpetuate racial and gender biases in health care: a model evaluation study",
-        "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00225-X/fulltext",
-        "source": "The Lancet Digital Health",
-        "date": "2024"
-      }
-    ],
+    "awards": [],
+    "highlights": [],
     "bio": [
       "Dr. Emily Alsentzer is an Assistant Professor in Biomedical Data Science and, by courtesy, Computer Science at Stanford University. Her research leverages machine learning (ML) and natural language processing (NLP) to augment clinical decision-making and broaden access to high quality healthcare. She focuses on integrating medical expertise into ML models to ensure responsible deployment in clinical workflows. Dr. Alsentzer completed a postdoctoral fellowship at Brigham and Women’s Hospital where she worked to deploy ML models within the Mass General Brigham healthcare system. She received her PhD from the Health Sciences and Technology program at MIT and Harvard Medical School and holds degrees in computer science (BS) and biomedical informatics (MS) from Stanford University. She has served as General Chair for the Machine Learning for Health Symposium and founding organizer for SAIL and the Conference on Health, Inference, and Learning (CHIL)."
     ],
-    "tagline": "Clinical NLP for responsible healthcare AI",
+    "tagline": "Deployable AI for Healthcare",
     "role": "Guest Lecturer",
     "day": "Day 1 Problems in ML4H",
     "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
@@ -509,78 +490,51 @@
     ],
     "highlights": [
       {
-        "type": "feature",
-        "title": "Olawale Salaudeen — AI Center Fellow in Residence",
-        "url": "https://www.schmidtsciences.org/person/olawale-salaudeen/",
-        "source": "Schmidt Sciences",
+        "type": "news_article",
+        "title": "Why It's Critical to Move Beyond Overly Aggregated Machine Learning Metrics",
+        "url": "https://news.mit.edu/2026/why-its-critical-to-move-beyond-overly-aggregated-machine-learning-metrics-0120",
+        "source": "MIT News",
+        "date": "2026-01"
+      },
+      {
+        "type": "news_article",
+        "title": "Smart Enough to Do Math, Dumb Enough to Fail: The Hunt for a Better AI Test",
+        "url": "https://hai.stanford.edu/news/smart-enough-to-do-math-dumb-enough-to-fail-the-hunt-for-a-better-ai-test",
+        "source": "Stanford HAI",
         "date": null
+      },
+      {
+        "type": "feature",
+        "title": "Validating Claims About AI: A Policymaker's Guide",
+        "url": "https://hai.stanford.edu/policy/validating-claims-about-ai-a-policymakers-guide",
+        "source": "Stanford HAI",
+        "date": null
+      },
+      {
+        "type": "news_article",
+        "title": "Better Benchmarks for Safety-Critical AI Applications",
+        "url": "https://hai.stanford.edu/news/better-benchmarks-for-safety-critical-ai-applications",
+        "source": "Stanford HAI",
+        "date": null
+      },
+      {
+        "type": "feature",
+        "title": "Meet a Trainee: Olawale Salaudeen",
+        "url": "https://minibrain.beckman.illinois.edu/2022/10/12/meet-a-trainee-olawale-salaudeen/",
+        "source": "NSF Miniature Brain Machinery, Beckman Institute",
+        "date": "2022-10"
       }
     ],
     "bio": [
       "Olawale (Wale) Salaudeen is a postdoctoral researcher at MIT in the Healthy ML Lab, led by Marzyeh Ghassemi, and an AI Center Fellow in Residence at Schmidt Sciences. He earned his PhD in Computer Science jointly through the University of Illinois Urbana-Champaign and Stanford University's Trustworthy AI Research (STAIR) Lab, advised by Sanmi Koyejo, and holds a BS in Mechanical Engineering with minors in Computer Science and Mathematics from Texas A&M University. He was previously a postdoctoral scholar at the Eric and Wendy Schmidt Center at the Broad Institute of MIT and Harvard.",
       "His research focuses on the robustness and reliability of AI in real-world decision-making. He works on the science of valid measurement and prediction of AI capabilities and risks, characterizing and intervening on the causal and spurious mechanisms behind model behavior, inference-time adaptation of AI systems, and measuring and mitigating the disparate impacts of AI. A central theme is anticipating failures before deployment and ensuring reliable behavior under real-world distribution shift, with translational impact in domains such as healthcare.",
-      "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has been named an NYU Tandon Faculty First-Look Fellow and a Georgia Tech FOCUS Fellow.",
+      "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has received a Sloan Scholarship, a Beckman Graduate Research Fellowship, a GEM Associate Fellowship, and an NSF Miniature Brain Machinery Traineeship.",
       "At the camp: Guest Lecturer — 11:00 AM Guest Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
     ],
-    "tagline": "Robust, rigorously-evaluated AI for the real world",
+    "tagline": "Measuring and Intervening on AI in Real-World Decision-Making",
     "role": "Guest Lecturer",
     "day": "Day 3 Methods & Evaluation I",
-    "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
-  },
-  {
-    "slug": "jonathan-t-kolstad",
-    "name": "Jonathan T. Kolstad",
-    "affiliation": "UC Berkeley",
-    "photo": "people/jonathan-t-kolstad.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://www.jkolstad.org/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=OLMHs_UAAAAJ&hl=en"
-      }
-    ],
-    "awards": [
-      "ASHEcon Medal (2018)",
-      "Kenneth J. Arrow Award, best paper in health economics (2014)",
-      "NIHCM Foundation Research Award (2016, 2018)",
-      "Henry J. Kaiser Chair, UC Berkeley Haas (named chair)"
-    ],
-    "highlights": [
-      {
-        "type": "feature",
-        "title": "Jonathan Kolstad — Faculty Profile, Berkeley Haas",
-        "url": "https://haas.berkeley.edu/faculty/jonathan-kolstad/",
-        "source": "UC Berkeley Haas",
-        "date": null
-      },
-      {
-        "type": "feature",
-        "title": "Jonathan Kolstad — Research at Berkeley",
-        "url": "https://vcresearch.berkeley.edu/faculty/jonathan-kolstad",
-        "source": "UC Berkeley Office of Research",
-        "date": null
-      },
-      {
-        "type": "press_release",
-        "title": "Top Health Economics Expert Professor Jonathan Kolstad Affiliates with Compass Lexecon",
-        "url": "https://www.compasslexecon.com/insights/news/jonathan-kolstad-affiliates-with-compass-lexecon",
-        "source": "Compass Lexecon",
-        "date": null
-      }
-    ],
-    "bio": [
-      "Jonathan T. Kolstad is a health economist and Professor in the Economic Analysis and Policy Group at the Haas School of Business and the Department of Economics at the University of California, Berkeley, where he holds the Henry J. Kaiser Chair. He is also a Research Associate at the National Bureau of Economic Research, a core faculty member of the Computational Precision Health graduate program (UC Berkeley and UCSF), and the founding director of the Center for Health Care Marketplace Innovation. He earned his Ph.D. from Harvard University and his B.A. from Stanford University.",
-      "Kolstad's research sits at the intersection of health economics, industrial organization, and public economics, increasingly incorporating tools from behavioral economics, machine learning, and AI. A recurring theme is the search for new models and novel data that can capture the complexity of health care markets — in particular the role of information asymmetries and incentives in shaping consumer choice, provider behavior, and policy design. Beyond academia, he is a co-founder and former Chief Data Scientist of Picwell, a co-founder of Healthpilot, and a founding advisor to OODA Health, applying data science to health-insurance decision-making.",
-      "His work has earned several major honors in the field. He received the ASHEcon Medal in 2018 — awarded biennially to the economist age 40 or under judged to have made the most significant contributions to health economics — as well as the Arrow Award for the best paper in health economics (2014) and the NIHCM Foundation Research Award (2016 and 2018).",
-      "At the camp: Lead / Panel Chair — 9:00 AM Finance Panel chair."
-    ],
-    "tagline": "Health economics for the AI era",
-    "role": "Lead / Panel Chair",
-    "day": "Day 6 Finance, Compute & Collaborators",
-    "assigned_block": "9:00 AM Finance Panel chair"
+    "assigned_block": "On Evaluating AI Methods vs. Models"
   },
   {
     "slug": "peter-szolovits",
