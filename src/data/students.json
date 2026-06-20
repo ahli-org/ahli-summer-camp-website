@@ -122,58 +122,6 @@
     "email": "kyungdaeun@kaist.ac.kr"
   },
   {
-    "slug": "hiba-ahsan",
-    "name": "Hiba Ahsan",
-    "affiliation": "Northeastern University",
-    "photo": "people/hiba-ahsan.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://hibaahsan.github.io/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=A_pe0lYAAAAJ"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/hibaahsan"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/hiba-ahsan-80a347178"
-      }
-    ],
-    "awards": [
-      "Paul Utgoff Memorial Graduate Scholarship in Machine Learning (2021)",
-      "CICS Scholarship to attend Grace Hopper Celebration (2020)",
-      "Indian Academy of Sciences (IAS) Summer Research Fellowship (2014)",
-      "Best Use of Google Cloud and Best User Experience Design, Hack(H)er413 (2020)"
-    ],
-    "highlights": [
-      {
-        "type": "news_article",
-        "title": "AI Bias in Health Care Pinpointed by New Northeastern Approach",
-        "url": "https://news.northeastern.edu/2026/01/20/pinpointing-ai-bias-health-care/",
-        "source": "Northeastern Global News",
-        "date": "2026-01"
-      },
-      {
-        "type": "news_article",
-        "title": "New research decodes hidden bias in health care LLMs",
-        "url": "https://medicalxpress.com/news/2026-01-decodes-hidden-bias-health-llms.html",
-        "source": "Medical Xpress",
-        "date": "2026-01"
-      }
-    ],
-    "bio": [
-      "Hiba Ahsan is a PhD candidate at Northeastern University, advised by Byron Wallace. She works in the clinical natural language processing domain. Her research interests include (1) developing ML/NLP methods for clinical tasks using unstructured electronic health record data, and (2) evaluating and improving LLMs for healthcare applications."
-    ],
-    "tagline": "Trustworthy reasoning in clinical language models",
-    "position": "PhD Student",
-    "email": "ahsan.hi@northeastern.edu"
-  },
-  {
     "slug": "louise-durand-janin",
     "name": "Louise Durand-Janin",
     "affiliation": "Inria and Doctolib",
@@ -279,44 +227,6 @@
     "email": "amy.tai@uwaterloo.ca"
   },
   {
-    "slug": "alemu-sisay-nigru",
-    "name": "Alemu Sisay Nigru",
-    "affiliation": "University of Brescia",
-    "photo": "people/alemu-sisay-nigru.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://alexsisay.github.io/alemu-portfolio/"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/alexsisay"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/alemu-sisay-nigru-23612514b"
-      },
-      {
-        "label": "Twitter/X",
-        "href": "https://twitter.com/alemu_sisay"
-      }
-    ],
-    "awards": [
-      "Gold Medalist & 1st in Graduating Class, B.Sc. Electrical & Computer Engineering, University of Gondar (2016)",
-      "M.Sc. 110/110 cum Laude, Communication Technologies & Multimedia, University of Brescia (2022)",
-      "Erasmus+ Mobility Scholarship, Mid Sweden University (2020-2021)",
-      "Oxford Machine Learning Summer School, AI for Global Goals, University of Oxford",
-      "Applied Data Science Lab, WorldQuant University"
-    ],
-    "highlights": [],
-    "bio": [
-      "Alemu Sisay Nigru is an AI researcher who recently completed his PhD in Artificial Intelligence in Medicine at the University of Brescia, Italy. His doctoral work focused on multimodal AI systems for clinical decision support, bridging deep learning, medical imaging, and real clinical workflows. He developed LumbarAI, a Swin3D Transformer-based framework for automated spine MRI analysis that reduced radiologist reporting time  and was deployed with a human-in-the-loop design. As a visiting researcher at NYU, he contributed to optimizing LumbarAI's diagnostic accuracy across diverse MRI datasets and collaborated with multidisciplinary teams on model interpretability. His technical expertise includes PyTorch, medical imaging pipelines (DICOM/PACS), and explainable AI. He holds an MSc cum laude from the University of Brescia and a BSc with gold medal distinction from the University of Gondar, Ethiopia. He is excited to join the inaugural AHLI cohort and contribute to the future of health AI."
-    ],
-    "tagline": "AI clinical decision support for spine care",
-    "position": "PhD Candidate",
-    "email": "alemu.nigru@unibs.it"
-  },
-  {
     "slug": "amin-adibi",
     "name": "Amin Adibi",
     "affiliation": "University of British Columbia",
@@ -399,9 +309,9 @@
     "email": "guilherme.imaialdeia@childrens.harvard.edu"
   },
   {
-    "slug": "simon-lee",
-    "name": "Simon Lee",
-    "affiliation": "Emory university",
+    "slug": "simon-a-lee",
+    "name": "Simon A. Lee",
+    "affiliation": "UCLA",
     "photo": "people/simon-lee.jpg",
     "links": [
       {
@@ -452,7 +362,7 @@
       }
     ],
     "bio": [
-      "Seyedeh Somayyeh Mousavi is currently a PhD candidate in Computer Science and Informatics at Emory University (2022–present). She holds a double Master’s degree in Biomedical Engineering and Computer Science and Informatics from Zanjan University (2018) and Emory University (2025), as well as a Bachelor’s degree in Electrical Engineering from Zanjan University (2014). Her Master’s project focused on developing a portable, non-invasive blood pressure (BP) monitoring system using biosignals. The goal was to continuously estimate blood pressure over long periods using Artificial Intelligence (AI) models, leveraging a combination of biosignals such as electrocardiogram (ECG) and photoplethysmography (PPG), to improve remote health monitoring and patient care. In her PhD research, she aims to develop Machine Learning (ML) and Deep Learning (DL) approaches for cardiovascular disease applications from both cross-sectional and longitudinal perspectives, incorporating BP measurements and ECG recordings as key biosignals."
+      "Simon A. Lee is a Ph.D. Candidate working with Dr. Jeffrey Chiang. His primary work revolves around developing foundations and world models on health data. He’s held positions in the industry at Google Research, Samsung Research, and Celsius Therapeutics during his time as a student. He’s generously supported by the Warren Alpert Fellowship, and is an active member of the MEDS Working Group."
     ],
     "tagline": "World models for health AI",
     "position": "PhD student",
@@ -663,32 +573,10 @@
       "High First (81.6%), ranked 8th of 107; First in the General Paper (94.3%), BA & MSci Natural Sciences (Physics), University of Cambridge",
       "The Catalyst named one of 2015's Debuts of the Year by the Guardian and Amazon (literary)"
     ],
-    "highlights": [
-      {
-        "type": "interview",
-        "title": "SLJ Chats with Helena Coggan, Teen Author of \"The Catalyst\"",
-        "url": "https://www.schoollibraryjournal.com/story/slj-chats-with-helena-coggan-teen-author-of-the-catalyst",
-        "source": "School Library Journal",
-        "date": null
-      },
-      {
-        "type": "interview",
-        "title": "#YAShot2018 Interview: Helena Coggan, author of The War of Angels duology, on writing as a teen vs. now",
-        "url": "http://danireviewsthings.com/2018/03/22/yashot2018-interview-helena-coggan-author-of-the-war-of-angels-duology-on-writing-as-a-teen-vs-now/",
-        "source": "dani reviews things",
-        "date": "2018-03"
-      },
-      {
-        "type": "feature",
-        "title": "Helena Coggan - author profile (The Catalyst, written at 13, named a 2015 Debut of the Year by the Guardian and Amazon)",
-        "url": "https://www.ki-agency.co.uk/authors/helena-coggan",
-        "source": "Ki Agency",
-        "date": null
-      }
-    ],
+    "highlights": [],
     "bio": [
       "Helena Coggan is a postdoctoral fellow in the Computational Health Informatics Program at Boston Children's Hospital, working with William La Cava. Her research concerns clinical decision support tools for use in the emergency department, developed using large-scale electronic health record databases.",
-      "Before moving to Boston, I completed my PhD at University College London (2025). My doctoral thesis focused on agent-based simulations of lung tumour evolution, and was supervised by Prof. Jasmin Fisher with support from Profs. Nicholas McGranahan and Karen M. Page. Before that, she obtained undergraduate and master's degrees in physics from the University of Cambridge (2017-2021)."
+      "Before moving to Boston, she completed her PhD at University College London (2025). Her doctoral thesis focused on agent-based simulations of lung tumour evolution, and was supervised by Prof. Jasmin Fisher with support from Profs. Nicholas McGranahan and Karen M. Page. Before that, she obtained undergraduate and master's degrees in physics from the University of Cambridge (2017-2021)."
     ],
     "tagline": "Real-time AI for emergency-department care quality",
     "position": "Postdoctoral Research Fellow",
@@ -1119,9 +1007,9 @@
     ],
     "highlights": [],
     "bio": [
-      "Sameer Neupane is a Postdoctoral Scholar in the Department of Medicine at the University of California, San Francisco (UCSF), conducting research at the UCSF TECH Lab under the mentorship of Dr. Peter Washington. My research focuses on mobile health, wearables, human-computer interaction, and artificial intelligence for mental health and neurodevelopmental conditions. He develops multimodal AI systems that integrate wearable biosignals, behavioral data, and contextual information to enable real-time detection and personalized interventions for stress, anxiety, and depression. His work also includes interpretable deep learning models using audio and video data for ADHD and autism assessment, wearable-based behavioral health modeling, Just-in-Time Adaptive Interventions (JITAIs), and AI-driven frameworks for nicotine vaping cessation using wearable and contextual sensing.  Previously, he completed his Ph.D. in Computer Science at the University of Memphis under the mentorship of Dr. Santosh Kumar at the mDOT Center."
+      "Sameer Neupane is a Postdoctoral Scholar in the Department of Medicine at the University of California, San Francisco (UCSF), conducting research at the UCSF TECH Lab under the mentorship of Dr. Peter Washington. His research focuses on mobile health, wearables, human-computer interaction, and artificial intelligence for mental health and neurodevelopmental conditions. He develops multimodal AI systems that integrate wearable biosignals, behavioral data, and contextual information to enable real-time detection and personalized interventions for stress, anxiety, and depression. His work also includes interpretable deep learning models using audio and video data for ADHD and autism assessment, wearable-based behavioral health modeling, Just-in-Time Adaptive Interventions (JITAIs), and AI-driven frameworks for nicotine vaping cessation using wearable and contextual sensing.  Previously, he completed his Ph.D. in Computer Science at the University of Memphis under the mentorship of Dr. Santosh Kumar at the mDOT Center."
     ],
-    "tagline": "Multimodal AI for neurodevelopmental screening",
+    "tagline": "Multimodal AI for mental health and neurodevelopmental screening",
     "position": "Postdoctoral Fellow",
     "email": "sameer.neupane@ucsf.edu"
   },
@@ -1235,83 +1123,9 @@
     "email": "cfensor@emory.edu"
   },
   {
-    "slug": "tanmoy-pias",
-    "name": "Tanmoy Pias",
-    "affiliation": "Stanford University",
-    "photo": "people/tanmoy-pias.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://piastanmoy.github.io/Tanmoy_CV/"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=wWSwk3YAAAAJ"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/PiasTanmoy"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/tanmoy-sarkar-pias-446060140/"
-      }
-    ],
-    "awards": [
-      "Kafura Fellowship, Department of Computer Science, Virginia Tech (2025)",
-      "Spotlight Student, Sanghani Center for Artificial Intelligence and Data Analytics, Virginia Tech (2025)",
-      "BitShare Fellowship, Department of Computer Science, Virginia Tech (2021)",
-      "Best Conference Paper Award, IEEE ECICE Conference, Yunlin, Taiwan (2019)",
-      "Dean's Award (outstanding 3rd-year result, undergraduate), BUET (2017)"
-    ],
-    "highlights": [
-      {
-        "type": "news_article",
-        "title": "Machine learning models fail to detect key health deteriorations, Virginia Tech research shows",
-        "url": "https://news.vt.edu/articles/2025/02/virginia-tech-study-published-in-communications-medicine-.html",
-        "source": "Virginia Tech News",
-        "date": "2025-02"
-      },
-      {
-        "type": "feature",
-        "title": "Sanghani Center Student Spotlight: Tanmoy Sarkar Pias",
-        "url": "https://sanghani.cs.vt.edu/news/2025/sanghani-center-student-spotlight--tanmoy-sarkar-pias-.html",
-        "source": "Sanghani Center, Virginia Tech",
-        "date": "2025-04"
-      },
-      {
-        "type": "news_article",
-        "title": "Machine learning models fail to detect key health deteriorations, research shows",
-        "url": "https://medicalxpress.com/news/2025-03-machine-key-health-deteriorations.html",
-        "source": "Medical Xpress",
-        "date": "2025-03"
-      },
-      {
-        "type": "news_article",
-        "title": "Will an AI recognize patient deterioration in the ICU? Not quite yet",
-        "url": "https://healthcare-in-europe.com/en/news/ai-patient-deterioration-icu.html",
-        "source": "Healthcare in Europe",
-        "date": "2025"
-      },
-      {
-        "type": "news_article",
-        "title": "Virginia Tech Study Reveals Machine Learning Models Struggle to Identify Critical Health Declines",
-        "url": "https://bioengineer.org/virginia-tech-study-reveals-machine-learning-models-struggle-to-identify-critical-health-declines/",
-        "source": "Bioengineer.org",
-        "date": "2025"
-      }
-    ],
-    "bio": [
-      "Tanmoy Sarkar Pias is currently a Postdoctoral Scholar at Stanford University. His current research focuses on multimodal, multitask foundation models for cancer detection and surgical assistance, including image segmentation models, image registration models, foundation models, and reinforcement learning with agents. His previous work spans several areas, including knowledge-guided machine learning, systematic evaluation of high-risk models, mitigation of model deficiencies and biases, automatic generation of gradient-based test cases, decision boundary estimation and analysis of deep learning models, and the development of approaches to improve the fairness, reliability, and trustworthiness of machine learning systems. He completed both his PhD and Master’s degrees in Computer Science from Virginia Tech."
-    ],
-    "tagline": "Vision foundation models for cancer surgery",
-    "position": "Postdoctoral Fellow",
-    "email": "tspias@stanford.edu"
-  },
-  {
     "slug": "somayyeh-mousavi",
     "name": "Somayyeh Mousavi",
-    "affiliation": "UCLA",
+    "affiliation": "Emory University",
     "photo": "people/somayyeh-mousavi.jpg",
     "links": [
       {
@@ -1341,9 +1155,9 @@
     ],
     "highlights": [],
     "bio": [
-      "Simon A. Lee is a Ph.D. Candidate working with Dr. Jeffrey Chiang. His primary work revolves around developing foundations and world models on health data. He's held positions in the industry at Google Research, Samsung Research, and Celsius Therapeutics during his time as a student. He's generously supported by the Warren Alpert Fellowship, and is an active member of the MEDS Working Group."
+      "Seyedeh Somayyeh Mousavi is currently a PhD candidate in Computer Science and Informatics at Emory University (2022–present). She holds a double Master's degree in Biomedical Engineering and Computer Science and Informatics from Zanjan University (2018) and Emory University (2025), as well as a Bachelor's degree in Electrical Engineering from Zanjan University (2014). Her Master's project focused on developing a portable, non-invasive blood pressure (BP) monitoring system using biosignals. The goal was to continuously estimate blood pressure over long periods using Artificial Intelligence (AI) models, leveraging a combination of biosignals such as electrocardiogram (ECG) and photoplethysmography (PPG), to improve remote health monitoring and patient care. In her PhD research, she aims to develop Machine Learning (ML) and Deep Learning (DL) approaches for cardiovascular disease applications from both cross-sectional and longitudinal perspectives, incorporating BP measurements and ECG recordings as key biosignals."
     ],
-    "tagline": "Demographic-aware ECG models for cardiac risk",
+    "tagline": "Demographic-aware EHR-based models for cardiovascular diseases",
     "position": "PhD Candidate",
     "email": "seyedeh.somayyeh.mousavi@emory.edu"
   },
@@ -1378,46 +1192,6 @@
     "tagline": "Multimodal EHR modeling and clinical AI evaluation",
     "position": "PhD Student",
     "email": "jiyoun.kim@kaist.ac.kr"
-  },
-  {
-    "slug": "yasmeena-akhter",
-    "name": "Yasmeena Akhter",
-    "affiliation": "Indian Institute of Technology Jodhpur, India",
-    "photo": "people/yasmeena-akhter.jpg",
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://sites.google.com/iitj.ac.in/yasmeena-akhter/home"
-      },
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=ITPH-zIAAAAJ"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/yasmeena-akhter-588845142/"
-      },
-      {
-        "label": "ORCID",
-        "href": "https://orcid.org/0000-0002-3317-4280"
-      }
-    ],
-    "awards": [
-      "Featured in NVIDIA AI Research Leaders of India (silicosis detection work)",
-      "MICCAI Society Travel Grant to attend MICCAI 2025 (Daejeon, Korea)",
-      "ANRF (Anusandhan National Research Foundation) Travel Grant to attend IJCAI 2025 (Montreal, Canada)",
-      "Microsoft Research Travel Grant to attend IJCAI 2023 (Macau S.A.R.)",
-      "Selected for oral presentation of doctoral thesis, IJCAI 2025 (Montreal, Canada)",
-      "Doctoral Consortium selection: CHIL 2023, MIDL 2023, IJCB 2022",
-      "Selected to attend Google DeepMind Research Symposium 2024 (Bangalore, India)"
-    ],
-    "highlights": [],
-    "bio": [
-      "Yasmeena is a researcher in Artificial Intelligence, specializing in healthcare AI for resource-constrained environments. Her research focuses on developing efficient deep learning frameworks through a multimodal approach, with a particular emphasis on lightweight and interpretable model architectures that deliver accurate automated diagnosis under computational and infrastructural constraints. Yasmeena is driven by a commitment to democratizing advanced diagnostic AI, bridging the gap between state-of-the-art AI research and the realities of underserved healthcare systems globally."
-    ],
-    "tagline": "Edge-AI cough screening for tuberculosis",
-    "position": "Visiting Researcher",
-    "email": "akhter.1@iitj.ac.in"
   },
   {
     "slug": "umay-kulsoom",
