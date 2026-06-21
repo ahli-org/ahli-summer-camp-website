@@ -461,34 +461,6 @@
     "email": "rdelosreyes@student.unimelb.edu.au"
   },
   {
-    "slug": "brighton-nuwagira",
-    "name": "Brighton Nuwagira",
-    "affiliation": "University of Texas at Dallas",
-    "photo": "people/brighton-nuwagira.jpg",
-    "links": [
-      {
-        "label": "Google Scholar",
-        "href": "https://scholar.google.com/citations?user=Vae5Ys8AAAAJ"
-      }
-    ],
-    "awards": [
-      "Best Graduate Student Poster Award - First Place, Third Annual Workshop on Imaging and Data Science, University of Texas at Dallas (2024)",
-      "MasterCard Foundation Scholarship, African Institute for Mathematical Sciences (AIMS), Senegal (2019)",
-      "Government of Uganda Undergraduate Scholarship, Makerere University (2014)",
-      "ICCV 2025 Broadening Participation Travel Grant (2025)",
-      "CHIL 2025 Travel Grant (2025)",
-      "ML4H 2024 Travel Grant (2024)",
-      "Graduate Tuition Scholarship, University of Texas at Dallas (2021)"
-    ],
-    "highlights": [],
-    "bio": [
-      "Brighton Nuwagira is a PhD candidate in Mathematics at the University of Texas at Dallas, expected to graduate in Summer 2026. His research focuses on machine learning, artificial intelligence, statistical learning, and topological data analysis for healthcare and medical imaging applications. His work combines deep learning, computational methods, and interpretable AI techniques for high-dimensional data analysis. Brighton is also a co-founder of the Computational Intelligence Group, where he mentors students and organizes research discussions in AI and data science. He was recently selected as a nominee for the Africa’s 100 Rising AI Developers Initiative by the Foundation for the Advancement of Artificial Intelligence."
-    ],
-    "tagline": "Topological deep learning for medical imaging",
-    "position": "PhD Candidate",
-    "email": "bxb210001@utdallas.edu"
-  },
-  {
     "slug": "zhongyu-li",
     "name": "Zhongyu Li",
     "affiliation": "Emory University, Rollins School of Public Health",
