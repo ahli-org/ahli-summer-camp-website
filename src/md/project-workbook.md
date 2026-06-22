@@ -43,18 +43,24 @@ One sentence: what you are doing and for whom.
 <div id="part-1"></div>
 
 ### Part 1 — Problem *(Day 1)*
-Adapted from the WIDOM framing structure. Resist naming a method here — this part
-is about the problem.
+Adapted from the [WIDOM](https://cs.stanford.edu/people/widom/paper-writing.html#intro)
+framing. Resist committing to *your* method here — this part is about the problem.
+(WIDOM's later questions, about your approach and the evidence for it, live in
+Parts 3–4.)
 
 - **What is the problem / question?**
 - **Who are the stakeholders?** *(patients, clinicians, health systems, payers,
   regulators — who is affected, who decides)*
-- **Why is it impactful?** *(the unmet health need; the consequence of leaving it
-  unsolved)*
+- **Why is it impactful?** *(the unmet health need and the cost of leaving it
+  unsolved — occasionally the impact is in your solution rather than the problem)*
 - **Why is it technically interesting?**
-- **Why is it hard?** *(name the naive approaches, and why each fails)*
-- **Why hasn't it been solved before?** *(why now — what changed; what prior
-  solutions exist; what is wrong with them)*
+- **Why is it hard?**
+  - *What are the naive approaches?*
+  - *Why does each one fail?*
+- **Why hasn't it been solved before?**
+  - *Why now? What changed — technically, culturally, or in available resources —
+    that makes a solution possible today?*
+  - *What prior solutions exist, and what is wrong with them?*
 - **Bottom line:** *one or two sentences — the problem, why it matters, why it is
   open.*
 
