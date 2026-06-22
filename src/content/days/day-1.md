@@ -17,7 +17,7 @@ stakeholders, and a reason it is still open.
 
 | Time | Block |
 |---|---|
-| 8:30–9:15 | Opening day materials — check-in, welcome & orientation, brief icebreaker (shuttles from the hotel) |
+| 8:30–9:15 | Opening day materials — check-in, welcome & orientation, brief icebreaker |
 | 9:15–10:30 | AM lecture (Szolovits) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 — problem framing |
@@ -83,7 +83,7 @@ their problem framing shifted over the day.
 
 ## Project Workbook — Part 1: Problem
 
-Using the WIDOM framing in the [Project Workbook template](/project-workbook/#part-1):
+Using the [Project Workbook template](/project-workbook/#part-1):
 your one-line pitch, what the problem is, who the stakeholders are, why it is
 impactful, why it is technically interesting, why it is hard, and why it hasn't
 been solved before. Resist naming a method — this part is about the problem.

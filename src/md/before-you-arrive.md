@@ -10,7 +10,7 @@ groups and workshops far more valuable.
 - [ ] **Set up your accounts and tools** (PhysioNet, Colab, an AI coding assistant — see below).
 - [ ] **Prepare your two things to bring** — a printed poster and a prospective project (see below).
 - [ ] **Skim the templates** — the [Project Workbook](/project-workbook/) and the Day 3 & 4 workshop notebooks ([Evaluation Lab](/notebooks/evaluation-lab/), [Methods Lab](/notebooks/methods-lab/)), so the 90-minute workshop blocks are spent on substance.
-- [ ] **Note Day 1 logistics** — an 8:30 AM start with shuttles from the hotel (below).
+- [ ] **Note Day 1 logistics** — an 8:30 AM start; everything is within walking distance (below).
 
 ## Suggested readings
 
@@ -67,7 +67,8 @@ If your project spans two tracks, pick the one your *data* most belongs to.
 
 ## Day 1 logistics
 
-Day 1 (Monday, June 22) begins at **8:30 AM** with breakfast and check-in, and
-**shuttles run from the hotel** so the cohort arrives together. The program
-proper begins at 9:00, with the first morning lecture at 9:15. An optional, informal
-social gathering may be held the evening before for anyone already in town.
+Day 1 (Monday, June 22) begins at **8:30 AM** with breakfast and check-in. You'll
+be staying in the dorms, and everything — sessions, meals, and housing — is within
+walking distance, so there's no shuttle to catch. The program proper begins at
+9:00, with the first morning lecture at 9:15. An optional, informal social
+gathering may be held the evening before for anyone already in town.

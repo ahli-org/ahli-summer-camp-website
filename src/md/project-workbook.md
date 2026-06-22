@@ -43,10 +43,8 @@ One sentence: what you are doing and for whom.
 <div id="part-1"></div>
 
 ### Part 1 — Problem *(Day 1)*
-Adapted from the [WIDOM](https://cs.stanford.edu/people/widom/paper-writing.html#intro)
-framing. Resist committing to *your* method here — this part is about the problem.
-(WIDOM's later questions, about your approach and the evidence for it, live in
-Parts 3–4.)
+This part is about the problem, not your method — resist jumping to a solution
+here.
 
 - **What is the problem / question?**
 - **Who are the stakeholders?** *(patients, clinicians, health systems, payers,
@@ -55,8 +53,6 @@ Parts 3–4.)
   unsolved — occasionally the impact is in your solution rather than the problem)*
 - **Why is it technically interesting?**
 - **Why is it hard?**
-  - *What are the naive approaches?*
-  - *Why does each one fail?*
 - **Why hasn't it been solved before?**
   - *Why now? What changed — technically, culturally, or in available resources —
     that makes a solution possible today?*
@@ -98,8 +94,9 @@ them.
   - *The root metric — the big-picture outcome that would move (e.g., mortality,
     length of stay).*
   - *Corroborating metrics — if you succeeded for the reasons you expect, what
-    else would change, and how would those metrics relate? (e.g., faster ED→ICU
-    transfers for high-acuity patients, and fewer unnecessary ICU transfers.)*
+    else would change, and how would those metrics relate? (e.g., for a tool that
+    flags ED patients likely to deteriorate: high-acuity patients reach the ICU
+    sooner, while those who don't need it aren't sent there.)*
 - **How would you know you failed?** *How could the project fail even if some of
   those success metrics still moved? (e.g., it costs too much to run, clinicians
   don't use it, or it works only for one group of patients.)*
@@ -139,12 +136,13 @@ exploit — and the fastest experiment that would tell you whether it works.
 - **What structure can you leverage?** *What structure — in your data, your
   problem, or the world — could you exploit to address what's left unsolved?*
 - **How would you use it, and why should it work?** *How do you bring that
-  structure to bear, and what's the argument it should help? Map it onto the three
-  stages of the modeling pipeline: data pre-processing, the model class /
-  architecture, and the training objective / broader algorithm.*
+  structure to bear, and what's the argument it should help? Map it across the
+  modeling pipeline — data pre-processing, the model class / architecture, and the
+  training objective / broader algorithm.*
 - **How can you fail fast?** *What's the simplest experiment — or the simplest
   tweak to real data — that would make your idea succeed or fail in a clearly
-  interpretable way? (This is what your synthetic notebook is for.)*
+  interpretable way? (Often the cleanest version is a quick test on synthetic data
+  you fully control.)*
 - **Key experimental questions.** *For the project overall, what must you answer
   to demonstrate success — or a genuinely interesting failure?*
 - **Bottom line:** *one or two sentences — the structure you're leveraging and the

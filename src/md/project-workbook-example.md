@@ -101,7 +101,8 @@ more than 12 hours, so bed-management can intervene early.
   data; *objective* — calibrated probabilities for the net-benefit decision.
 - **Failing fast.** On synthetic data where boarding is a known function of
   (acuity, census), check that the model recovers it — and that a census-blind
-  baseline fails precisely when census is high. That's the synthetic notebook.
+  baseline fails precisely when census is high — a quick synthetic test to run
+  before investing in the full model.
 - **Key experimental questions.** Does adding live census beat patient-only and
   census-only baselines on net benefit? Does the gain hold across arrival types?
   Does usable lead time survive?
