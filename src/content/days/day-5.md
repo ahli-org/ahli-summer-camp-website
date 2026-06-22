@@ -5,9 +5,9 @@ day: 5
 ## About this day
 
 A model that validates beautifully can still fail the moment it meets a real
-clinical workflow. The lead lecture is deployment told as war stories — from
+clinical workflow. The morning lecture is deployment told as war stories — from
 someone running dozens of AI models in live hospital use: workflow integration,
-clinician adoption, monitoring, and drift. The guest lecture connects evaluation
+clinician adoption, monitoring, and drift. The afternoon lecture connects evaluation
 rigor to deployment accountability — auditing, incident reporting, and the case
 against benchmark-only evaluation. A fireside chat brings a practicing
 clinician/patient voice on ML4H deployment. The mode is **stress-test** — today
@@ -18,17 +18,17 @@ you try to break your own project.
 | Time | Block |
 |---|---|
 | 9:00–9:15 | Morning handoff |
-| 9:15–10:30 | Lead lecture (Mamdani) |
+| 9:15–10:30 | AM lecture (Mamdani) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 — red-team |
 | 12:30–1:30 | Lunch |
-| 1:30–2:45 | Guest lecture (Raji) |
+| 1:30–2:45 | PM lecture (Raji) |
 | 2:45–4:15 | Fireside chat — clinician / patient voice |
 | 4:15–5:45 | Small Group 2 (closing) — red-team (cont.) |
 | 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
-## Lead lecture outline
+## Morning lecture outline
 
 **Deployment: when the model meets the clinic.** A working outline of the
 lecture's content.
@@ -72,7 +72,7 @@ reached.
 
 ## Recommended / reference reading
 
-Beyond the required readings (listed below): Diao et al. (2024) on race
+Beyond the suggested readings (listed below): Diao et al. (2024) on race
 adjustment; Bastani et al. (2021) on RL for COVID border testing; Varoquaux &
 Cheplygina (2022) on imaging methodological failures; Ganapathi et al. (2022),
 STANDING Together; Vidal et al. (2023) on US AI regulation; Agarwal et al. (2023)

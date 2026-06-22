@@ -69,7 +69,7 @@ const daySuggested = suggestedReadings[meta.n] ?? [];
 
         {dayReadings.length > 0 && (
           <>
-            <h2 id="readings">Required readings</h2>
+            <h2 id="readings">Suggested readings</h2>
             <ol class="reading-list">
               {dayReadings.map((r) => (
                 <li>{r.url ? <a href={r.url} rel="noopener" target="_blank">{r.cite}</a> : <span>{r.cite}</span>}</li>
@@ -80,11 +80,11 @@ const daySuggested = suggestedReadings[meta.n] ?? [];
 
         {daySuggested.length > 0 && (
           <aside class="ai-readings">
-            <p class="ai-readings-tag">🤖 AI-suggested readings — for committee review</p>
+            <p class="ai-readings-tag">🤖 AI-proposed additional readings — for committee review</p>
             <p>
               Candidate additional readings proposed by an AI assistant (with
               verified links). <strong>Not yet vetted or assigned</strong> — the
-              program committee should review before adding them to the required
+              program committee should review before adding them to the suggested
               list.
             </p>
             <ol class="reading-list">

@@ -43,7 +43,7 @@
       "Dr. Mamdani is Clinical Lead – Artificial Intelligence at Ontario Health and Director of the University of Toronto Temerty Faculty of Medicine Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM). Previously, Dr. Mamdani was Vice President of Data Science and Advanced Analytics at Unity Health Toronto where his team deployed over 50 AI solutions to improve patient outcomes and hospital efficiency. Dr. Mamdani is also Professor in the Department of Medicine of the Temerty Faculty of Medicine, the Leslie Dan Faculty of Pharmacy, and the Institute of Health Policy, Management and Evaluation of the Dalla Lana School of Public Health. He is also an Affiliate Scientist at IC/ES and a Faculty Affiliate of the Vector Institute. In 2024, Dr. Mamdani’s team received the national Solventum Health Care Innovation Team Award by the Canadian College of Health Leaders. Also in 2024, Dr. Mamdani was named international AI Leader of the Year by AIMed. Previously, Dr. Mamdani was named among Canada’s Top 40 under 40. He has published over 600 studies in peer-reviewed medical journals. Dr. Mamdani obtained a Doctor of Pharmacy degree (PharmD) from the University of Michigan (Ann Arbor) and completed a fellowship in pharmacoeconomics and outcomes research at the Detroit Medical Center. During his fellowship, Dr. Mamdani obtained a Master of Arts degree in Economics from Wayne State University with a concentration in econometric theory. He then completed a Master of Public Health degree from Harvard University with a concentration in quantitative methods."
     ],
     "tagline": "Deploying AI into real clinical care",
-    "role": "Lead Lecturer",
+    "role": "AM Lecturer",
     "day": "Day 5 Deployment",
     "assigned_block": "9:00 AM Lecture - Real-world deployments & challenges"
   },
@@ -124,12 +124,12 @@
       "Inioluwa Deborah Raji is a Nigerian-Canadian computer scientist and a Ph.D. candidate in Computer Science at the University of California, Berkeley, where her research centers on algorithmic auditing and the legal and institutional accountability required for machine learning systems to be deployed safely. An Engineering Science graduate of the University of Toronto (2019), she has also held fellowships at the Mozilla Foundation and currently serves as an Academic Fellow at the Leadership Conference on Civil and Human Rights. Her work interrogates how model evaluation choices, performance metrics, and weak consumer-protection frameworks allow real-world AI harms to go unchecked.",
       "Raji is best known for her empirical audits of commercial AI systems. Building on work with Joy Buolamwini and Timnit Gebru, she co-authored audits of commercial facial recognition products that exposed large accuracy disparities for darker-skinned women — research that contributed to decisions by IBM and Amazon to restrict facial recognition sales to law enforcement. She has worked with the Algorithmic Justice League and Google's Ethical AI team, and contributed to Google's \"model cards\" framework for transparent documentation of ML systems. Her broader agenda argues for third-party auditor access and standardized accountability mechanisms across the AI industry.",
       "Her contributions have been widely recognized. She was named to MIT Technology Review's 35 Innovators Under 35 (2020), Forbes 30 Under 30 in Enterprise Technology (2021), and TIME's inaugural list of the 100 Most Influential People in AI (2023). She is also a co-recipient of the Electronic Frontier Foundation's Pioneer Award (2020, with Buolamwini and Gebru) and was named to the Mozilla Rise 25 list (2024).",
-      "At the camp: Guest Lecturer — 1:30 PM Guest Lecture - Bias & ethics in deploying ML4H."
+      "At the camp: PM Lecturer — 1:30 PM Lecture - Bias & ethics in deploying ML4H."
     ],
     "tagline": "Auditing AI for accountability",
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 5 Deployment",
-    "assigned_block": "1:30 PM Guest Lecture - Bias & ethics in deploying ML4H"
+    "assigned_block": "1:30 PM Lecture - Bias & ethics in deploying ML4H"
   },
   {
     "slug": "matthew-mcdermott",
@@ -184,10 +184,10 @@
       "Matthew McDermott is an Assistant Professor of Biomedical Informatics at Columbia University, where he joined the faculty in 2025. His research centers on representation learning and foundation models over electronic health record (EHR) data, with the broader goal of making medical records both usable and shareable for modern machine learning. He earned a bachelor's degree in mathematics from Harvey Mudd College and a PhD in Computer Science from MIT, where he studied clinical and biomedical representation learning under Peter Szolovits. Before Columbia, he was a Berkowitz Postdoctoral Fellow at Harvard Medical School in Zak Kohane's lab, and he previously worked as a software engineer at Google and co-founded Guesstimate.",
       "His work has shaped widely used tools and standards in machine learning for health. He is a co-creator of ClinicalBERT, one of the most widely used pre-trained clinical language models, and the originator of the open-source MEDS (Medical Event Data Standard) ecosystem, which acts as a universal adapter for structured medical data across research groups. His software contributions also include the EventStreamGPT (ESGPT) package and the MEDS-DEV reproducibility benchmark, and his methodological work includes Structure-inducing Pre-training, a framework for incorporating domain knowledge into pre-training with provable guarantees. His publications have been cited more than 8,500 times.",
       "McDermott is an active leader in the ML4H research community. He has served as a board member of the Association for Health, Learning, and Inference (AHLI) since its inception, was General Chair of the Machine Learning for Health (ML4H) Symposium in 2021, and was General Chair of the Conference on Health, Inference, and Learning (CHIL) in 2024 and 2025.",
-      "At the camp: Lead Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
+      "At the camp: AM Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
     ],
     "tagline": "Foundation models and open standards for health data",
-    "role": "Lead Lecturer",
+    "role": "AM Lecturer",
     "day": "Day 4 Methods & Evaluation II",
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
   },
@@ -223,7 +223,7 @@
     "bio": [
       "Solly Sieberts is the Director of Analytical Science and Evaluation at Sage Bionetworks where she focuses on the organizational mission of enabling biomedical research through open science data sharing and benchmarking of AI/ML models in the biomedical research space. With a background spanning genetics, genomics, systems biology, and digital health, her research has spanned a broad range of health applications from neuropsychology and neurodegeneration to infectious disease and post-viral syndromes. She holds a Ph.D in Statistical Genetics from the University of Washington, and has previously worked at Rosetta Inpharmatics (Merck) and deCODE Genetics in Iceland. She also serves on the board of directors of DREAM Challenges."
     ],
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 2 Data"
   },
   {
@@ -277,7 +277,7 @@
       "Jineta Banerjee, PhD, is a Principal Data Scientist and Associate Director of Advanced Data Analytics at Sage Bionetworks. Her research focuses on creative computational analyses of biomedical data to accelerate rare-disease research and to encourage data sharing within patient communities. Her work spans neuroscience, genomics, bioinformatics, machine learning, and electronic health records. She is involved in the ARPA-H Biomedical Data Fabric Toolbox project, where her team applies AI-assisted methods and digital-dignity principles to meaningfully connect biomedical data, and serves as a principal investigator on the NIH Complement-ARIE program — a $25 million data hub and coordinating center hosted jointly at NYU Langone Health and Sage Bionetworks."
     ],
     "tagline": "AI-assisted data sharing for rare-disease research",
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 2 Data"
   },
   {
@@ -316,12 +316,12 @@
       "Walter Gerych is a tenure-track Assistant Professor of Computer Science at Worcester Polytechnic Institute (WPI). He earned his PhD in Data Science from WPI, advised by Elke Rundensteiner and Emmanuel Agu, and subsequently was a postdoctoral associate in the Healthy ML lab at MIT CSAIL under Marzyeh Ghassemi before returning to WPI as faculty.",
       "His research centers on trustworthy machine learning: removing harmful behaviors and spurious correlations from models, improving fairness, advancing AI safety, and developing robust measures of confidence and uncertainty that indicate when a model's prediction can be trusted. A recurring theme of his recent work is debiasing large pre-trained and multi-modal foundation models using efficient, minimally invasive approaches that preserve downstream performance, with frequent application to machine learning for healthcare and generative AI. At MIT he led an SERC group on bias in clinical large language models. His work has appeared at top venues including NeurIPS, ICLR, AAAI, ACL, and CIKM.",
       "Gerych is also active in service to the research community. He has served as an organizer for the Time Series for Health workshop, as a Senior Area Chair for the Models and Methods track at the Conference on Health, Inference, and Learning (CHIL 2024), and as an Area Chair for NeurIPS (2025).",
-      "At the camp: Guest Lecturer — Day 4 Methods & Evaluation II, 11:00 AM Guest Lecture (Methods & evaluation paper spotlight)."
+      "At the camp: PM Lecturer — Day 4 Methods & Evaluation II, 11:00 AM Lecture (Methods & evaluation paper spotlight)."
     ],
     "tagline": "Trustworthy, fair multimodal AI",
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 4 Methods & Evaluation II",
-    "assigned_block": "11:00 AM Guest Lecture - Methods & evaluation paper spotlight"
+    "assigned_block": "11:00 AM Lecture - Methods & evaluation paper spotlight"
   },
   {
     "slug": "tom-pollard",
@@ -377,10 +377,10 @@
       "Tom Pollard is a Research Scientist at the MIT Laboratory for Computational Physiology, where he works at the intersection of medicine and engineering to improve how clinical data is shared and reused for the benefit of patients. He is also Technical Director of PhysioNet, the widely used repository of freely available physiological and clinical data, and an Instructor in the Department of Biostatistics at the Harvard T.H. Chan School of Public Health. He completed an interdisciplinary PhD on computational modeling of patient physiology at University College London, working across the Mullard Space Science Laboratory and University College Hospital, before joining MIT in 2015.",
       "His work centers on the development of databases and software that make machine learning in health possible, with a particular focus on critical care data. He co-developed the MIMIC critical care databases (including MIMIC-III and MIMIC-IV), openly accessible electronic health record datasets derived from the Beth Israel Deaconess Medical Center that are used by thousands of researchers worldwide for clinical research and education. He is a strong advocate for open science, reproducibility, and responsible data sharing.",
       "Pollard is a Fellow of the Software Sustainability Institute and an instructor for The Carpentries. He serves on the editorial boards of PLOS Digital Health and npj Scientific Data, has been a member of MIT's Task Force on Open Access, and is an organizer and committee member for the Conference on Health, Inference, and Learning (CHIL).",
-      "At the camp: Lead Lecturer — 9:00 AM Lecture - Overview of data availability across domains."
+      "At the camp: AM Lecturer — 9:00 AM Lecture - Overview of data availability across domains."
     ],
     "tagline": "Building the open datasets behind clinical ML (MIMIC)",
-    "role": "Lead Lecturer",
+    "role": "AM Lecturer",
     "day": "Day 2 Data",
     "assigned_block": "9:00 AM Lecture - Overview of data availability across domains"
   },
@@ -413,7 +413,7 @@
       "Shalmali Joshi is an Assistant Professor at Columbia University, Department of Biomedical Informatics, where she leads the reAIM group. She works on robustness, generalizability, and reliability of multimodal AI/ML prediction, inference, and adaptivity in health and biomedicine. Before Columbia, she was a Postdoctoral Fellow at Harvard University and the Vector Institute. She completed her PhD in Electrical and Computer Engineering from the University of Texas at Austin."
     ],
     "tagline": "Robust AI for health and biomedicine",
-    "role": "Lead Lecturer",
+    "role": "AM Lecturer",
     "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
   },
@@ -450,9 +450,9 @@
       "Dr. Emily Alsentzer is an Assistant Professor in Biomedical Data Science and, by courtesy, Computer Science at Stanford University. Her research leverages machine learning (ML) and natural language processing (NLP) to augment clinical decision-making and broaden access to high quality healthcare. She focuses on integrating medical expertise into ML models to ensure responsible deployment in clinical workflows. Dr. Alsentzer completed a postdoctoral fellowship at Brigham and Women’s Hospital where she worked to deploy ML models within the Mass General Brigham healthcare system. She received her PhD from the Health Sciences and Technology program at MIT and Harvard Medical School and holds degrees in computer science (BS) and biomedical informatics (MS) from Stanford University. She has served as General Chair for the Machine Learning for Health Symposium and founding organizer for SAIL and the Conference on Health, Inference, and Learning (CHIL)."
     ],
     "tagline": "Deployable AI for Healthcare",
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 1 Problems in ML4H",
-    "assigned_block": "1:30 PM Guest Lecture - Project walkthrough"
+    "assigned_block": "1:30 PM Lecture - Project walkthrough"
   },
   {
     "slug": "olawale-salaudeen",
@@ -529,10 +529,10 @@
       "Olawale (Wale) Salaudeen is a postdoctoral researcher at MIT in the Healthy ML Lab, led by Marzyeh Ghassemi, and an AI Center Fellow in Residence at Schmidt Sciences. He earned his PhD in Computer Science jointly through the University of Illinois Urbana-Champaign and Stanford University's Trustworthy AI Research (STAIR) Lab, advised by Sanmi Koyejo, and holds a BS in Mechanical Engineering with minors in Computer Science and Mathematics from Texas A&M University. He was previously a postdoctoral scholar at the Eric and Wendy Schmidt Center at the Broad Institute of MIT and Harvard.",
       "His research focuses on the robustness and reliability of AI in real-world decision-making. He works on the science of valid measurement and prediction of AI capabilities and risks, characterizing and intervening on the causal and spurious mechanisms behind model behavior, inference-time adaptation of AI systems, and measuring and mitigating the disparate impacts of AI. A central theme is anticipating failures before deployment and ensuring reliable behavior under real-world distribution shift, with translational impact in domains such as healthcare.",
       "Salaudeen's work and training have been recognized with a Schmidt Sciences AI Center Fellowship, the Sloan Scholarship, a Beckman Graduate Research Fellowship, and a GEM Associate Fellowship, among others. He received a Best Paper Award at the NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle, and he has received a Sloan Scholarship, a Beckman Graduate Research Fellowship, a GEM Associate Fellowship, and an NSF Miniature Brain Machinery Traineeship.",
-      "At the camp: Guest Lecturer — 11:00 AM Guest Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
+      "At the camp: PM Lecturer — 11:00 AM Lecture - Methods & evaluation paper spotlight (Day 3 Methods & Evaluation I)."
     ],
     "tagline": "Measuring and Intervening on AI in Real-World Decision-Making",
-    "role": "Guest Lecturer",
+    "role": "PM Lecturer",
     "day": "Day 3 Methods & Evaluation I",
     "assigned_block": "On Evaluating AI Methods vs. Models"
   },
@@ -583,7 +583,7 @@
       "His physics bachelor's degree and his PhD in information science are both from Caltech. Prof. Szolovits was elected to the National Academy of Medicine and to Fellowships in the American Association for Artificial Intelligence, the American College of Medical Informatics, the American Institute for Medical and Biological Engineering, and the International Academy of Health Sciences Informatics. He has served as a member of the National Research Council's Computer Science and Telecommunications Board and as a member of the National Library of Medicine’s Biomedical Library and Informatics Review Committee. He was the 2013 recipient of the Morris F. Collen Award of Excellence from the American College of Medical Informatics."
     ],
     "tagline": "Pioneering AI for clinical decision-making",
-    "role": "Lead Lecturer",
+    "role": "AM Lecturer",
     "day": "Day 1 Problems in ML4H",
     "assigned_block": "10:00 AM Lecture - Intro to problems in ML4H"
   }

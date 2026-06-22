@@ -17,7 +17,7 @@ export interface CurriculumDay {
   gap: string;        // "the gap it closes"
   mode: string;       // signature mode for the day
   lead?: Person;
-  leadLabel?: string; // defaults to "Lead lecture"
+  leadLabel?: string; // defaults to "AM lecture"
   guest?: Person;
   guest2?: Person;    // optional second guest (Day 2 has two Sage Bionetworks guests)
   panel?: boolean;
@@ -38,7 +38,7 @@ export const days: CurriculumDay[] = [
     morning:
       'An opening block — welcome, orientation to how the week works, and a brief icebreaker — then a field-level frame: what ML4H is, what is shared across health problems, and what AI can and cannot do. A first small group reframes your project as a problem, not a method.',
     afternoon:
-      'A guest lecture walks a real project from messy problem-formulation toward clinical use, then a problem clinic within your data-modality track. The day closes with a small group where you refine your problem framing.',
+      'An afternoon lecture walks a real project from messy problem-formulation toward clinical use, then a problem clinic within your data-modality track. The day closes with a small group where you refine your problem framing.',
     questions:
       'What is the unmet health need? Who are the stakeholders? What historical, societal, or scientific gaps challenge the problem — and how is a problem different from a method?',
   },
@@ -54,7 +54,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Health data as a first-class citizen — the data-generating process, structured clinical data, de-identification, and access mechanics (PhysioNet, DUAs). Small groups map their own data-generating process and access plan.',
     afternoon:
-      'Two guest lectures from Sage Bionetworks on the other half of the picture: research-cohort and genomics data (GWAS, multi-omics, longitudinal phenotyping), and the Synapse / data-fabric model for governed sharing across consortia and patient communities. Small groups refine the access plan and complete a data specification, followed by a data clinic within your modality track.',
+      'Two afternoon lectures from Sage Bionetworks on the other half of the picture: research-cohort and genomics data (GWAS, multi-omics, longitudinal phenotyping), and the Synapse / data-fabric model for governed sharing across consortia and patient communities. Small groups refine the access plan and complete a data specification, followed by a data clinic within your modality track.',
     questions:
       'What is the data-generating process for your project? What data exists independent of your AI system, and what biases does its provenance create?',
   },
@@ -69,7 +69,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Study design and evaluation — estimands, utility-aligned metrics, statistical power, fairness, and threats to validity. Small groups dissect a provided evaluation case study.',
     afternoon:
-      'A guest lecture on evaluation pitfalls and disaggregated metrics. Small groups define their evaluation plan, then a workshop to build an evaluation notebook for your own project (worked examples and a template provided).',
+      'An afternoon lecture on evaluation pitfalls and disaggregated metrics. Small groups define their evaluation plan, then a workshop to build an evaluation notebook for your own project (worked examples and a template provided).',
     questions:
       'What would count as success, and how would you measure it credibly? What is your estimand? Which metrics track clinical utility, and how will you evaluate across subgroups?',
   },
@@ -84,7 +84,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Method selection, health-specific inductive biases, and foundation versus task-specific models. Small groups draft a one-slide method / model proposal.',
     afternoon:
-      'A guest lecture on trustworthy-by-construction methods, structured peer review of proposals, and a workshop to build a methods / modeling notebook for your own project (a prompt-a-thon alternative is offered for LLM-centric projects).',
+      'An afternoon lecture on trustworthy-by-construction methods, structured peer review of proposals, and a workshop to build a methods / modeling notebook for your own project (a prompt-a-thon alternative is offered for LLM-centric projects).',
     questions:
       'What method fits your data and your Day 3 metrics? Should you fine-tune, prompt, or train from scratch — and a foundation or task-specific model?',
   },
@@ -99,7 +99,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Real-world deployment war stories — workflow integration, clinician adoption, monitoring, and drift. Each group red-teams its members’ projects as a whole: imagine the project is built and deployed, then find where and why it would fail in the real world.',
     afternoon:
-      'A guest lecture on bias, ethics, and accountability in deployment, continued red-teaming, and a fireside chat with a practicing clinician / patient voice on ML4H deployment.',
+      'An afternoon lecture on bias, ethics, and accountability in deployment, continued red-teaming, and a fireside chat with a practicing clinician / patient voice on ML4H deployment.',
     questions:
       'How do you red-team a deployed model? What mistakes does it make, and how does it treat patient populations differently? How do you simulate deployment, deploy, and audit?',
   },
@@ -138,11 +138,11 @@ export const days: CurriculumDay[] = [
 // The shared rhythm of a content day (Days 1–5). Days 6–7 differ — see their cards.
 export const dailyRhythm: { time: string; item: string }[] = [
   { time: '9:00', item: 'Morning handoff (Day 1: an 8:30 opening block — check-in, welcome & orientation, icebreaker)' },
-  { time: '9:15', item: 'Lead lecture — frames the day' },
+  { time: '9:15', item: 'Morning lecture — frames the day' },
   { time: '10:30', item: 'Coffee break' },
   { time: '11:00', item: 'Small Group 1 — apply the frame to your project' },
   { time: '12:30', item: 'Lunch' },
-  { time: '1:30', item: 'Guest lecture — a concrete case or counterpoint' },
+  { time: '1:30', item: 'Afternoon lecture — a concrete case or counterpoint' },
   { time: '2:45', item: 'Workshop — a notebook (Days 3–4), specialty breakout (Days 1–2), or fireside (Day 5)' },
   { time: '4:15', item: 'Small Group 2 (closing) — talk through how your thinking moved today' },
   { time: '5:45', item: 'Daily wrap — quick recap and look ahead' },
@@ -154,7 +154,7 @@ export interface Reading {
   url?: string; // canonical link (publisher DOI / arXiv / journal); omit if none
 }
 
-// Required readings per day. NOTE FOR REVIEW: links point to the paper matching
+// Suggested readings per day. NOTE FOR REVIEW: links point to the paper matching
 // each citation, but the citation list itself is carried from the program
 // materials and needs a human accuracy/recency pass (see the review notice).
 export const readings: Record<number, Reading[]> = {

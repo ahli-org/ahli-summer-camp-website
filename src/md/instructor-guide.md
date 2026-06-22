@@ -1,4 +1,4 @@
-## For lead lecturers and guest lecturers
+## For morning lecturers and afternoon lecturers
 
 Thank you for teaching at the AHLI Health AI Summer Camp. This guide explains
 the program's design, what each teaching role is asked to do, and the per-day
@@ -27,7 +27,7 @@ thinking aid, **not turned in and not graded**. Sessions should drive each
 participant's thinking on that day's part, not toward a submission.
 
 **The five-block content day (Days 1–5).** Every content day runs the same arc:
-a morning handoff → lead lecture → small group → guest lecture → workshop →
+a morning handoff → morning lecture → small group → afternoon lecture → workshop →
 **closing small group**. The day ends with a small group in which participants
 step back and talk through how their thinking moved that day — so the last thing
 they do each day is sharpen their own project. Day 1 uses the same structure,
@@ -38,10 +38,10 @@ icebreaker) in place of the handoff.
 *interrogate*, Day 3 *critique*, Day 4 *build*, Day 5 *stress-test*, Day 6
 *present*, Day 7 *synthesize*.
 
-## If you are a lead lecturer
+## If you give the morning lecture
 
 You own the conceptual frame for your day. Your lecture is the scaffold the small
-groups and the guest lecture hang on.
+groups and the afternoon lecture hang on.
 
 - **Teach the frame, not your CV.** Your lecture's job is to give participants a
   framework they can apply to their own project that same day. Use your own work
@@ -57,17 +57,17 @@ groups and the guest lecture hang on.
   visual theme. The companion slide-deck repository’s `guides/uplevel-review.md`
   goes deeper on how to raise the ceiling for this audience — read it before
   building your deck.
-- **Coordinate with your guest** so the two talks complement rather than overlap.
+- **Coordinate with the afternoon lecturer** so the two talks complement rather than overlap.
 
-## If you are a guest lecturer
+## If you give the afternoon lecture
 
 You bring the day's frame down to earth. You craft your own slides; we are not
 prescribing your content.
 
 - **Know your job for the day.** You are not giving a second lecture on the
-  lead's theme — you either *instantiate* the frame in a concrete project or case
+  morning lecture's theme — you either *instantiate* the frame in a concrete project or case
   or *productively complicate* it. Your day's brief states which.
-- **Be concrete and candid.** Participants get abstraction from the lead. From
+- **Be concrete and candid.** Participants get abstraction from the morning lecture. From
   you they want the lived texture of real work — the decision points, the dead
   ends, what you would do differently.
 - **Aim for ~75 minutes** including discussion, unless your day's schedule says
@@ -109,7 +109,7 @@ off the rails, at the next morning's handoff.
 
 ## Per-day briefs
 
-### Day 1 — Problems in ML4H · Lead: Peter Szolovits · Guest: Emily Alsentzer
+### Day 1 — Problems in ML4H · AM: Peter Szolovits · PM: Emily Alsentzer
 
 **Your role.** You set the intellectual frame for the entire week. Day 1 uses the
 five-block template; its only difference is the start — an 8:30–9:15 opening
@@ -128,7 +128,7 @@ own project: *is this a real, well-posed problem?*
 Alsentzer's project walkthrough, which makes the abstraction concrete before the
 afternoon small group.
 
-### Day 2 — Data · Lead: Tom Pollard · Guests: Solly Sieberts & Jineta Banerjee
+### Day 2 — Data · AM: Tom Pollard · PM: Solly Sieberts & Jineta Banerjee
 
 **Your lecture.** Health data as a first-class citizen: the data-generating
 process; data collected as a byproduct of care versus designed for research;
@@ -136,19 +136,19 @@ de-identification and governance; and, concretely, access mechanics — PhysioNe
 credentialing, data use agreements, what it actually takes to get MIMIC-style
 data in hand. Frame the day as a two-sided contrast: your lecture covers the
 *byproduct-of-care* world — single-site institutional EHRs, MIMIC-style cohorts;
-the Sage Bionetworks guest lectures cover the *designed-for-research* world —
+the Sage Bionetworks afternoon lectures cover the *designed-for-research* world —
 Sieberts on statistical genetics and multi-omics with DREAM Challenges as a
 benchmarking model, and Banerjee on rare-disease data fabric and Synapse-style
 governed sharing across consortia and patient communities. Make the contrast
-explicit so the guest lectures land as the other half of one picture.
+explicit so the afternoon lectures land as the other half of one picture.
 
 **Handoff.** Open with the handoff (Day 1 problem statements). Close by naming
 Workbook Part 2 — the data specification — and its gap check: does the available
 data actually support the Day 1 problem?
 
-### Day 3 — Evaluation & Study Design · Lead: Shalmali Joshi · Guest: Olawale Salaudeen
+### Day 3 — Evaluation & Study Design · AM: Shalmali Joshi · PM: Olawale Salaudeen
 
-**Your role.** Day lead. You give the full ~75-minute lead lecture (9:15 AM) and
+**Your role.** Day lead. You give the full ~75-minute morning lecture (9:15 AM) and
 anchor the afternoon build-your-own-notebook workshop (2:45–4:15 PM), which feeds
 the closing small group.
 
@@ -163,9 +163,9 @@ failures. In the afternoon you anchor the
 **Handoff.** Open with the handoff (Day 2 data specs). Close by naming Workbook
 Part 3 (the evaluation plan) and pointing to the afternoon notebook workshop.
 
-### Day 4 — Methods & Modeling · Lead: Matthew McDermott · Guest: Walter Gerych
+### Day 4 — Methods & Modeling · AM: Matthew McDermott · PM: Walter Gerych
 
-**Your role.** Day lead. Like Day 3, a full lead lecture (9:15 AM) and the
+**Your role.** Day lead. Like Day 3, a full morning lecture (9:15 AM) and the
 afternoon build-your-own-notebook workshop (2:45–4:15 PM).
 
 **Your lecture.** Method selection as a reasoned choice: health-specific
@@ -181,9 +181,9 @@ the afternoon you anchor the
 **Handoff.** Open with the handoff (Day 3 evaluation plans). Close by naming
 Workbook Part 4 — the method rationale.
 
-### Day 5 — Deployment · Lead: Muhammad Mamdani · Guest: Inioluwa Deborah Raji · 2:45 PM fireside
+### Day 5 — Deployment · AM: Muhammad Mamdani · PM: Inioluwa Deborah Raji · 2:45 PM fireside
 
-**Your role.** Day lead; the 9:15 AM lead lecture. The day's fourth block is a
+**Your role.** Day lead; the 9:15 AM lecture. The day's fourth block is a
 clinician fireside chat with Mjaye Mazwi (an organizer moderates), and the day
 closes with a small group that continues red-teaming projects.
 
@@ -192,7 +192,7 @@ integration, clinician adoption, the model that validated beautifully and failed
 on the ward, monitoring and drift, and who you need on your side to deploy at all.
 Push for specific deployment narratives, successes and failures, rather than
 abstractions; that lived texture is the value. Your lecture sets up the red-team
-small groups and Raji's accountability-focused guest lecture.
+small groups and Raji's accountability-focused afternoon lecture.
 
 **Handoff.** Open with the handoff (Day 4 method rationales). Frame the small
 groups as a red team — the group tries to break each project as a whole — and
@@ -210,7 +210,7 @@ questions, and learns from the room.
 
 **Moderating.** Keep talks to time, run a crisp Q&A, and make the feedback both
 concrete and kind — model the kinds of questions a real search committee asks. No
-required readings.
+assigned readings.
 
 **Handoff.** Open with the handoff (Day 5 red-team takeaways).
 

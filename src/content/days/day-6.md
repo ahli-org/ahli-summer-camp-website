@@ -38,7 +38,7 @@ Talks run in parallel rooms so every presenter gets a full slot, each session
 moderated by camp faculty. Presenters give a job-talk-style presentation and take
 questions; the rest of the room listens and offers feedback afterward. The week
 of Project Workbook thinking — problem, data, evaluation, method, deployment — is
-the substance the talk draws on. No required readings.
+the substance the talk draws on. No assigned readings.
 
 ## Additional resources
 

@@ -24,13 +24,13 @@ export const studentResources: Resource[] = [
   },
   {
     title: 'Project Workbook template',
-    description: 'The cumulative project document you complete one part per day — copy it and fill it in.',
+    description: 'Your private five-part thinking aid — one part per content day. Copy it and fill it in for yourself; nothing is turned in.',
     internal: 'project-workbook',
   },
   {
-    title: 'Required readings',
-    description: 'Every content day’s required papers, with links — collected on the curriculum page and on each day’s page.',
-    internal: 'curriculum#required-readings',
+    title: 'Suggested readings',
+    description: 'Every content day’s suggested papers, with links — collected on the curriculum page and on each day’s page.',
+    internal: 'curriculum#suggested-readings',
   },
   {
     title: 'Evaluation Lab notebook (Day 3)',
@@ -51,7 +51,7 @@ export const studentResources: Resource[] = [
 // Lecture slide decks (Marp), built in the companion slides repo and synced via
 // `npm run sync:slides`. Tentative drafts — actively revised.
 export const slideResources: Resource[] = [
-  { title: 'Day 1 — Problems in ML4H', description: 'Lead lecture slides (PDF also available on the day page).', file: 'slides/day1-problems.html' },
+  { title: 'Day 1 — Problems in ML4H', description: 'Lecture slides (PDF also available on the day page).', file: 'slides/day1-problems.html' },
   { title: 'Day 2 — Data', file: 'slides/day2-data.html' },
   { title: 'Day 3 — Evaluation & Study Design', file: 'slides/day3-evaluation.html' },
   { title: 'Day 4 — Methods & Modeling', file: 'slides/day4-methods.html' },
@@ -60,18 +60,18 @@ export const slideResources: Resource[] = [
 
 export const instructorResources: Resource[] = [
   {
-    title: 'Instructor & guest lecturer guide',
+    title: 'Instructor & lecturer guide',
     description: 'Program design, teaching roles, and a brief for every day.',
     internal: 'instructor-guide',
   },
   {
     title: 'Curriculum, schedule & lecture outlines',
-    description: 'The day-by-day program; each day page carries a slide-by-slide outline of its lead lecture.',
+    description: 'The day-by-day program; each day page carries a slide-by-slide outline of its morning lecture.',
     internal: 'curriculum',
   },
   {
     title: 'Project Workbook template',
-    description: 'The seven-part deliverable participants complete across the week.',
+    description: 'The private five-part thinking aid participants keep across the content days.',
     internal: 'project-workbook',
   },
 ];

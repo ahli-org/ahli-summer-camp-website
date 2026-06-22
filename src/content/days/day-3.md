@@ -5,9 +5,9 @@ day: 3
 ## About this day
 
 Before you build anything, you need to know what would count as evidence that it
-worked. The lead lecture covers study design and evaluation: estimands,
+worked. The morning lecture covers study design and evaluation: estimands,
 utility-aligned metrics versus metrics of convenience, statistical power,
-fairness, and the threats to a study's validity. The guest lecture brings the
+fairness, and the threats to a study's validity. The afternoon lecture brings the
 sharp empirical case that aggregate metrics routinely hide subgroup failures.
 The mode is **critique** — you learn to take an evaluation apart before you
 trust it.
@@ -17,17 +17,17 @@ trust it.
 | Time | Block |
 |---|---|
 | 9:00–9:15 | Morning handoff |
-| 9:15–10:30 | Lead lecture (Joshi) |
+| 9:15–10:30 | AM lecture (Joshi) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 |
 | 12:30–1:30 | Lunch |
-| 1:30–2:45 | Guest lecture (Salaudeen) |
+| 1:30–2:45 | PM lecture (Salaudeen) |
 | 2:45–4:15 | Workshop — build your project's evaluation notebook |
 | 4:15–5:45 | Small Group 2 (closing) |
 | 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
-## Lead lecture outline
+## Morning lecture outline
 
 **Evaluation & study design: how would you know if it worked?** A working
 outline of the lecture's content.

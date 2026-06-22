@@ -5,7 +5,7 @@ import { url } from '../lib/site';
 import { days, dailyRhythm, readings } from '../lib/curriculum';
 import type { Person } from '../lib/curriculum';
 
-// Days that carry required readings, in order.
+// Days that carry suggested readings, in order.
 const readingDays = days.filter((d) => (readings[d.n] ?? []).length > 0);
 
 // Render an instructor name, linked to their profile when we have a slug.
@@ -17,7 +17,7 @@ function personHref(p?: Person): string | null {
   <Hero
     eyebrow="Curriculum & schedule"
     title="Seven days, one complete arc"
-    lead="The week moves through the full lifecycle of an ML-for-health project — each day closing one gap from idea to bedside. Days pair a lead lecture and guest lecture with hands-on small-group and workshop time, and each content day builds a part of your private Project Workbook."
+    lead="The week moves through the full lifecycle of an ML-for-health project — each day closing one gap from idea to bedside. Days pair a morning and an afternoon lecture with hands-on small-group and workshop time, and each content day builds a part of your private Project Workbook."
   />
 
   <section class="section">
@@ -41,7 +41,7 @@ function personHref(p?: Person): string | null {
               <p class="day-faculty">
                 {d.lead && (
                   <span>
-                    <strong>{d.leadLabel ?? 'Lead'}:</strong>{' '}
+                    <strong>{d.leadLabel ?? 'AM lecture'}:</strong>{' '}
                     {personHref(d.lead)
                       ? <a href={personHref(d.lead)}>{d.lead.name}</a>
                       : <span>{d.lead.name}</span>}
@@ -50,7 +50,7 @@ function personHref(p?: Person): string | null {
                 )}
                 {d.guest && (
                   <span>
-                    <strong>{d.guest2 ? 'Guests' : 'Guest'}:</strong>{' '}
+                    <strong>{d.guest2 ? 'PM lectures' : 'PM lecture'}:</strong>{' '}
                     {personHref(d.guest)
                       ? <a href={personHref(d.guest)}>{d.guest.name}</a>
                       : <span>{d.guest.name}</span>}
@@ -85,8 +85,8 @@ function personHref(p?: Person): string | null {
       <p class="eyebrow">A typical day</p>
       <h2>The daily rhythm</h2>
       <p>
-        Days 1–5 share one consistent five-block structure: lead lecture →
-        small group → guest lecture → workshop → closing small group. The shape
+        Days 1–5 share one consistent five-block structure: morning lecture →
+        small group → afternoon lecture → workshop → closing small group. The shape
         is deliberate — you get a frame, apply it to your project, get content
         that sharpens your thinking, then revise your work. <strong>Every content
         day ends with a small group</strong>, not a lecture, so the last thing
@@ -108,12 +108,12 @@ function personHref(p?: Person): string | null {
     </div>
   </section>
 
-  <section class="section" id="required-readings">
+  <section class="section" id="suggested-readings">
     <div class="wrap">
-      <p class="eyebrow">Required readings</p>
+      <p class="eyebrow">Suggested readings</p>
       <h2>Readings by day</h2>
       <p>
-        Each content day has a short required-reading list. They’re also on each
+        Each content day has a short suggested-reading list. They’re also on each
         day’s page; the full set is collected here.
       </p>
       {readingDays.map((d) => (

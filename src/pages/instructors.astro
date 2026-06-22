@@ -5,19 +5,17 @@ import ProfileCard from '../components/ProfileCard.astro';
 import { url } from '../lib/site';
 import { instructors } from '../lib/instructors';
 
-// Split into sections by role; order within each is the stable shuffle from the data.
-const leads = instructors.filter((i) => /lead/i.test(i.role ?? ''));
-const guests = instructors.filter((i) => !/lead/i.test(i.role ?? ''));
+// All lecturers in one list — they share the same lecture slot, so we don't split
+// them into a hierarchy. Order is the stable shuffle from the data.
 const groups = [
-  { heading: 'Lead instructors', blurb: 'Faculty who lead the daily sessions and labs.', people: leads },
-  { heading: 'Guest lecturers', blurb: 'Visiting speakers joining for focused talks.', people: guests },
+  { heading: 'Lecturers', blurb: 'The faculty leading the week’s lectures and sessions.', people: instructors },
 ];
 ---
 <BaseLayout title="Instructors">
   <Hero
     eyebrow="Instructors"
     title="Learn from researchers shaping health AI"
-    lead={`The camp is led by ${instructors.length} instructors and guest lecturers working at the frontier of machine learning for health. Explore their work below.`}
+    lead={`The camp is led by ${instructors.length} instructors working at the frontier of machine learning for health. Explore their work below.`}
   />
 
   {groups.map((g) => g.people.length > 0 && (
@@ -45,10 +43,9 @@ const groups = [
     <div class="wrap wrap--wide">
       <div class="callout">
         <p>
-          <strong>More speakers to be announced.</strong> Beyond the confirmed
-          lecturers above, the Day 5 clinician/patient fireside guest and the
-          four Day 6 funding panelists (federal/NIH, philanthropy, industry/VC,
-          and an academic budget-holder) will be added as they’re confirmed.
+          <strong>More speakers to be announced.</strong> Beyond the lecturers
+          above, additional contributors — including the Day 5 fireside
+          clinician — will be added as they’re confirmed.
         </p>
       </div>
     </div>

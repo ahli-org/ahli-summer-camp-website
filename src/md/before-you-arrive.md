@@ -4,7 +4,7 @@ groups and workshops far more valuable.
 
 ## Checklist
 
-- [ ] **Do the required readings** — each content day has a short list ([all readings, by day](/curriculum/#required-readings)).
+- [ ] **Look over the suggested readings** — each content day has a short list ([all readings, by day](/curriculum/#suggested-readings)).
 - [ ] **Pick your specialty track** — self-select the data-modality track closest to your project (see below).
 - [ ] **Find your home group** — your fixed small group for the week, and the days you facilitate ([home groups & facilitator rotation](/small-groups/)).
 - [ ] **Set up your accounts and tools** (PhysioNet, Colab, an AI coding assistant — see below).
@@ -12,11 +12,12 @@ groups and workshops far more valuable.
 - [ ] **Skim the templates** — the [Project Workbook](/project-workbook/) and the Day 3 & 4 workshop notebooks ([Evaluation Lab](/notebooks/evaluation-lab/), [Methods Lab](/notebooks/methods-lab/)), so the 90-minute workshop blocks are spent on substance.
 - [ ] **Note Day 1 logistics** — an 8:30 AM start with shuttles from the hotel (below).
 
-## Required readings
+## Suggested readings
 
-Each content day (Days 1–5) has a short required-reading list — around five
-papers each. They make the lectures and small groups far more valuable.
-See the [full list, organized by day](/curriculum/#required-readings).
+Each content day (Days 1–5) has a short suggested-reading list — around five
+papers each. You're not expected to have read them in advance, but skimming them
+makes the lectures and small groups more valuable.
+See the [full list, organized by day](/curriculum/#suggested-readings).
 
 ## Specialty tracks
 
@@ -68,5 +69,5 @@ If your project spans two tracks, pick the one your *data* most belongs to.
 
 Day 1 (Monday, June 22) begins at **8:30 AM** with breakfast and check-in, and
 **shuttles run from the hotel** so the cohort arrives together. The program
-proper begins at 9:00, with the first lead lecture at 9:15. An optional, informal
+proper begins at 9:00, with the first morning lecture at 9:15. An optional, informal
 social gathering may be held the evening before for anyone already in town.

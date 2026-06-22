@@ -5,10 +5,10 @@ day: 4
 ## About this day
 
 With success defined on Day 3, today you design the model that reaches it. The
-lead lecture treats method selection as a reasoned choice: health-specific
+morning lecture treats method selection as a reasoned choice: health-specific
 inductive biases, task-specific versus foundation models, when to fine-tune
 versus prompt versus train from scratch, representation learning, and how data
-structure constrains method. The guest lecture covers making a built model
+structure constrains method. The afternoon lecture covers making a built model
 trustworthy without breaking it. The mode is **build** — you commit to an
 approach and defend it.
 
@@ -17,17 +17,17 @@ approach and defend it.
 | Time | Block |
 |---|---|
 | 9:00–9:15 | Morning handoff |
-| 9:15–10:30 | Lead lecture (McDermott) |
+| 9:15–10:30 | AM lecture (McDermott) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 |
 | 12:30–1:30 | Lunch |
-| 1:30–2:45 | Guest lecture (Gerych) |
+| 1:30–2:45 | PM lecture (Gerych) |
 | 2:45–4:15 | Workshop — build your project's methods notebook |
 | 4:15–5:45 | Small Group 2 (closing) |
 | 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
-## Lead lecture outline
+## Morning lecture outline
 
 **Methods & modeling: building toward a defined target.** A working outline of
 the lecture's content.

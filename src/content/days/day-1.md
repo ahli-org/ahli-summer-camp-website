@@ -5,10 +5,10 @@ day: 1
 ## About this day
 
 Day 1 sets the frame for the week. After a short opening block — welcome,
-orientation to how the week works, and a brief icebreaker — the lead lecture
+orientation to how the week works, and a brief icebreaker — the morning lecture
 asks what makes machine learning for health a distinct discipline, what is
 shared across all health problems regardless of domain, and what AI cannot do.
-The guest lecture walks a real project from messy problem-formulation toward
+The afternoon lecture walks a real project from messy problem-formulation toward
 clinical use. The work of the day is to stop thinking about your project as a
 *method* and start thinking about it as a *problem*: an unmet need, with
 stakeholders, and a reason it is still open.
@@ -18,17 +18,17 @@ stakeholders, and a reason it is still open.
 | Time | Block |
 |---|---|
 | 8:30–9:15 | Opening day materials — check-in, welcome & orientation, brief icebreaker (shuttles from the hotel) |
-| 9:15–10:30 | Lead lecture (Szolovits) |
+| 9:15–10:30 | AM lecture (Szolovits) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 — problem framing |
 | 12:30–1:30 | Lunch |
-| 1:30–2:45 | Guest lecture (Alsentzer) |
+| 1:30–2:45 | PM lecture (Alsentzer) |
 | 2:45–4:15 | Specialty Breakout #1 — problem clinic |
 | 4:15–5:45 | Small Group 2 (closing) — refine your problem framing |
 | 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
-## Lead lecture outline
+## Morning lecture outline
 
 **Problems in ML4H: what we're actually trying to solve.** A working outline of
 the lecture's content — the basis for the slides.
