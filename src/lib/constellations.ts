@@ -27,11 +27,11 @@ export const constellations: Record<string, string> = {
     line('27,25 45,30 41,49 23,44 27,25') +
     stars([15, 13], [27, 25], [45, 30], [41, 49], [23, 44]),
 
-  // Cygnus — the Northern Cross.
+  // Cygnus — the Northern Cross (Sadr sits where the crossbar meets the spine).
   Cygnus:
     line('32,9 32,57') +
-    line('12,30 52,33') +
-    stars([32, 9], [32, 37], [32, 57], [12, 30], [52, 33]),
+    line('12,32 52,32') +
+    stars([32, 9], [32, 32], [32, 57], [12, 32], [52, 32]),
 
   // Aquila — Altair on a cross-line, head and tail (the eagle).
   Aquila:
