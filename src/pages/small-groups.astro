@@ -13,7 +13,7 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
   <Hero
     eyebrow="Daily small groups"
     title="Your home group for the week"
-    lead={`The ${totalStudents} participants are split into ${groups.length} fixed home groups of six or seven. You stay in the same group all week, so you come to know your groupmates' projects as well as your own — and a different member facilitates each day.`}
+    lead={`The ${totalStudents} participants are split into ${groups.length} fixed home groups of five. You stay in the same group all week, so you come to know your groupmates' projects as well as your own — and each member facilitates exactly one day.`}
   />
 
   <!-- The goal of the small-group discussions -->
@@ -44,10 +44,10 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
       </p>
       <div class="callout">
         <p>
-          <strong>The through-line on each group is a loose hook, not an
-          assignment.</strong> Your project does not have to fit your group's
-          theme — work on whatever you came to work on. The themes below just
-          reflect how the cohort happened to fall out.
+          <strong>Groups are mixed by design, not by topic.</strong> Yours spans
+          different research areas, methods, institutions, and countries on
+          purpose — so don't expect your group to share your subfield. Work on
+          whatever you came to work on; the value is the outside perspective.
         </p>
       </div>
     </div>
@@ -60,17 +60,18 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
       <h2>Facilitating a small group</h2>
       <p>
         There is no instructor in the room — the groups are <strong>peer-led</strong>.
-        Each day a different member is the <strong>facilitator</strong>. The role
-        rotates so that, across the week, everyone in the group leads at least one
-        discussion. The facilitator is not the expert; they keep the conversation
-        useful and make sure every project gets time.
+        Because each group has five members and the week has five content days,
+        <strong>you each facilitate exactly one day</strong>, leading both of that
+        day's small-group blocks (the mid-morning and the closing one). The
+        facilitator is not the expert; they keep the conversation useful and make
+        sure every project gets time.
       </p>
-      <p>If it's your turn to facilitate, your job is to:</p>
+      <p>On the day you facilitate, your job is to:</p>
       <ul>
         <li>
           <strong>Keep time.</strong> Divide the block evenly so every member's
-          project gets a roughly equal turn — about 7–8 minutes each in a group of
-          six or seven. Watch the clock; don't let the first project eat the hour.
+          project gets a roughly equal turn — about 15 minutes each in a group of
+          five. Watch the clock; don't let the first project eat the hour.
         </li>
         <li>
           <strong>Hold the day's focus.</strong> Anchor each turn on the day's
@@ -95,9 +96,10 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
         </li>
       </ul>
       <p>
-        When it's not your turn, you're a participant: come ready to pitch your
+        On the other four days you're a participant: come ready to pitch your
         project in a couple of minutes and to give your groupmates sharp,
-        generous feedback.
+        generous feedback. If you can't make the day you're assigned, swap with
+        another member so every day still has a facilitator.
       </p>
     </div>
   </section>
@@ -108,11 +110,10 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
       <p class="eyebrow">The {groups.length} groups</p>
       <h2>Groups &amp; facilitator rotation</h2>
       <p>
-        Find your group below. The schedule shows who facilitates each day —
-        rotated in roster order across the two daily blocks (<strong>SG1</strong>,
-        the mid-morning block, and <strong>SG2</strong>, the closing block) so the
-        role is shared evenly. Days 6 (funding panel) and 7 (presentations) have no
-        home-group session.
+        Find your group below. The schedule shows who facilitates each day — one
+        member per day, in roster order, leading both of that day's small-group
+        blocks. Days 6 (funding panel) and 7 (presentations) have no home-group
+        session.
       </p>
 
       {groups.map((g) => (
@@ -121,7 +122,6 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
             <span class="group-badge">{g.name}</span>
             <div>
               <h3 id={g.name.toLowerCase()}>Group {g.n} · {g.name}</h3>
-              <p class="group-through">{g.throughline}</p>
             </div>
           </header>
 
@@ -143,15 +143,14 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
               <h4>Facilitator rotation</h4>
               <table class="rota">
                 <thead>
-                  <tr><th>Day</th><th>Focus</th><th>SG1</th><th>SG2</th></tr>
+                  <tr><th>Day</th><th>Focus</th><th>Facilitator</th></tr>
                 </thead>
                 <tbody>
                   {facilitatorsForGroup(g).map((r) => (
                     <tr>
                       <td class="rota-day">{r.day}</td>
                       <td>{r.topic}</td>
-                      <td>{r.sg1.name}</td>
-                      <td>{r.sg2.name}</td>
+                      <td>{r.facilitator.name}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -200,7 +199,6 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
     letter-spacing: .02em;
   }
   .group-head h3 { margin: 0; }
-  .group-through { margin: .15rem 0 0; font-size: .92rem; color: var(--ink-soft); }
 
   .group-cols {
     display: grid;
