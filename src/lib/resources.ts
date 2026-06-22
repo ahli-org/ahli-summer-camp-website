@@ -24,7 +24,7 @@ export const studentResources: Resource[] = [
   },
   {
     title: 'Project Workbook template',
-    description: 'Your private five-part thinking aid — one part per content day. Copy it and fill it in for yourself; nothing is turned in.',
+    description: 'Your private four-part thinking aid (Days 1–4) — copy it and fill it in for yourself.',
     internal: 'project-workbook',
   },
   {
@@ -71,7 +71,7 @@ export const instructorResources: Resource[] = [
   },
   {
     title: 'Project Workbook template',
-    description: 'The private five-part thinking aid participants keep across the content days.',
+    description: 'The private four-part thinking aid (Days 1–4) participants keep for their own projects.',
     internal: 'project-workbook',
   },
 ];

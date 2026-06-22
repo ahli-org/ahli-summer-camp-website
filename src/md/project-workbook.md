@@ -1,7 +1,6 @@
 The Project Workbook is a **private thinking aid** for your own project. It is
-**not turned in and not graded** — no one collects it. Its only job is to sharpen
-how you think about your project; you fill it in for yourself, and you decide what
-(if anything) to share.
+**not graded** — its only job is to sharpen how you think about your project, and
+you fill it in for yourself.
 
 It has **four short parts**, one for each of Days 1–4: problem, data, evaluation,
 and methods. **Day 5 has no workbook section** — it's a stress-test (see below).

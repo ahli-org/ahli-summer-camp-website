@@ -23,7 +23,7 @@ you're on.
 **The Project Workbook.** Across the five content days, each participant keeps a
 short, **private** [Project Workbook](/project-workbook/) on their own project —
 one part per day (problem, data, evaluation, methods, deployment). It is a
-thinking aid, **not turned in and not graded**. Sessions should drive each
+thinking aid, and **not graded**. Sessions should drive each
 participant's thinking on that day's part, not toward a submission.
 
 **The five-block content day (Days 1–5).** Every content day runs the same arc:
@@ -97,10 +97,10 @@ run, even though you do not staff them.
   removes most of the first-time-facilitator risk.
 - **The day lead floats** among the groups during small-group blocks.
 
-### Feedback without submissions
+### Feedback
 
-The Workbook is private and **not collected** — there is no daily submission to
-grade. Feedback happens live: the closing small group each day includes a round
+The Workbook is private and **not graded**. Feedback happens live: the closing
+small group each day includes a round
 where members react to one another's thinking, so everyone gets peer input, and
 the day lead and any coaches can surface a strong example, or a project heading
 off the rails, at the next morning's handoff.
