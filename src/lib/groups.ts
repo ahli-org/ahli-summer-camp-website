@@ -31,7 +31,9 @@ export interface Group {
 }
 
 // Colors are matched to the sticker sheet, in row order from the top:
-// 1 lime, 2 indigo, 3 purple, 4 magenta, 5 red, 6 orange, 7 yellow, 8 coral.
+// 1 lime, 2 indigo, 3 purple, 4 magenta, 5 red, 6 orange, 7 yellow — and the
+// bottom row's teal for group 8 (the sheet's coral row is skipped: too close to
+// Perseus's red to tell apart on a name tag).
 
 export const groups: Group[] = [
   {
@@ -128,7 +130,7 @@ export const groups: Group[] = [
   {
     n: 8,
     name: 'Draco',
-    color: '#E96A6C',
+    color: '#2FA8B5',
     ink: '#ffffff',
     members: [
       { slug: 'grace-xiyu-ding', name: 'Grace (Xiyu) Ding', stage: 'PhD Y5', focus: 'Federated Bayesian models for health equity' },
