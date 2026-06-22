@@ -61,9 +61,9 @@ the lecture's content.
 
 ## Small group & workshop
 
-In **Small Group 1**, the group works through the Day 4 Workbook prompt — the
-method each project should use and why it fits that project's data and Day 3
-metrics. See [how the small groups run](/small-groups/).
+In **Small Group 1**, the group works through the Day 4 Workbook prompt — from
+each project's baselines to the structure it can exploit, and the fastest
+experiment to test it. See [how the small groups run](/small-groups/).
 
 The **workshop** then has you build a methods notebook for your project — a
 baseline, stronger models, a representation / foundation-model approach, and a
@@ -77,10 +77,12 @@ moved over the day.
 
 ## Project Workbook — Part 4: Methods & modeling
 
-What about your data and problem actually shapes the modeling — the features,
-structure, timing, missingness, or label quirks that matter — then the approach
-you'd choose, the simplest baseline that could work, and your main methodological
-risk with a credible alternative.
+The naive and existing methods that form your baselines and the structure they
+leverage; where they still fall short on your Day 3 metrics; the structure of your
+data or problem you can exploit instead and why it should work (across
+pre-processing, model class, and training objective); the fastest experiment that
+would show your idea working or failing; and the key experimental questions for
+the project.
 
 ## Additional resources
 

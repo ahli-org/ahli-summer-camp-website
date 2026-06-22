@@ -52,44 +52,61 @@ more than 12 hours, so bed-management can intervene early.
   The problem can't be separated from having census — it's load-bearing, not an
   add-on.*
 
-## Part 3 — Defining success *(Day 3)*
+## Part 3 — Evaluation *(Day 3)*
 
-- **What success means.** Two things at once: net benefit of acting at the
-  threshold operations would use (not raw AUROC), *and* lead time gained over
-  current practice. There's a causal wrinkle — what matters is who would actually
-  *benefit* from early bed-management action, not just who happens to board.
-- **Measuring for real vs. retrospectively.** Net benefit and lead time are
-  measurable prospectively. Retrospectively, boarding > 12h is recoverable from
-  ADT timestamps — but the *benefit of acting early* is counterfactual (you never
-  observe the averted boarding), so retrospective numbers over-state what the
-  model alone can deliver.
-- **Competing metrics.** Predicting earlier buys more lead time but sees less
-  data, so accuracy drops; predicting later is accurate but useless. Navigating
-  that timing/accuracy trade-off *is* the core of the evaluation.
-- **Confounders that change the meaning.** Admissions arriving by ambulance in a
-  trauma flow are triaged through a different process than walk-ins — lumping them
-  together would make the model look good for the wrong reason. Treat that
-  structure as first-order, not a box-ticking subgroup split.
-- **Bottom line:** *Success = net benefit at the action threshold, early enough to
-  act on. The hard part is the timing/accuracy trade-off and not conflating
-  different arrival processes.*
+- **Knowing you succeeded.** Boarding-driven harm falls.
+  - *Root metric:* in-hospital mortality and length of stay for admitted ED
+    patients.
+  - *Corroborating metrics:* high-acuity patients reach the ICU faster, fewer
+    patients board > 12h, and ED crowding eases — these should move together if
+    the early flag is genuinely creating actionable lead time.
+- **Knowing you failed.** The flag is accurate but nothing changes: bed management
+  has no slack to act on it, or clinicians ignore the dashboard, or it works for
+  medical admissions but not surgical. Each is failure even if AUROC looks great.
+- **Key metrics.** Net benefit at the action threshold, lead time gained, and an
+  actually-acted-on rate. They trade off (predict earlier → less data → lower
+  accuracy; predict later → no lead time), and that frontier is the target.
+  - *Visualize:* a decision-curve / net-benefit plot vs. threshold, plus a
+    lead-time distribution.
+- **Measuring them.** Ideally, prospective net benefit against real outcomes;
+  realistically, a shadow-mode deployment. Retrospectively, boarding > 12h is
+  recoverable from ADT timestamps — but the *benefit of acting early* is
+  counterfactual and can't be read off historical data, so retrospective numbers
+  over-state what the model alone delivers.
+  - *Detecting the error:* compare flagged-but-not-boarded against missed cases,
+    and check whether net-benefit gains actually coincide with operational action.
+- **Confounders.** Ambulance/trauma arrivals are triaged through a different
+  process than walk-ins — a hidden stratification that would flatter a model that
+  merely learns "arrived critically ill." Shifting census regimes are another.
+- **Bottom line:** *Success = net benefit early enough to act on, holding across
+  arrival types; the biggest measurement threat is the counterfactual gap in
+  retrospective data.*
 
 ## Part 4 — Methods & modeling *(Day 4)*
 
-- **What about the data/problem shapes the method.** It's small, tabular, and
-  operational; **live census is the load-bearing, time-varying feature** — and the
-  biggest leakage risk, since it's easy to accidentally use *future* census. The
-  question is also partly causal (benefit of acting), which a pure predictor won't
-  capture on its own.
-- **Chosen approach.** Gradient-boosted trees on tabular features incl. live
-  census — fits the data and the calibration/net-benefit criteria from Part 3.
-- **Baseline.** Penalized logistic regression on census + a few vitals; if GBT
-  doesn't beat it on net benefit, prefer the simpler model.
-- **Main risk + alternative.** Risk: census features leak the future, so validate
-  on a strict temporal split. Alternative considered: a survival model for
-  time-to-bed (richer, but harder to calibrate to the 12h decision).
-- **Bottom line:** *GBT on tabular features incl. live census, against a logistic
-  baseline; the modeling is dominated by getting census right without leakage.*
+- **Baselines and prior work.** Existing tools predict *admission*, not boarding;
+  a simple census threshold; logistic regression on patient features alone.
+- **What structure they leverage.** Patient-feature models use physiology but
+  ignore system congestion; census thresholds use system state but ignore which
+  patients will actually board.
+- **What's still unsolved, and why.** On net benefit and lead time, patient-only
+  models fail exactly when the hospital is full (they can't see congestion), and
+  census-only rules can't say *who* will board — so neither moves the frontier.
+- **Structure to leverage.** Boarding is jointly driven by patient acuity *and*
+  live system congestion, and census has exploitable temporal structure — the
+  interaction is what single-factor baselines miss.
+- **How, and why it should work.** Combine acuity and live census so the model can
+  represent that interaction. Across the pipeline: *pre-processing* — engineer
+  live-census + acuity features; *model class* — gradient-boosted trees on tabular
+  data; *objective* — calibrated probabilities for the net-benefit decision.
+- **Failing fast.** On synthetic data where boarding is a known function of
+  (acuity, census), check that the model recovers it — and that a census-blind
+  baseline fails precisely when census is high. That's the synthetic notebook.
+- **Key experimental questions.** Does adding live census beat patient-only and
+  census-only baselines on net benefit? Does the gain hold across arrival types?
+  Does usable lead time survive?
+- **Bottom line:** *Leverage the acuity × census interaction; first test it on
+  synthetic data where a census-blind baseline must fail when the hospital is full.*
 
 ## Day 5 — Stress-test notes
 

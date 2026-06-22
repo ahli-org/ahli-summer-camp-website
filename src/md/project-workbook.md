@@ -25,7 +25,7 @@ poster — but the workbook stays yours.
 |---|---|
 | 1 | Problem |
 | 2 | Data |
-| 3 | Defining success |
+| 3 | Evaluation |
 | 4 | Methods & modeling |
 | 5 | *Stress-test — no workbook section* |
 
@@ -88,47 +88,67 @@ expanding it as a design choice with a cost.
 
 <div id="part-3"></div>
 
-### Part 3 — Defining success *(Day 3)*
-What would make this a success, in terms you could actually measure? Success is
-often *implied by the problem* — the work is to make it explicit: which metrics
-you truly care about, how you'd measure them for real, how you'd approximate them
-in retrospective data, and how competing metrics trade off.
+### Part 3 — Evaluation *(Day 3)*
+This part is about success: how you'd know you succeeded, how you'd know you
+failed, the set of metrics that captures both, and how you'd actually measure
+them.
 
-- **What does success mean here?** *Name the metrics you actually care about —
-  which may be causal (who would benefit from an action), not just predictive
-  accuracy.*
-- **Measuring for real vs. retrospectively.** *How would you measure each metric
-  in deployment? How would you approximate it in retrospective data — and what is
-  lost in the approximation?*
-- **Competing metrics.** *Where do the things you care about trade off against
-  each other, and how would you navigate it? (e.g., waiting for more data raises
-  accuracy but costs time.)*
-- **Confounders that change the meaning of your evaluation.** *What subgroup or
-  process structure could mislead you if ignored? (e.g., trauma arrivals by
-  ambulance are triaged through a different process than walk-ins — don't conflate
-  them.) This is about anticipating specific confounders, not checking off a
-  "fairness plan."*
-- **Bottom line:** *one or two sentences — what success means, and the metric
-  trade-off or confounder you most have to respect.*
+- **How would you know you succeeded?** *If you solved the problem, how would the
+  world be different?*
+  - *The root metric — the big-picture outcome that would move (e.g., mortality,
+    length of stay).*
+  - *Corroborating metrics — if you succeeded for the reasons you expect, what
+    else would change, and how would those metrics relate? (e.g., faster ED→ICU
+    transfers for high-acuity patients, and fewer unnecessary ICU transfers.)*
+- **How would you know you failed?** *How could the project fail even if some of
+  those success metrics still moved? (e.g., it costs too much to run, clinicians
+  don't use it, or it works only for one group of patients.)*
+- **Your key metrics.** *Synthesize the above into the set of metrics that
+  together characterize success and failure — the frontier your solution should
+  push out. Too few and you ignore real-world constraints (and can't move the
+  state of the art meaningfully); too many and you optimize a slice too narrow to
+  matter.*
+  - *How would you visualize them?*
+- **How would you measure them?** *For each metric: how would you measure it in a
+  real deployment with no resource limits? How would you approximate it under
+  realistic deployment constraints? How would you approximate it in a retrospective
+  dataset — and what error does each approximation introduce?*
+  - *How would you detect those errors in real data — tell when a metric is, and
+    isn't, capturing what you actually care about?*
+- **Confounders that could invalidate your evaluation.** *What real-world
+  confounders, specific to your problem and data, could change or break your
+  evaluation — hidden stratifications, subgroups that behave differently? Flag
+  these early, as part of your robustness plan. (This is in addition to, not a
+  replacement for, the fairness checks every model should get.)*
+- **Bottom line:** *one or two sentences — your key success/failure metrics and
+  the biggest threat to measuring them honestly.*
 
 <div id="part-4"></div>
 
 ### Part 4 — Methods & modeling *(Day 4)*
-Start not from a model menu but from **what about your data and problem actually
-shapes the modeling** — the features, structure, timing, missingness, or
-label quirks that meaningfully affect how you'd model. Then commit to an approach
-and defend it against the simplest thing that could work.
+Build up from what already exists to the specific structure your method will
+exploit — and the fastest experiment that would tell you whether it works.
 
-- **What about your data/problem setup meaningfully affects modeling?** *Features,
-  temporal structure, missingness, label noise, the data scope from Part 2,
-  whether the question is causal or predictive — what genuinely constrains the
-  method?*
-- **Chosen approach** and why it fits the above and your Part 3 success criteria.
-- **Baseline.** *The simplest approach that could work — and why it is (or isn't)
-  enough.*
-- **Main methodological risk**, and one credible alternative you considered.
-- **Bottom line:** *one or two sentences — what about the data drives the method,
-  and the main risk.*
+- **Baselines and prior work.** *What naive solutions exist, and what have others
+  tried? These are your baselines and comparisons.*
+- **What structure do they leverage?** *For each, what structure of your data or
+  problem (if any) does it exploit?*
+- **What's still unsolved, and why?** *On your Day 3 metrics, where do existing
+  methods fall short — citing evidence where you have it, or reasoning about why
+  they'll fail on a given metric where you don't?*
+- **What structure can you leverage?** *What structure — in your data, your
+  problem, or the world — could you exploit to address what's left unsolved?*
+- **How would you use it, and why should it work?** *How do you bring that
+  structure to bear, and what's the argument it should help? Map it onto the three
+  stages of the modeling pipeline: data pre-processing, the model class /
+  architecture, and the training objective / broader algorithm.*
+- **How can you fail fast?** *What's the simplest experiment — or the simplest
+  tweak to real data — that would make your idea succeed or fail in a clearly
+  interpretable way? (This is what your synthetic notebook is for.)*
+- **Key experimental questions.** *For the project overall, what must you answer
+  to demonstrate success — or a genuinely interesting failure?*
+- **Bottom line:** *one or two sentences — the structure you're leveraging and the
+  first experiment that would test it.*
 
 <div id="part-5"></div>
 

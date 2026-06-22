@@ -62,9 +62,9 @@ outline of the lecture's content.
 
 ## Small group & workshop
 
-In **Small Group 1**, the group works through the Day 3 Workbook prompt — each
-project's estimand, the metric that tracks its real decision, the subgroup plan,
-and the biggest threats to validity. See [how the small groups run](/small-groups/).
+In **Small Group 1**, the group works through the Day 3 Workbook prompt — what
+success and failure look like for each project, the metrics that capture both,
+and how you'd measure them. See [how the small groups run](/small-groups/).
 
 The **workshop** then has you build an evaluation notebook for your own
 project — discrimination, calibration, clinical utility, subgroup
@@ -76,12 +76,13 @@ The notebook is a personal scratch tool — nothing is turned in.
 The closing small group ends with each person noting how their evaluation
 thinking moved over the day.
 
-## Project Workbook — Part 3: Defining success
+## Project Workbook — Part 3: Evaluation
 
-What would count as success, in terms you could measure: the metrics you actually
-care about (often causal, not just predictive), how you'd measure them for real
-versus approximate them retrospectively, where competing metrics trade off, and
-the confounders that would change what your evaluation means.
+How you'd know you succeeded and how you'd know you failed; the set of metrics
+that captures both (the frontier your solution should push); how you'd measure
+them in deployment and approximate them retrospectively, and the errors that
+introduces; and the problem-specific confounders that could invalidate your
+evaluation.
 
 ## Additional resources
 
