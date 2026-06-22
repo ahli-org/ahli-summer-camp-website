@@ -85,7 +85,7 @@ evaluation.
 
 ## Additional resources
 
-- Lecture slides (tentative draft): [view the deck](/slides/day3-evaluation.html) · [PDF](/slides/day3-evaluation.pdf).
+- Slide decks (PDF): [Morning — Joshi](/slides/day3-evaluation.pdf) · [Afternoon — Salaudeen](/slides/day3-salaudeen.pdf).
 - [Project Workbook template](/project-workbook/#part-3) — Part 3.
 - [scikit-learn](https://scikit-learn.org/), [fairlearn](https://fairlearn.org/), and scikit-survival, as implementation references.
 - The [MIMIC-IV demo on PhysioNet](https://physionet.org/content/mimic-iv-demo/), for a real-data substrate.

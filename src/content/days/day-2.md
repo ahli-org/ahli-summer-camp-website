@@ -82,7 +82,7 @@ collecting it part of the solution, and note that here.
 
 ## Additional resources
 
-- Lecture slides (tentative draft): [view the deck](/slides/day2-data.html) · [PDF](/slides/day2-data.pdf).
+- Slide decks (PDF): [Afternoon lecture — Sieberts & Banerjee](/slides/day2-sieberts-banerjee.pdf).
 - [Project Workbook template](/project-workbook/#part-2) — Part 2.
 - [PhysioNet](https://physionet.org/) — MIMIC-IV and credentialing.
 - The [MEDS (Medical Event Data Standard) documentation](https://medical-event-data-standard.github.io/).

@@ -87,7 +87,7 @@ running list of failure modes if it helps — but the discussion is the point.
 
 ## Additional resources
 
-- Lecture slides (tentative draft): [view the deck](/slides/day5-deployment.html) · [PDF](/slides/day5-deployment.pdf).
+- Slide decks (PDF): [Morning lecture — Mamdani](/slides/day5-deployment.pdf).
 - [Project Workbook](/project-workbook/#part-5) — the Day 5 stress-test (and revisit Parts 1–4).
 - The [TRIPOD+AI reporting checklist](https://doi.org/10.1136/bmj-2023-078378).
 - Institutional model-monitoring and audit frameworks referenced in the readings.

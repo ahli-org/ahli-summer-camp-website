@@ -41,11 +41,15 @@ export const studentResources: Resource[] = [
 // Lecture slide decks (Marp), built in the companion slides repo and synced via
 // `npm run sync:slides`. Tentative drafts — actively revised.
 export const slideResources: Resource[] = [
-  { title: 'Day 1 — Problems in ML4H', description: 'Lecture slides (PDF also available on the day page).', file: 'slides/day1-problems.html' },
-  { title: 'Day 2 — Data', file: 'slides/day2-data.html' },
-  { title: 'Day 3 — Evaluation & Study Design', file: 'slides/day3-evaluation.html' },
-  { title: 'Day 4 — Methods & Modeling', file: 'slides/day4-methods.html' },
-  { title: 'Day 5 — Deployment', file: 'slides/day5-deployment.html' },
+  { title: 'Day 1 — Welcome & orientation (Naumann)', file: 'slides/opening-remarks.pdf' },
+  { title: 'Day 1 — Problems in ML4H (Szolovits)', file: 'slides/day1-problems.pdf' },
+  { title: 'Day 1 — Project walkthrough (Alsentzer)', file: 'slides/day1-alsentzer.pdf' },
+  { title: 'Day 2 — Genomics & data sharing (Sieberts & Banerjee)', file: 'slides/day2-sieberts-banerjee.pdf' },
+  { title: 'Day 3 — Evaluation & Study Design (Joshi)', file: 'slides/day3-evaluation.pdf' },
+  { title: 'Day 3 — Evaluation pitfalls (Salaudeen)', file: 'slides/day3-salaudeen.pdf' },
+  { title: 'Day 4 — Methods & Modeling (McDermott)', file: 'slides/day4-methods.pdf' },
+  { title: 'Day 4 — Trustworthy-by-construction methods (Gerych)', file: 'slides/day4-gerych.pdf' },
+  { title: 'Day 5 — Deployment (Mamdani)', file: 'slides/day5-deployment.pdf' },
 ];
 
 export const instructorResources: Resource[] = [
