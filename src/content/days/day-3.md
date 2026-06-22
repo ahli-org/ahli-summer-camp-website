@@ -32,27 +32,34 @@ trust it.
 **Evaluation & study design: how would you know if it worked?** A working
 outline of the lecture's content.
 
-- **The day on the spine, and the validity ladder.** Today closes the gap from
-  data to a credible way to know whether a solution works. Days 3–4 concern
-  *internal* validity; Day 5 concerns *external/deployment* validity. Today is
-  study design.
-- **Defining the target.** Estimands — what, precisely, are you trying to
-  measure? — and the difference between the population you evaluate on and the
-  population you deploy on.
-- **Metrics: convenience versus utility.** The metric that is easy to compute is
-  rarely the one that tracks the clinical decision. Choose the metric from the
-  decision backward.
-- **Discrimination and its failure modes.** AUROC and AUPRC, and why a strong
-  AUROC can coexist with a useless model under realistic class imbalance.
-- **Calibration.** A well-discriminating model can be badly miscalibrated;
-  calibration is what matters the moment a prediction informs a decision.
-- **Clinical utility.** Decision-curve analysis and net benefit; choosing an
-  operating threshold from the actual decision, not the metric.
-- **Subgroups, power, and validity threats.** Aggregate metrics hide subgroup
-  failures, so disaggregated evaluation is not optional; underpowered
-  evaluations are too noisy to act on; and leakage, shortcut learning, and
-  development-to-deployment shift are the threats the medical algorithmic audit
-  is built to find.
+- **The question of the day.** Evaluating whether an AI *system* (the model plus
+  the ecosystem around it) works as intended — the validation and study-design
+  choices, not post-deployment monitoring.
+- **Precursors: threats to validity.** Assume construct validity and no leakage —
+  then see why that's hard, with real leakage cases (antihypertensives
+  "predicting" hypertension; antibiotics "predicting" sepsis).
+- **Distribution shift.** Covariate (X) vs. concept (Y∣X) shift; "accuracy on the
+  line" and when it holds; attributing a performance drop to a specific shift.
+- **Case study — the Epic Sepsis Model.** A label-definition mismatch and feature
+  leakage that broke external validity, worst in the sickest patients.
+- **Shortcut learning.** Models that latch onto the scanner, not the pathology
+  (COVID chest X-ray) — and why a same-distribution holdout hides it.
+- **Anatomy of an estimand.** Population, data, outcome/label, timing/horizon,
+  operating point, how the score is used, and the primary endpoint.
+- **In-silico metrics.** Discrimination (AUROC/AUPRC under class imbalance),
+  calibration (reliability, subgroup/multicalibration), and decision-curve
+  analysis / net benefit — what each does and does not tell you.
+- **Evaluation is causal.** Predictions made to drive decisions need
+  p(y∣x, do(t)), not p(y∣x, t); identifiability, self-fulfilling prophecies, and
+  why a *working* intervention can lower AUROC.
+- **Subgroups & fairness.** Aggregate metrics hide subgroup failure; when — and
+  whether — to be subgroup/race-aware.
+- **Stages of evaluation.** In silico → silent → pilot → prospective trial:
+  target vs. deployment population, the silent trial, and RCTs with AI as the
+  intervention (cluster designs, contamination, DECIDE-AI / CONSORT-AI).
+- **Deployed tools and generative systems.** Retrospective panel analyses; and
+  evaluation without ground truth — selective prediction and the pitfalls of
+  LLM-as-judge.
 
 ## What you'll be able to do
 

@@ -154,76 +154,83 @@ export interface Reading {
   url?: string; // canonical link (publisher DOI / arXiv / journal); omit if none
 }
 
-// Suggested readings per day. NOTE FOR REVIEW: links point to the paper matching
-// each citation, but the citation list itself is carried from the program
-// materials and needs a human accuracy/recency pass (see the review notice).
+// Suggested readings per day — the papers actually cited in each instructor's
+// lecture deck (verified links). Day 2's lead-lecture deck isn't finalized, so
+// its list is canonical data-provenance readings pending that deck.
 export const readings: Record<number, Reading[]> = {
   1: [
-    { cite: 'Kleinberg, Ludwig, Mullainathan & Obermeyer (2015), Prediction Policy Problems.', url: 'https://www.aeaweb.org/articles?id=10.1257/aer.p20151023' },
-    { cite: 'Passi & Barocas (2019), Problem Formulation and Fairness.', url: 'https://arxiv.org/abs/1901.02547' },
-    { cite: 'Wang et al. (2023), Scientific discovery in the age of artificial intelligence.', url: 'https://www.nature.com/articles/s41586-023-06221-2' },
-    { cite: 'Bastani, Bastani & Chung (2024), Optimizing Health Supply Chains in LMICs with Machine Learning.', url: 'https://link.springer.com/chapter/10.1007/978-3-031-60867-4_12' },
-    { cite: 'Yala et al. (2021), Toward robust mammography-based models for breast cancer risk (Mirai).', url: 'https://www.science.org/doi/10.1126/scitranslmed.aba4373' },
+    { cite: 'Kleinberg, Ludwig, Mullainathan & Obermeyer (2015), Prediction Policy Problems. American Economic Review.', url: 'https://doi.org/10.1257/aer.p20151023' },
+    { cite: 'Obermeyer et al. (2019), Dissecting racial bias in an algorithm used to manage the health of populations. Science.', url: 'https://www.science.org/doi/10.1126/science.aax2342' },
+    { cite: 'Passi & Barocas (2019), Problem Formulation and Fairness. ACM FAT*.', url: 'https://doi.org/10.1145/3287560.3287567' },
+    { cite: 'Yala et al. (2021), Toward robust mammography-based models for breast cancer risk (Mirai). Science Translational Medicine.', url: 'https://www.science.org/doi/10.1126/scitranslmed.aba4373' },
+    { cite: 'Perdomo, Zrnic, Mendler-Dünner & Hardt (2020), Performative Prediction. ICML.', url: 'https://arxiv.org/abs/2002.06673' },
+    { cite: 'Schölkopf et al. (2012), On Causal and Anticausal Learning. ICML.', url: 'https://arxiv.org/abs/1206.6471' },
+    { cite: 'McDermott, Nestor & Szolovits (2023), Clinical Artificial Intelligence: Design Principles and Fallacies. Clinics in Laboratory Medicine.', url: 'https://doi.org/10.1016/j.cll.2022.09.004' },
   ],
   2: [
-    { cite: 'Rajkomar et al. (2018), Scalable and accurate deep learning with electronic health records.', url: 'https://www.nature.com/articles/s41746-018-0029-1' },
-    { cite: 'Yuan et al. (2021), Temporal bias in case-control design.', url: 'https://www.nature.com/articles/s41467-021-21390-2' },
-    { cite: 'Einav et al. (2018), Predictive modeling of U.S. health care spending in late life.', url: 'https://www.science.org/doi/10.1126/science.aar5045' },
-    { cite: 'Chandra, Cutler & Song (2011), Who ordered that? The economics of treatment choices in medical care.', url: 'https://www.sciencedirect.com/science/article/pii/B9780444535924000062' },
-    { cite: 'Fleming et al. (2023), MedAlign: a clinician-generated dataset.', url: 'https://arxiv.org/abs/2308.14089' },
-    { cite: 'The datasets list in the resources document.' },
+    { cite: 'Johnson et al. (2023), MIMIC-IV, a freely accessible electronic health record dataset. Scientific Data.', url: 'https://www.nature.com/articles/s41597-022-01899-x' },
+    { cite: 'Yuan et al. (2021), Temporal bias in case-control design: preventing reliable predictions of the future. Nature Communications.', url: 'https://www.nature.com/articles/s41467-021-21390-2' },
+    { cite: 'Bareinboim & Pearl (2016), Causal inference and the data-fusion problem. PNAS.', url: 'https://www.pnas.org/doi/10.1073/pnas.1510507113' },
+    { cite: 'Einav et al. (2018), Predictive modeling of U.S. health care spending in late life. Science.', url: 'https://www.science.org/doi/10.1126/science.aar5045' },
+    { cite: 'Chandra, Cutler & Song (2011), Who Ordered That? The economics of treatment choices in medical care. Handbook of Health Economics.', url: 'https://www.sciencedirect.com/science/article/pii/B9780444535924000062' },
+    { cite: 'Fleming et al. (2024), MedAlign: a clinician-generated dataset for instruction following with EHRs. AAAI.', url: 'https://arxiv.org/abs/2308.14089' },
+    { cite: 'Gebru et al. (2021), Datasheets for Datasets. Communications of the ACM.', url: 'https://dl.acm.org/doi/10.1145/3458723' },
   ],
   3: [
-    { cite: 'Card et al. (2020), With Little Power Comes Great Responsibility.', url: 'https://aclanthology.org/2020.emnlp-main.745/' },
-    { cite: 'Liu et al. (2022), The medical algorithmic audit.', url: 'https://doi.org/10.1016/S2589-7500(22)00003-6' },
-    { cite: 'Plana et al. (2022), Randomized Clinical Trials of Machine Learning Interventions in Health Care.', url: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2796833' },
-    { cite: 'Yu et al. (2024), Heterogeneity and predictors of the effects of AI assistance on radiologists.', url: 'https://www.nature.com/articles/s41591-024-02850-w' },
-    { cite: 'Chang et al. (2024), Red Teaming Large Language Models in Medicine.', url: 'https://www.medrxiv.org/content/10.1101/2024.04.05.24305411v1' },
+    { cite: 'Wong et al. (2021), External validation of a widely implemented proprietary sepsis prediction model. JAMA Internal Medicine.', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307' },
+    { cite: 'DeGrave, Janizek & Lee (2021), AI for radiographic COVID-19 detection selects shortcuts over signal. Nature Machine Intelligence.', url: 'https://www.nature.com/articles/s42256-021-00338-7' },
+    { cite: 'McDermott et al. (2024), A Closer Look at AUROC and AUPRC under Class Imbalance. NeurIPS.', url: 'https://arxiv.org/abs/2401.06091' },
+    { cite: 'Joshi et al. (2025), AI as an Intervention: improving clinical outcomes relies on a causal approach to AI development and validation. JAMIA.', url: 'https://doi.org/10.1093/jamia/ocae301' },
+    { cite: 'van Amsterdam et al. (2025), When Accurate Prediction Models Yield Harmful Self-Fulfilling Prophecies. Patterns.', url: 'https://doi.org/10.1016/j.patter.2025.101229' },
+    { cite: 'Miller et al. (2021), Accuracy on the Line: on the strong correlation between OOD and in-distribution generalization. ICML.', url: 'https://arxiv.org/abs/2107.04649' },
+    { cite: 'Coots, Saghafian, Kent & Goel (2025), A Framework for Considering the Value of Race and Ethnicity in Estimating Disease Risk. Annals of Internal Medicine.', url: 'https://www.acpjournals.org/doi/10.7326/M23-3166' },
+    { cite: 'Kwong et al. (2022), The Silent Trial — the bridge between bench-to-bedside clinical AI. Frontiers in Digital Health.', url: 'https://doi.org/10.3389/fdgth.2022.929508' },
   ],
   4: [
-    { cite: 'Yang et al. (2022), A large language model for electronic health records (GatorTron).', url: 'https://www.nature.com/articles/s41746-022-00742-2' },
-    { cite: 'Lehman et al. (2023), Do we still need clinical language models?', url: 'https://arxiv.org/abs/2302.08091' },
-    { cite: 'Agrawal et al. (2022), Large Language Models are Few-Shot Clinical Information Extractors.', url: 'https://aclanthology.org/2022.emnlp-main.130/' },
-    { cite: 'Jiménez-Sánchez et al. (2024), Copycats: the many lives of a public medical imaging dataset.', url: 'https://arxiv.org/abs/2402.06353' },
-    { cite: 'One current foundation-model-for-health reading — instructor’s pick (announced before the camp).' },
+    { cite: 'Grinsztajn, Oyallon & Varoquaux (2022), Why do tree-based models still outperform deep learning on tabular data? NeurIPS.', url: 'https://arxiv.org/abs/2207.08815' },
+    { cite: 'Agniel, Kohane & Weber (2018), Biases in electronic health record data due to processes within the healthcare system. BMJ.', url: 'https://doi.org/10.1136/bmj.k1479' },
+    { cite: 'McDermott et al. (2024), Using machine learning to develop smart reflex testing protocols. JAMIA.', url: 'https://arxiv.org/abs/2302.00794' },
+    { cite: 'Renc et al. (2024), Zero-shot health trajectory prediction using transformer (ETHOS). npj Digital Medicine.', url: 'https://www.nature.com/articles/s41746-024-01235-0' },
+    { cite: 'Dey et al. (2025), Learning General-purpose Biomedical Volume Representations using Randomized Synthesis. ICLR.', url: 'https://arxiv.org/abs/2411.02372' },
+    { cite: 'McDermott (2025), The (lack of?) Science of Machine Learning for Healthcare. ML4H (PMLR).', url: 'https://proceedings.mlr.press/v259/mcdermott25a.html' },
   ],
   5: [
-    { cite: 'Obermeyer et al. (2019), Dissecting racial bias in an algorithm used to manage the health of populations.', url: 'https://www.science.org/doi/10.1126/science.aax2342' },
-    { cite: 'Collins et al. (2024), TRIPOD+AI statement.', url: 'https://doi.org/10.1136/bmj-2023-078378' },
-    { cite: 'Boag et al. (2024), The algorithm journey map.', url: 'https://www.nature.com/articles/s41746-024-01061-4' },
-    { cite: 'Lyons et al. (2023), Variability in the performance of a sepsis prediction model across 9 hospitals.', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2803492' },
-    { cite: 'Pfohl et al. (2024), A toolbox for surfacing health equity harms and biases in large language models.', url: 'https://www.nature.com/articles/s41591-024-03258-2' },
+    { cite: 'Goh et al. (2024), Large Language Model Influence on Diagnostic Reasoning: a Randomized Clinical Trial. JAMA Network Open.', url: 'https://doi.org/10.1001/jamanetworkopen.2024.40969' },
+    { cite: 'Chen et al. (2025), Patient perceptions of empathy in physician and AI chatbot responses to questions about cancer. npj Digital Medicine.', url: 'https://doi.org/10.1038/s41746-025-01671-6' },
+    { cite: 'Verma et al. (2024), Clinical evaluation of a machine learning–based early warning system for patient deterioration (CHARTwatch). CMAJ.', url: 'https://doi.org/10.1503/cmaj.240132' },
+    { cite: 'Lekadir et al. (2025), FUTURE-AI: international consensus guideline for trustworthy and deployable AI in healthcare. BMJ.', url: 'https://doi.org/10.1136/bmj-2024-081554' },
+    { cite: 'Denecke et al. (2025), The Unexpected Harms of Artificial Intelligence in Healthcare: reflections on four real-world cases.', url: 'https://doi.org/10.3233/SHTI250219' },
   ],
 };
 
-// AI-SUGGESTED additional readings — generated by an AI assistant as candidate
-// improvements/additions, with verified canonical links. These are NOT yet
-// vetted or assigned; the program committee should review them before use. They
-// render on each day page in a clearly labeled, separate section.
+// AI-PROPOSED additional readings — surfaced by an AI scan of each deck's topic
+// as candidate further reading (verified links). NOT yet vetted or assigned; the
+// program committee should review before use. Rendered in a clearly labeled,
+// separate section on each day page.
 export const suggestedReadings: Record<number, Reading[]> = {
   1: [
-    { cite: 'Wiens et al. (2019), Do no harm: a roadmap for responsible machine learning for health care. Nature Medicine.', url: 'https://www.nature.com/articles/s41591-019-0548-6' },
-    { cite: 'Rajpurkar, Chen, Banerjee & Topol (2022), AI in health and medicine. Nature Medicine.', url: 'https://www.nature.com/articles/s41591-021-01614-0' },
+    { cite: 'Mullainathan & Obermeyer (2017), Does Machine Learning Automate Moral Hazard and Error? American Economic Review P&P.', url: 'https://doi.org/10.1257/aer.p20171084' },
     { cite: 'Ghassemi, Oakden-Rayner & Beam (2021), The false hope of current approaches to explainable AI in health care. Lancet Digital Health.', url: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00208-9/fulltext' },
+    { cite: 'Wiens et al. (2019), Do no harm: a roadmap for responsible machine learning for health care. Nature Medicine.', url: 'https://www.nature.com/articles/s41591-019-0548-6' },
   ],
   2: [
     { cite: 'Gianfrancesco et al. (2018), Potential biases in machine learning algorithms using electronic health record data. JAMA Internal Medicine.', url: 'https://doi.org/10.1001/jamainternmed.2018.3763' },
     { cite: 'Sjoding et al. (2020), Racial bias in pulse oximetry measurement. NEJM.', url: 'https://www.nejm.org/doi/10.1056/NEJMc2029240' },
-    { cite: 'Johnson et al. (2023), MIMIC-IV, a freely accessible electronic health record dataset. Scientific Data.', url: 'https://www.nature.com/articles/s41597-022-01899-x' },
+    { cite: 'Homer et al. (2008), Resolving individuals contributing trace amounts of DNA to highly complex mixtures (the genomic re-identification result behind controlled access). PLoS Genetics.', url: 'https://doi.org/10.1371/journal.pgen.1000167' },
   ],
   3: [
-    { cite: 'Van Calster et al. (2019), Calibration: the Achilles heel of predictive analytics. BMC Medicine.', url: 'https://link.springer.com/article/10.1186/s12916-019-1466-7' },
-    { cite: 'Oakden-Rayner et al. (2020), Hidden stratification causes clinically meaningful failures in machine learning for medical imaging. CHIL.', url: 'https://arxiv.org/abs/1909.12475' },
-    { cite: 'DeGrave, Janizek & Lee (2021), AI for radiographic COVID-19 detection selects shortcuts over signal. Nature Machine Intelligence.', url: 'https://www.nature.com/articles/s42256-021-00338-7' },
+    { cite: 'Vickers & Elkin (2006), Decision Curve Analysis: a novel method for evaluating prediction models. Medical Decision Making.', url: 'https://doi.org/10.1177/0272989X06295361' },
+    { cite: 'Vasey et al. (2022), DECIDE-AI: reporting guideline for the early-stage clinical evaluation of AI decision-support systems. Nature Medicine.', url: 'https://www.nature.com/articles/s41591-022-01772-9' },
+    { cite: 'Salaudeen et al. (2025), Measurement to Meaning: a validity-centered framework for AI evaluation.', url: 'https://arxiv.org/abs/2505.10573' },
   ],
   4: [
-    { cite: 'Grinsztajn, Oyallon & Varoquaux (2022), Why do tree-based models still outperform deep learning on typical tabular data? NeurIPS.', url: 'https://arxiv.org/abs/2207.08815' },
     { cite: 'Wornow et al. (2023), The shaky foundations of large language models and foundation models for electronic health records. npj Digital Medicine.', url: 'https://www.nature.com/articles/s41746-023-00879-8' },
-    { cite: 'Moor et al. (2023), Foundation models for generalist medical artificial intelligence. Nature.', url: 'https://www.nature.com/articles/s41586-023-05881-4' },
+    { cite: 'Steinberg et al. (2021), Language models are an effective representation learning technique for EHR data. Journal of Biomedical Informatics.', url: 'https://doi.org/10.1016/j.jbi.2020.103637' },
+    { cite: 'Rubin (1976), Inference and missing data. Biometrika.', url: 'https://doi.org/10.1093/biomet/63.3.581' },
   ],
   5: [
-    { cite: 'Finlayson et al. (2021), The clinician and dataset shift in artificial intelligence. NEJM.', url: 'https://www.nejm.org/doi/full/10.1056/NEJMc2104626' },
-    { cite: 'Wong et al. (2021), External validation of a widely implemented proprietary sepsis prediction model in hospitalized patients. JAMA Internal Medicine.', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307' },
-    { cite: 'Beede et al. (2020), A human-centered evaluation of a deep learning system deployed in clinics for the detection of diabetic retinopathy. CHI.', url: 'https://dl.acm.org/doi/10.1145/3313831.3376718' },
+    { cite: 'Sendak et al. (2020), A path for translation of machine learning products into healthcare delivery. EMJ Innovations.', url: 'https://doi.org/10.33590/emjinnov/19-00172' },
+    { cite: 'Wong et al. (2021), External validation of a widely implemented proprietary sepsis prediction model (Epic Sepsis Model). JAMA Internal Medicine.', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307' },
+    { cite: 'Sculley et al. (2015), Hidden Technical Debt in Machine Learning Systems. NeurIPS.', url: 'https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html' },
   ],
 };

@@ -29,29 +29,39 @@ approach and defend it.
 
 ## Morning lecture outline
 
-**Methods & modeling: building toward a defined target.** A working outline of
-the lecture's content.
+**Methods & modeling: every choice for a reason.** A working outline of the
+lecture's content.
 
-- **The day on the spine.** Today closes the gap from a definition of success to
-  a model designed to reach it.
-- **The central claim.** Method selection is a *choice*, downstream of the data
-  and the target — not a default and not a fashion.
-- **The method landscape.** Penalized linear models, gradient-boosted trees,
-  deep networks, foundation models — a spectrum of capacity and assumptions, not
-  a ranking.
-- **Health-specific inductive biases.** Temporality, irregular sampling,
-  structured missingness, and multimodality — what health data demands of a
-  method.
-- **Foundation models for health.** When a pretrained, general representation
-  helps and when a focused task-specific model wins; what EHR foundation models,
-  clinical language models, and multimodal models learn and what they don't.
-- **Fine-tune, prompt, or train from scratch.** A decision framework built on
-  data volume, label availability, distribution match, and cost.
-- **Representation learning.** Why a good representation matters for health data,
-  and how representation choices propagate into evaluation.
-- **Building well.** Data structure (and standards like MEDS) constrains method;
-  the baseline is the bar any complex method must clear; method, data, and metric
-  are entangled choices — and building so that failures don't hide is the goal.
+- **The thesis.** Each modeling choice should be dictated by an expected property
+  of your problem and data — and the methodological work is to justify, test, and
+  *show* those choices. "I want to use a transformer" is not a reason.
+- **What the data actually is.** A patient is a longitudinal stream of
+  timestamped, typed events (MEDS-like) — a flat feature table is already a lossy
+  modeling choice.
+- **Model vs. algorithm.** The loss and optimizer live in training; the model is
+  only what `predict` runs — and whatever `predict` needs (a k-NN's training set,
+  a graph's neighborhood) has to ship inside it.
+- **Three coupled choices.** Data representation, model class, and the
+  loss/objective — none independent; each constrains the others.
+- **Representation.** A good representation exposes the signal (spectrograms for
+  ECG/EEG; eGFR over raw creatinine). Pitfall: mean-imputing a missing lab throws
+  away informative missingness.
+- **The label is a choice too.** Predicting "needs a ferritin test" fails because
+  the label only exists where a clinician already suspected it — selection bias /
+  MNAR.
+- **Model class.** Match the inductive bias: gradient-boosted trees still beat
+  deep nets on tabular clinical data; CNNs win on images. Don't pick by fashion.
+- **Loss / objective.** Encode the invariance you actually believe (shape-not-
+  appearance for imaging; a pre-training graph for relational data) — a
+  fashionable objective with no matching property just ties plain ERM.
+- **Epistemic humility.** For most EHR tasks we can't yet say which choices
+  matter — "it depends," and we can't say on what. That gap is the opportunity.
+- **Foundation models for health.** MIMIC wasn't out of data, just out of ideas;
+  event-stream foundation models (ETHOS, CoMET) scale like LLMs.
+- **Think stupider, then test.** Shrink the problem, synthesize data with and
+  without the property, break the model on purpose — controlled experiments you
+  can re-run on every change. (This feeds the afternoon synthetic-experiment
+  notebook.)
 
 ## What you'll be able to do
 

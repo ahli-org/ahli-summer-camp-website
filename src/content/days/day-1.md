@@ -31,32 +31,38 @@ stakeholders, and a reason it is still open.
 ## Morning lecture outline
 
 **Problems in ML4H: what we're actually trying to solve.** A working outline of
-the lecture's content — the basis for the slides.
+the lecture's content.
 
-- **The week's spine.** Idea → problem → data → evaluation → method → deployment
-  → resourced program. Today closes the first gap: an interesting topic becomes a
+- **The week's spine.** Idea → problem → data → evaluation → method →
+  deployment. Today closes the first gap: an interesting topic becomes a
   well-posed problem.
-- **The central claim.** ML4H is a distinct field, not "ML applied to health
-  data." Health changes the assumptions ML quietly relies on.
-- **What is shared across health problems.** High stakes; distribution shift;
-  label noise and weak labels; causal structure under the surface; regulation; a
-  human in the loop.
-- **Why health breaks generic ML assumptions.** IID is rarely true; the label is
-  often a proxy; "performance" is not the same as "benefit"; the cost of errors
-  is asymmetric and patient-specific.
-- **Where AI is well-suited.** Pattern recognition at scale; triage and
-  prioritization; surfacing signal a human would miss; tasks with abundant,
-  well-defined labels.
-- **Where AI is poorly suited — or cannot help.** Problems that are actually
-  causal rather than predictive; settings with no credible label; problems where
-  the binding constraint is not prediction but action, access, or trust.
-- **Prediction, causation, decision.** Three different questions that projects
-  routinely conflate — which one is your project actually asking? (Day 3 returns
-  to this directly.)
-- **Posing a problem well.** A problem is not a method: start from "this need is
-  unmet," not "I want to use X." Name who is affected, who decides, who pays, and
-  who is harmed if it fails. Separate what is genuinely new now — foundation
-  models, scale, data availability — from recurring hype.
+- **Clinical and population context.** What clinicians actually do (diagnose,
+  prognose, treat, monitor) and what "health" even means — the WHO definition,
+  why social well-being is so hard to measure, and a quick tour of
+  population-health data.
+- **The central claim.** ML4H is a *distinct field*, not "ML applied to health
+  data": labels are endogenous to the care process and deployment is
+  *performative* (it changes the data-generating process), breaking the i.i.d. and
+  identifiability assumptions ML quietly relies on.
+- **Fifty years of perspective.** From MYCIN/INTERNIST expert systems through
+  statistical ML and deep learning to today's foundation models — every era
+  promised autonomy and delivered, at best, decision support.
+- **Six features shared across health problems.** High stakes; distribution
+  shift; label noise; causal structure; regulation; a human in the loop.
+- **Why health breaks generic ML.** IID is rarely true; the label is often a
+  proxy; "performance" is not "benefit"; error costs are asymmetric and
+  patient-specific.
+- **Where AI is, and isn't, well-suited.** Strong at pattern recognition at
+  scale, triage, and surfacing missed signal (e.g. mammography-based risk); poor
+  where the problem is actually causal, where there is no credible label, or where
+  the binding constraint is action, access, or trust.
+- **Prediction, causation, decision.** Three different questions projects
+  routinely conflate — even "pure prediction" needs a written estimand. (Day 3
+  returns to this.)
+- **Problem formulation is a choice.** A problem is not a method; the framing —
+  target, population, label — bakes in fairness and harm before any model exists
+  (the cost-versus-need example). Name who is affected, who decides, who pays, and
+  separate what is genuinely new from recurring hype.
 
 ## What you'll be able to do
 

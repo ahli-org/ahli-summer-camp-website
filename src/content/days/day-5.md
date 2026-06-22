@@ -30,24 +30,36 @@ you try to break your own project.
 
 ## Morning lecture outline
 
-**Deployment: when the model meets the clinic.** A working outline of the
-lecture's content.
+**AI in health: real-world deployments and challenges.** A working outline of
+the lecture's content.
 
-- **The day on the spine.** Today closes the gap from a model that works in a
-  notebook to a system that survives a real clinic.
-- **The central claim.** Validation is not deployment. A model that validates
-  beautifully can fail the moment it meets a workflow.
-- **What deployment actually looks like.** A war story of a model that validated
-  and then failed on the ward; workflow integration — where the output lands,
-  who sees it, what action it triggers; clinician adoption and trust as design
-  problems, not afterthoughts.
-- **Keeping a deployed model alive.** A deployed model decays — how you know and
-  what you watch (monitoring and drift); auditing during deployment, incident
-  reporting, and the difference between pre-deployment evaluation and live
-  accountability.
-- **The people and the system.** The clinical champions, IT, governance,
-  regulatory, and operations people a real deployment requires — and
-  red-teaming your own project to find the failure modes before a clinic does.
+- **The two hardest things for AI in medicine.** Cognitive reasoning and empathy
+  — and where today's systems actually stand on each.
+- **The cognitive-load problem.** Complex decisions involve hundreds of
+  parameters but humans hold ~7±2; ~1 in 4 hospitalized patients are harmed,
+  much of it preventable.
+- **How AI compares — reasoning and empathy.** An RCT where an LLM out-scored
+  physicians on diagnostic reasoning (Goh et al.); patient surveys and a study
+  rating AI chatbot answers as more empathetic than physicians' (Chen et al.).
+- **Where we are now.** Rapidly rising FDA authorizations and market growth;
+  climbing physician adoption (AMA surveys), still mostly administrative use.
+- **Cautionary cases.** Real-world harms — transcription hallucinations, biased
+  allocation algorithms, chatbot failures — as a reason for governance.
+- **A model for adopting AI in a health system.** Unity Health's experience
+  (50+ deployed solutions): skilled people + process (governance, value-based
+  intake, monitoring) + infrastructure, over a diffusion-of-innovation curve.
+- **Defining and operationalizing value.** Outcomes per dollar (Porter); value
+  framed across personal, technical, allocative, and societal dimensions;
+  priority-setting and "AI success begins at intake."
+- **Deployment case studies — the winners.** AI nurse-staffing and ED assignment
+  optimization, AI scribes that cut documentation burden, and CHARTwatch (~26%
+  fewer unexpected deaths) — what made them work.
+- **Responsible, staged implementation.** FUTURE-AI principles (fairness,
+  universality, traceability, usability, robustness, explainability) and a staged
+  rollout: pre-implementation validation/bias/ethics → silent soft launch →
+  implementation with monitoring and maintenance.
+- **The frontier and the literacy gap.** An AI-enabled care loop ahead — and the
+  societal and AI-literacy challenges that gate it.
 
 ## What you'll be able to do
 
