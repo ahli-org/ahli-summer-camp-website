@@ -171,6 +171,8 @@ export const readings: Record<number, Reading[]> = {
   ],
   2: [
     { cite: 'Johnson et al. (2023), MIMIC-IV, a freely accessible electronic health record dataset. Scientific Data.', url: 'https://www.nature.com/articles/s41597-022-01899-x' },
+    { cite: 'Roberts et al. (2021), Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans. Nature Machine Intelligence.', url: 'https://www.nature.com/articles/s42256-021-00307-0' },
+    { cite: 'Mehra et al. (2020, RETRACTED), Hydroxychloroquine or chloroquine for treatment of COVID-19: a multinational registry analysis (the Surgisphere scandal). The Lancet.', url: 'https://www.thelancet.com/article/S0140-6736(20)31180-6/fulltext' },
     { cite: 'Yuan et al. (2021), Temporal bias in case-control design: preventing reliable predictions of the future. Nature Communications.', url: 'https://www.nature.com/articles/s41467-021-21390-2' },
     { cite: 'Bareinboim & Pearl (2016), Causal inference and the data-fusion problem. PNAS.', url: 'https://www.pnas.org/doi/10.1073/pnas.1510507113' },
     { cite: 'Einav et al. (2018), Predictive modeling of U.S. health care spending in late life. Science.', url: 'https://www.science.org/doi/10.1126/science.aar5045' },
@@ -179,6 +181,8 @@ export const readings: Record<number, Reading[]> = {
     { cite: 'Gebru et al. (2021), Datasheets for Datasets. Communications of the ACM.', url: 'https://dl.acm.org/doi/10.1145/3458723' },
     { cite: 'Gianfrancesco et al. (2018), Potential biases in machine learning algorithms using electronic health record data. JAMA Internal Medicine.', url: 'https://doi.org/10.1001/jamainternmed.2018.3763' },
     { cite: 'Sjoding et al. (2020), Racial bias in pulse oximetry measurement. NEJM.', url: 'https://www.nejm.org/doi/10.1056/NEJMc2029240' },
+    { cite: 'Gichoya et al. (2022), AI recognition of patient race in medical imaging: a modelling study. Lancet Digital Health.', url: 'https://doi.org/10.1016/S2589-7500(22)00063-2' },
+    { cite: 'Johnson et al. (2018), A comparative analysis of sepsis identification methods in an electronic database (how the cohort definition changes the data). Critical Care Medicine.', url: 'https://doi.org/10.1097/CCM.0000000000002965' },
     { cite: 'Homer et al. (2008), Resolving individuals contributing trace amounts of DNA to highly complex mixtures (the genomic re-identification result behind controlled access). PLoS Genetics.', url: 'https://doi.org/10.1371/journal.pgen.1000167' },
     { cite: 'MEDS (2025), An emerging data standard and ecosystem for health-AI research. NEJM AI.', url: 'https://ai.nejm.org/doi/full/10.1056/AIra2501253' },
     { cite: 'Overhage et al. (2012), Validation of a common data model for active safety surveillance research (the OMOP CDM). JAMIA.', url: 'https://academic.oup.com/jamia/article/19/1/54/734166' },
