@@ -96,7 +96,7 @@ been solved before. Resist naming a method — this part is about the problem.
 
 ## Additional resources
 
-- Slide decks (PDF): [Welcome & orientation](/slides/opening-remarks.pdf) · [Morning lecture — Szolovits](/slides/day1-problems.pdf) · [Afternoon — Alsentzer](/slides/day1-alsentzer.pdf).
+- Slide decks (PDF): [Welcome & orientation](/slides/opening-remarks.pdf) · [Morning lecture — Szolovits](/slides/day1-problems.pdf).
 - [Project Workbook template](/project-workbook/#part-1) — copy it and complete Part 1.
 - The CHIL and ML4H proceedings, for a sense of the field's scope.
 - Your specialty-breakout track materials (posted before the camp).
