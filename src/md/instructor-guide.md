@@ -84,8 +84,7 @@ run, even though you do not staff them.
   group has five members and there are five content days, so a different member
   facilitates each day, leading both of that day's small-group blocks. There is
   no instructor in the room.
-- **Coaches strengthen the groups — aim to staff them.** One floating day lead
-  cannot meaningfully support eight simultaneous groups, and a first-time peer
+- **Coaches strengthen the groups — aim to staff them.** A first-time peer
   facilitator on a hard prompt with no coach is a predictable weak point —
   especially Day 3 (critique) and Day 5 (red-team), which are adversarial by
   design. Recruit coaches (postdocs, senior PhDs, or instructors with free
@@ -95,15 +94,15 @@ run, even though you do not staff them.
 - **Brief the next day's facilitators the evening before.** A five-minute
   walkthrough of the next day's prompt with each group's incoming facilitator
   removes most of the first-time-facilitator risk.
-- **The day lead floats** among the groups during small-group blocks.
+- **Coaches float** among the groups during small-group blocks.
 
 ### Feedback
 
 The Workbook is private and **not graded**. Feedback happens live: the closing
 small group each day includes a round
 where members react to one another's thinking, so everyone gets peer input, and
-the day lead and any coaches can surface a strong example, or a project heading
-off the rails, at the next morning's handoff.
+coaches can surface a strong example, or a project heading off the rails, at the
+next morning's handoff.
 
 ---
 
@@ -148,7 +147,7 @@ data actually support the Day 1 problem?
 
 ### Day 3 — Evaluation & Study Design · AM: Shalmali Joshi · PM: Olawale Salaudeen
 
-**Your role.** Day lead. You give the full ~75-minute morning lecture (9:15 AM) and
+**Your role.** You give the full ~75-minute morning lecture (9:15 AM) and
 anchor the afternoon build-your-own-notebook workshop (2:45–4:15 PM), which feeds
 the closing small group.
 
@@ -165,7 +164,7 @@ Part 3 (the evaluation plan) and pointing to the afternoon notebook workshop.
 
 ### Day 4 — Methods & Modeling · AM: Matthew McDermott · PM: Walter Gerych
 
-**Your role.** Day lead. Like Day 3, a full morning lecture (9:15 AM) and the
+**Your role.** Like Day 3, a full morning lecture (9:15 AM) and the
 afternoon build-your-own-notebook workshop (2:45–4:15 PM).
 
 **Your lecture.** Method selection as a reasoned choice: health-specific
@@ -183,7 +182,7 @@ Workbook Part 4 — the method rationale.
 
 ### Day 5 — Deployment · AM: Muhammad Mamdani · PM: Inioluwa Deborah Raji · 2:45 PM fireside
 
-**Your role.** Day lead; the 9:15 AM lecture. The day's fourth block is a
+**Your role.** You give the 9:15 AM lecture. The day's fourth block is a
 clinician fireside chat with Mjaye Mazwi (an organizer moderates), and the day
 closes with a small group that continues red-teaming projects.
 

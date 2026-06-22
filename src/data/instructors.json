@@ -184,12 +184,12 @@
       "Matthew McDermott is an Assistant Professor of Biomedical Informatics at Columbia University, where he joined the faculty in 2025. His research centers on representation learning and foundation models over electronic health record (EHR) data, with the broader goal of making medical records both usable and shareable for modern machine learning. He earned a bachelor's degree in mathematics from Harvey Mudd College and a PhD in Computer Science from MIT, where he studied clinical and biomedical representation learning under Peter Szolovits. Before Columbia, he was a Berkowitz Postdoctoral Fellow at Harvard Medical School in Zak Kohane's lab, and he previously worked as a software engineer at Google and co-founded Guesstimate.",
       "His work has shaped widely used tools and standards in machine learning for health. He is a co-creator of ClinicalBERT, one of the most widely used pre-trained clinical language models, and the originator of the open-source MEDS (Medical Event Data Standard) ecosystem, which acts as a universal adapter for structured medical data across research groups. His software contributions also include the EventStreamGPT (ESGPT) package and the MEDS-DEV reproducibility benchmark, and his methodological work includes Structure-inducing Pre-training, a framework for incorporating domain knowledge into pre-training with provable guarantees. His publications have been cited more than 8,500 times.",
       "McDermott is an active leader in the ML4H research community. He has served as a board member of the Association for Health, Learning, and Inference (AHLI) since its inception, was General Chair of the Machine Learning for Health (ML4H) Symposium in 2021, and was General Chair of the Conference on Health, Inference, and Learning (CHIL) in 2024 and 2025.",
-      "At the camp: AM Lecturer — Day lead for Day 4 Methods & Evaluation II, facilitating the 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop."
+      "At the camp: morning lecturer for Day 4 (Methods & Modeling); also anchors the afternoon methods workshop."
     ],
     "tagline": "Foundation models and open standards for health data",
     "role": "AM Lecturer",
     "day": "Day 4 Methods & Evaluation II",
-    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
+    "assigned_block": "Morning lecture + afternoon workshop"
   },
   {
     "slug": "solly-sieberts",
@@ -415,7 +415,7 @@
     "tagline": "Robust AI for health and biomedicine",
     "role": "AM Lecturer",
     "day": "Day 3 Methods & Evaluation I",
-    "assigned_block": "Day lead - facilitates 9:00 AM & 1:30 PM small groups and the 3:00 PM workshop"
+    "assigned_block": "Morning lecture + afternoon workshop"
   },
   {
     "slug": "emily-alsentzer",
