@@ -25,7 +25,7 @@ stakeholders, and a reason it is still open.
 | 1:30–2:45 | Guest lecture (Alsentzer) |
 | 2:45–4:15 | Specialty Breakout #1 — problem clinic |
 | 4:15–5:45 | Small Group 2 (closing) — refine your problem framing |
-| 5:45–6:00 | Daily wrap — submit Workbook Part 1 |
+| 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
 ## Lead lecture outline
@@ -66,18 +66,20 @@ the lecture's content — the basis for the slides.
 
 ## Small groups & specialty breakout
 
-In **Small Group 1**, each participant states their project's unmet need,
-stakeholders, and the historical or structural gap in three minutes — no
-methods, no slides. The group's question for each: *is this a problem, or a
-method in disguise? Who is actually affected?*
+Day 1's first small group opens with **introductions** — yourselves first, then
+a short pitch of the project you came with. Keep the pitch brief: if your
+groupmates don't quite get it from a quick description, that is useful signal
+about how the problem is being communicated. The group then works through the
+Day 1 Workbook prompt together, reframing each project as a *problem* — an unmet
+need with stakeholders — rather than a method. See
+[how the small groups run](/small-groups/).
 
 The **specialty breakout** then runs as a problem clinic within your
 data-modality track: what distinguishes a strong from a weak problem in your
 domain, and the recurring ways problems in it are mis-posed.
 
-The day closes with **Small Group 2**, where you return to your home group to
-refine your problem framing in light of the breakout and complete Workbook
-Part 1.
+The closing small group ends with each person taking a few minutes to say how
+their problem framing shifted over the day.
 
 ## Project Workbook — Part 1: Problem framing
 

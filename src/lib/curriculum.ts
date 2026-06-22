@@ -97,7 +97,7 @@ export const days: CurriculumDay[] = [
     lead: { name: 'Muhammad Mamdani', affil: 'Unity Health / U Toronto', slug: 'muhammad-mamdani' },
     guest: { name: 'Inioluwa Deborah Raji', affil: 'UC Berkeley', slug: 'inioluwa-deborah-raji' },
     morning:
-      'Real-world deployment war stories — workflow integration, clinician adoption, monitoring, and drift. Small groups red-team the ethics, safety, and failure modes of their project.',
+      'Real-world deployment war stories — workflow integration, clinician adoption, monitoring, and drift. Each group red-teams its members’ projects as a whole: imagine the project is built and deployed, then find where and why it would fail in the real world.',
     afternoon:
       'A guest lecture on bias, ethics, and accountability in deployment, continued red-teaming, and a fireside chat with a practicing clinician / patient voice on ML4H deployment.',
     questions:
@@ -106,33 +106,32 @@ export const days: CurriculumDay[] = [
   {
     n: 6,
     date: 'Sat · Jun 27',
-    title: 'Finance, Compute & Collaborators',
-    gap: 'A working prototype → a funded, staffed, sustained program.',
-    mode: 'Resource',
-    lead: { name: 'Jonathan T. Kolstad', affil: 'UC Berkeley', slug: 'jonathan-t-kolstad' },
-    leadLabel: 'Panel chair',
-    panel: true,
+    title: 'Practice Job Talks',
+    gap: 'A week of project work → the research story you can tell on the job market.',
+    mode: 'Present',
+    lead: { name: 'Camp faculty' },
+    leadLabel: 'Moderated by',
     morning:
-      'A finance panel (chaired by Kolstad) on funding sources and the incentive structures of government, industry, and philanthropic funders, across four lenses: federal/NIH, philanthropy, industry/VC, and academic budget-holder. Followed by Q&A, an optional “Communicating & Pitching Your Work” mini-session, and a resource-plan working block.',
+      'Concurrent practice job-talk sessions, run in parallel rooms with faculty moderators. Each presenter gives a short job-talk-style presentation of their research and fields questions, as they would on the academic or industry market; the rest of the room listens and gives feedback. The day is geared toward participants on or near the research job market, but everyone benefits from giving and hearing the talks.',
     afternoon:
-      'Free — deliberate decompression and time to assemble the Day 7 presentation from the Project Workbook.',
+      'Job talks continue in parallel blocks through the afternoon, so everyone presenting gets a full slot and live feedback from faculty and peers.',
     questions:
-      'What funding path is realistic for your project, and what are its incentives? How do you estimate compute honestly? What collaborators and approvals does your project need?',
+      'Can you tell the story of your research as a job talk — the problem, your approach, why it matters, and where it is going — and field hard questions about it?',
   },
   {
     n: 7,
     date: 'Sun · Jun 28',
-    title: 'Presentations & Networking',
-    gap: 'Seven separate deliverables → one coherent research vision.',
+    title: 'Poster Session & Networking',
+    gap: 'A week of project thinking → a poster that tells the whole story.',
     mode: 'Synthesize',
     lead: { name: 'All instructors & organizers' },
     leadLabel: 'Led by',
     morning:
-      'Final presentations / poster session before an invited interdisciplinary audience. Each presentation walks the Project Workbook arc: problem → data → evaluation → method → deployment → resourcing.',
+      'A cohort poster session, run in two rounds so everyone can both present their work and browse others’. Each poster walks the project arc — problem → data → evaluation → method → deployment — before an invited interdisciplinary audience.',
     afternoon:
-      'Lunch, then networking activities (1:30–3:00 PM), closing with a reflection that returns to the Day 1 spine.',
+      'Closing remarks and a reflection that returns to the Day 1 spine, then lunch and networking to close out the week.',
     questions:
-      'Can you articulate your project as a coherent end-to-end arc, apply the week’s lessons to revise it, and situate the work in ML4H as a field?',
+      'Can you tell your project as a coherent end-to-end arc on a single poster, apply the week’s lessons to revise it, and situate the work in ML4H as a field?',
   },
 ];
 
@@ -145,8 +144,8 @@ export const dailyRhythm: { time: string; item: string }[] = [
   { time: '12:30', item: 'Lunch' },
   { time: '1:30', item: 'Guest lecture — a concrete case or counterpoint' },
   { time: '2:45', item: 'Workshop — a notebook (Days 3–4), specialty breakout (Days 1–2), or fireside (Day 5)' },
-  { time: '4:15', item: 'Small Group 2 (closing) — revise your work and complete your Workbook section' },
-  { time: '5:45', item: 'Daily wrap — submit your Workbook section' },
+  { time: '4:15', item: 'Small Group 2 (closing) — talk through how your thinking moved today' },
+  { time: '5:45', item: 'Daily wrap — quick recap and look ahead' },
   { time: '6:00', item: 'Dinner' },
 ];
 

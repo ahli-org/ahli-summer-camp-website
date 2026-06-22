@@ -23,10 +23,9 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
       <h2>What the small groups are for</h2>
       <p>
         Every content day (Days 1–5) has two <strong>small-group blocks</strong>:
-        one mid-morning to apply the day's frame to your own project, and one at
-        the end of the day to revise your work and complete that day's
-        <a href={url('project-workbook')}>Project Workbook</a> section. You spend
-        them with the same home group all week.
+        one mid-morning to apply the day's topic to your own project, and one at
+        the end of the day to step back and talk through how your thinking moved.
+        You spend them with the same home group all week.
       </p>
       <p>
         The groups are <strong>fixed on purpose</strong>. The aim is not to match
@@ -53,7 +52,57 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
     </div>
   </section>
 
-  <!-- How a session runs + facilitator instructions -->
+  <!-- How the daily sessions run -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">How the sessions run</p>
+      <h2>What happens in a small group</h2>
+      <p>
+        These are <strong>working discussions, not quiet work time</strong> — the
+        goal is to think out loud about your project and engage with everyone
+        else's. There's just enough shared structure to get going; the rest is
+        open, and the day's facilitator steers it.
+      </p>
+      <ul>
+        <li>
+          <strong>Day 1, first block — introductions.</strong> Introduce
+          yourselves, then give a <em>short</em> pitch of the project you came
+          with. Keep it brief on purpose: if it doesn't land in a quick
+          description, that's useful signal about how the problem is being
+          communicated — better to surface it now than to over-explain.
+        </li>
+        <li>
+          <strong>Days 1–4, morning block — work the day's prompt.</strong> Start
+          by walking through that day's <a href={url('project-workbook')}>Project
+          Workbook</a> prompt together. You won't have prepared it in advance —
+          that's the point; use the time to work out how the day's topic applies
+          to each project.
+        </li>
+        <li>
+          <strong>Days 1–4, closing block — how your thinking moved.</strong> Save
+          the last ~30 minutes for a round where each person takes about five
+          minutes on how their thinking about their project evolved over the day,
+          anchored on the Workbook.
+        </li>
+        <li>
+          <strong>Day 5 — present, then red-team.</strong> Each person presents
+          their updated project in brief, constrained form (around 12 minutes) —
+          problem, data, evaluation, and method — and the group then red-teams it
+          as a whole: assume it's built and deployed, and find where and why it
+          would fail in the real world. Use what surfaces to scope risks or
+          revise your framing.
+        </li>
+      </ul>
+      <p>
+        Outside those anchors the discussion is open. The
+        <a href={url('project-workbook')}>Project Workbook</a> is the shared
+        reference, but it's a <strong>private thinking aid</strong> — nothing is
+        turned in, and you're encouraged to keep refining it after each day.
+      </p>
+    </div>
+  </section>
+
+  <!-- The rotating facilitator -->
   <section class="section">
     <div class="wrap">
       <p class="eyebrow">The rotating facilitator</p>
@@ -63,43 +112,37 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
         Because each group has five members and the week has five content days,
         <strong>you each facilitate exactly one day</strong>, leading both of that
         day's small-group blocks (the mid-morning and the closing one). The
-        facilitator is not the expert; they keep the conversation useful and make
-        sure every project gets time.
+        facilitator is not the expert; your job is to keep the discussion useful
+        and make sure every project — and every person — gets time. Beyond that,
+        run the session however you think works best. In particular:
       </p>
-      <p>On the day you facilitate, your job is to:</p>
       <ul>
         <li>
-          <strong>Keep time.</strong> Divide the block evenly so every member's
-          project gets a roughly equal turn — about 15 minutes each in a group of
-          five. Watch the clock; don't let the first project eat the hour.
+          <strong>Keep time.</strong> Divide each block so every project gets a
+          roughly equal turn — about 15 minutes each in a group of five. Don't let
+          the first project eat the hour.
         </li>
         <li>
-          <strong>Hold the day's focus.</strong> Anchor each turn on the day's
-          question (framing, data, evaluation, methods, or deployment), not on
-          whatever is most fun to discuss. Gently pull the conversation back when
-          it drifts.
+          <strong>Get everyone talking.</strong> Make sure each member speaks —
+          about their own project <em>and</em> about others'. The goal is
+          discussion, not silent work; draw in anyone who's gone quiet, and make
+          it clear everyone is both invited and expected to contribute.
         </li>
         <li>
-          <strong>Draw everyone in.</strong> Make sure quieter members both
-          present and give feedback. Invite the people who haven't spoken before
-          moving on.
+          <strong>Hold the day's focus.</strong> Keep each turn anchored on the
+          day's topic (framing, data, evaluation, methods, or — on Day 5 —
+          red-teaming), and gently pull the conversation back when it drifts.
         </li>
         <li>
-          <strong>Push for the concrete.</strong> Steer the group toward specific,
-          actionable feedback the presenter can use, and toward a clear next step
-          for each project — not vague praise.
-        </li>
-        <li>
-          <strong>Close the loop.</strong> In the day's second (closing) block,
-          make sure everyone leaves with their <a href={url('project-workbook')}>Project
-          Workbook</a> section for that day drafted before the daily wrap.
+          <strong>Push for the concrete.</strong> Steer toward specific, usable
+          feedback and a clear next thought for each project — not vague praise.
         </li>
       </ul>
       <p>
-        On the other four days you're a participant: come ready to pitch your
-        project in a couple of minutes and to give your groupmates sharp,
-        generous feedback. If you can't make the day you're assigned, swap with
-        another member so every day still has a facilitator.
+        On the other four days you're a participant: come ready to talk through
+        your project and to give your groupmates sharp, generous feedback. If you
+        can't make the day you're assigned, swap with another member so every day
+        still has a facilitator.
       </p>
     </div>
   </section>

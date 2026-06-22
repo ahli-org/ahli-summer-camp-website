@@ -21,8 +21,8 @@ and governance, and the practical mechanics of access. The guest lecturers from 
 | 12:30–1:30 | Lunch |
 | 1:30–2:45 | Guest lectures (Sieberts & Banerjee) |
 | 2:45–4:15 | Specialty Breakout #2 — data clinic |
-| 4:15–5:45 | Small Group 2 (closing) — refine your data specification |
-| 5:45–6:00 | Daily wrap — submit Workbook Part 2 |
+| 4:15–5:45 | Small Group 2 (closing) — refine your data plan |
+| 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
 ## Lead lecture outline
@@ -61,15 +61,16 @@ of the lecture's content.
 
 ## Small group & specialty breakout
 
-In **Small Group 1**, each participant describes their data-generating process
-and what data exists independent of their AI system; the group's question: *what
-bias does that provenance create?*
+In **Small Group 1**, the group works through the Day 2 Workbook prompt: each
+person describes their data-generating process and what data exists independent
+of their AI system, and the group asks *what bias that provenance creates*. See
+[how the small groups run](/small-groups/).
 
 The **specialty breakout** then runs as a data clinic: the main datasets, access
 routes, and shared biases in your domain.
 
-The day closes with **Small Group 2**, where you refine the access plan in light
-of the breakout and complete your data specification.
+The closing small group ends with each person noting how their thinking on data
+shifted over the day.
 
 ## Project Workbook — Part 2: Data
 

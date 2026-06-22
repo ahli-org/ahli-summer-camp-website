@@ -12,30 +12,31 @@ design depends on every instructor understanding it.
 
 **The spine.** The whole week closes one gap: the distance between *an idea a
 researcher finds interesting* and *a system that actually helps patients*. Each
-day closes one segment — problems → data → evaluation → methods → deployment →
-resourcing → synthesis.
+content day (1–5) closes one segment — problems → data → evaluation → methods →
+deployment. Day 6 is practice job talks; Day 7 is a poster session.
 
 **The validity ladder.** Days 3–4 concern *internal* validity (is the evidence
 credible, is the model sound on its own terms); Day 5 concerns *external and
 deployment* validity. If your day touches "evaluation," be clear which rung
 you're on.
 
-**The deliverable spine — the Project Workbook.** Each day produces one short,
-concrete section of a single cumulative document, the participant's
-[Project Workbook](/project-workbook/). The seven sections become the Day 7
-presentation. Sessions should drive toward that day's section.
+**The Project Workbook.** Across the five content days, each participant keeps a
+short, **private** [Project Workbook](/project-workbook/) on their own project —
+one part per day (problem, data, evaluation, methods, deployment). It is a
+thinking aid, **not turned in and not graded**. Sessions should drive each
+participant's thinking on that day's part, not toward a submission.
 
 **The five-block content day (Days 1–5).** Every content day runs the same arc:
 a morning handoff → lead lecture → small group → guest lecture → workshop →
 **closing small group**. The day ends with a small group in which participants
-revise their thinking and complete that day's Workbook section — so the last
-thing they do each day is improve their own project. Day 1 uses the same
-structure, with an 8:30–9:15 opening block (check-in, welcome and orientation, a
-brief icebreaker) in place of the handoff.
+step back and talk through how their thinking moved that day — so the last thing
+they do each day is sharpen their own project. Day 1 uses the same structure,
+with an 8:30–9:15 opening block (check-in, welcome and orientation, a brief
+icebreaker) in place of the handoff.
 
 **Signature modes.** Each day has a distinctive mode — Day 1 *frame*, Day 2
 *interrogate*, Day 3 *critique*, Day 4 *build*, Day 5 *stress-test*, Day 6
-*resource*, Day 7 *synthesize*.
+*present*, Day 7 *synthesize*.
 
 ## If you are a lead lecturer
 
@@ -45,8 +46,8 @@ groups and the guest lecture hang on.
 - **Teach the frame, not your CV.** Your lecture's job is to give participants a
   framework they can apply to their own project that same day. Use your own work
   as illustration, not as the syllabus.
-- **Drive toward the day's deliverable.** End your lecture by naming the Workbook
-  section due that day and handing off to the activity.
+- **Drive toward the day's question.** End your lecture by naming that day's
+  Workbook prompt and handing off to the activity.
 - **Open with the handoff and the spine.** From Day 2 on, start by placing the
   week on the arc — what gap yesterday closed, what gap today closes.
 - **Use the slide outlines as a scaffold.** Each day's
@@ -77,40 +78,32 @@ prescribing your content.
 The small groups are where the project develops. You should understand how they
 run, even though you do not staff them.
 
-- **Home groups** — roughly six groups of 8–9, stable all week, deliberately
-  mixed across research areas and modalities.
-- **Rotating peer session leads.** The participants are senior researchers; each
-  session is run by a rotating peer "session lead" from within the group,
-  following a one-page protocol. The role rotates daily.
+- **Home groups** — eight groups of five, stable all week, deliberately mixed
+  across research areas, institutions, and geography.
+- **Rotating peer facilitator.** The participants are senior researchers. Each
+  group has five members and there are five content days, so a different member
+  facilitates each day, leading both of that day's small-group blocks. There is
+  no instructor in the room.
 - **Coaches strengthen the groups — aim to staff them.** One floating day lead
-  cannot meaningfully support six simultaneous groups, and a first-time peer lead
-  on a hard prompt with no coach is a predictable weak point — especially Day 3
-  (critique) and Day 5 (red-team), which are adversarial by design. Recruit
-  coaches (postdocs, senior PhDs, or instructors with free blocks) to cover **at
-  least two or three of the six groups**, prioritizing Days 3 and 5. The program
-  can run without them, but not *identically* — so where coaches are thin, lean
-  harder on the one-page protocol and the night-before briefing below.
-- **Brief the next day's rotating leads the evening before.** A five-minute
-  walkthrough of the next day's prompt and protocol with each group's incoming
-  session lead removes most of the first-time-facilitator risk.
+  cannot meaningfully support eight simultaneous groups, and a first-time peer
+  facilitator on a hard prompt with no coach is a predictable weak point —
+  especially Day 3 (critique) and Day 5 (red-team), which are adversarial by
+  design. Recruit coaches (postdocs, senior PhDs, or instructors with free
+  blocks) to cover as many of the eight groups as you can, prioritizing Days 3
+  and 5. The program can run without them, but not *identically* — so where
+  coaches are thin, lean harder on the night-before briefing below.
+- **Brief the next day's facilitators the evening before.** A five-minute
+  walkthrough of the next day's prompt with each group's incoming facilitator
+  removes most of the first-time-facilitator risk.
 - **The day lead floats** among the groups during small-group blocks.
 
-### What happens to each daily submission
+### Feedback without submissions
 
-Each content day's Workbook part is submitted at the 5:45 wrap — and it gets a
-response, so submission never becomes a formality:
-
-- **Overnight skim.** The floating day lead and any coaches skim that day's
-  submissions and flag 2–3 — strong examples or ones heading off the rails (e.g.
-  a Day 2 data plan that quietly invalidates the Day 1 problem) — for a
-  30-second mention at the **next morning's handoff**.
-- **Built-in peer cross-review.** The closing small group each day includes a
-  brief round where members react to one another's draft part, not just their
-  own — so every participant gets feedback on every deliverable, not only on the
-  Day 4 peer-review and Day 7 audience rubrics.
-
-This catches a participant whose early part is off before they build on it for
-three more days, which is the whole point of a cumulative deliverable.
+The Workbook is private and **not collected** — there is no daily submission to
+grade. Feedback happens live: the closing small group each day includes a round
+where members react to one another's thinking, so everyone gets peer input, and
+the day lead and any coaches can surface a strong example, or a project heading
+off the rails, at the next morning's handoff.
 
 ---
 
@@ -185,16 +178,14 @@ a model zoo. Coordinate with Gerych so the talks divide cleanly: you cover
 the afternoon you anchor the
 [methods-lab notebook](/notebooks/methods-lab/).
 
-**Handoff.** Open with the handoff (Day 3 evaluation plans). The afternoon closing
-small group is a structured peer review. Close by naming Workbook Part 4 — the
-method rationale.
+**Handoff.** Open with the handoff (Day 3 evaluation plans). Close by naming
+Workbook Part 4 — the method rationale.
 
 ### Day 5 — Deployment · Lead: Muhammad Mamdani · Guest: Inioluwa Deborah Raji · 2:45 PM fireside
 
 **Your role.** Day lead; the 9:15 AM lead lecture. The day's fourth block is a
-clinician/patient fireside chat (an organizer moderates; guest TBD), and the day
-closes with a small group in which participants finish red-teaming and complete
-their deployment plan.
+clinician fireside chat with Mjaye Mazwi (an organizer moderates), and the day
+closes with a small group that continues red-teaming projects.
 
 **Your lecture.** Real-world deployment, told as war stories — workflow
 integration, clinician adoption, the model that validated beautifully and failed
@@ -204,38 +195,34 @@ abstractions; that lived texture is the value. Your lecture sets up the red-team
 small groups and Raji's accountability-focused guest lecture.
 
 **Handoff.** Open with the handoff (Day 4 method rationales). Frame the small
-groups as a red team — participants try to break their own projects — and name
-Workbook Part 5, the deployment plan.
+groups as a red team — the group tries to break each project as a whole — and
+name Workbook Part 5, the deployment plan.
 
-### Day 6 — Finance, Compute & Collaborators · Panel Chair: Jonathan T. Kolstad
+### Day 6 — Practice Job Talks · Camp faculty
 
-**Your role.** You frame the funding landscape and chair the Finance panel; the
-panel fills the lead-and-guest role across the 9:15 and 11:00 blocks.
+**Format.** Day 6 is given over to **practice job talks**, run as concurrent
+sessions in parallel rooms and moderated by camp faculty across three blocks
+through the day. Each presenter gives a short job-talk-style presentation of
+their research and fields questions, as they would on the academic or industry
+market; the rest of the room listens and gives feedback. The day is geared toward
+participants on or near the research job market; everyone else attends, asks
+questions, and learns from the room.
 
-**As chair.** Open by framing the funding landscape — the incentive structures
-behind government, philanthropic, industry, and venture money, and how each
-funder's incentives shape what research actually gets done — then chair the
-four-panelist discussion. Brief each panelist to speak from one lens so the panel
-is structured rather than four overlapping war-stories: (1) a federal/NIH voice;
-(2) a philanthropic funder; (3) an industry or health-tech VC voice; (4) an
-academic who has assembled a full ML4H project budget. A pre-circulated one-page
-resource covers compute estimation and collaborator/IRB/PHI norms; brief the
-panel to field "what does compute actually cost" and "what is a normal
-expectation of a clinical collaborator." The 11:00 block also carries an optional
-"Communicating & Pitching Your Work" mini-session.
+**Moderating.** Keep talks to time, run a crisp Q&A, and make the feedback both
+concrete and kind — model the kinds of questions a real search committee asks. No
+required readings.
 
-**Handoff.** Open with the handoff (Day 5 deployment plans). The afternoon is free
-by design — decompression and Day 7 prep. Name Workbook Part 6, the resource plan.
+**Handoff.** Open with the handoff (Day 5 red-team takeaways).
 
-### Day 7 — Presentations & Networking · All instructors and organizers
+### Day 7 — Poster Session & Networking · All instructors and organizers
 
-**Organizers' role.** Run the final presentations and poster session, then
-networking. Each presentation should explicitly walk the Project Workbook arc —
-problem → data → evaluation → method → deployment → resourcing — which is what
-makes the presentations comparable and the week legible. Give the invited audience
-a light feedback rubric so participants leave with structured input. Close with a
-short collective reflection that returns to the Day 1 spine. Lunch, networking
-(1:30–3:00 PM), and a single adjournment at 3:00 PM.
+**Organizers' role.** Run the poster session in two rounds so everyone can both
+present their work and browse others', then closing remarks and networking. Each
+poster walks the project arc — problem → data → evaluation → method →
+deployment — which makes the work legible across the cohort. Give the invited
+audience a light feedback rubric so participants leave with structured input.
+Close with a short collective reflection that returns to the Day 1 spine, then
+lunch and networking, adjourning in the early afternoon.
 
 ---
 

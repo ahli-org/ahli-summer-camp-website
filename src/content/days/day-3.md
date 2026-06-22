@@ -19,12 +19,12 @@ trust it.
 | 9:00–9:15 | Morning handoff |
 | 9:15–10:30 | Lead lecture (Joshi) |
 | 10:30–11:00 | Coffee |
-| 11:00–12:30 | Small Group 1 — case-study dissection |
+| 11:00–12:30 | Small Group 1 |
 | 12:30–1:30 | Lunch |
 | 1:30–2:45 | Guest lecture (Salaudeen) |
 | 2:45–4:15 | Workshop — build your project's evaluation notebook |
-| 4:15–5:45 | Small Group 2 (closing) — define your evaluation plan |
-| 5:45–6:00 | Daily wrap — submit Workbook Part 3 |
+| 4:15–5:45 | Small Group 2 (closing) |
+| 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
 ## Lead lecture outline
@@ -62,20 +62,19 @@ outline of the lecture's content.
 
 ## Small group & workshop
 
-In **Small Group 1**, the session lead splits the group into pairs; each pair
-critiques one section of a provided case-study paper against the question *would
-this evidence convince you?*, then reports back, and the group assembles a
-shared list of evaluation failure modes.
+In **Small Group 1**, the group works through the Day 3 Workbook prompt — each
+project's estimand, the metric that tracks its real decision, the subgroup plan,
+and the biggest threats to validity. See [how the small groups run](/small-groups/).
 
 The **workshop** then has you build an evaluation notebook for your own
 project — discrimination, calibration, clinical utility, subgroup
 disaggregation, power, and leakage/shortcut probing. Start from the
-[Evaluation Lab template notebook](/notebooks/evaluation-lab/), and
-you are encouraged to use an AI coding assistant to scaffold a synthetic
-stand-in for your project.
+[Evaluation Lab template notebook](/notebooks/evaluation-lab/), and use an AI
+coding assistant to scaffold a synthetic stand-in for your project if you like.
+The notebook is a personal scratch tool — nothing is turned in.
 
-The day closes with **Small Group 2**: with the notebook in hand, you turn its
-findings into your project's evaluation plan.
+The closing small group ends with each person noting how their evaluation
+thinking moved over the day.
 
 ## Project Workbook — Part 3: Evaluation & study design
 

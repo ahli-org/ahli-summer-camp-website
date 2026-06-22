@@ -24,8 +24,8 @@ you try to break your own project.
 | 12:30–1:30 | Lunch |
 | 1:30–2:45 | Guest lecture (Raji) |
 | 2:45–4:15 | Fireside chat — clinician / patient voice |
-| 4:15–5:45 | Small Group 2 (closing) — red-team & deployment plan |
-| 5:45–6:00 | Daily wrap — submit Workbook Part 5 |
+| 4:15–5:45 | Small Group 2 (closing) — red-team (cont.) |
+| 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
 ## Lead lecture outline
@@ -57,16 +57,18 @@ lecture's content.
 
 ## Small group & fireside
 
-In **Small Group 1**, the group runs as a red team: each participant presents
-their project, and the rest adversarially identify failure modes — workflow
-mismatch, subgroup harm, drift, gaming, missing collaborators. The presenter
-records, and does not defend.
+Day 5 works differently. In **Small Group 1**, each person presents their
+updated project in brief, constrained form (around 12 minutes) — problem, data,
+evaluation (what success means), and method — and then the group **red-teams it
+as a whole**: assume it has been built and deployed, and work out where and why
+it would fail in the real world. Use what surfaces to scope risks or revise your
+framing. See [how the small groups run](/small-groups/).
 
 The **fireside chat** then grounds deployment in a practitioner's lived
-experience *(clinician/patient guest to be announced)*.
+experience, with Muhammad Mamdani and clinician Mjaye Mazwi.
 
-The day closes with **Small Group 2**, where you finish red-teaming any
-remaining projects and complete your deployment plan.
+The closing small group continues red-teaming any projects the group has not yet
+reached.
 
 ## Recommended / reference reading
 

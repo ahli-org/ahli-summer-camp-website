@@ -19,12 +19,12 @@ approach and defend it.
 | 9:00–9:15 | Morning handoff |
 | 9:15–10:30 | Lead lecture (McDermott) |
 | 10:30–11:00 | Coffee |
-| 11:00–12:30 | Small Group 1 — draft method proposal |
+| 11:00–12:30 | Small Group 1 |
 | 12:30–1:30 | Lunch |
 | 1:30–2:45 | Guest lecture (Gerych) |
 | 2:45–4:15 | Workshop — build your project's methods notebook |
-| 4:15–5:45 | Small Group 2 (closing) — method-proposal peer review |
-| 5:45–6:00 | Daily wrap — submit Workbook Part 4 |
+| 4:15–5:45 | Small Group 2 (closing) |
+| 5:45–6:00 | Daily wrap — recap & look ahead |
 | 6:00 | Dinner |
 
 ## Lead lecture outline
@@ -61,21 +61,19 @@ the lecture's content.
 
 ## Small group & workshop
 
-In **Small Group 1**, each participant drafts a one-slide method / model
-proposal. The **workshop** then has you build a methods notebook for your
-project — a baseline, stronger models, a representation / foundation-model
-approach, and a comparison harness that reuses your Day 3 evaluation moves. Start
-from the [Methods Lab template notebook](/notebooks/methods-lab/). A
-prompt-a-thon is the alternative track for LLM-centric projects.
+In **Small Group 1**, the group works through the Day 4 Workbook prompt — the
+method each project should use and why it fits that project's data and Day 3
+metrics. See [how the small groups run](/small-groups/).
 
-The day closes with **Small Group 2**: with the notebook's results in hand, each
-proposal is reviewed by two assigned peers, and you revise your method rationale.
+The **workshop** then has you build a methods notebook for your project — a
+baseline, stronger models, a representation / foundation-model approach, and a
+comparison harness that reuses your Day 3 evaluation moves. Start from the
+[Methods Lab template notebook](/notebooks/methods-lab/); a prompt-a-thon is the
+alternative track for LLM-centric projects. The notebook is a personal scratch
+tool — nothing is turned in.
 
-> **Peer-review rubric.** For each proposal, reviewers answer: (1) Is the method
-> well-justified given the data and the Day 3 metrics? (1–5) (2) Does the
-> presenter identify the main risk to their approach? (1–5) (3) Is a credible
-> alternative discussed? (1–5) (4) One strength. (5) The single most valuable
-> change.
+The closing small group ends with each person noting how their method thinking
+moved over the day.
 
 ## Project Workbook — Part 4: Method & modeling
 

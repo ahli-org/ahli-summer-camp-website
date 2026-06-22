@@ -24,20 +24,20 @@ On Day 1 and Day 2, the afternoon **specialty breakout** runs in
 **domain-organized tracks** — distinct from your home group, and used to pressure-test
 domain-specific choices with people *inside* your niche. **Self-select** the
 track closest to your project's data modality before you arrive, and stay in it
-both days. Tracks may be merged or split based on the cohort.
+both days.
 
-1. **Clinical & Structured EHR Data** — prediction and decision tasks over
-   structured records (vitals, labs, medications, diagnoses, procedures).
+1. **Clinical & Structured EHR Data** — structured records (vitals, labs,
+   medications, diagnoses, procedures). *Led by Tom Pollard (MIT).*
 2. **Clinical & Biomedical Text** — clinical notes, reports, biomedical
-   literature; extraction, summarization, clinical LLMs.
+   literature; extraction, summarization, clinical LLMs. *Led by Emily Alsentzer
+   (Stanford).*
 3. **Medical Imaging** — radiographs, CT/MRI, digital pathology, ophthalmology,
-   dermatology.
+   dermatology. *Led by Tristan Naumann (AHLI).*
 4. **Genomics & Multi-omics** — DNA/RNA and variant data, gene regulation,
-   multi-omic integration.
+   multi-omic integration. *Led by Jineta Banerjee (Sage Bionetworks).*
 5. **Patient-Generated & Wearable / Sensor Data** — wearables, remote
-   monitoring, mobile health, continuous physiological signals.
-6. **Therapeutics & Molecular Discovery** — drug discovery, molecular property
-   prediction, protein structure and design.
+   monitoring, mobile health, continuous physiological signals. *Led by Tom
+   Hartvigsen (U Virginia).*
 
 If your project spans two tracks, pick the one your *data* most belongs to.
 

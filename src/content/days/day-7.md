@@ -4,49 +4,38 @@ day: 7
 
 ## About this day
 
-You present your project as a single coherent arc before an invited
-interdisciplinary audience. Each presentation walks the Project Workbook:
-problem → data → evaluation → method → deployment → resourcing. That arc *is* the
-synthesis. The day — and the week — closes with a reflection that returns to the
-Day 1 spine: the gap from an idea to a system that helps patients, and how far
-your project moved across the week. The mode is **synthesize**.
+The week closes with a **poster session**: each participant presents their
+project as a single coherent arc — problem, data, evaluation, method,
+deployment — to an invited interdisciplinary audience, and gets to walk the room
+and take in everyone else's. A closing reflection returns to the Day 1 spine: the
+gap from an idea to a system that helps patients, and how far each project moved
+across the week. The mode is **synthesize**.
 
 ## Schedule
 
 | Time | Block |
 |---|---|
-| 9:00–12:30 | Final presentations / poster session |
-| 12:30–1:30 | Lunch |
-| 1:30–3:00 | Networking activities |
-| 3:00 | Adjourn |
-
-## Closing outline
-
-**Final presentations: the week, synthesized.** A working outline of the closing
-remarks.
-
-- **The arc we walked.** The seven gaps, from an interesting idea to a funded
-  program that helps patients.
-- **How to present.** Each presentation walks the Project Workbook arc: problem →
-  data → evaluation → method → deployment → resourcing. Holding everyone to the
-  same structure keeps the talks comparable.
-- **Feedback.** A light rubric the invited audience uses, so every participant
-  leaves with structured input.
-- **Closing reflection.** The week's question, returned to: how far did your
-  project move from an idea toward a system that helps patients?
+| 9:00–9:15 | Morning handoff |
+| 9:15–10:15 | Poster session — round 1 |
+| 10:15–10:30 | Break |
+| 10:30–11:30 | Poster session — round 2 |
+| 11:30–12:00 | Closing remarks & reflection |
+| 12:00–1:30 | Lunch & networking |
+| 1:30 | Adjourn |
 
 ## What you'll be able to do
 
-- Articulate your project as a coherent end-to-end arc.
-- Show how the week's lessons concretely revised it.
+- Tell your project as a coherent end-to-end arc on a single poster.
+- Show how the week's discussions concretely revised it.
 - Situate the work within ML4H as a field.
 
-## Project Workbook — Part 7: Synthesis
+## The poster
 
-The integrated one-paragraph narrative, and the assembled deck — one slide per
-Workbook part, plus a title and a closing "what I'll do next." Your Workbook has
-already written your slides; today is assembly, rehearsal, and delivery.
+Your poster walks the same arc your Project Workbook does — problem → data →
+evaluation → method → deployment. Running the session in two rounds lets everyone
+both present and browse. Bring the printed poster you prepared before the camp
+(see [before you arrive](/before-you-arrive/)).
 
 ## Additional resources
 
-- [Project Workbook template](/project-workbook/#part-7) — Part 7 assembles your deck.
+- The closing-reflection slides (shared on the day).
