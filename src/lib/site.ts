@@ -21,7 +21,7 @@ export function currentKey(pathname: string): string {
 
 // Review mode: shows a prominent internal review banner (see ReviewNotice.astro)
 // flagging content that needs human verification. SET TO false BEFORE DEPLOY.
-export const REVIEW_MODE = true;
+export const REVIEW_MODE = false;
 
 export const SITE = {
   name: 'AHLI Health AI Summer Camp',

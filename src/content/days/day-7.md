@@ -36,6 +36,8 @@ evaluation → method → deployment. Running the session in two rounds lets eve
 both present and browse. Bring the printed poster you prepared before the camp
 (see [before you arrive](/before-you-arrive/)).
 
+<div id="posters"></div>
+
 ## Poster assignments
 
 **Session A — 9:15–10:15 AM:** Helena Coggan, Sameer Neupane, Dominik Becker,

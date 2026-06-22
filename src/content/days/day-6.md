@@ -13,6 +13,8 @@ people who have sat on hiring committees. The day is geared toward participants
 on or near the research job market; everyone else attends, asks questions, and
 learns from the room. The mode is **present**.
 
+<div id="job-talks"></div>
+
 ## Job-talk schedule
 
 Talks run in two parallel rooms (40-minute slots) after a 9:00 morning handoff;

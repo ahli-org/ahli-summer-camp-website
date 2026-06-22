@@ -36,14 +36,17 @@ answer to each prompt in a line or two; delete what doesn't apply. Revisit earli
 parts as later days change your view.*
 
 > **Running example (AI-generated).** A single project — early warning for ED
-> *boarding* (when an admitted patient waits hours for an inpatient bed) — runs
-> through the template in blockquotes like this, one part at a time, to show how
-> each prompt might be answered. It is illustrative and **not vetted**; yours will
-> differ. See the [worked examples](/project-workbook/example/) for this one in
-> full, plus others on different kinds of projects.
+> *boarding* (when an admitted patient waits hours for an inpatient bed) — is
+> threaded through the template, with an *italic example answer beneath each
+> prompt* to show how it might be filled in. It is illustrative and **not
+> vetted**; yours will differ. See the [worked examples](/project-workbook/example/)
+> for this one in full, plus others on different kinds of projects.
 
 ### Project title and one-line pitch
 One sentence: what you are doing and for whom.
+
+*Example — "An early-warning flag for ED boarding: which just-admitted patients
+will wait >12h for an inpatient bed, surfaced to bed management in time to act."*
 
 <div id="part-1"></div>
 
@@ -52,25 +55,33 @@ This part is about the problem, not your method — resist jumping to a solution
 here.
 
 - **What is the problem / question?**
+  - *Example — admitted ED patients often wait hours for an inpatient bed
+    ("boarding"); can we flag high-risk patients early enough to act?*
 - **Who are the stakeholders?** *(patients, clinicians, health systems, payers,
   regulators — who is affected, who decides)*
+  - *Example — boarding patients, ED and inpatient clinicians, bed management (who
+    act on a warning), and the hospital (which pays).*
 - **Why is it impactful?** *(the unmet health need and the cost of leaving it
   unsolved — occasionally the impact is in your solution rather than the problem)*
+  - *Example — boarding worsens outcomes and crowds the ED; even hours of lead
+    time let bed management intervene.*
 - **Why is it technically interesting?**
+  - *Example — the risk is a system outcome, depending on hospital congestion
+    rather than the patient alone.*
 - **Why is it hard?**
+  - *Example — boarding is driven by hospital-wide congestion, not the individual
+    patient, so a patient-only view misleads.*
 - **Why hasn't it been solved before?**
   - *Why now? What changed — technically, culturally, or in available resources —
     that makes a solution possible today?*
   - *What prior solutions exist, and what is wrong with them?*
+  - *Example — existing tools predict admission, not boarding, and ignore live
+    census; real-time ADT/census feeds now make acting on a boarding flag
+    possible.*
 - **Bottom line:** *one or two sentences — the problem, why it matters, why it is
   open.*
-
-> *Running example — Admitted ED patients often wait hours for an inpatient bed
-> ("boarding"), which worsens outcomes and crowds the ED. Stakeholders: the
-> boarding patients, ED and inpatient clinicians, bed management (who act on a
-> warning), and the hospital (which pays). It's hard because boarding is driven by
-> hospital congestion, not the patient alone, so a patient-only view misleads —
-> and existing tools predict admission, not boarding.*
+  - *Example — a high-impact, system-driven delay that admission-focused tools
+    miss; open because it needs both patient and live-census signal.*
 
 <div id="part-2"></div>
 
@@ -82,20 +93,25 @@ as a design choice with a cost.
 
 - **What data is actually available** at the point your solution must operate?
   *(This scope is part of the problem, not a free choice.)*
+  - *Example — at the admission decision: ADT timestamps, vitals, labs, and orders
+    so far, plus the current census.*
 - **The data-generating process.** *How is that data produced, and for what
   purpose — a byproduct of care, or designed for research?*
+  - *Example — all a byproduct of care and operations, recorded for billing and
+    workflow, not research.*
 - **Provenance and what it hides.** *Who is missing or mismeasured; what does the
   data silently encode?*
+  - *Example — census counts staffed, not physical, beds; off-hours labs are
+    sparser, so "missing" is itself informative.*
 - **Scope tension.** *Does the problem as stated implicitly need data that won't
   be there when you act? If so, re-scope the problem — or make collecting that
   data part of the solution, and name the cost.*
+  - *Example — boarding can't be separated from census; without a live census feed
+    the data simply can't speak to it.*
 - **Bottom line:** *one or two sentences — the data in scope, where it comes from,
   and the main tension between the data and the problem.*
-
-> *Running example — At the admission decision, only data already on hand is in
-> scope: ADT timestamps, vitals, labs, and orders so far, plus the current census.
-> The problem can't be separated from census — boarding is a system outcome, so
-> without live census the data simply can't speak to it.*
+  - *Example — in scope is on-hand clinical data plus live census; the core tension
+    is that boarding is a system outcome on-hand patient data alone can't predict.*
 
 <div id="part-3"></div>
 
@@ -110,35 +126,41 @@ them.
     length of stay).*
   - *Corroborating metrics — if you succeeded for the reasons you expect, what
     else would change, and how would those metrics relate?*
+  - *Example — fewer prolonged (>12h) boards and less ED crowding, because bed
+    management acted on flags early enough to matter.*
 - **How would you know you failed?** *How could the project fail even if some of
   those success metrics still moved? (e.g., it costs too much to run, clinicians
   don't use it, or it works only for one group of patients.)*
+  - *Example — accurate flags but no slack to act on them, or staff ignore them,
+    so boarding doesn't actually move.*
 - **Your key metrics.** *Synthesize the above into the set of metrics that
   together characterize success and failure — the frontier your solution should
   push out. Too few and you ignore real-world constraints (and can't move the
   state of the art meaningfully); too many and you optimize a slice too narrow to
   matter.*
   - *How would you visualize them?*
+  - *Example — net benefit at the threshold bed management would act on, plus the
+    rate of >12h boards and an ED-crowding index.*
 - **How would you measure them?** *For each metric: how would you measure it in a
   real deployment with no resource limits? How would you approximate it under
   realistic deployment constraints? How would you approximate it in a retrospective
   dataset — and what error does each approximation introduce?*
   - *How would you detect those errors in real data — tell when a metric is, and
     isn't, capturing what you actually care about?*
+  - *Example — net benefit needs the counterfactual of acting early, which a
+    retrospective dataset can't show; approximate with historical board times and
+    flag the gap.*
 - **Confounders that could invalidate your evaluation.** *What real-world
   confounders, specific to your problem and data, could change or break your
   evaluation — hidden stratifications, subgroups that behave differently? Flag
   these early, as part of your robustness plan. (This is in addition to, not a
   replacement for, the fairness checks every model should get.)*
+  - *Example — ambulance/trauma arrivals are triaged differently from walk-ins,
+    and night-shift census behaves unlike daytime.*
 - **Bottom line:** *one or two sentences — your key success/failure metrics and
   the biggest threat to measuring them honestly.*
-
-> *Running example — Success = net benefit at the threshold bed management would
-> act on, early enough to act on; corroborating signs: fewer >12h boards and less
-> ED crowding. It could fail even while accurate — if there's no slack to act on
-> the flag, or staff ignore it. Retrospective data can't show the benefit of
-> acting early (it's counterfactual). Key confounder: ambulance/trauma arrivals
-> are triaged differently from walk-ins.*
+  - *Example — key metric is net benefit at an actionable threshold; the biggest
+    threat is that retrospective data can't capture the benefit of acting early.*
 
 <div id="part-4"></div>
 
@@ -148,31 +170,39 @@ exploit — and the fastest experiment that would tell you whether it works.
 
 - **Baselines and prior work.** *What naive solutions exist, and what have others
   tried? These are your baselines and comparisons.*
+  - *Example — admission-prediction tools, a simple census threshold, and logistic
+    regression on patient features.*
 - **What structure do they leverage?** *For each, what structure of your data or
   problem (if any) does it exploit?*
+  - *Example — each uses either physiology or system state, never both.*
 - **What's still unsolved, and why?** *On your Day 3 metrics, where do existing
   methods fall short — citing evidence where you have it, or reasoning about why
   they'll fail on a given metric where you don't?*
+  - *Example — none capture the acuity × congestion interaction, so they miss
+    boarding that only happens when a sick patient meets a full hospital.*
 - **What structure can you leverage?** *What structure — in your data, your
   problem, or the world — could you exploit to address what's left unsolved?*
+  - *Example — the interaction between patient acuity and live hospital census.*
 - **How would you use it, and why should it work?** *How do you bring that
   structure to bear, and what's the argument it should help? Map it across the
   modeling pipeline — data pre-processing, the model class / architecture, and the
   training objective / broader algorithm.*
+  - *Example — feed both patient features and live census to a model with an
+    explicit interaction term, since boarding is a joint function of the two.*
 - **How can you fail fast?** *What's the simplest experiment — or the simplest
   tweak to real data — that would make your idea succeed or fail in a clearly
   interpretable way? (Often the cleanest version is a quick test on synthetic data
   you fully control.)*
+  - *Example — on synthetic data, confirm a census-blind model must fail when the
+    hospital is full while the acuity × census model holds up.*
 - **Key experimental questions.** *For the project overall, what must you answer
   to demonstrate success — or a genuinely interesting failure?*
+  - *Example — does adding live census beat the best patient-only baseline on net
+    benefit, and is the gain concentrated when the hospital is congested?*
 - **Bottom line:** *one or two sentences — the structure you're leveraging and the
   first experiment that would test it.*
-
-> *Running example — Baselines: admission-prediction tools, a simple census
-> threshold, logistic regression on patient features — each uses either physiology
-> or system state, not both, so they miss the acuity × congestion interaction.
-> Leverage that interaction (acuity + live census); fail fast on synthetic data
-> where a census-blind model must fail when the hospital is full.*
+  - *Example — leverage the acuity × census interaction; first test is a synthetic
+    fail-fast showing census-blind models break at full capacity.*
 
 <div id="part-5"></div>
 

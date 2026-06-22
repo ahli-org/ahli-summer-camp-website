@@ -7,7 +7,6 @@ groups and workshops far more valuable.
 - [ ] **Look over the suggested readings** — each content day has a short list ([all readings, by day](/curriculum/#suggested-readings)).
 - [ ] **Pick your specialty track** — self-select the data-modality track closest to your project (see below).
 - [ ] **Find your home group** — your fixed small group for the week, and the days you facilitate ([home groups & facilitator rotation](/small-groups/)).
-- [ ] **Set up your accounts and tools** (PhysioNet, Colab, an AI coding assistant — see below).
 - [ ] **Prepare your two things to bring** — a printed poster and a prospective project (see below).
 - [ ] **Skim the [Project Workbook](/project-workbook/)** so the small-group and workshop blocks are spent on substance.
 - [ ] **Note Day 1 logistics** — an 8:30 AM start; everything is within walking distance (below).
@@ -41,17 +40,6 @@ both days.
    Hartvigsen (U Virginia).*
 
 If your project spans two tracks, pick the one your *data* most belongs to.
-
-## Accounts & tools to set up
-
-- **PhysioNet credentialing** — if you plan to use MIMIC-style data, start
-  [PhysioNet credentialing](https://physionet.org/) early; it can take days to
-  weeks. The [MIMIC-IV demo](https://physionet.org/content/mimic-iv-demo/) needs
-  no credentialing and is a good substrate for the workshops.
-- **A Google account for Colab** — you’ll build your Day 3 & 4 workshop notebooks
-  from scratch in Google Colab (or your own local Python setup).
-- **An AI coding assistant** — you’re encouraged to use one to scaffold a
-  synthetic stand-in for your project in the workshops.
 
 ## What to bring
 

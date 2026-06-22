@@ -53,11 +53,6 @@ export const slideResources: Resource[] = [
 
 export const instructorResources: Resource[] = [
   {
-    title: 'Instructor & lecturer guide',
-    description: 'Program design, teaching roles, and a brief for every day.',
-    internal: 'instructor-guide',
-  },
-  {
     title: 'Curriculum, schedule & lecture outlines',
     description: 'The day-by-day program; each day page carries a slide-by-slide outline of its morning lecture.',
     internal: 'curriculum',
