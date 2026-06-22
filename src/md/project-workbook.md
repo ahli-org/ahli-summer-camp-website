@@ -3,9 +3,8 @@ The Project Workbook is a **private thinking aid** for your own project. It is
 how you think about your project; you fill it in for yourself, and you decide what
 (if anything) to share.
 
-It has **four short parts**, one for each of Days 1–4: problem, data, defining
-success, and methods. **Day 5 has no workbook section** — it's a stress-test
-(see below).
+It has **four short parts**, one for each of Days 1–4: problem, data, evaluation,
+and methods. **Day 5 has no workbook section** — it's a stress-test (see below).
 
 These parts are **not a clean pipeline.** The problem, the data that actually
 exists, and what counts as success are deeply intertwined: pinning one down
@@ -37,6 +36,13 @@ poster — but the workbook stays yours.
 answer to each prompt in a line or two; delete what doesn't apply. Revisit earlier
 parts as later days change your view.*
 
+> **Running example (AI-generated).** A single project — early warning for ED
+> *boarding* (when an admitted patient waits hours for an inpatient bed) — runs
+> through the template in blockquotes like this, one part at a time, to show how
+> each prompt might be answered. It is illustrative and **not vetted**; yours will
+> differ. See the [worked examples](/project-workbook/example/) for this one in
+> full, plus others on different kinds of projects.
+
 ### Project title and one-line pitch
 One sentence: what you are doing and for whom.
 
@@ -60,15 +66,20 @@ here.
 - **Bottom line:** *one or two sentences — the problem, why it matters, why it is
   open.*
 
+> *Running example — Admitted ED patients often wait hours for an inpatient bed
+> ("boarding"), which worsens outcomes and crowds the ED. Stakeholders: the
+> boarding patients, ED and inpatient clinicians, bed management (who act on a
+> warning), and the hospital (which pays). It's hard because boarding is driven by
+> hospital congestion, not the patient alone, so a patient-only view misleads —
+> and existing tools predict admission, not boarding.*
+
 <div id="part-2"></div>
 
 ### Part 2 — Data *(Day 2)*
 Data is **not** downstream of the problem — the two are inseparable. Stating the
 problem already implies a *data scope*: the data realistically available at the
-moment your solution has to act. (If the problem is to flag, at ED presentation,
-who will deteriorate, then only data on hand at presentation is in scope — you
-can't lean on an MRI that won't be taken.) Make that scope explicit, and treat
-expanding it as a design choice with a cost.
+moment your solution has to act. Make that scope explicit, and treat expanding it
+as a design choice with a cost.
 
 - **What data is actually available** at the point your solution must operate?
   *(This scope is part of the problem, not a free choice.)*
@@ -82,6 +93,11 @@ expanding it as a design choice with a cost.
 - **Bottom line:** *one or two sentences — the data in scope, where it comes from,
   and the main tension between the data and the problem.*
 
+> *Running example — At the admission decision, only data already on hand is in
+> scope: ADT timestamps, vitals, labs, and orders so far, plus the current census.
+> The problem can't be separated from census — boarding is a system outcome, so
+> without live census the data simply can't speak to it.*
+
 <div id="part-3"></div>
 
 ### Part 3 — Evaluation *(Day 3)*
@@ -94,9 +110,7 @@ them.
   - *The root metric — the big-picture outcome that would move (e.g., mortality,
     length of stay).*
   - *Corroborating metrics — if you succeeded for the reasons you expect, what
-    else would change, and how would those metrics relate? (e.g., for a tool that
-    flags ED patients likely to deteriorate: high-acuity patients reach the ICU
-    sooner, while those who don't need it aren't sent there.)*
+    else would change, and how would those metrics relate?*
 - **How would you know you failed?** *How could the project fail even if some of
   those success metrics still moved? (e.g., it costs too much to run, clinicians
   don't use it, or it works only for one group of patients.)*
@@ -119,6 +133,13 @@ them.
   replacement for, the fairness checks every model should get.)*
 - **Bottom line:** *one or two sentences — your key success/failure metrics and
   the biggest threat to measuring them honestly.*
+
+> *Running example — Success = net benefit at the threshold bed management would
+> act on, early enough to act on; corroborating signs: fewer >12h boards and less
+> ED crowding. It could fail even while accurate — if there's no slack to act on
+> the flag, or staff ignore it. Retrospective data can't show the benefit of
+> acting early (it's counterfactual). Key confounder: ambulance/trauma arrivals
+> are triaged differently from walk-ins.*
 
 <div id="part-4"></div>
 
@@ -148,6 +169,12 @@ exploit — and the fastest experiment that would tell you whether it works.
 - **Bottom line:** *one or two sentences — the structure you're leveraging and the
   first experiment that would test it.*
 
+> *Running example — Baselines: admission-prediction tools, a simple census
+> threshold, logistic regression on patient features — each uses either physiology
+> or system state, not both, so they miss the acuity × congestion interaction.
+> Leverage that interaction (acuity + live census); fail fast on synthetic data
+> where a census-blind model must fail when the hospital is full.*
+
 <div id="part-5"></div>
 
 ### Day 5 — Stress-test *(no workbook section)*
@@ -156,3 +183,9 @@ assume it has been built and deployed, brainstorm where and why it would fail in
 the real world, and ask how those failure modes change your framing — sending you
 back to revise Parts 1–4. Keep a running list of failure modes if it helps, but
 the value is the discussion, not a written deliverable.
+
+> *Running example — Failure modes: the flag only fires when the hospital is
+> already full (no slack to act); it's gamed by admitting-service coding; it
+> degrades when a new unit shifts census patterns. Upshot: the intervention, not
+> just the model, is part of the project — rescope Part 1 toward "create
+> actionable lead time."*

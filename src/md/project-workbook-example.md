@@ -1,10 +1,14 @@
-A fully worked Project Workbook for a **fictional** project, to show what a
-strong, concise entry looks like for each part. Yours will differ — this is a
-calibration aid, not a template to copy. See the blank
-[Project Workbook template](/project-workbook/) to start your own.
+A few worked Project Workbooks, to show what strong, concise entries look like.
+These are **calibration aids, not templates to copy** — yours will differ. See the
+blank [Project Workbook template](/project-workbook/) to start your own.
 
-> **Fictional project — for illustration only.** Numbers and claims below are
-> invented to demonstrate the format.
+> ⚠️ **AI-generated and unvetted.** These examples were drafted by an AI assistant
+> to illustrate the format. The projects are fictional and the numbers and claims
+> are invented — treat them as illustrative only.
+
+The first example, **ED-Boarding Early Warning**, is the running example from the
+template, worked out in full. Two more (condensed) follow, on different kinds of
+projects.
 
 ## Project title and one-line pitch
 
@@ -137,3 +141,60 @@ it deploys as a flag on the bed-management dashboard. The week's discussions
 reshaped it most at Day 2 (census must be a feature) and Day 5 (the flag is
 useless without operational slack — so the intervention, not just the model, has
 to be designed).
+
+---
+
+## More examples (condensed)
+
+The same framework on two other kinds of project, in brief.
+
+### Example — Referable diabetic retinopathy in primary care
+**Pitch.** Flag, from a single fundus photo taken at a primary-care diabetes
+visit, which patients have referable retinopathy and should see ophthalmology.
+
+- **Problem.** Most vision loss from diabetic retinopathy is preventable with
+  timely referral, but many patients never get a dilated eye exam and primary care
+  can't grade images on site. Stakeholders: patients, primary-care clinicians (who
+  refer), ophthalmologists (capacity), payers.
+- **Data.** In scope: the fundus image captured in clinic plus basic EHR (HbA1c,
+  diabetes duration). Out of scope: OCT or specialist grading — unavailable in
+  primary care. Provenance: camera model and image quality vary by site; labels
+  carry grader disagreement.
+- **Evaluation.** Success = more referable cases caught and actually referred,
+  without flooding ophthalmology with false positives; the root metric is vision
+  loss averted. Failure even if accurate: clinicians don't act, it works on one
+  camera but not another, or it's worse on darker fundus pigmentation. Confounder:
+  camera/site differences and ungradable images (a hidden stratification).
+- **Methods.** Baselines: ophthalmologist grading (reference), image-quality +
+  lesion heuristics, an off-the-shelf CNN. Structure to leverage: lesion locality
+  and robustness to camera variation. Fail fast: recolor/degrade images to mimic a
+  new camera and check whether performance holds.
+- **Day 5 stress-test.** Fails silently on a new camera; ungradable images get
+  dropped and inflate the metrics; referral capacity can't absorb the true
+  positives.
+
+### Example — Faithful overnight handoff summaries
+**Pitch.** Draft a concise summary of an inpatient's overnight events for morning
+handoff from the notes and orders, without asserting anything the record doesn't
+support.
+
+- **Problem.** Handoffs are error-prone and time-consuming, and missed or garbled
+  events cause harm. Stakeholders: night and day clinicians, patients, the health
+  system. It's hard because success hinges on faithfulness (no hallucination) and
+  completeness — both hard to measure — and one confident wrong statement is
+  costly.
+- **Data.** In scope: the structured and free-text record for the stay up to the
+  handoff moment. Provenance: notes are noisy, copy-forwarded, and uneven across
+  services.
+- **Evaluation.** Success = clinicians trust and use the draft, with fewer missed
+  events and time saved, and no unsupported claims. Failure even if fluent: a
+  single hallucination erodes trust, or clinicians rubber-stamp it. Measuring
+  faithfulness is itself hard — proxy with claim-level support checks; gold
+  summaries are scarce and subjective. Confounder: note style varies by service.
+- **Methods.** Baselines: no summary (status quo), an extractive summary, a
+  general LLM prompt. Structure to leverage: ground every sentence in source spans
+  and constrain generation to the record. Fail fast: inject a known event into a
+  synthetic note and check it surfaces; add nothing and check the model invents
+  nothing.
+- **Day 5 stress-test.** Hallucinations under distribution shift; automation bias
+  (clinicians stop checking); silent omission of rare but critical events.
