@@ -3,7 +3,7 @@
 // Two audiences (students, instructors), each with public resources. A resource
 // links via exactly one of:
 //   internal — an on-site path (e.g. 'curriculum'), resolved with url()
-//   file     — a file in public/ (e.g. 'notebooks/x.ipynb'), served at base + file
+//   file     — a file in public/ (e.g. 'slides/day1-problems.pdf'), served at base + file
 //   href     — an external/absolute URL
 // A resource with none of these is rendered as "not yet available" (no link),
 // for material that won't exist until later (e.g. recordings).

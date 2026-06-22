@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL;
 
 const sections: { heading: string; eyebrow: string; items: Resource[]; note?: string }[] = [
   { eyebrow: 'For students', heading: 'Student resources', items: studentResources },
-  { eyebrow: 'Lecture slides', heading: 'Lecture slide decks', items: slideResources, note: 'Tentative drafts, actively being revised. Each opens as an interactive deck; a PDF is linked from the matching day page.' },
+  { eyebrow: 'Lecture slides', heading: 'Lecture slide decks', items: slideResources, note: 'Tentative drafts (PDF), actively being revised. The same decks are linked from each day’s page.' },
   { eyebrow: 'For instructors', heading: 'Instructor resources', items: instructorResources },
 ];
 
@@ -26,7 +26,7 @@ const external = (r: Resource) => Boolean(r.href);
   <Hero
     eyebrow="Resources"
     title="Materials for the camp"
-    lead="Reading, the Project Workbook, guides, and session recordings — gathered here as they’re ready. Everything is open."
+    lead="Reading, the Project Workbook, guides, and session recordings — gathered here as they’re ready."
   />
 
   {sections.map((s) => (

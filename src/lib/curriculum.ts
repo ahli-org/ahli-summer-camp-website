@@ -20,7 +20,6 @@ export interface CurriculumDay {
   leadLabel?: string; // defaults to "AM lecture"
   guest?: Person;
   guest2?: Person;    // optional second guest (Day 2 has two Sage Bionetworks guests)
-  panel?: boolean;
   morning: string;
   afternoon: string;
   questions: string;

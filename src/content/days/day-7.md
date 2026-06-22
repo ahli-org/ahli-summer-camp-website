@@ -46,7 +46,7 @@ Louise Durand-Janin.
 
 **Session B — 10:30–11:30 AM:** Alexander Schubert, Reyhaneh Hosseinpour,
 Guilherme Imai Aldeia, Milos Vukadinovic, Ayush Noori, Haoran Zhang,
-Roben Delos Reyes, Simon Lee, Antonio Mendoza, Amin Adibi, Divyam Madaan,
+Roben Delos Reyes, Simon A. Lee, Antonio Mendoza, Amin Adibi, Divyam Madaan,
 Sanjana Ramprasad, Umay Kulsoom, Hyungjun Yoon, Arvind Pillai, Somayyeh Mousavi,
 Anders Gjølbye, Amy Tai, Uzma Pathan, Jiyoun Kim.
 

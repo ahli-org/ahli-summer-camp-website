@@ -156,9 +156,9 @@ export interface GroupDay {
 export const groupDays: GroupDay[] = [
   { n: 1, topic: 'Problem framing' },
   { n: 2, topic: 'Data' },
-  { n: 3, topic: 'Evaluation & study design' },
+  { n: 3, topic: 'Evaluation' },
   { n: 4, topic: 'Methods & modeling' },
-  { n: 5, topic: 'Deployment' },
+  { n: 5, topic: 'Stress-test' },
 ];
 
 // Day d's facilitator is the d-th member in roster order. With 5 members and 5

@@ -18,11 +18,11 @@ learns from the room. The mode is **present**.
 Talks run in two parallel rooms (40-minute slots) after a 9:00 morning handoff;
 attend whichever talks you like. Open slots are filled by sign-up during the camp.
 
-**Room A — Alder 107** · *Moderators: Pete Szolovits & Tom Pollard*
+**Room A — Alder 107** · *Moderators: Peter Szolovits & Tom Pollard*
 
 | Time | Speaker |
 |---|---|
-| 9:15–9:55 | Simon Lee |
+| 9:15–9:55 | Simon A. Lee |
 | 9:55–10:35 | Sanjana Ramprasad |
 | 10:35–11:15 | Divyam Madaan |
 | 11:15–11:55 | Helena Coggan |

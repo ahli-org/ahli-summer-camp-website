@@ -17,7 +17,7 @@ stakeholders, and a reason it is still open.
 
 | Time | Block |
 |---|---|
-| 8:30–9:15 | Opening day materials — check-in, welcome & orientation, brief icebreaker |
+| 8:30–9:15 | Opening block — check-in, welcome & orientation (Tristan Naumann), brief icebreaker |
 | 9:15–10:30 | AM lecture (Szolovits) |
 | 10:30–11:00 | Coffee |
 | 11:00–12:30 | Small Group 1 — problem framing |

@@ -20,10 +20,10 @@ credible, is the model sound on its own terms); Day 5 concerns *external and
 deployment* validity. If your day touches "evaluation," be clear which rung
 you're on.
 
-**The Project Workbook.** Across the five content days, each participant keeps a
-short, **private** [Project Workbook](/project-workbook/) on their own project —
-one part per day (problem, data, evaluation, methods, deployment). It is a
-thinking aid, and **not graded**. Sessions should drive each
+**The Project Workbook.** Across Days 1–4, each participant keeps a short,
+**private** [Project Workbook](/project-workbook/) on their own project — one part
+per day (problem, data, evaluation, methods). Day 5 has no part; it is a
+stress-test of those four. It is a thinking aid, and **not graded**. Sessions should drive each
 participant's thinking on that day's part, not toward a submission.
 
 **The five-block content day (Days 1–5).** Every content day runs the same arc:
@@ -195,8 +195,8 @@ abstractions; that lived texture is the value. Your lecture sets up the red-team
 small groups and Raji's accountability-focused afternoon lecture.
 
 **Handoff.** Open with the handoff (Day 4 method rationales). Frame the small
-groups as a red team — the group tries to break each project as a whole — and
-name Workbook Part 5, the deployment plan.
+groups as a red team — the group tries to break each project as a whole,
+stress-testing the Day 1–4 Workbook. Day 5 has no Workbook part of its own.
 
 ### Day 6 — Practice Job Talks · Camp faculty
 
