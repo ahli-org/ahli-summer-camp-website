@@ -4,6 +4,7 @@ import ProfileDetail from '../../components/ProfileDetail.astro';
 import { url } from '../../lib/site';
 import { students } from '../../lib/students';
 import type { Student } from '../../lib/students';
+import { scheduleFor } from '../../lib/assignments';
 
 export function getStaticPaths() {
   return students.map((student) => ({ params: { slug: student.slug }, props: { student } }));
@@ -13,6 +14,8 @@ interface Props {
   student: Student;
 }
 const { student } = Astro.props;
+const sched = scheduleFor(student.slug);
+const hasSchedule = !!(sched.facilitate || sched.jobTalk || sched.poster);
 
 const metaBits = [student.position, student.affiliation].filter(Boolean).join(' · ');
 const description = student.tagline
@@ -33,5 +36,50 @@ const description = student.tagline
     highlights={student.highlights}
     backHref={url('students')}
     backLabel="Meet the rest of the cohort"
-  />
+  >
+    {hasSchedule && (
+      <div class="ataglance">
+        <p class="eyebrow">Your week at a glance</p>
+        <ul>
+          {sched.facilitate && (
+            <li>
+              <strong>Small group —</strong> you facilitate
+              {' '}<a href={`${url('small-groups')}#${sched.facilitate.groupName.toLowerCase()}`}>Group {sched.facilitate.groupN} · {sched.facilitate.groupName}</a>
+              {' '}on <a href={url(`curriculum/day-${sched.facilitate.day}`)}>Day {sched.facilitate.day}</a> ({sched.facilitate.topic}).
+            </li>
+          )}
+          {sched.jobTalk && (
+            <li>
+              <strong>Job talk —</strong> <a href={url('curriculum/day-6')}>Day 6</a> (Sat, Jun 27){sched.jobTalk.start ? `, ${sched.jobTalk.start}` : ''} · {sched.jobTalk.room}{sched.jobTalk.signup ? ' (sign-up slot)' : ''}.
+            </li>
+          )}
+          {sched.poster && (
+            <li>
+              <strong>Poster —</strong> <a href={url('curriculum/day-7')}>Day 7</a> (Sun, Jun 28) · Session {sched.poster.session} ({sched.poster.time}).
+            </li>
+          )}
+        </ul>
+      </div>
+    )}
+  </ProfileDetail>
 </BaseLayout>
+
+<style>
+  .ataglance {
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--purple);
+    border-radius: 8px;
+    background: var(--paper-2);
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+  .ataglance .eyebrow { margin-bottom: .5rem; }
+  .ataglance ul { list-style: none; margin: 0; padding: 0; }
+  .ataglance li {
+    padding: .35rem 0;
+    color: var(--ink-soft);
+    font-size: .95rem;
+  }
+  .ataglance li + li { border-top: 1px solid var(--line); }
+  .ataglance strong { color: var(--ink); }
+</style>

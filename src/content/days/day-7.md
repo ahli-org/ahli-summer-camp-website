@@ -36,6 +36,22 @@ evaluation → method → deployment. Running the session in two rounds lets eve
 both present and browse. Bring the printed poster you prepared before the camp
 (see [before you arrive](/before-you-arrive/)).
 
+## Poster assignments
+
+**Session A — 9:15–10:15 AM:** Helena Coggan, Sameer Neupane, Dominik Becker,
+Ferdaous Idlahcen, Chase Fensore, Yvonne Wu, Daeun Kyung, Grace (Xiyu) Ding,
+Jiho Kim, Sylvie Dobrota Lai, Tahmina Sultana Priya, Tiffany Hsieh, Kyungdo Kim,
+Ben Fox, Zhongyu Li, Hangyul Yoon, Dipendra Pant, Tae Jones, Ha Le,
+Louise Durand-Janin.
+
+**Session B — 10:30–11:30 AM:** Alexander Schubert, Reyhaneh Hosseinpour,
+Guilherme Imai Aldeia, Milos Vukadinovic, Ayush Noori, Haoran Zhang,
+Roben Delos Reyes, Simon Lee, Antonio Mendoza, Amin Adibi, Divyam Madaan,
+Sanjana Ramprasad, Umay Kulsoom, Hyungjun Yoon, Arvind Pillai, Somayyeh Mousavi,
+Anders Gjølbye, Amy Tai, Uzma Pathan, Jiyoun Kim.
+
+Each participant's own slot is also shown on their [student page](/students/).
+
 ## Additional resources
 
 - The closing-reflection slides (shared on the day).

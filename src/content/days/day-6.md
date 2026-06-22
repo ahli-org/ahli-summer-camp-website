@@ -13,17 +13,47 @@ people who have sat on hiring committees. The day is geared toward participants
 on or near the research job market; everyone else attends, asks questions, and
 learns from the room. The mode is **present**.
 
-## Schedule
+## Job-talk schedule
 
-| Time | Block |
+Talks run in two parallel rooms (40-minute slots) after a 9:00 morning handoff;
+attend whichever talks you like. Open slots are filled by sign-up during the camp.
+
+**Room A — Alder 107** · *Moderators: Pete Szolovits & Tom Pollard*
+
+| Time | Speaker |
 |---|---|
-| 9:00–9:15 | Morning handoff |
-| 9:15–12:00 | Concurrent job talks — Block 1 (parallel rooms) |
-| 12:00–1:00 | Lunch |
-| 1:00–3:45 | Concurrent job talks — Block 2 |
-| 3:45–4:00 | Coffee |
-| 4:00–6:00 | Concurrent job talks — Block 3 |
-| 6:00 | Dinner |
+| 9:15–9:55 | Simon Lee |
+| 9:55–10:35 | Sanjana Ramprasad |
+| 10:35–11:15 | Divyam Madaan |
+| 11:15–11:55 | Helena Coggan |
+| 12:00–1:00 | — Lunch — |
+| 1:00–1:40 | Tae Jones |
+| 1:40–2:20 | Guilherme Imai Aldeia |
+| 2:20–3:00 | Sameer Neupane |
+| 3:00–3:40 | Open — sign-up |
+| 3:45–4:00 | — Break — |
+| 4:00–4:40 | Open — sign-up |
+| 4:40–5:20 | Open — sign-up |
+
+**Room B — Alder 103** · *Moderators: Joyce Ho & Matthew McDermott*
+
+| Time | Speaker |
+|---|---|
+| 9:15–9:55 | Hyungjun Yoon |
+| 9:55–10:35 | Amin Adibi |
+| 10:35–11:15 | Jiho Kim |
+| 11:15–11:55 | Ha Le |
+| 12:00–1:00 | — Lunch — |
+| 1:00–1:40 | Hangyul Yoon |
+| 1:40–2:20 | Chase Fensore |
+| 2:20–3:00 | Kyungdo Kim |
+| 3:00–3:40 | Open — sign-up |
+| 3:45–4:00 | — Break — |
+| 4:00–4:40 | Open — sign-up |
+| 4:40–5:20 | Open — sign-up |
+
+Dinner follows at 6:00. Grace (Xiyu) Ding and Yvonne Wu are also presenting and
+will take sign-up slots.
 
 ## What you'll be able to do
 

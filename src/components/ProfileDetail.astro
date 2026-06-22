@@ -58,6 +58,8 @@ function fmtDate(d?: string): string {
 
 <section class="section">
   <div class="wrap">
+    <slot />
+
     {bio.length > 0 && (
       <div class="profile-bio">
         {bio.map((p) => <p>{p}</p>)}
