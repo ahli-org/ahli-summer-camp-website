@@ -69,7 +69,7 @@ export const days: CurriculumDay[] = [
     morning:
       'Study design and evaluation — estimands, utility-aligned metrics, statistical power, fairness, and threats to validity. Small groups dissect a provided evaluation case study.',
     afternoon:
-      'An afternoon lecture on evaluation pitfalls and disaggregated metrics. Small groups define their evaluation plan, then a workshop to build an evaluation notebook for your own project (worked examples and a template provided).',
+      'An afternoon lecture on evaluation pitfalls and disaggregated metrics. Small groups define their evaluation plan, then a workshop to build an evaluation notebook for your own project, from a blank notebook.',
     questions:
       'What would count as success, and how would you measure it credibly? What is your estimand? Which metrics track clinical utility, and how will you evaluate across subgroups?',
   },

@@ -68,10 +68,9 @@ and how you'd measure them. See [how the small groups run](/small-groups/).
 
 The **workshop** then has you build an evaluation notebook for your own
 project — discrimination, calibration, clinical utility, subgroup
-disaggregation, power, and leakage/shortcut probing. Start from the
-[Evaluation Lab template notebook](/notebooks/evaluation-lab/), and use an AI
-coding assistant to scaffold a synthetic stand-in for your project if you like.
-The notebook is a personal scratch tool — nothing is turned in.
+disaggregation, power, and leakage/shortcut probing. You start from a blank
+notebook (no template); use an AI coding assistant to scaffold a synthetic
+stand-in for your project if you like.
 
 The closing small group ends with each person noting how their evaluation
 thinking moved over the day.
@@ -87,7 +86,6 @@ evaluation.
 ## Additional resources
 
 - Lecture slides (tentative draft): [view the deck](/slides/day3-evaluation.html) · [PDF](/slides/day3-evaluation.pdf).
-- [Evaluation Lab notebook](/notebooks/evaluation-lab/) — the Day 3 workshop template.
 - [Project Workbook template](/project-workbook/#part-3) — Part 3.
 - [scikit-learn](https://scikit-learn.org/), [fairlearn](https://fairlearn.org/), and scikit-survival, as implementation references.
 - The [MIMIC-IV demo on PhysioNet](https://physionet.org/content/mimic-iv-demo/), for a real-data substrate.

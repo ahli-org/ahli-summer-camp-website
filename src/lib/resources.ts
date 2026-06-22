@@ -33,16 +33,6 @@ export const studentResources: Resource[] = [
     internal: 'curriculum#suggested-readings',
   },
   {
-    title: 'Evaluation Lab notebook (Day 3)',
-    description: 'A template notebook for building your project’s evaluation — view it, open in Colab, or download.',
-    internal: 'notebooks/evaluation-lab',
-  },
-  {
-    title: 'Methods Lab notebook (Day 4)',
-    description: 'A template notebook for building and comparing methods for your project — view it, open in Colab, or download.',
-    internal: 'notebooks/methods-lab',
-  },
-  {
     title: 'Session recordings',
     description: 'Video recordings of the lectures — posted after the camp.',
   },

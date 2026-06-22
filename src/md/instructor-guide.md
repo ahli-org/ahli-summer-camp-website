@@ -157,8 +157,8 @@ on: the estimand; metrics that correlate with clinical utility versus metrics of
 convenience; discrimination, calibration, and clinical utility; statistical power;
 fairness and subgroup criteria; and the major threats to internal validity. Your
 lecture sets up Salaudeen's empirical case that aggregate metrics hide subgroup
-failures. In the afternoon you anchor the
-[evaluation-lab notebook](/notebooks/evaluation-lab/).
+failures. In the afternoon you anchor the build-your-own evaluation-notebook
+workshop (participants start from a blank notebook — no template).
 
 **Handoff.** Open with the handoff (Day 2 data specs). Close by naming Workbook
 Part 3 (the evaluation plan) and pointing to the afternoon notebook workshop.
@@ -175,8 +175,8 @@ method choice is entangled with data structure and standards. Cover foundation
 models explicitly, framed as *"what method for what data and what target,"* not as
 a model zoo. Coordinate with Gerych so the talks divide cleanly: you cover
 *building*; he covers making the built model *trustworthy without breaking it*. In
-the afternoon you anchor the
-[methods-lab notebook](/notebooks/methods-lab/).
+the afternoon you anchor the build-your-own methods-notebook workshop
+(participants start from a blank notebook — no template).
 
 **Handoff.** Open with the handoff (Day 3 evaluation plans). Close by naming
 Workbook Part 4 — the method rationale.

@@ -67,10 +67,9 @@ experiment to test it. See [how the small groups run](/small-groups/).
 
 The **workshop** then has you build a methods notebook for your project — a
 baseline, stronger models, a representation / foundation-model approach, and a
-comparison harness that reuses your Day 3 evaluation moves. Start from the
-[Methods Lab template notebook](/notebooks/methods-lab/); a prompt-a-thon is the
-alternative track for LLM-centric projects. The notebook is a personal scratch
-tool — nothing is turned in.
+comparison harness that reuses your Day 3 evaluation moves. You start from a
+blank notebook (no template); a prompt-a-thon is the alternative track for
+LLM-centric projects.
 
 The closing small group ends with each person noting how their method thinking
 moved over the day.
@@ -87,7 +86,6 @@ the project.
 ## Additional resources
 
 - Lecture slides (tentative draft): [view the deck](/slides/day4-methods.html) · [PDF](/slides/day4-methods.pdf).
-- [Methods Lab notebook](/notebooks/methods-lab/) — the Day 4 workshop template.
 - [Project Workbook template](/project-workbook/#part-4) — Part 4.
 - The [MEDS ecosystem documentation](https://medical-event-data-standard.github.io/), as an implementation reference.
 - Current EHR foundation models worth knowing for the foundation-vs-task-specific decision: ETHOS, CEHR-GPT, and COMET, plus the MEDS-DEV benchmark (names to look up — verify the latest before relying on them).

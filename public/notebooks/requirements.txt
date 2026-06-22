@@ -1,9 +1,0 @@
-# Dependencies for the AHLI Summer Camp workshop notebooks (Days 3 & 4).
-# Run locally with:  python -m pip install -r requirements.txt
-# (Colab already has numpy/pandas/scikit-learn/matplotlib; add scikit-survival
-#  there with: %pip install scikit-survival)
-numpy>=1.26
-pandas>=2.0
-scikit-learn>=1.4
-matplotlib>=3.8
-scikit-survival>=0.22   # for the time-to-event substrate
