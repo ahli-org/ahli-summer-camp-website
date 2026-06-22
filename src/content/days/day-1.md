@@ -81,7 +81,7 @@ domain, and the recurring ways problems in it are mis-posed.
 The closing small group ends with each person taking a few minutes to say how
 their problem framing shifted over the day.
 
-## Project Workbook — Part 1: Problem framing
+## Project Workbook — Part 1: Problem
 
 Using the WIDOM framing in the [Project Workbook template](/project-workbook/#part-1):
 your one-line pitch, what the problem is, who the stakeholders are, why it is

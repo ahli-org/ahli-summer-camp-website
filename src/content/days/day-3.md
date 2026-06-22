@@ -76,10 +76,12 @@ The notebook is a personal scratch tool — nothing is turned in.
 The closing small group ends with each person noting how their evaluation
 thinking moved over the day.
 
-## Project Workbook — Part 3: Evaluation & study design
+## Project Workbook — Part 3: Defining success
 
-Estimand, primary and secondary metrics, subgroup / fairness plan, sample-size
-reasoning, and the top three threats to validity.
+What would count as success, in terms you could measure: the metrics you actually
+care about (often causal, not just predictive), how you'd measure them for real
+versus approximate them retrospectively, where competing metrics trade off, and
+the confounders that would change what your evaluation means.
 
 ## Additional resources
 

@@ -75,12 +75,12 @@ tool — nothing is turned in.
 The closing small group ends with each person noting how their method thinking
 moved over the day.
 
-## Project Workbook — Part 4: Method & modeling
+## Project Workbook — Part 4: Methods & modeling
 
-Your chosen approach justified against data and metrics; the
-foundation-vs-task-specific and fine-tune/prompt/train-from-scratch decisions;
-your baseline; an internal-validation plan; and your main risk with a credible
-alternative.
+What about your data and problem actually shapes the modeling — the features,
+structure, timing, missingness, or label quirks that matter — then the approach
+you'd choose, the simplest baseline that could work, and your main methodological
+risk with a credible alternative.
 
 ## Additional resources
 

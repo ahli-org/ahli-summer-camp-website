@@ -74,10 +74,11 @@ shifted over the day.
 
 ## Project Workbook — Part 2: Data
 
-The data-generating process, what data already exists, your access plan,
-anticipated provenance-driven bias, and a gap check: does the available data
-actually support your Part 1 problem? If not, re-scope the problem or change the
-data plan — and note that here.
+The data realistically in scope at the point your solution must act, the
+data-generating process behind it, and what its provenance hides. Data and the
+problem aren't separable — the problem already implies a data scope — so if the
+data you'd need won't be there when you act, re-scope the problem or make
+collecting it part of the solution, and note that here.
 
 ## Additional resources
 

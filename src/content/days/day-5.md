@@ -78,15 +78,16 @@ Cheplygina (2022) on imaging methodological failures; Ganapathi et al. (2022),
 STANDING Together; Vidal et al. (2023) on US AI regulation; Agarwal et al. (2023)
 on combining human and AI expertise.
 
-## Project Workbook — Part 5: Deployment
+## Project Workbook — Day 5: Stress-test (no workbook section)
 
-Where the model's output lands in the workflow; the failure modes surfaced by
-the red team; your monitoring and drift plan; your audit plan; and the people
-and approvals the deployment needs.
+Day 5 has no structured Workbook part. The group stress-tests each project:
+assume it's built and deployed, brainstorm where and why it would fail in the
+real world, and use those failure modes to revise your Day 1–4 framing. Keep a
+running list of failure modes if it helps — but the discussion is the point.
 
 ## Additional resources
 
 - Lecture slides (tentative draft): [view the deck](/slides/day5-deployment.html) · [PDF](/slides/day5-deployment.pdf).
-- [Project Workbook template](/project-workbook/#part-5) — Part 5.
+- [Project Workbook](/project-workbook/#part-5) — the Day 5 stress-test (and revisit Parts 1–4).
 - The [TRIPOD+AI reporting checklist](https://doi.org/10.1136/bmj-2023-078378).
 - Institutional model-monitoring and audit frameworks referenced in the readings.

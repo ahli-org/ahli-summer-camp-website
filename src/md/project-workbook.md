@@ -1,30 +1,33 @@
 The Project Workbook is a **private thinking aid** for your own project. It is
 **not turned in and not graded** — no one collects it. Its only job is to sharpen
-how you think about your project across the five content days; you fill it in for
-yourself, and you decide what (if anything) to share.
+how you think about your project; you fill it in for yourself, and you decide what
+(if anything) to share.
 
-It has five parts — one per content day: problem framing, data, evaluation,
-methods, and deployment. The parts are **living**: when a later day changes how
-you see an earlier one, go back and revise it.
+It has **four short parts**, one for each of Days 1–4: problem, data, defining
+success, and methods. **Day 5 has no workbook section** — it's a stress-test
+(see below).
+
+These parts are **not a clean pipeline.** The problem, the data that actually
+exists, and what counts as success are deeply intertwined: pinning one down
+reshapes the others. So treat the parts as **living** — when a later day changes
+how you see an earlier one, go back and revise it.
 
 **Keep it short.** The point is to find the *right concise statement* for each
-prompt — a sentence or two — not to argue a half-formed one at length. A good
-entry is a few clear lines. Time spent in discussion and thinking will move your
-project much further than time spent polishing text, so use the prompts to get to
-the heart of each question, talk it through with your group, and refine the
-workbook afterward if you want to. The prompts are a guide, not a form: if one
-doesn't fit your project, adapt it or skip it.
+prompt — a sentence or two — not to argue a half-formed one at length. Time spent
+in discussion and thinking will move your project much further than time spent
+polishing text. The prompts are a guide, not a form: if one doesn't fit your
+project, adapt it or skip it.
 
 You'll lean on this thinking for your Day 6 practice job talk and your Day 7
 poster — but the workbook stays yours.
 
-| Day | Part | Mode |
-|---|---|---|
-| 1 | Problem framing | Frame |
-| 2 | Data | Interrogate |
-| 3 | Evaluation & study design | Critique |
-| 4 | Method & modeling | Build |
-| 5 | Deployment | Stress-test |
+| Day | Part |
+|---|---|
+| 1 | Problem |
+| 2 | Data |
+| 3 | Defining success |
+| 4 | Methods & modeling |
+| 5 | *Stress-test — no workbook section* |
 
 ---
 
@@ -39,7 +42,7 @@ One sentence: what you are doing and for whom.
 
 <div id="part-1"></div>
 
-### Part 1 — Problem framing *(Day 1)*
+### Part 1 — Problem *(Day 1)*
 Adapted from the WIDOM framing structure. Resist naming a method here — this part
 is about the problem.
 
@@ -58,59 +61,74 @@ is about the problem.
 <div id="part-2"></div>
 
 ### Part 2 — Data *(Day 2)*
-- **The data-generating process.** *How is your data produced? Care byproduct, or
-  designed for research?*
-- **What data already exists** independent of any AI system you would build?
-- **Access plan.** *Credentialing, data use agreements, IRB — and a realistic
-  timeline.*
-- **Anticipated provenance-driven bias.** *Who is missing; what does the
-  provenance silently encode?*
-- **Gap check.** *Does the data that actually exists support the Part 1 problem?
-  If not, re-scope the problem or change the data plan — and note that here.*
-- **Bottom line:** *one or two sentences — the data source, the access path, the
-  main bias.*
+Data is **not** downstream of the problem — the two are inseparable. Stating the
+problem already implies a *data scope*: the data realistically available at the
+moment your solution has to act. (If the problem is to flag, at ED presentation,
+who will deteriorate, then only data on hand at presentation is in scope — you
+can't lean on an MRI that won't be taken.) Make that scope explicit, and treat
+expanding it as a design choice with a cost.
+
+- **What data is actually available** at the point your solution must operate?
+  *(This scope is part of the problem, not a free choice.)*
+- **The data-generating process.** *How is that data produced, and for what
+  purpose — a byproduct of care, or designed for research?*
+- **Provenance and what it hides.** *Who is missing or mismeasured; what does the
+  data silently encode?*
+- **Scope tension.** *Does the problem as stated implicitly need data that won't
+  be there when you act? If so, re-scope the problem — or make collecting that
+  data part of the solution, and name the cost.*
+- **Bottom line:** *one or two sentences — the data in scope, where it comes from,
+  and the main tension between the data and the problem.*
 
 <div id="part-3"></div>
 
-### Part 3 — Evaluation & study design *(Day 3)*
-- **Estimand.** *What exactly are you trying to measure?*
-- **Primary metric** and why it tracks the real clinical decision *(not a metric
-  of convenience)*.
-- **Secondary metrics.** *Calibration, decision-curve / net benefit, others as
-  relevant.*
-- **Subgroup / fairness evaluation plan.** *Which subgroups, and what gap would
-  concern you.*
-- **Sample size / power.** *How much test data do you need for a usable estimate?*
-- **Top 3 threats to internal validity** and how you will guard against each
-  *(leakage, shortcut learning, distribution shift, …)*.
-- **Bottom line:** *one or two sentences — what success means, how you'll measure
-  it, the biggest validity risk.*
+### Part 3 — Defining success *(Day 3)*
+What would make this a success, in terms you could actually measure? Success is
+often *implied by the problem* — the work is to make it explicit: which metrics
+you truly care about, how you'd measure them for real, how you'd approximate them
+in retrospective data, and how competing metrics trade off.
+
+- **What does success mean here?** *Name the metrics you actually care about —
+  which may be causal (who would benefit from an action), not just predictive
+  accuracy.*
+- **Measuring for real vs. retrospectively.** *How would you measure each metric
+  in deployment? How would you approximate it in retrospective data — and what is
+  lost in the approximation?*
+- **Competing metrics.** *Where do the things you care about trade off against
+  each other, and how would you navigate it? (e.g., waiting for more data raises
+  accuracy but costs time.)*
+- **Confounders that change the meaning of your evaluation.** *What subgroup or
+  process structure could mislead you if ignored? (e.g., trauma arrivals by
+  ambulance are triaged through a different process than walk-ins — don't conflate
+  them.) This is about anticipating specific confounders, not checking off a
+  "fairness plan."*
+- **Bottom line:** *one or two sentences — what success means, and the metric
+  trade-off or confounder you most have to respect.*
 
 <div id="part-4"></div>
 
-### Part 4 — Method & modeling *(Day 4)*
-- **Chosen approach** and why it fits your data (Part 2) and your metrics
-  (Part 3).
-- **Foundation vs. task-specific model** — your decision and your reasoning.
-- **Fine-tune / prompt / train-from-scratch** — your decision and your reasoning.
-- **Baseline.** *The simplest approach that could work — and why it is not enough.*
-- **Internal-validation plan** during development.
+### Part 4 — Methods & modeling *(Day 4)*
+Start not from a model menu but from **what about your data and problem actually
+shapes the modeling** — the features, structure, timing, missingness, or
+label quirks that meaningfully affect how you'd model. Then commit to an approach
+and defend it against the simplest thing that could work.
+
+- **What about your data/problem setup meaningfully affects modeling?** *Features,
+  temporal structure, missingness, label noise, the data scope from Part 2,
+  whether the question is causal or predictive — what genuinely constrains the
+  method?*
+- **Chosen approach** and why it fits the above and your Part 3 success criteria.
+- **Baseline.** *The simplest approach that could work — and why it is (or isn't)
+  enough.*
 - **Main methodological risk**, and one credible alternative you considered.
-- **Bottom line:** *one or two sentences — the method, why it fits, the main risk.*
+- **Bottom line:** *one or two sentences — what about the data drives the method,
+  and the main risk.*
 
 <div id="part-5"></div>
 
-### Part 5 — Deployment *(Day 5)*
-On Day 5 your group red-teams each project as a whole — imagine it is built and
-deployed, and it fails in the real world: where, and why? Use what surfaces to
-scope risks and, if needed, revise your framing.
-
-- **Where the output lands.** *Where in the clinical workflow does your model's
-  output appear, and who acts on it?*
-- **Failure modes** surfaced when the group red-teamed your project.
-- **Monitoring & drift plan.** *How will you know the model has decayed?*
-- **Audit plan.** *How will the model be checked while it runs?*
-- **People & approvals.** *The collaborators, roles, and sign-offs a real
-  deployment needs.*
-- **Bottom line:** *one or two sentences — where it deploys, the top failure mode,
-  the monitoring plan.*
+### Day 5 — Stress-test *(no workbook section)*
+Day 5 has no structured entry. Instead, your group **stress-tests each project**:
+assume it has been built and deployed, brainstorm where and why it would fail in
+the real world, and ask how those failure modes change your framing — sending you
+back to revise Parts 1–4. Keep a running list of failure modes if it helps, but
+the value is the discussion, not a written deliverable.
