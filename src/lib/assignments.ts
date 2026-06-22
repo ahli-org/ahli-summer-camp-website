@@ -28,12 +28,8 @@ const JOB_TALKS: Record<string, { room: 'A' | 'B'; start: string }> = {
   'hangyul-yoon': { room: 'B', start: '1:00 PM' },
   'chase-fensore': { room: 'B', start: '1:40 PM' },
   'kyungdo-kim': { room: 'B', start: '2:20 PM' },
-};
-
-// Confirmed presenters not yet assigned a specific time (sign-up slots).
-const JOB_TALK_SIGNUPS: Record<string, 'A' | 'B'> = {
-  'grace-xiyu-ding': 'A',
-  'yvonne-wu': 'B',
+  'grace-xiyu-ding': { room: 'A', start: '3:00 PM' },
+  'yvonne-wu': { room: 'B', start: '3:00 PM' },
 };
 
 // Posters — Sunday, Jun 28 (Day 7).
@@ -61,7 +57,7 @@ const POSTERS: Record<string, 'A' | 'B'> = {
 
 export interface StudentSchedule {
   facilitate?: { groupN: number; groupName: string; day: number; topic: string };
-  jobTalk?: { room: string; start?: string; signup?: boolean };
+  jobTalk?: { room: string; start?: string };
   poster?: { session: 'A' | 'B'; time: string };
 }
 
@@ -79,8 +75,6 @@ export function scheduleFor(slug: string): StudentSchedule {
 
   if (JOB_TALKS[slug]) {
     out.jobTalk = { room: ROOMS[JOB_TALKS[slug].room], start: JOB_TALKS[slug].start };
-  } else if (JOB_TALK_SIGNUPS[slug]) {
-    out.jobTalk = { room: ROOMS[JOB_TALK_SIGNUPS[slug]], signup: true };
   }
 
   if (POSTERS[slug]) {

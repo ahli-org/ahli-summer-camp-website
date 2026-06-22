@@ -30,7 +30,7 @@ attend whichever talks you like. Open slots are filled by sign-up during the cam
 | 1:00–1:40 | Tae Jones |
 | 1:40–2:20 | Guilherme Imai Aldeia |
 | 2:20–3:00 | Sameer Neupane |
-| 3:00–3:40 | Open — sign-up |
+| 3:00–3:40 | Grace (Xiyu) Ding |
 | 3:45–4:00 | — Break — |
 | 4:00–4:40 | Open — sign-up |
 | 4:40–5:20 | Open — sign-up |
@@ -47,13 +47,12 @@ attend whichever talks you like. Open slots are filled by sign-up during the cam
 | 1:00–1:40 | Hangyul Yoon |
 | 1:40–2:20 | Chase Fensore |
 | 2:20–3:00 | Kyungdo Kim |
-| 3:00–3:40 | Open — sign-up |
+| 3:00–3:40 | Yvonne Wu |
 | 3:45–4:00 | — Break — |
 | 4:00–4:40 | Open — sign-up |
 | 4:40–5:20 | Open — sign-up |
 
-Dinner follows at 6:00. Grace (Xiyu) Ding and Yvonne Wu are also presenting and
-will take sign-up slots.
+Dinner follows at 6:00.
 
 ## What you'll be able to do
 
