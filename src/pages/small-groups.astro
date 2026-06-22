@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import { url, SITE } from '../lib/site';
-import { groups, facilitatorsForGroup } from '../lib/groups';
+import { groups } from '../lib/groups';
+import { constellations } from '../lib/constellations';
 
 const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
 ---
@@ -147,61 +148,46 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
     </div>
   </section>
 
-  <!-- The groups + facilitator rotation -->
+  <!-- The groups -->
   <section class="section">
     <div class="wrap">
       <p class="eyebrow">The {groups.length} groups</p>
-      <h2>Groups &amp; facilitator rotation</h2>
+      <h2>The groups</h2>
       <p>
-        Find your group below. The schedule shows who facilitates each day — one
-        member per day, in roster order, leading both of that day's small-group
-        blocks. Days 6 (funding panel) and 7 (presentations) have no home-group
-        session.
+        Find your group below. Each has an identity <strong>color</strong> — it
+        matches your name-tag sticker — and a constellation. Members are listed in
+        the order they facilitate: the first leads Day 1's discussions, the next
+        Day 2, and so on through Day 5. Days 6 (job talks) and 7 (posters) have no
+        home-group session.
       </p>
 
-      {groups.map((g) => (
-        <article class="group">
-          <header class="group-head">
-            <span class="group-badge">{g.name}</span>
-            <div>
-              <h3 id={g.name.toLowerCase()}>Group {g.n} · {g.name}</h3>
-            </div>
-          </header>
+      <div class="group-grid">
+        {groups.map((g) => (
+          <article class="group" style={`--g:${g.color};--gink:${g.ink}`}>
+            <header class="group-head">
+              <span class="group-badge">
+                <svg class="constellation" viewBox="0 0 64 64" aria-hidden="true" set:html={constellations[g.name]} />
+              </span>
+              <div>
+                <h3 id={g.name.toLowerCase()}>Group {g.n} · {g.name}</h3>
+                <p class="group-cap">In facilitation order — each member leads the day shown.</p>
+              </div>
+            </header>
 
-          <div class="group-cols">
-            <div class="group-members">
-              <h4>Members <span class="muted">({g.members.length})</span></h4>
-              <ul class="member-list">
-                {g.members.map((m) => (
-                  <li>
+            <ul class="member-list">
+              {g.members.map((m, i) => (
+                <li>
+                  <span class="member-line">
                     <a href={url(`students/${m.slug}`)}>{m.name}</a>
-                    {m.stage && <span class="member-stage">{m.stage}</span>}
-                    <span class="member-focus">{m.focus}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div class="group-rota">
-              <h4>Facilitator rotation</h4>
-              <table class="rota">
-                <thead>
-                  <tr><th>Day</th><th>Focus</th><th>Facilitator</th></tr>
-                </thead>
-                <tbody>
-                  {facilitatorsForGroup(g).map((r) => (
-                    <tr>
-                      <td class="rota-day">{r.day}</td>
-                      <td>{r.topic}</td>
-                      <td>{r.facilitator.name}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </article>
-      ))}
+                    <span class="member-day">Day {i + 1}</span>
+                  </span>
+                  <span class="member-focus">{m.focus}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
 
       <div class="btn-row">
         <a class="btn btn-primary" href={url('curriculum')}>See the daily curriculum</a>
@@ -213,97 +199,72 @@ const totalStudents = groups.reduce((n, g) => n + g.members.length, 0);
 </BaseLayout>
 
 <style>
+  .group-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 1.6rem;
+  }
+  @media (min-width: 900px) {
+    .group-grid { grid-template-columns: 1fr 1fr; }
+  }
+
   .group {
     border: 1px solid var(--line);
+    border-left: 6px solid var(--g);
     border-radius: 10px;
-    padding: 1.4rem 1.5rem 1.6rem;
-    margin-top: 1.6rem;
+    padding: 1.3rem 1.4rem 1.4rem;
     background: var(--card);
   }
   .group-head {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.1rem;
+    gap: .9rem;
+    margin-bottom: .9rem;
   }
   .group-badge {
     flex: 0 0 auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 11px;
+    background: var(--g);
+    color: var(--gink);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 4.4rem;
-    padding: .55rem .7rem;
-    border-radius: 8px;
-    background: var(--purple);
-    color: #fff;
-    font-family: var(--serif, inherit);
-    font-weight: 700;
-    font-size: .95rem;
-    letter-spacing: .02em;
   }
+  .constellation { width: 80%; height: 80%; display: block; }
   .group-head h3 { margin: 0; }
-
-  .group-cols {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 1.6rem;
-  }
-  .group-cols h4 {
-    margin: 0 0 .6rem;
-    font-size: .82rem;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    color: var(--ink-soft);
-  }
-  .muted { color: var(--ink-faint); font-weight: 400; }
+  .group-cap { margin: .15rem 0 0; font-size: .78rem; color: var(--ink-faint); }
 
   .member-list { list-style: none; margin: 0; padding: 0; }
   .member-list li {
-    padding: .4rem 0;
+    padding: .5rem 0;
     border-top: 1px solid var(--line);
   }
   .member-list li:first-child { border-top: 0; }
-  .member-list a { font-weight: 600; }
-  .member-stage {
-    margin-left: .5rem;
-    font-size: .72rem;
-    font-weight: 600;
-    color: var(--teal, var(--purple));
-    text-transform: uppercase;
+  .member-line {
+    display: flex;
+    align-items: baseline;
+    gap: .55rem;
+    flex-wrap: wrap;
+  }
+  .member-line a { font-weight: 600; }
+  .member-day {
+    font-size: .68rem;
+    font-weight: 700;
     letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--gink);
+    background: var(--g);
+    padding: .12rem .5rem;
+    border-radius: 999px;
+    white-space: nowrap;
   }
   .member-focus {
     display: block;
     font-size: .88rem;
     color: var(--ink-soft);
-    margin-top: .1rem;
-  }
-
-  .rota {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .88rem;
-  }
-  .rota th, .rota td {
-    text-align: left;
-    padding: .4rem .5rem;
-    border-bottom: 1px solid var(--line);
-    vertical-align: top;
-  }
-  .rota thead th {
-    font-size: .72rem;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    color: var(--ink-soft);
-    border-bottom: 2px solid var(--line);
-  }
-  .rota-day {
-    color: var(--teal, var(--purple));
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-  }
-
-  @media (max-width: 640px) {
-    .group-cols { grid-template-columns: 1fr; gap: 1.2rem; }
+    margin-top: .15rem;
   }
 </style>

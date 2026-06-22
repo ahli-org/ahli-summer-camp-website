@@ -25,13 +25,20 @@ export interface GroupMember {
 export interface Group {
   n: number;          // group number (1–8)
   name: string;       // constellation name
+  color: string;      // identity color (matches the physical name-tag sticker)
+  ink: string;        // text/icon color that reads on `color`
   members: GroupMember[];
 }
+
+// Colors are matched to the sticker sheet, in row order from the top:
+// 1 lime, 2 indigo, 3 purple, 4 magenta, 5 red, 6 orange, 7 yellow, 8 coral.
 
 export const groups: Group[] = [
   {
     n: 1,
     name: 'Orion',
+    color: '#8CC63E',
+    ink: '#1f2a07',
     members: [
       { slug: 'jiho-kim', name: 'Jiho Kim', stage: 'Postdoc', focus: 'LLM agents for error-free electronic health records' },
       { slug: 'tae-jones', name: 'Tae Jones', stage: 'PhD Y5', focus: 'Human-centered AI for health equity' },
@@ -43,6 +50,8 @@ export const groups: Group[] = [
   {
     n: 2,
     name: 'Lyra',
+    color: '#4254A6',
+    ink: '#ffffff',
     members: [
       { slug: 'helena-coggan', name: 'Helena Coggan', stage: 'Postdoc', focus: 'Real-time AI for emergency-department care quality' },
       { slug: 'hangyul-yoon', name: 'Hangyul Yoon', stage: 'PhD Y5', focus: 'Medical vision-language AI' },
@@ -54,6 +63,8 @@ export const groups: Group[] = [
   {
     n: 3,
     name: 'Cygnus',
+    color: '#9560A8',
+    ink: '#ffffff',
     members: [
       { slug: 'guilherme-imai-aldeia', name: 'Guilherme Imai Aldeia', stage: 'Postdoc', focus: 'Interpretable AI for brain-disorder diagnosis' },
       { slug: 'daeun-kyung', name: 'Daeun Kyung', stage: 'PhD Y5', focus: 'Reinforcement-trained doctor agents' },
@@ -65,6 +76,8 @@ export const groups: Group[] = [
   {
     n: 4,
     name: 'Aquila',
+    color: '#E84A8F',
+    ink: '#ffffff',
     members: [
       { slug: 'sameer-neupane', name: 'Sameer Neupane', stage: 'Postdoc', focus: 'Multimodal AI for neurodevelopmental screening' },
       { slug: 'anders-gjolbye', name: 'Anders Gjølbye', stage: 'PhD Y5', focus: 'Trustworthy EEG foundation models for neurodiagnostics' },
@@ -76,6 +89,8 @@ export const groups: Group[] = [
   {
     n: 5,
     name: 'Perseus',
+    color: '#E5402B',
+    ink: '#ffffff',
     members: [
       { slug: 'yvonne-wu', name: 'Yvonne Wu', stage: 'Postdoc', focus: 'Generative AI for student mental well-being' },
       { slug: 'haoran-zhang', name: 'Haoran Zhang', stage: 'PhD Y5', focus: 'Fairness and robustness in clinical machine learning' },
@@ -87,6 +102,8 @@ export const groups: Group[] = [
   {
     n: 6,
     name: 'Andromeda',
+    color: '#F39A3C',
+    ink: '#3a2406',
     members: [
       { slug: 'hyungjun-yoon', name: 'Hyungjun Yoon', stage: 'PhD Y6', focus: 'Personalized health LLMs on the edge' },
       { slug: 'uzma-pathan', name: 'Uzma Pathan', stage: 'PhD Y5', focus: 'Modeling treatment gaps in opioid use disorder' },
@@ -98,6 +115,8 @@ export const groups: Group[] = [
   {
     n: 7,
     name: 'Cassiopeia',
+    color: '#F6D21F',
+    ink: '#3a3406',
     members: [
       { slug: 'sanjana-ramprasad', name: 'Sanjana Ramprasad', stage: 'PhD Y6', focus: 'Curbing hallucination in medical language models' },
       { slug: 'alexander-schubert', name: 'Alexander Schubert', stage: 'PhD Y5', focus: 'Data science for precision cardiovascular health' },
@@ -109,6 +128,8 @@ export const groups: Group[] = [
   {
     n: 8,
     name: 'Draco',
+    color: '#E96A6C',
+    ink: '#ffffff',
     members: [
       { slug: 'grace-xiyu-ding', name: 'Grace (Xiyu) Ding', stage: 'PhD Y5', focus: 'Federated Bayesian models for health equity' },
       { slug: 'arvind-pillai', name: 'Arvind Pillai', stage: 'PhD Y5', focus: 'Wearable sensing and foundation models for mental health' },
