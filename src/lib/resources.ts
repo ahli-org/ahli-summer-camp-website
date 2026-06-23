@@ -44,6 +44,8 @@ export const slideResources: Resource[] = [
   { title: 'Day 1 — Welcome & orientation (Naumann)', file: 'slides/opening-remarks.pdf' },
   { title: 'Day 1 — Problems in ML4H (Szolovits)', file: 'slides/day1-problems.pdf' },
   { title: 'Day 1 — Formulating impactful ML4H research questions (Alsentzer)', file: 'slides/day1-alsentzer.pdf' },
+  { title: 'Day 2 — Data (Pollard) — HTML deck', file: 'slides/day2-data.html' },
+  { title: 'Day 2 — Data (Pollard) — PDF', file: 'slides/day2-data.pdf' },
   { title: 'Day 2 — Genomics & data sharing (Sieberts & Banerjee)', file: 'slides/day2-sieberts-banerjee.pdf' },
   { title: 'Day 3 — Evaluation & Study Design (Joshi)', file: 'slides/day3-evaluation.pdf' },
   { title: 'Day 3 — Evaluation pitfalls (Salaudeen)', file: 'slides/day3-salaudeen.pdf' },
