@@ -51,6 +51,8 @@ export const slideResources: Resource[] = [
   { title: 'Day 3 — Evaluation & Study Design (Joshi) — PDF', file: 'slides/day3-evaluation.pdf' },
   { title: 'Day 3 — Evaluating AI methods vs. models (Salaudeen) — HTML deck', file: 'slides/day3-salaudeen.html' },
   { title: 'Day 3 — Evaluating AI methods vs. models (Salaudeen) — PDF', file: 'slides/day3-salaudeen.pdf' },
+  { title: 'Day 3 — Afternoon breakout opening remarks (McDermott) — HTML deck', file: 'slides/day3-breakout-remarks.html' },
+  { title: 'Day 3 — Afternoon breakout opening remarks (McDermott) — PDF', file: 'slides/day3-breakout-remarks.pdf' },
   { title: 'Day 4 — Methods & Modeling (McDermott) — HTML deck', file: 'slides/day4-methods.html' },
   { title: 'Day 4 — Methods & Modeling (McDermott) — PDF', file: 'slides/day4-methods.pdf' },
   { title: 'Day 4 — Trustworthy-by-construction methods (Gerych)', file: 'slides/day4-gerych.pdf' },
