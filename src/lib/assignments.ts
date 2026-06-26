@@ -12,24 +12,27 @@ const ROOMS: Record<'A' | 'B', string> = {
   B: 'Room B · Alder 103',
 };
 
-// Job talks — Saturday, Jun 27 (Day 6). Slotted presenters with their start time.
-const JOB_TALKS: Record<string, { room: 'A' | 'B'; start: string }> = {
-  'simon-a-lee': { room: 'A', start: '9:15 AM' },
-  'sanjana-ramprasad': { room: 'A', start: '9:55 AM' },
-  'divyam-madaan': { room: 'A', start: '10:35 AM' },
+// Job talks — Saturday, Jun 27 (Day 6). Slotted presenters with start time and,
+// where provided, the talk title (pulled from each presenter's submitted slides).
+const JOB_TALKS: Record<string, { room: 'A' | 'B'; start: string; title?: string }> = {
+  // Room A — Alder 107
+  'simon-a-lee': { room: 'A', start: '9:15 AM', title: 'Toward a General Health Intelligence: Learning to Understand and Intervene in Human Health' },
+  'kyungdo-kim': { room: 'A', start: '9:55 AM', title: 'From Physical Body to Digital Human: Quantitative Assessment of Human Movement for Neurological Disorders' },
+  'divyam-madaan': { room: 'A', start: '10:35 AM', title: 'From Complete to Missing Modalities: A Framework for Multimodal Learning' },
   'helena-coggan': { room: 'A', start: '11:15 AM' },
   'tae-jones': { room: 'A', start: '1:00 PM' },
   'guilherme-imai-aldeia': { room: 'A', start: '1:40 PM' },
-  'sameer-neupane': { room: 'A', start: '2:20 PM' },
-  'hyungjun-yoon': { room: 'B', start: '9:15 AM' },
+  'sameer-neupane': { room: 'A', start: '2:20 PM', title: 'From Wearable Physiological AI to Actionable Insights' },
+  'dipendra-pant': { room: 'A', start: '3:00 PM', title: 'Data-driven Clinical Decision Support' },
+  // Room B — Alder 103
+  'hyungjun-yoon': { room: 'B', start: '9:15 AM', title: 'Elevating Large-Scale Pre-Trained Models into Foundation Models for Mobile Sensing' },
   'amin-adibi': { room: 'B', start: '9:55 AM' },
-  'jiho-kim': { room: 'B', start: '10:35 AM' },
-  'ha-le': { room: 'B', start: '11:15 AM' },
+  'jiho-kim': { room: 'B', start: '10:35 AM', title: 'Trustworthy AI for High-Stakes Decisions' },
+  'ha-le': { room: 'B', start: '11:15 AM', title: 'Towards Accurate Tracking and Annotation of Physical Activities In-the-Wild' },
   'hangyul-yoon': { room: 'B', start: '1:00 PM' },
   'chase-fensore': { room: 'B', start: '1:40 PM' },
-  'kyungdo-kim': { room: 'B', start: '2:20 PM' },
-  'grace-xiyu-ding': { room: 'A', start: '3:00 PM' },
-  'yvonne-wu': { room: 'B', start: '3:00 PM' },
+  'uzma-pathan': { room: 'B', start: '2:20 PM' },
+  'ayush-noori': { room: 'B', start: '3:00 PM' },
 };
 
 // Posters — Sunday, Jun 28 (Day 7).
@@ -57,7 +60,7 @@ const POSTERS: Record<string, 'A' | 'B'> = {
 
 export interface StudentSchedule {
   facilitate?: { groupN: number; groupName: string; day: number; topic: string };
-  jobTalk?: { room: string; start?: string };
+  jobTalk?: { room: string; start?: string; title?: string };
   poster?: { session: 'A' | 'B'; time: string };
 }
 
@@ -74,7 +77,7 @@ export function scheduleFor(slug: string): StudentSchedule {
   }
 
   if (JOB_TALKS[slug]) {
-    out.jobTalk = { room: ROOMS[JOB_TALKS[slug].room], start: JOB_TALKS[slug].start };
+    out.jobTalk = { room: ROOMS[JOB_TALKS[slug].room], start: JOB_TALKS[slug].start, title: JOB_TALKS[slug].title };
   }
 
   if (POSTERS[slug]) {

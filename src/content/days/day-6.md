@@ -22,37 +22,37 @@ attend whichever talks you like. Open slots are filled by sign-up during the cam
 
 **Room A — Alder 107** · *Moderators: Peter Szolovits & Tom Pollard*
 
-| Time | Speaker |
-|---|---|
-| 9:15–9:55 | Simon A. Lee |
-| 9:55–10:35 | Sanjana Ramprasad |
-| 10:35–11:15 | Divyam Madaan |
-| 11:15–11:55 | Helena Coggan |
-| 12:00–1:00 | — Lunch — |
-| 1:00–1:40 | Tae Jones |
-| 1:40–2:20 | Guilherme Imai Aldeia |
-| 2:20–3:00 | Sameer Neupane |
-| 3:00–3:40 | Grace (Xiyu) Ding |
-| 3:45–4:00 | — Break — |
-| 4:00–4:40 | Open — sign-up |
-| 4:40–5:20 | Open — sign-up |
+| Time | Speaker | Talk title |
+|---|---|---|
+| 9:15–9:55 | Simon A. Lee | Toward a General Health Intelligence: Learning to Understand and Intervene in Human Health |
+| 9:55–10:35 | Kyungdo Kim | From Physical Body to Digital Human: Quantitative Assessment of Human Movement for Neurological Disorders |
+| 10:35–11:15 | Divyam Madaan | From Complete to Missing Modalities: A Framework for Multimodal Learning |
+| 11:15–11:55 | Helena Coggan | _TBA_ |
+| 12:00–1:00 | — Lunch — | |
+| 1:00–1:40 | Tae Jones | _TBA_ |
+| 1:40–2:20 | Guilherme Imai Aldeia | _TBA_ |
+| 2:20–3:00 | Sameer Neupane | From Wearable Physiological AI to Actionable Insights |
+| 3:00–3:40 | Dipendra Pant | Data-driven Clinical Decision Support |
+| 3:45–4:00 | — Break — | |
+| 4:00–4:40 | Open — sign-up | |
+| 4:40–5:20 | Open — sign-up | |
 
 **Room B — Alder 103** · *Moderators: Joyce Ho & Matthew McDermott*
 
-| Time | Speaker |
-|---|---|
-| 9:15–9:55 | Hyungjun Yoon |
-| 9:55–10:35 | Amin Adibi |
-| 10:35–11:15 | Jiho Kim |
-| 11:15–11:55 | Ha Le |
-| 12:00–1:00 | — Lunch — |
-| 1:00–1:40 | Hangyul Yoon |
-| 1:40–2:20 | Chase Fensore |
-| 2:20–3:00 | Kyungdo Kim |
-| 3:00–3:40 | Yvonne Wu |
-| 3:45–4:00 | — Break — |
-| 4:00–4:40 | Open — sign-up |
-| 4:40–5:20 | Open — sign-up |
+| Time | Speaker | Talk title |
+|---|---|---|
+| 9:15–9:55 | Hyungjun Yoon | Elevating Large-Scale Pre-Trained Models into Foundation Models for Mobile Sensing |
+| 9:55–10:35 | Amin Adibi | _TBA_ |
+| 10:35–11:15 | Jiho Kim | Trustworthy AI for High-Stakes Decisions |
+| 11:15–11:55 | Ha Le | Towards Accurate Tracking and Annotation of Physical Activities In-the-Wild |
+| 12:00–1:00 | — Lunch — | |
+| 1:00–1:40 | Hangyul Yoon | _TBA_ |
+| 1:40–2:20 | Chase Fensore | _TBA_ |
+| 2:20–3:00 | Uzma Pathan | _TBA_ |
+| 3:00–3:40 | Ayush Noori | _TBA_ |
+| 3:45–4:00 | — Break — | |
+| 4:00–4:40 | Open — sign-up | |
+| 4:40–5:20 | Open — sign-up | |
 
 Dinner follows at 6:00.
 

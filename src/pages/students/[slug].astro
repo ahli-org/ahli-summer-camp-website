@@ -50,7 +50,7 @@ const description = student.tagline
           )}
           {sched.jobTalk && (
             <li>
-              <strong>Job talk —</strong> <a href={`${url('curriculum/day-6')}#job-talks`}>Day 6</a> (Sat, Jun 27){sched.jobTalk.start ? `, ${sched.jobTalk.start}` : ''} · {sched.jobTalk.room}.
+              <strong>Job talk —</strong> <a href={`${url('curriculum/day-6')}#job-talks`}>Day 6</a> (Sat, Jun 27){sched.jobTalk.start ? `, ${sched.jobTalk.start}` : ''} · {sched.jobTalk.room}{sched.jobTalk.title ? ` — “${sched.jobTalk.title}”.` : '.'}
             </li>
           )}
           {sched.poster && (
