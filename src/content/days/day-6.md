@@ -34,7 +34,7 @@ attend whichever talks you like. Open slots are filled by sign-up during the cam
 | 2:20–3:00 | Sameer Neupane | From Wearable Physiological AI to Actionable Insights |
 | 3:00–3:40 | Dipendra Pant | Data-driven Clinical Decision Support |
 | 3:45–4:00 | — Break — | |
-| 4:00–4:40 | Open — sign-up | |
+| 4:00–4:40 | Grace (Xiyu) Ding | High-dimensional Bayesian Transfer Learning in Federated Settings |
 | 4:40–5:20 | Open — sign-up | |
 
 **Room B — Alder 103** · *Moderators: Joyce Ho & Matthew McDermott*

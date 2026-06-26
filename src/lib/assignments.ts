@@ -24,6 +24,7 @@ const JOB_TALKS: Record<string, { room: 'A' | 'B'; start: string; title?: string
   'guilherme-imai-aldeia': { room: 'A', start: '1:40 PM' },
   'sameer-neupane': { room: 'A', start: '2:20 PM', title: 'From Wearable Physiological AI to Actionable Insights' },
   'dipendra-pant': { room: 'A', start: '3:00 PM', title: 'Data-driven Clinical Decision Support' },
+  'grace-xiyu-ding': { room: 'A', start: '4:00 PM', title: 'High-dimensional Bayesian Transfer Learning in Federated Settings' },
   // Room B — Alder 103
   'hyungjun-yoon': { room: 'B', start: '9:15 AM', title: 'Elevating Large-Scale Pre-Trained Models into Foundation Models for Mobile Sensing' },
   'amin-adibi': { room: 'B', start: '9:55 AM' },
